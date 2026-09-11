@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="BARSAL | اخبار روز فوتبال، لیگ‌ها، تیم‌های بزرگ و نقل‌وانتقالات">
+
+<title>BARSAL | اخبار فوتبال</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --bg:#07090d;
+    --bg2:#0d1118;
+    --card:#11161e;
+    --card2:#151b24;
+    --text:#f5f7fa;
+    --muted:#9aa4b2;
+    --line:#252c36;
+    --red:#e21d2d;
+    --red2:#a90f1b;
+    --gold:#f0c75e;
+    --green:#25c477;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Vazirmatn",sans-serif;
+    background:
+    radial-gradient(circle at 85% 0%,#3a1015 0%,transparent 30%),
+    radial-gradient(circle at 0% 30%,#17100b 0%,transparent 25%),
+    var(--bg);
+    color:var(--text);
+    line-height:1.8;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 6%;
+    background:rgba(7,9,13,.88);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid var(--line);
+}
+
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo{
+    width:45px;
+    height:45px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
+    font-weight:900;
+    background:linear-gradient(135deg,var(--red),#26090c);
+    box-shadow:0 8px 30px #e21d2d40;
+}
+
+.logo-text strong{
+    display:block;
+    font-size:23px;
+    letter-spacing:2px;
+}
+
+.logo-text small{
+    color:var(--muted);
+    font-size:9px;
+    letter-spacing:2px;
+}
+
+.theme{
+    border:1px solid var(--line);
+    background:var(--card);
+    color:white;
+    width:42px;
+    height:42px;
+    border-radius:12px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+/* NAV */
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:12px 5%;
+    background:#0a0d12;
+    border-bottom:1px solid var(--line);
+    overflow-x:auto;
+}
+
+nav a{
+    color:var(--muted);
+    font-size:13px;
+    white-space:nowrap;
+    transition:.2s;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* MAIN */
+
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:0 22px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:470px;
+    display:grid;
+    grid-template-columns:1.5fr .7fr;
+    gap:35px;
+    align-items:center;
+    padding:70px 0;
+}
+
+.live{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    color:#ff6974;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+.live-dot{
+    width:9px;
+    height:9px;
+    background:#ff3948;
+    border-radius:50%;
+    box-shadow:0 0 0 7px #ff394820;
+}
+
+.hero h1{
+    font-size:clamp(42px,7vw,76px);
+    line-height:1.15;
+    margin:18px 0;
+}
+
+.hero h1 span{
+    color:var(--red);
+}
+
+.hero p{
+    color:var(--muted);
+    font-size:16px;
+    max-width:650px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:11px 19px;
+    border-radius:11px;
+    font-weight:700;
+    font-size:13px;
+}
+
+.btn-red{
+    background:var(--red);
+    color:white;
+}
+
+.btn-dark{
+    background:var(--card);
+    border:1px solid var(--line);
+}
+
+.hero-panel{
+    background:linear-gradient(145deg,var(--card2),#0c1016);
+    border:1px solid var(--line);
+    border-radius:23px;
+    padding:30px;
+    box-shadow:0 25px 70px #0008;
+}
+
+.hero-panel .number{
+    font-size:42px;
+    font-weight:900;
+    color:var(--gold);
+}
+
+.hero-panel small{
+    color:var(--muted);
+}
+
+.status{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:20px;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+    color:#65e3a1;
+    font-size:12px;
+}
+
+/* SECTIONS */
+
+.section{
+    padding:55px 0;
+}
+
+.section-head{
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.eyebrow{
+    color:var(--gold);
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+h2{
+    font-size:29px;
+    margin-top:3px;
+}
+
+/* TABS */
+
+.tabs{
+    display:flex;
+    gap:9px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.tab{
+    cursor:pointer;
+    padding:9px 15px;
+    border-radius:30px;
+    background:var(--card);
+    border:1px solid var(--line);
+    color:var(--muted);
+    font-family:inherit;
+}
+
+.tab.active{
+    background:var(--red);
+    border-color:var(--red);
+    color:white;
+}
+
+/* NEWS */
+
+.news-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.news{
+    min-height:205px;
+    padding:19px;
+    border-radius:17px;
+    border:1px solid var(--line);
+    background:linear-gradient(145deg,var(--card),#0d1015);
+    transition:.2s;
+    display:flex;
+    flex-direction:column;
+}
+
+.news:hover{
+    transform:translateY(-4px);
+    border-color:#ffffff35;
+}
+
+.news-top{
+    display:flex;
+    justify-content:space-between;
+    color:var(--muted);
+    font-size:10px;
+}
+
+.news h3{
+    font-size:17px;
+    line-height:1.7;
+    margin:12px 0 8px;
+}
+
+.news p{
+    color:var(--muted);
+    font-size:12px;
+}
+
+.news-link{
+    margin-top:auto;
+    padding-top:14px;
+    color:var(--gold);
+    font-size:11px;
+    font-weight:800;
+}
+
+/* BREAKING */
+
+.breaking{
+    border-color:#6b1b22;
+    background:
+    linear-gradient(145deg,#241013,#10141b);
+}
+
+.breaking .tag{
+    display:inline-block;
+    background:var(--red);
+    color:white;
+    padding:2px 7px;
+    border-radius:5px;
+    font-size:9px;
+    margin-bottom:7px;
+}
+
+/* TEAM CHIPS */
+
+.team-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:9px;
+    margin-bottom:20px;
+}
+
+.team{
+    cursor:pointer;
+    border:1px solid var(--line);
+    background:var(--card);
+    color:var(--muted);
+    padding:8px 13px;
+    border-radius:30px;
+    font-family:inherit;
+}
+
+.team.active{
+    color:white;
+    background:var(--red);
+    border-color:var(--red);
+}
+
+/* SEARCH */
+
+.search{
+    width:100%;
+    padding:14px 17px;
+    border-radius:12px;
+    border:1px solid var(--line);
+    background:var(--card);
+    color:white;
+    outline:none;
+    font-family:inherit;
+    margin-bottom:18px;
+}
+
+/* BALE */
+
+.follow{
+    margin:50px 0;
+    padding:35px;
+    border-radius:23px;
+    border:1px solid #762027;
+    background:
+    radial-gradient(circle at 90% 30%,#641820,transparent 35%),
+    linear-gradient(120deg,#210c0f,#11151c);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+}
+
+.follow h2{
+    margin:5px 0;
+}
+
+.follow p{
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* ABOUT */
+
+.about p{
+    color:var(--muted);
+    max-width:850px;
+    margin-top:12px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:13px;
+    margin-top:25px;
+}
+
+.about-card{
+    padding:20px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:15px;
+}
+
+.about-card b{
+    display:block;
+    margin-bottom:5px;
+}
+
+.about-card span{
+    color:var(--muted);
+    font-size:12px;
+}
+
+/* FOOTER */
+
+footer{
+    border-top:1px solid var(--line);
+    padding:27px 6%;
+    display:flex;
+    justify-content:space-between;
+    color:var(--muted);
+    font-size:12px;
+}
+
+/* LIGHT MODE */
+
+body.light{
+    --bg:#f3f5f8;
+    --bg2:#ffffff;
+    --card:#ffffff;
+    --card2:#ffffff;
+    --text:#16191f;
+    --muted:#66707c;
+    --line:#dce1e7;
+    background:#f3f5f8;
+}
+
+body.light header{
+    background:#ffffffeb;
+}
+
+body.light nav{
+    background:white;
+}
+
+body.light .theme{
+    color:#111;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    header{
+        padding:0 20px;
+    }
+
+    .hero{
+        grid-template-columns:1fr;
+        padding:50px 0;
+    }
+
+    .hero h1{
+        font-size:46px;
+    }
+
+    .news-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .follow{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:8px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-box">
+
+        <div class="logo">B</div>
+
+        <div class="logo-text">
+            <strong>BARSAL</strong>
+            <small>FOOTBALL NEWS</small>
+        </div>
+
+    </div>
+
+    <button class="theme" onclick="toggleTheme()">☾</button>
+
+</header>
+
+
+<nav>
+
+    <a href="#home">خانه</a>
+    <a href="#important">فوری و مهم</a>
+    <a href="#leagues">لیگ‌ها</a>
+    <a href="#teams">تیم‌ها</a>
+    <a href="#transfers">نقل‌وانتقالات</a>
+    <a href="#latest">آخرین اخبار</a>
+    <a href="#about">درباره ما</a>
+
+</nav>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div>
+
+        <div class="live">
+            <span class="live-dot"></span>
+            BARSAL LIVE
+        </div>
+
+        <h1>
+            فوتبال را
+            <span>سریع‌تر</span>
+            دنبال کن.
+        </h1>
+
+        <p>
+            آخرین اخبار فوتبال جهان، لیگ‌های معتبر،
+            تیم‌های بزرگ و نقل‌وانتقالات در BARSAL.
+        </p>
+
+        <div class="buttons">
+
+            <a class="btn btn-red" href="#important">
+                🔥 اخبار مهم امروز
+            </a>
+
+            <a class="btn btn-dark" href="#teams">
+                ⚽ تیم مورد علاقه من
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-panel">
+
+        <small>وضعیت سیستم اخبار</small>
+
+        <div class="number">
+            LIVE
+        </div>
+
+        <p>
+            سیستم BARSAL برای دریافت و نمایش
+            اخبار جدید آماده است.
+        </p>
+
+        <div class="status">
+            ● سیستم فعال است
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- IMPORTANT -->
+
+<section class="section" id="important">
+
+    <div class="section-head">
+
+        <div>
+            <div class="eyebrow">BREAKING NEWS</div>
+            <h2>🚨 اخبار فوری و مهم</h2>
+        </div>
+
+    </div>
+
+
+    <div class="news-grid">
+
+        <article class="news breaking">
+
+            <span class="tag">فوری</span>
+
+            <div class="news-top">
+                <span>BARSAL</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                آخرین اخبار مهم فوتبال را اینجا دنبال کنید
+            </h3>
+
+            <p>
+                این قسمت برای خبرهای بسیار مهم و فوری BARSAL طراحی شده است.
+            </p>
+
+            <a class="news-link" href="#latest">
+                مشاهده اخبار ←
+            </a>
+
+        </article>
+
+
+        <article class="news breaking">
+
+            <span class="tag">مهم</span>
+
+            <div class="news-top">
+                <span>FOOTBALL</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                مهم‌ترین اتفاقات فوتبال جهان
+            </h3>
+
+            <p>
+                خبرهای مهم فوتبال در این بخش قرار خواهند گرفت.
+            </p>
+
+            <a class="news-link" href="#latest">
+                ادامه ←
+            </a>
+
+        </article>
+
+
+        <article class="news breaking">
+
+            <span class="tag">LIVE</span>
+
+            <div class="news-top">
+                <span>BARSAL</span>
+                <span>اکنون</span>
+            </div>
+
+            <h3>
+                اخبار لحظه‌ای فوتبال
+            </h3>
+
+            <p>
+                سیستم اخبار خودکار BARSAL در حال آماده‌سازی است.
+            </p>
+
+            <a class="news-link" href="#latest">
+                مشاهده ←
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- LEAGUES -->
+
+<section class="section" id="leagues">
+
+    <div class="section-head">
+
+        <div>
+            <div class="eyebrow">TOP LEAGUES</div>
+            <h2>🏆 لیگ‌ها</h2>
+        </div>
+
+    </div>
+
+
+    <div class="tabs">
+
+        <button class="tab active" onclick="showLeague('laliga',this)">
+            🇪🇸 لالیگا
+        </button>
+
+        <button class="tab" onclick="showLeague('premier',this)">
+            🏴 لیگ انگلیس
+        </button>
+
+        <button class="tab" onclick="showLeague('seriea',this)">
+            🇮🇹 سری A
+        </button>
+
+    </div>
+
+
+    <div id="leagueNews" class="news-grid">
+
+        <article class="news">
+
+            <div class="news-top">
+                <span>🇪🇸 LALIGA</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                آخرین اخبار لالیگا
+            </h3>
+
+            <p>
+                اخبار جدید تیم‌ها و اتفاقات لالیگا در این بخش نمایش داده می‌شود.
+            </p>
+
+            <a class="news-link" href="#">
+                ادامه خبر ←
+            </a>
+
+        </article>
+
+        <article class="news">
+
+            <div class="news-top">
+                <span>🇪🇸 LALIGA</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                آخرین وضعیت تیم‌های لالیگا
+            </h3>
+
+            <p>
+                جدیدترین اخبار فوتبال اسپانیا.
+            </p>
+
+            <a class="news-link" href="#">
+                ادامه خبر ←
+            </a>
+
+        </article>
+
+        <article class="news">
+
+            <div class="news-top">
+                <span>🇪🇸 LALIGA</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                اتفاقات مهم لالیگا
+            </h3>
+
+            <p>
+                پوشش اتفاقات مهم فوتبال اسپانیا.
+            </p>
+
+            <a class="news-link" href="#">
+                ادامه خبر ←
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- TEAMS -->
+
+<section class="section" id="teams">
+
+    <div class="section-head">
+
+        <div>
+            <div class="eyebrow">BIG TEAMS</div>
+            <h2>⭐ تیم‌های بزرگ</h2>
+        </div>
+
+    </div>
+
+
+    <div class="team-list">
+
+        <button class="team active" onclick="teamSelect(this,'بارسلونا')">🔵🔴 بارسلونا</button>
+
+        <button class="team" onclick="teamSelect(this,'رئال مادرید')">⚪ رئال مادرید</button>
+
+        <button class="team" onclick="teamSelect(this,'اتلتیکو مادرید')">🔴 اتلتیکو مادرید</button>
+
+        <button class="team" onclick="teamSelect(this,'آرسنال')">🔴 آرسنال</button>
+
+        <button class="team" onclick="teamSelect(this,'لیورپول')">🔴 لیورپول</button>
+
+        <button class="team" onclick="teamSelect(this,'منچسترسیتی')">🔵 منچسترسیتی</button>
+
+        <button class="team" onclick="teamSelect(this,'منچستریونایتد')">🔴 منچستریونایتد</button>
+
+        <button class="team" onclick="teamSelect(this,'اینتر میامی')">🩷 اینتر میامی</button>
+
+        <button class="team" onclick="teamSelect(this,'النصر')">🟡 النصر</button>
+
+        <button class="team" onclick="teamSelect(this,'پاریسن ژرمن')">🔵🔴 پاریسن ژرمن</button>
+
+        <button class="team" onclick="teamSelect(this,'بایرن مونیخ')">🔴 بایرن مونیخ</button>
+
+        <button class="team" onclick="teamSelect(this,'اینتر')">🔵⚫ اینتر</button>
+
+    </div>
+
+
+    <div id="teamTitle" style="margin-bottom:15px;color:#f0c75e;font-weight:800;">
+        اخبار بارسلونا
+    </div>
+
+
+    <div class="news-grid">
+
+        <article class="news">
+
+            <div class="news-top">
+                <span>⚽ BARSAL</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                جدیدترین اخبار بارسلونا
+            </h3>
+
+            <p>
+                اخبار و اتفاقات مربوط به تیم انتخاب‌شده در این قسمت نمایش داده می‌شود.
+            </p>
+
+            <a class="news-link" href="#">
+                ادامه خبر ←
+            </a>
+
+        </article>
+
+
+        <article class="news">
+
+            <div class="news-top">
+                <span>TEAM NEWS</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                آخرین وضعیت تیم
+            </h3>
+
+            <p>
+                اخبار جدید تیم مورد علاقه شما.
+            </p>
+
+            <a class="news-link" href="#">
+                ادامه ←
+            </a>
+
+        </article>
+
+
+        <article class="news">
+
+            <div class="news-top">
+                <span>BARSAL</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                مهم‌ترین اخبار تیم
+            </h3>
+
+            <p>
+                BARSAL اخبار مهم تیم‌ها را پوشش می‌دهد.
+            </p>
+
+            <a class="news-link" href="#">
+                ادامه ←
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- TRANSFERS -->
+
+<section class="section" id="transfers">
+
+    <div class="section-head">
+
+        <div>
+            <div class="eyebrow">TRANSFER MARKET</div>
+            <h2>🔄 نقل‌وانتقالات</h2>
+        </div>
+
+    </div>
+
+
+    <div class="news-grid">
+
+        <article class="news">
+
+            <div class="news-top">
+                <span>TRANSFER</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                جدیدترین شایعات نقل‌وانتقالات
+            </h3>
+
+            <p>
+                مهم‌ترین شایعات و اخبار نقل‌وانتقالات فوتبال.
+            </p>
+
+            <a class="news-link" href="#">
+                ادامه خبر ←
+            </a>
+
+        </article>
+
+
+        <article class="news">
+
+            <div class="news-top">
+                <span>TRANSFER</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                آخرین انتقال‌های رسمی
+            </h3>
+
+            <p>
+                انتقال‌های رسمی بازیکنان در این بخش نمایش داده می‌شود.
+            </p>
+
+            <a class="news-link" href="#">
+                ادامه ←
+            </a>
+
+        </article>
+
+
+        <article class="news">
+
+            <div class="news-top">
+                <span>TRANSFER</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                بمب‌های نقل‌وانتقالاتی
+            </h3>
+
+            <p>
+                خبرهای داغ بازار نقل‌وانتقالات.
+            </p>
+
+            <a class="news-link" href="#">
+                مشاهده ←
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- LATEST -->
+
+<section class="section" id="latest">
+
+    <div class="section-head">
+
+        <div>
+            <div class="eyebrow">LATEST NEWS</div>
+            <h2>📰 آخرین اخبار</h2>
+        </div>
+
+    </div>
+
+
+    <input
+        class="search"
+        id="search"
+        type="search"
+        placeholder="🔎 جستجوی خبر، تیم یا لیگ..."
+        oninput="searchNews()"
+    >
+
+
+    <div class="news-grid" id="allNews">
+
+        <article class="news">
+
+            <div class="news-top">
+                <span>BARSAL</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                به BARSAL خوش آمدید
+            </h3>
+
+            <p>
+                این بخش در نسخه نهایی با سیستم اخبار خودکار پر خواهد شد.
+            </p>
+
+            <a class="news-link" href="#">
+                مشاهده ←
+            </a>
+
+        </article>
+
+
+        <article class="news">
+
+            <div class="news-top">
+                <span>FOOTBALL</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                اخبار فوتبال جهان
+            </h3>
+
+            <p>
+                جدیدترین اخبار فوتبال در BARSAL.
+            </p>
+
+            <a class="news-link" href="#">
+                ادامه ←
+            </a>
+
+        </article>
+
+
+        <article class="news">
+
+            <div class="news-top">
+                <span>BARSAL</span>
+                <span>امروز</span>
+            </div>
+
+            <h3>
+                اخبار مهم امروز
+            </h3>
+
+            <p>
+                این قسمت به سیستم خبرهای خودکار متصل خواهد شد.
+            </p>
+
+            <a class="news-link" href="#">
+                مشاهده ←
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- BALE -->
+
+<section class="follow">
+
+    <div>
+
+        <div class="eyebrow">
+            BARSAL ON BALE
+        </div>
+
+        <h2>
+            📲 ما رو در بله دنبال کنید
+        </h2>
+
+        <p>
+            برای دریافت سریع‌تر اخبار فوتبال و خبرهای فوری،
+            کانال BARSAL را در بله دنبال کن.
+        </p>
+
+    </div>
+
+
+    <a
+        class="btn btn-red"
+        href="https://ble.ir/barsal10"
+        target="_blank"
+    >
+        ورود به کانال BARSAL
+    </a>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+
+    <div class="eyebrow">
+        ABOUT BARSAL
+    </div>
+
+    <h2>
+        درباره BARSAL
+    </h2>
+
+    <p>
+        BARSAL یک رسانه فوتبالی برای دنبال‌کردن
+        اخبار روز فوتبال، لیگ‌های معتبر،
+        تیم‌های بزرگ و نقل‌وانتقالات است.
+        هدف BARSAL ارائه سریع، مرتب و منبع‌محور اخبار فوتبال است.
+    </p>
+
+
+    <div class="about-grid">
+
+        <div class="about-card">
+            <b>⚡ سریع</b>
+            <span>
+                اخبار جدید با سیستم بروزرسانی خودکار
+            </span>
+        </div>
+
+        <div class="about-card">
+            <b>🎯 مرتب</b>
+            <span>
+                دسته‌بندی اخبار بر اساس لیگ و تیم
+            </span>
+        </div>
+
+        <div class="about-card">
+            <b>🔗 منبع‌محور</b>
+            <span>
+                لینک خبر به منبع اصلی
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <strong>BARSAL · FOOTBALL NEWS</strong>
+
+    <span>
+        © 2026 BARSAL
+    </span>
+
+</footer>
+
+
+<script>
+
+/* THEME */
+
+function toggleTheme(){
+
+    document.body.classList.toggle("light");
+
+    if(document.body.classList.contains("light")){
+        localStorage.setItem("theme","light");
+    }else{
+        localStorage.setItem("theme","dark");
+    }
+
+}
+
+if(localStorage.getItem("theme")==="light"){
+    document.body.classList.add("light");
+}
+
+
+/* LEAGUES */
+
+function showLeague(league,button){
+
+    document.querySelectorAll(".tab").forEach(function(x){
+        x.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    let box=document.getElementById("leagueNews");
+
+    let title="";
+    let flag="";
+
+    if(league==="laliga"){
+        title="اخبار لالیگا";
+        flag="🇪🇸";
+    }
+
+    if(league==="premier"){
+        title="اخبار لیگ انگلیس";
+        flag="🏴";
+    }
+
+    if(league==="seriea"){
+        title="اخبار سری A ایتالیا";
+        flag="🇮🇹";
+    }
+
+    box.innerHTML=`
+
+    <article class="news">
+        <div class="news-top">
+            <span>${flag} BARSAL</span>
+            <span>امروز</span>
+        </div>
+        <h3>${title}</h3>
+        <p>جدیدترین اخبار این لیگ در این بخش نمایش داده خواهد شد.</p>
+        <a class="news-link" href="#">ادامه خبر ←</a>
+    </article>
+
+    <article class="news">
+        <div class="news-top">
+            <span>FOOTBALL</span>
+            <span>امروز</span>
+        </div>
+        <h3>آخرین اتفاقات ${title}</h3>
+        <p>خبرهای مهم و جدید فوتبال.</p>
+        <a class="news-link" href="#">ادامه خبر ←</a>
+    </article>
+
+    <article class="news">
+        <div class="news-top">
+            <span>BARSAL</span>
+            <span>امروز</span>
+        </div>
+        <h3>مهم‌ترین اخبار</h3>
+        <p>این بخش با سیستم اخبار خودکار تکمیل خواهد شد.</p>
+        <a class="news-link" href="#">مشاهده ←</a>
+    </article>
+
+    `;
+
+}
+
+
+/* TEAMS */
+
+function teamSelect(button,name){
+
+    document.querySelectorAll(".team").forEach(function(x){
+        x.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    document.getElementById("teamTitle").innerText=
+        "اخبار "+name;
+
+}
+
+
+/* SEARCH */
+
+function searchNews(){
+
+    let query=document
+        .getElementById("search")
+        .value
+        .toLowerCase();
+
+    document.querySelectorAll("#allNews .news").forEach(function(card){
+
+        let text=card.innerText.toLowerCase();
+
+        if(text.includes(query)){
+            card.style.display="flex";
+        }else{
+            card.style.display="none";
+        }
+
+    });
+
+}
+
+</script>
+
+</body>
+  </html>

@@ -630,51 +630,117 @@ h2{
 
 .tabs{
     display:flex;
-    gap:8px;
+    gap:10px;
 
     flex-wrap:wrap;
 
-    margin-bottom:20px;
+    margin-bottom:22px;
 }
 
 .tab{
     cursor:pointer;
 
-    padding:9px 15px;
+    min-width:150px;
 
-    border-radius:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+
+    padding:10px 16px;
+
+    border-radius:15px;
 
     border:1px solid var(--line);
 
-    background:rgba(255,255,255,.035);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.045),
+            rgba(255,255,255,.018)
+        );
 
     color:var(--muted);
 
     font-size:11px;
-    font-weight:700;
+    font-weight:800;
 
-    transition:.2s;
+    transition:.25s;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.10);
 }
 
 .tab:hover{
     color:white;
-    border-color:#ffffff28;
+
+    border-color:
+        rgba(255,255,255,.18);
+
+    transform:translateY(-2px);
 }
 
 .tab.active{
     color:white;
 
-    border-color:var(--red);
+    border-color:
+        rgba(229,29,50,.7);
 
     background:
         linear-gradient(
             135deg,
-            var(--red2),
-            var(--red)
+            rgba(229,29,50,.25),
+            rgba(229,29,50,.08)
         );
 
     box-shadow:
-        0 8px 22px rgba(229,29,50,.16);
+        0 10px 30px rgba(229,29,50,.14);
+}
+
+.league-logo{
+    width:34px;
+    height:34px;
+
+    padding:5px;
+
+    object-fit:contain;
+
+    border-radius:10px;
+
+    background:
+        rgba(255,255,255,.09);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.25s;
+}
+
+.tab:hover .league-logo,
+.tab.active .league-logo{
+    transform:scale(1.08);
+}
+
+.tab-name{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+
+    line-height:1.3;
+}
+
+.tab-name small{
+    margin-top:2px;
+
+    color:#697482;
+
+    font-size:7px;
+
+    font-weight:500;
+}
+
+.tab.active .tab-name small{
+    color:#cbd2da;
 }
 
 /* ================= NEWS ================= */
@@ -1278,6 +1344,14 @@ body.light .qr-card{
     background:#fff;
 }
 
+body.light .tab{
+    background:#fff;
+}
+
+body.light .league-logo{
+    background:#f4f5f7;
+}
+
 /* ================= RESPONSIVE ================= */
 
 @media(max-width:950px){
@@ -1353,6 +1427,26 @@ body.light .qr-card{
     footer{
         flex-direction:column;
         gap:8px;
+    }
+
+}
+
+@media(max-width:560px){
+
+    .tabs{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+
+    .tab{
+        width:100%;
+        min-width:0;
+        justify-content:flex-start;
+        padding:10px 13px;
+    }
+
+    .tab-name{
+        align-items:flex-start;
     }
 
 }
@@ -1651,25 +1745,87 @@ body.light .qr-card{
 
     <div class="tabs">
 
+        <!-- La Liga -->
+
         <button
             class="tab active"
             onclick="showLeague('laliga',this)"
         >
-            🇪🇸 لالیگا
+
+            <img
+                class="league-logo"
+                src="https://media.api-sports.io/football/leagues/140.png"
+                alt="La Liga"
+            >
+
+            <span class="tab-name">
+
+                <span>
+                    لالیگا
+                </span>
+
+                <small>
+                    LA LIGA
+                </small>
+
+            </span>
+
         </button>
+
+
+        <!-- Premier League -->
 
         <button
             class="tab"
             onclick="showLeague('premier',this)"
         >
-            🏴 لیگ انگلیس
+
+            <img
+                class="league-logo"
+                src="https://media.api-sports.io/football/leagues/39.png"
+                alt="Premier League"
+            >
+
+            <span class="tab-name">
+
+                <span>
+                    لیگ انگلیس
+                </span>
+
+                <small>
+                    PREMIER LEAGUE
+                </small>
+
+            </span>
+
         </button>
+
+
+        <!-- Serie A -->
 
         <button
             class="tab"
             onclick="showLeague('seriea',this)"
         >
-            🇮🇹 سری A
+
+            <img
+                class="league-logo"
+                src="https://media.api-sports.io/football/leagues/135.png"
+                alt="Serie A"
+            >
+
+            <span class="tab-name">
+
+                <span>
+                    سری A
+                </span>
+
+                <small>
+                    SERIE A
+                </small>
+
+            </span>
+
         </button>
 
     </div>
@@ -1905,8 +2061,8 @@ body.light .qr-card{
 
             <img
                 class="team-logo"
-                src="https://media.api-sports.io/football/teams/536.png"
-                alt="Inter Miami"
+                src="https://media.api-sports.io/football/teams/9568.png"
+                alt="Inter Miami CF"
             >
 
             <span class="team-name">
@@ -1931,8 +2087,8 @@ body.light .qr-card{
 
             <img
                 class="team-logo"
-                src="https://media.api-sports.io/football/teams/2382.png"
-                alt="Al Nassr"
+                src="https://media.api-sports.io/football/teams/2939.png"
+                alt="Al Nassr FC"
             >
 
             <span class="team-name">

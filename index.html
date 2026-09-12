@@ -4,26 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="BARSAL | اخبار روز فوتبال، لیگ‌ها، تیم‌های بزرگ و نقل‌وانتقالات">
+<meta name="description" content="BARSAL | رسانه خبری فوتبال؛ آخرین اخبار فوتبال، لیگ‌ها، تیم‌ها و نقل‌وانتقالات">
 
-<title>BARSAL | اخبار فوتبال</title>
+<title>BARSAL | Football News</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
-
 :root{
-    --bg:#07090d;
-    --bg2:#0d1118;
-    --card:#11161e;
-    --card2:#151b24;
-    --text:#f5f7fa;
-    --muted:#9aa4b2;
-    --line:#252c36;
-    --red:#e21d2d;
-    --red2:#a90f1b;
-    --gold:#f0c75e;
-    --green:#25c477;
+    --bg:#05070a;
+    --bg2:#090d13;
+    --card:#0d1219;
+    --card2:#111821;
+    --card3:#151d27;
+    --text:#f7f9fc;
+    --muted:#8d98a7;
+    --line:#202934;
+    --red:#e51d32;
+    --red2:#ff3047;
+    --gold:#f2c75c;
+    --green:#27d17f;
+    --blue:#4da3ff;
+    --shadow:0 25px 80px rgba(0,0,0,.45);
 }
 
 *{
@@ -39,11 +44,25 @@ html{
 body{
     font-family:"Vazirmatn",sans-serif;
     background:
-    radial-gradient(circle at 85% 0%,#3a1015 0%,transparent 30%),
-    radial-gradient(circle at 0% 30%,#17100b 0%,transparent 25%),
-    var(--bg);
+        radial-gradient(circle at 90% -5%,rgba(229,29,50,.20),transparent 28%),
+        radial-gradient(circle at 5% 25%,rgba(70,100,150,.08),transparent 25%),
+        linear-gradient(180deg,#05070a,#080c11 55%,#05070a);
     color:var(--text);
     line-height:1.8;
+    min-height:100vh;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:.025;
+    background-image:
+        linear-gradient(rgba(255,255,255,.8) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.8) 1px,transparent 1px);
+    background-size:45px 45px;
+    z-index:-1;
 }
 
 a{
@@ -56,19 +75,26 @@ input{
     font-family:inherit;
 }
 
+button{
+    -webkit-tap-highlight-color:transparent;
+}
+
+/* ================= HEADER ================= */
+
 header{
     position:sticky;
     top:0;
     z-index:1000;
-    min-height:75px;
+    min-height:76px;
     display:flex;
     align-items:center;
     justify-content:space-between;
     gap:15px;
-    padding:10px 6%;
-    background:rgba(7,9,13,.88);
-    backdrop-filter:blur(18px);
-    border-bottom:1px solid var(--line);
+    padding:10px max(18px,5vw);
+    background:rgba(5,7,10,.78);
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
+    border-bottom:1px solid rgba(255,255,255,.07);
 }
 
 .logo-box{
@@ -78,28 +104,48 @@ header{
 }
 
 .logo{
-    width:45px;
-    height:45px;
-    border-radius:14px;
+    width:47px;
+    height:47px;
+    border-radius:15px;
     display:flex;
     align-items:center;
     justify-content:center;
     font-size:27px;
     font-weight:900;
-    background:linear-gradient(135deg,var(--red),#26090c);
-    box-shadow:0 8px 30px #e21d2d40;
+    color:white;
+    background:
+        linear-gradient(145deg,#ff3047,#a20e1c);
+    box-shadow:
+        0 8px 30px rgba(229,29,50,.28),
+        inset 0 1px 0 rgba(255,255,255,.22);
+    position:relative;
+    overflow:hidden;
+}
+
+.logo::after{
+    content:"";
+    position:absolute;
+    width:80px;
+    height:15px;
+    background:rgba(255,255,255,.16);
+    transform:rotate(-45deg);
+    top:-20px;
+    left:-30px;
 }
 
 .logo-text strong{
     display:block;
     font-size:23px;
-    letter-spacing:2px;
+    letter-spacing:2.5px;
+    line-height:1.1;
 }
 
 .logo-text small{
+    display:block;
     color:var(--muted);
-    font-size:9px;
-    letter-spacing:2px;
+    font-size:8px;
+    letter-spacing:2.5px;
+    margin-top:3px;
 }
 
 .header-actions{
@@ -110,13 +156,13 @@ header{
 
 .theme,
 .translate-btn{
-    border:1px solid var(--line);
-    background:var(--card);
-    color:white;
     height:42px;
     border-radius:12px;
     cursor:pointer;
-    transition:.2s;
+    transition:.25s ease;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.035);
+    color:white;
 }
 
 .theme{
@@ -126,166 +172,224 @@ header{
 
 .translate-btn{
     padding:0 14px;
-    font-size:12px;
+    font-size:11px;
     font-weight:800;
 }
 
 .theme:hover,
 .translate-btn:hover{
-    border-color:#ffffff45;
     transform:translateY(-2px);
+    border-color:rgba(255,255,255,.2);
+    background:rgba(255,255,255,.07);
 }
 
-.translate-btn.active{
-    background:var(--red);
-    border-color:var(--red);
-}
-
-.translate-status{
-    position:fixed;
-    top:90px;
-    left:50%;
-    transform:translateX(-50%);
-    z-index:2000;
-    padding:9px 16px;
-    border-radius:12px;
-    background:var(--card2);
-    border:1px solid var(--line);
-    box-shadow:0 10px 40px #0008;
-    color:var(--text);
-    font-size:11px;
-    opacity:0;
-    pointer-events:none;
-    transition:.25s;
-}
-
-.translate-status.show{
-    opacity:1;
-}
+/* ================= NAV ================= */
 
 nav{
+    position:sticky;
+    top:76px;
+    z-index:900;
     display:flex;
     justify-content:center;
-    gap:25px;
-    padding:12px 5%;
-    background:#0a0d12;
-    border-bottom:1px solid var(--line);
+    gap:7px;
+    padding:9px max(15px,5vw);
+    background:rgba(7,10,14,.88);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.055);
     overflow-x:auto;
 }
 
+nav::-webkit-scrollbar{
+    display:none;
+}
+
 nav a{
-    color:var(--muted);
-    font-size:13px;
+    color:#929dac;
+    font-size:12px;
+    font-weight:600;
     white-space:nowrap;
+    padding:7px 13px;
+    border-radius:9px;
     transition:.2s;
 }
 
 nav a:hover{
     color:white;
+    background:rgba(255,255,255,.055);
 }
+
+/* ================= MAIN ================= */
 
 main{
-    max-width:1200px;
+    width:min(1200px,92%);
     margin:auto;
-    padding:0 22px;
 }
 
+/* ================= HERO ================= */
+
 .hero{
-    min-height:470px;
+    min-height:550px;
     display:grid;
-    grid-template-columns:1.5fr .7fr;
-    gap:35px;
+    grid-template-columns:1.45fr .7fr;
+    gap:45px;
     align-items:center;
-    padding:70px 0;
+    padding:80px 0 65px;
 }
 
 .live{
     display:inline-flex;
     align-items:center;
     gap:9px;
-    color:#ff6974;
-    font-size:11px;
-    font-weight:800;
-    letter-spacing:1px;
+    color:#ff6978;
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:2px;
+    padding:7px 12px;
+    border:1px solid rgba(229,29,50,.25);
+    background:rgba(229,29,50,.07);
+    border-radius:30px;
 }
 
 .live-dot{
-    width:9px;
-    height:9px;
-    background:#ff3948;
+    width:8px;
+    height:8px;
+    background:#ff3047;
     border-radius:50%;
-    box-shadow:0 0 0 7px #ff394820;
+    box-shadow:0 0 0 6px rgba(255,48,71,.12);
+    animation:pulse 1.6s infinite;
+}
+
+@keyframes pulse{
+    0%,100%{box-shadow:0 0 0 5px rgba(255,48,71,.10)}
+    50%{box-shadow:0 0 0 9px rgba(255,48,71,.02)}
 }
 
 .hero h1{
-    font-size:clamp(42px,7vw,76px);
-    line-height:1.15;
-    margin:18px 0;
+    font-size:clamp(44px,7vw,78px);
+    line-height:1.12;
+    margin:22px 0 17px;
+    letter-spacing:-2px;
 }
 
 .hero h1 span{
-    color:var(--red);
+    color:var(--red2);
+    text-shadow:0 0 35px rgba(229,29,50,.18);
 }
 
 .hero p{
     color:var(--muted);
-    font-size:16px;
+    font-size:15px;
     max-width:650px;
 }
 
 .buttons{
     display:flex;
-    gap:12px;
-    margin-top:30px;
+    gap:10px;
+    margin-top:29px;
     flex-wrap:wrap;
 }
 
 .btn{
-    display:inline-block;
-    padding:11px 19px;
-    border-radius:11px;
-    font-weight:700;
-    font-size:13px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+    padding:12px 18px;
+    border-radius:12px;
+    font-weight:800;
+    font-size:12px;
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
 }
 
 .btn-red{
-    background:var(--red);
+    background:linear-gradient(135deg,var(--red2),var(--red));
     color:white;
+    box-shadow:0 10px 30px rgba(229,29,50,.18);
 }
 
 .btn-dark{
-    background:var(--card);
+    background:rgba(255,255,255,.035);
     border:1px solid var(--line);
 }
+
+/* HERO PANEL */
 
 .hero-panel{
-    background:linear-gradient(145deg,var(--card2),#0c1016);
-    border:1px solid var(--line);
-    border-radius:23px;
-    padding:30px;
-    box-shadow:0 25px 70px #0008;
+    position:relative;
+    overflow:hidden;
+    background:
+        radial-gradient(circle at 100% 0%,rgba(229,29,50,.18),transparent 40%),
+        linear-gradient(145deg,var(--card2),#080c11);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:27px;
+    padding:29px;
+    box-shadow:var(--shadow);
 }
 
-.hero-panel .number{
-    font-size:42px;
+.hero-panel::before{
+    content:"B";
+    position:absolute;
+    left:-15px;
+    bottom:-60px;
+    font-size:190px;
+    font-weight:900;
+    color:rgba(255,255,255,.025);
+    pointer-events:none;
+}
+
+.panel-label{
+    color:var(--muted);
+    font-size:11px;
+    position:relative;
+}
+
+.number{
+    font-size:53px;
     font-weight:900;
     color:var(--gold);
+    line-height:1.2;
+    margin-top:8px;
+    position:relative;
 }
 
-.hero-panel small{
+.panel-text{
     color:var(--muted);
+    font-size:11px;
+    position:relative;
 }
 
 .status{
     display:flex;
     align-items:center;
-    gap:10px;
-    margin-top:20px;
-    padding-top:20px;
+    gap:8px;
+    margin-top:22px;
+    padding-top:18px;
     border-top:1px solid var(--line);
-    color:#65e3a1;
-    font-size:12px;
+    color:var(--green);
+    font-size:11px;
+    position:relative;
 }
+
+.status-dot{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--green);
+    box-shadow:0 0 0 5px rgba(39,209,127,.1);
+}
+
+.last-update{
+    margin-top:10px;
+    color:#66717e;
+    font-size:9px;
+    position:relative;
+}
+
+/* ================= SECTIONS ================= */
 
 .section{
     padding:55px 0;
@@ -293,26 +397,75 @@ main{
 
 .section-head{
     display:flex;
-    align-items:end;
+    align-items:flex-end;
     justify-content:space-between;
-    margin-bottom:20px;
+    gap:15px;
+    margin-bottom:22px;
 }
 
 .eyebrow{
     color:var(--gold);
-    font-size:10px;
+    font-size:9px;
     font-weight:900;
-    letter-spacing:2px;
+    letter-spacing:2.5px;
 }
 
 h2{
-    font-size:29px;
+    font-size:28px;
     margin-top:3px;
+    letter-spacing:-.5px;
 }
+
+/* ================= SEARCH ================= */
+
+.search-wrap{
+    position:relative;
+    margin:10px 0 22px;
+}
+
+.search{
+    width:100%;
+    padding:17px 52px 17px 17px;
+    border-radius:16px;
+    border:1px solid var(--line);
+    background:
+        linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));
+    color:white;
+    outline:none;
+    font-size:13px;
+    box-shadow:0 15px 45px rgba(0,0,0,.16);
+    transition:.25s;
+}
+
+.search:focus{
+    border-color:rgba(229,29,50,.65);
+    box-shadow:0 0 0 4px rgba(229,29,50,.08);
+}
+
+.search::placeholder{
+    color:#727d8b;
+}
+
+.search-icon{
+    position:absolute;
+    right:18px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:18px;
+    pointer-events:none;
+}
+
+.search-hint{
+    color:#687381;
+    font-size:10px;
+    margin-top:8px;
+}
+
+/* ================= TABS ================= */
 
 .tabs{
     display:flex;
-    gap:9px;
+    gap:8px;
     flex-wrap:wrap;
     margin-bottom:20px;
 }
@@ -321,133 +474,191 @@ h2{
     cursor:pointer;
     padding:9px 15px;
     border-radius:30px;
-    background:var(--card);
+    background:rgba(255,255,255,.035);
     border:1px solid var(--line);
     color:var(--muted);
+    font-size:11px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.tab:hover{
+    border-color:#ffffff30;
+    color:white;
 }
 
 .tab.active{
-    background:var(--red);
+    background:linear-gradient(135deg,var(--red2),var(--red));
     border-color:var(--red);
     color:white;
+    box-shadow:0 8px 22px rgba(229,29,50,.16);
 }
 
-.news-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:16px;
-}
-
-.news{
-    min-height:225px;
-    padding:19px;
-    border-radius:17px;
-    border:1px solid var(--line);
-    background:linear-gradient(145deg,var(--card),#0d1015);
-    transition:.2s;
-    display:flex;
-    flex-direction:column;
-}
-
-.news:hover{
-    transform:translateY(-4px);
-    border-color:#ffffff35;
-}
-
-.news-top{
-    display:flex;
-    justify-content:space-between;
-    gap:10px;
-    color:var(--muted);
-    font-size:10px;
-}
-
-.news h3{
-    font-size:17px;
-    line-height:1.7;
-    margin:12px 0 8px;
-}
-
-.news p{
-    color:var(--muted);
-    font-size:12px;
-}
-
-.news-link{
-    margin-top:auto;
-    padding-top:14px;
-    color:var(--gold);
-    font-size:11px;
-    font-weight:800;
-}
-
-.breaking{
-    border-color:#6b1b22;
-    background:
-    linear-gradient(145deg,#241013,#10141b);
-}
-
-.breaking .tag{
-    display:inline-block;
-    width:max-content;
-    background:var(--red);
-    color:white;
-    padding:2px 7px;
-    border-radius:5px;
-    font-size:9px;
-    margin-bottom:7px;
-}
+/* ================= TEAM BUTTONS ================= */
 
 .team-list{
     display:flex;
     flex-wrap:wrap;
-    gap:9px;
+    gap:8px;
     margin-bottom:20px;
 }
 
 .team{
     cursor:pointer;
     border:1px solid var(--line);
-    background:var(--card);
+    background:rgba(255,255,255,.035);
     color:var(--muted);
     padding:8px 13px;
     border-radius:30px;
+    font-size:11px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.team:hover{
+    color:white;
+    transform:translateY(-2px);
 }
 
 .team.active{
     color:white;
-    background:var(--red);
+    background:linear-gradient(135deg,var(--red2),var(--red));
     border-color:var(--red);
 }
 
-.search{
-    width:100%;
-    padding:14px 17px;
-    border-radius:12px;
-    border:1px solid var(--line);
-    background:var(--card);
-    color:white;
-    outline:none;
-    font-family:inherit;
-    margin-bottom:18px;
+/* ================= NEWS GRID ================= */
+
+.news-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
 }
 
-.search::placeholder{
-    color:var(--muted);
+.news{
+    position:relative;
+    overflow:hidden;
+    min-height:235px;
+    padding:19px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.07);
+    background:
+        linear-gradient(145deg,var(--card),#090d12);
+    display:flex;
+    flex-direction:column;
+    transition:.28s ease;
 }
+
+.news::before{
+    content:"";
+    position:absolute;
+    right:0;
+    top:0;
+    width:3px;
+    height:0;
+    background:var(--red2);
+    transition:.3s;
+}
+
+.news:hover{
+    transform:translateY(-6px);
+    border-color:rgba(255,255,255,.14);
+    box-shadow:0 18px 45px rgba(0,0,0,.28);
+}
+
+.news:hover::before{
+    height:100%;
+}
+
+.news-top{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    color:#687381;
+    font-size:9px;
+}
+
+.news h3{
+    font-size:15px;
+    line-height:1.75;
+    margin:11px 0 8px;
+}
+
+.news p{
+    color:var(--muted);
+    font-size:11px;
+    line-height:1.8;
+}
+
+.news-link{
+    margin-top:auto;
+    padding-top:15px;
+    color:var(--gold);
+    font-size:10px;
+    font-weight:800;
+}
+
+.breaking{
+    border-color:rgba(229,29,50,.32);
+    background:
+        radial-gradient(circle at 100% 0%,rgba(229,29,50,.15),transparent 35%),
+        linear-gradient(145deg,#1b0c10,#0c1117);
+}
+
+.breaking .tag{
+    display:inline-block;
+    width:max-content;
+    background:linear-gradient(135deg,#ff3047,#c31223);
+    color:white;
+    padding:3px 8px;
+    border-radius:6px;
+    font-size:8px;
+    margin-bottom:5px;
+    font-weight:800;
+}
+
+/* ================= EMPTY / LOADING ================= */
+
+.loading,
+.empty{
+    grid-column:1/-1;
+    text-align:center;
+    padding:42px 20px;
+    color:var(--muted);
+    border:1px dashed var(--line);
+    border-radius:18px;
+    background:rgba(255,255,255,.02);
+    font-size:12px;
+}
+
+.error{
+    color:#ff6978;
+}
+
+.badge{
+    display:inline-block;
+    padding:3px 8px;
+    border-radius:6px;
+    background:rgba(255,255,255,.05);
+    color:var(--gold);
+    font-size:8px;
+}
+
+/* ================= FOLLOW ================= */
 
 .follow{
-    margin:50px 0;
-    padding:35px;
-    border-radius:23px;
-    border:1px solid #762027;
+    margin:45px 0;
+    padding:38px;
+    border-radius:26px;
+    border:1px solid rgba(229,29,50,.3);
     background:
-    radial-gradient(circle at 90% 30%,#641820,transparent 35%),
-    linear-gradient(120deg,#210c0f,#11151c);
+        radial-gradient(circle at 90% 30%,rgba(229,29,50,.24),transparent 32%),
+        radial-gradient(circle at 10% 100%,rgba(100,130,180,.08),transparent 30%),
+        linear-gradient(120deg,#18090c,#0d1218);
     display:flex;
     justify-content:space-between;
     align-items:center;
     gap:25px;
+    box-shadow:var(--shadow);
 }
 
 .follow h2{
@@ -456,13 +667,78 @@ h2{
 
 .follow p{
     color:var(--muted);
-    font-size:13px;
+    font-size:12px;
 }
+
+/* ================= QR ================= */
+
+.qr-section{
+    padding:55px 0;
+}
+
+.qr-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+}
+
+.qr-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:22px;
+    border-radius:20px;
+    border:1px solid var(--line);
+    background:
+        linear-gradient(145deg,var(--card2),var(--card));
+}
+
+.qr-box{
+    width:135px;
+    height:135px;
+    flex:0 0 135px;
+    padding:8px;
+    border-radius:15px;
+    background:white;
+}
+
+.qr-box img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:contain;
+}
+
+.qr-info h3{
+    font-size:17px;
+    margin-bottom:4px;
+}
+
+.qr-info p{
+    color:var(--muted);
+    font-size:10px;
+    word-break:break-word;
+}
+
+.qr-info .qr-btn{
+    display:inline-block;
+    margin-top:13px;
+    padding:7px 11px;
+    border-radius:9px;
+    background:rgba(255,255,255,.05);
+    border:1px solid var(--line);
+    color:var(--gold);
+    font-size:9px;
+    font-weight:800;
+}
+
+/* ================= ABOUT ================= */
 
 .about p{
     color:var(--muted);
     max-width:850px;
     margin-top:12px;
+    font-size:13px;
 }
 
 .about-grid{
@@ -474,9 +750,15 @@ h2{
 
 .about-card{
     padding:20px;
-    background:var(--card);
+    background:rgba(255,255,255,.025);
     border:1px solid var(--line);
-    border-radius:15px;
+    border-radius:17px;
+    transition:.25s;
+}
+
+.about-card:hover{
+    transform:translateY(-4px);
+    border-color:#ffffff18;
 }
 
 .about-card b{
@@ -486,73 +768,76 @@ h2{
 
 .about-card span{
     color:var(--muted);
-    font-size:12px;
+    font-size:11px;
 }
 
-.loading{
-    grid-column:1/-1;
-    text-align:center;
-    padding:40px 20px;
-    color:var(--muted);
+/* ================= TRANSLATION ================= */
+
+.translate-status{
+    position:fixed;
+    top:95px;
+    left:50%;
+    transform:translateX(-50%) translateY(-10px);
+    z-index:2000;
+    padding:10px 16px;
+    border-radius:12px;
+    background:var(--card3);
     border:1px solid var(--line);
-    border-radius:17px;
-    background:var(--card);
+    box-shadow:0 15px 45px rgba(0,0,0,.5);
+    color:var(--text);
+    font-size:10px;
+    opacity:0;
+    pointer-events:none;
+    transition:.25s;
 }
 
-.empty{
-    grid-column:1/-1;
-    text-align:center;
-    padding:35px;
-    color:var(--muted);
-    border:1px solid var(--line);
-    border-radius:17px;
-    background:var(--card);
+.translate-status.show{
+    opacity:1;
+    transform:translateX(-50%) translateY(0);
 }
 
-.error{
-    color:#ff6974;
-}
-
-.badge{
-    display:inline-block;
-    padding:3px 8px;
-    border-radius:6px;
-    background:#ffffff0d;
-    color:var(--gold);
-    font-size:9px;
-}
+/* ================= FOOTER ================= */
 
 footer{
     border-top:1px solid var(--line);
-    padding:27px 6%;
+    padding:30px max(18px,5vw);
     display:flex;
     justify-content:space-between;
     color:var(--muted);
-    font-size:12px;
+    font-size:10px;
+    margin-top:35px;
 }
 
+/* ================= LIGHT MODE ================= */
+
 body.light{
-    --bg:#f3f5f8;
-    --bg2:#ffffff;
-    --card:#ffffff;
-    --card2:#ffffff;
+    --bg:#f2f4f7;
+    --bg2:#fff;
+    --card:#fff;
+    --card2:#fff;
+    --card3:#fff;
     --text:#16191f;
-    --muted:#66707c;
+    --muted:#68717d;
     --line:#dce1e7;
-    background:#f3f5f8;
+    background:#f2f4f7;
+}
+
+body.light::before{
+    opacity:.018;
 }
 
 body.light header{
-    background:#ffffffeb;
+    background:rgba(255,255,255,.88);
 }
 
 body.light nav{
-    background:white;
+    background:rgba(255,255,255,.92);
 }
 
 body.light .theme,
 body.light .translate-btn{
     color:#111;
+    background:#fff;
 }
 
 body.light .news{
@@ -563,10 +848,35 @@ body.light .hero-panel{
     background:#fff;
 }
 
-@media(max-width:800px){
+body.light .search{
+    background:#fff;
+    color:#111;
+}
+
+body.light .follow{
+    background:linear-gradient(120deg,#fff,#f6f7f9);
+}
+
+body.light .qr-card{
+    background:#fff;
+}
+
+body.light .team,
+body.light .tab{
+    background:#fff;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:850px){
 
     header{
-        padding:10px 16px;
+        padding:9px 14px;
+    }
+
+    .logo{
+        width:42px;
+        height:42px;
     }
 
     .logo-text strong{
@@ -578,20 +888,34 @@ body.light .hero-panel{
     }
 
     .translate-btn{
-        padding:0 10px;
-        font-size:10px;
+        padding:0 9px;
+        font-size:9px;
+    }
+
+    nav{
+        top:62px;
+        justify-content:flex-start;
     }
 
     .hero{
         grid-template-columns:1fr;
-        padding:50px 0;
+        gap:25px;
+        padding:55px 0 45px;
     }
 
     .hero h1{
-        font-size:46px;
+        font-size:47px;
+    }
+
+    .hero-panel{
+        padding:23px;
     }
 
     .news-grid{
+        grid-template-columns:1fr;
+    }
+
+    .qr-grid{
         grid-template-columns:1fr;
     }
 
@@ -602,12 +926,57 @@ body.light .hero-panel{
     .follow{
         flex-direction:column;
         align-items:flex-start;
+        padding:27px;
     }
 
     footer{
         flex-direction:column;
         gap:8px;
     }
+
+}
+
+@media(max-width:480px){
+
+    main{
+        width:92%;
+    }
+
+    .hero h1{
+        font-size:41px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+    .qr-card{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .qr-box{
+        width:150px;
+        height:150px;
+    }
+
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.news{
+    animation:fadeUp .45s ease both;
 }
 
 </style>
@@ -646,6 +1015,7 @@ body.light .hero-panel{
             class="theme"
             onclick="toggleTheme()"
             title="تغییر حالت"
+            id="themeButton"
         >
             ☾
         </button>
@@ -654,19 +1024,16 @@ body.light .hero-panel{
 
 </header>
 
-
 <nav>
-
     <a href="#home">خانه</a>
-    <a href="#important">فوری و مهم</a>
+    <a href="#important">فوری</a>
     <a href="#leagues">لیگ‌ها</a>
     <a href="#teams">تیم‌ها</a>
     <a href="#transfers">نقل‌وانتقالات</a>
-    <a href="#latest">آخرین اخبار</a>
-    <a href="#about">درباره ما</a>
-
+    <a href="#latest">جستجوی اخبار</a>
+    <a href="#qr">QR</a>
+    <a href="#about">درباره BARSAL</a>
 </nav>
-
 
 <main>
 
@@ -676,7 +1043,7 @@ body.light .hero-panel{
 
         <div class="live">
             <span class="live-dot"></span>
-            BARSAL LIVE
+            BARSAL LIVE · FOOTBALL NEWS
         </div>
 
         <h1>
@@ -687,38 +1054,45 @@ body.light .hero-panel{
 
         <p>
             آخرین اخبار فوتبال جهان، لیگ‌های معتبر،
-            تیم‌های بزرگ و نقل‌وانتقالات در BARSAL.
+            تیم‌های بزرگ و نقل‌وانتقالات؛
+            همه در یک رسانه سریع و مرتب.
         </p>
 
         <div class="buttons">
 
-            <a class="btn btn-red" href="#important">
-                🔥 اخبار مهم امروز
+            <a class="btn btn-red" href="#latest">
+                🔎 جستجوی اخبار
             </a>
 
             <a class="btn btn-dark" href="#teams">
-                ⚽ تیم مورد علاقه من
+                ⚽ انتخاب تیم
             </a>
 
         </div>
 
     </div>
 
-
     <div class="hero-panel">
 
-        <small>وضعیت سیستم اخبار</small>
+        <div class="panel-label">
+            وضعیت سیستم اخبار خودکار
+        </div>
 
         <div class="number" id="newsCount">
             ...
         </div>
 
-        <p id="systemText">
-            در حال اتصال به سیستم اخبار خودکار BARSAL...
-        </p>
+        <div class="panel-text">
+            خبر در پایگاه BARSAL
+        </div>
 
         <div class="status" id="systemStatus">
-            ● در حال اتصال
+            <span class="status-dot"></span>
+            در حال اتصال...
+        </div>
+
+        <div class="last-update" id="lastUpdate">
+            آخرین بررسی: در حال دریافت...
         </div>
 
     </div>
@@ -729,20 +1103,16 @@ body.light .hero-panel{
 <section class="section" id="important">
 
     <div class="section-head">
-
         <div>
             <div class="eyebrow">BREAKING NEWS</div>
             <h2>🚨 اخبار فوری و مهم</h2>
         </div>
-
     </div>
 
     <div class="news-grid" id="importantNews">
-
         <div class="loading">
             ⏳ در حال دریافت اخبار مهم...
         </div>
-
     </div>
 
 </section>
@@ -751,14 +1121,11 @@ body.light .hero-panel{
 <section class="section" id="leagues">
 
     <div class="section-head">
-
         <div>
             <div class="eyebrow">TOP LEAGUES</div>
             <h2>🏆 لیگ‌ها</h2>
         </div>
-
     </div>
-
 
     <div class="tabs">
 
@@ -776,13 +1143,10 @@ body.light .hero-panel{
 
     </div>
 
-
     <div id="leagueNews" class="news-grid">
-
         <div class="loading">
             ⏳ در حال دریافت اخبار لیگ...
         </div>
-
     </div>
 
 </section>
@@ -791,14 +1155,11 @@ body.light .hero-panel{
 <section class="section" id="teams">
 
     <div class="section-head">
-
         <div>
             <div class="eyebrow">BIG TEAMS</div>
             <h2>⭐ تیم‌های بزرگ</h2>
         </div>
-
     </div>
-
 
     <div class="team-list">
 
@@ -838,8 +1199,8 @@ body.light .hero-panel{
             🟡 النصر
         </button>
 
-        <button class="team" onclick="teamSelect(this,'پاریسن ژرمن','PSG')">
-            🔵🔴 پاریسن ژرمن
+        <button class="team" onclick="teamSelect(this,'پاری‌سن‌ژرمن','Paris Saint-Germain')">
+            🔵🔴 پاری‌سن‌ژرمن
         </button>
 
         <button class="team" onclick="teamSelect(this,'بایرن مونیخ','Bayern Munich')">
@@ -852,18 +1213,17 @@ body.light .hero-panel{
 
     </div>
 
-
-    <div id="teamTitle" style="margin-bottom:15px;color:#f0c75e;font-weight:800;">
+    <div
+        id="teamTitle"
+        style="margin-bottom:15px;color:#f0c75e;font-weight:800;font-size:13px;"
+    >
         اخبار بارسلونا
     </div>
 
-
     <div id="teamNews" class="news-grid">
-
         <div class="loading">
             ⏳ در حال دریافت اخبار بارسلونا...
         </div>
-
     </div>
 
 </section>
@@ -872,21 +1232,16 @@ body.light .hero-panel{
 <section class="section" id="transfers">
 
     <div class="section-head">
-
         <div>
             <div class="eyebrow">TRANSFER MARKET</div>
             <h2>🔄 نقل‌وانتقالات</h2>
         </div>
-
     </div>
 
-
     <div class="news-grid" id="transferNews">
-
         <div class="loading">
             ⏳ در حال دریافت اخبار نقل‌وانتقالات...
         </div>
-
     </div>
 
 </section>
@@ -897,26 +1252,34 @@ body.light .hero-panel{
     <div class="section-head">
 
         <div>
-            <div class="eyebrow">LATEST NEWS</div>
-            <h2>📰 آخرین اخبار</h2>
+            <div class="eyebrow">SEARCH ENGINE</div>
+            <h2>🔎 جستجوی اخبار</h2>
         </div>
 
     </div>
 
+    <div class="search-wrap">
 
-    <input
-        class="search"
-        id="search"
-        type="search"
-        placeholder="🔎 جستجوی خبر، تیم یا لیگ..."
-        oninput="searchNews()"
-    >
+        <span class="search-icon">🔎</span>
 
+        <input
+            class="search"
+            id="search"
+            type="search"
+            placeholder="نام تیم، بازیکن، لیگ یا موضوع خبر را جستجو کن..."
+            oninput="searchNews()"
+        >
+
+        <div class="search-hint">
+            مثال: Barcelona · Real Madrid · Premier League · Transfer
+        </div>
+
+    </div>
 
     <div class="news-grid" id="allNews">
 
-        <div class="loading">
-            ⏳ در حال دریافت آخرین اخبار...
+        <div class="empty">
+            🔎 برای پیدا کردن خبر، عبارت موردنظر را جستجو کن.
         </div>
 
     </div>
@@ -933,16 +1296,15 @@ body.light .hero-panel{
         </div>
 
         <h2>
-            📲 ما رو در بله دنبال کنید
+            📲 اخبار فوتبال را در بله بگیر
         </h2>
 
         <p>
             برای دریافت سریع‌تر اخبار فوتبال و خبرهای فوری،
-            کانال BARSAL را در بله دنبال کن.
+            کانال رسمی BARSAL را در بله دنبال کن.
         </p>
 
     </div>
-
 
     <a
         class="btn btn-red"
@@ -950,13 +1312,98 @@ body.light .hero-panel{
         target="_blank"
         rel="noopener"
     >
-        ورود به کانال BARSAL
+        🚀 ورود به کانال BARSAL
     </a>
 
 </section>
 
 
-<section class="section" id="about">
+<section class="qr-section" id="qr">
+
+    <div class="section-head">
+
+        <div>
+            <div class="eyebrow">SCAN & FOLLOW</div>
+            <h2>📱 BARSAL را اسکن کن</h2>
+        </div>
+
+    </div>
+
+    <div class="qr-grid">
+
+        <div class="qr-card">
+
+            <div class="qr-box">
+
+                <img
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fble.ir%2Fbarsal10"
+                    alt="QR Code کانال BARSAL"
+                >
+
+            </div>
+
+            <div class="qr-info">
+
+                <h3>📲 کانال BARSAL</h3>
+
+                <p>
+                    برای ورود سریع به کانال بله،
+                    این QR Code را اسکن کن.
+                </p>
+
+                <a
+                    class="qr-btn"
+                    href="https://ble.ir/barsal10"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    @barsal10
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="qr-card">
+
+            <div class="qr-box">
+
+                <img
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fkiannabifar-sys.github.io%2FBARSAL%2F"
+                    alt="QR Code سایت BARSAL"
+                >
+
+            </div>
+
+            <div class="qr-info">
+
+                <h3>🌐 سایت BARSAL</h3>
+
+                <p>
+                    برای باز کردن سریع سایت خبری BARSAL،
+                    این QR Code را اسکن کن.
+                </p>
+
+                <a
+                    class="qr-btn"
+                    href="https://kiannabifar-sys.github.io/BARSAL/"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    BARSAL Website
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section about" id="about">
 
     <div class="eyebrow">
         ABOUT BARSAL
@@ -972,7 +1419,6 @@ body.light .hero-panel{
         تیم‌های بزرگ و نقل‌وانتقالات است.
         هدف BARSAL ارائه سریع، مرتب و منبع‌محور اخبار فوتبال است.
     </p>
-
 
     <div class="about-grid">
 
@@ -1022,40 +1468,71 @@ let allNewsData = [];
 let selectedTeam = "Barcelona";
 let selectedLeague = "laliga";
 
-let isPersian = localStorage.getItem("barsalLanguage") === "fa";
+let isPersian =
+    localStorage.getItem("barsalLanguage") === "fa";
 
 let translationCache = {};
 
 try{
+
     translationCache =
         JSON.parse(
             localStorage.getItem("barsalTranslationCache") || "{}"
         );
+
 }catch(e){
+
     translationCache = {};
+
 }
 
 
-/* THEME */
+/* ================= THEME ================= */
 
 function toggleTheme(){
 
     document.body.classList.toggle("light");
 
-    if(document.body.classList.contains("light")){
-        localStorage.setItem("theme","light");
-    }else{
-        localStorage.setItem("theme","dark");
+    const light =
+        document.body.classList.contains("light");
+
+    localStorage.setItem(
+        "theme",
+        light ? "light" : "dark"
+    );
+
+    updateThemeButton();
+
+}
+
+
+function updateThemeButton(){
+
+    const button =
+        document.getElementById("themeButton");
+
+    if(!button){
+        return;
     }
 
+    button.innerText =
+        document.body.classList.contains("light")
+        ? "☀"
+        : "☾";
+
 }
+
 
 if(localStorage.getItem("theme")==="light"){
+
     document.body.classList.add("light");
+
 }
 
+updateThemeButton();
 
-/* ESCAPE HTML */
+
+/* ================= ESCAPE ================= */
 
 function escapeHTML(value){
 
@@ -1073,7 +1550,7 @@ function escapeHTML(value){
 }
 
 
-/* DATE */
+/* ================= DATE ================= */
 
 function formatDate(value){
 
@@ -1103,7 +1580,7 @@ function formatDate(value){
 }
 
 
-/* TRANSLATION API */
+/* ================= TRANSLATION ================= */
 
 async function translateText(text){
 
@@ -1111,7 +1588,8 @@ async function translateText(text){
         return "";
     }
 
-    const cacheKey = String(text).trim();
+    const cacheKey =
+        String(text).trim();
 
     if(translationCache[cacheKey]){
         return translationCache[cacheKey];
@@ -1124,13 +1602,15 @@ async function translateText(text){
             encodeURIComponent(text) +
             "&langpair=auto|fa";
 
-        const response = await fetch(url);
+        const response =
+            await fetch(url);
 
         if(!response.ok){
-            throw new Error("Translation request failed");
+            throw new Error("Translation failed");
         }
 
-        const data = await response.json();
+        const data =
+            await response.json();
 
         const translated =
             data &&
@@ -1141,13 +1621,17 @@ async function translateText(text){
             :
             text;
 
-        translationCache[cacheKey] = translated;
+        translationCache[cacheKey] =
+            translated;
 
         return translated;
 
     }catch(error){
 
-        console.error("Translation error:",error);
+        console.error(
+            "Translation error:",
+            error
+        );
 
         return text;
 
@@ -1155,8 +1639,6 @@ async function translateText(text){
 
 }
 
-
-/* TRANSLATE ONE NEWS */
 
 async function translateNewsItem(item){
 
@@ -1175,12 +1657,16 @@ async function translateNewsItem(item){
         item.originalSummary || item.summary;
 
     translatedItem.title =
-        await translateText(item.title || "خبر فوتبال");
+        await translateText(
+            item.title || "Football News"
+        );
 
     if(item.summary){
 
         translatedItem.summary =
-            await translateText(item.summary);
+            await translateText(
+                item.summary
+            );
 
     }
 
@@ -1189,36 +1675,31 @@ async function translateNewsItem(item){
 }
 
 
-/* TRANSLATE ALL NEWS */
-
 async function translateAllNews(){
 
     if(!allNewsData.length){
         return;
     }
 
-    showTranslationStatus("🌐 در حال ترجمه اخبار...");
+    showTranslationStatus(
+        "🌐 در حال ترجمه اخبار..."
+    );
 
     const result = [];
 
-    /*
-       ترجمه یکی‌یکی انجام می‌شود تا فشار زیادی
-       به سرویس رایگان وارد نشود.
-    */
-
     for(let i=0;i<allNewsData.length;i++){
 
-        const item = allNewsData[i];
-
         const translated =
-            await translateNewsItem(item);
+            await translateNewsItem(
+                allNewsData[i]
+            );
 
         result.push(translated);
 
         if(i % 3 === 0){
 
             showTranslationStatus(
-                "🌐 در حال ترجمه اخبار " +
+                "🌐 ترجمه " +
                 (i + 1) +
                 " از " +
                 allNewsData.length
@@ -1234,14 +1715,12 @@ async function translateAllNews(){
 
         localStorage.setItem(
             "barsalTranslationCache",
-            JSON.stringify(translationCache)
+            JSON.stringify(
+                translationCache
+            )
         );
 
-    }catch(e){
-
-        console.warn("Translation cache could not be saved.");
-
-    }
+    }catch(e){}
 
     hideTranslationStatus();
 
@@ -1250,38 +1729,42 @@ async function translateAllNews(){
 }
 
 
-/* ORIGINAL NEWS */
-
 function restoreOriginalNews(){
 
-    allNewsData = allNewsData.map(item => {
+    allNewsData =
+        allNewsData.map(item => {
 
-        return {
-            ...item,
-            title:
-                item.originalTitle ||
-                item.title,
+            return {
+                ...item,
 
-            summary:
-                item.originalSummary ||
-                item.summary
-        };
+                title:
+                    item.originalTitle ||
+                    item.title,
 
-    });
+                summary:
+                    item.originalSummary ||
+                    item.summary
 
-    localStorage.setItem("barsalLanguage","en");
+            };
+
+        });
+
+    localStorage.setItem(
+        "barsalLanguage",
+        "en"
+    );
 
     renderEverything();
 
 }
 
 
-/* TRANSLATION BUTTON */
-
 async function toggleTranslation(){
 
     const button =
-        document.getElementById("translateButton");
+        document.getElementById(
+            "translateButton"
+        );
 
     if(isPersian){
 
@@ -1298,6 +1781,7 @@ async function toggleTranslation(){
         restoreOriginalNews();
 
         return;
+
     }
 
     isPersian = true;
@@ -1315,12 +1799,12 @@ async function toggleTranslation(){
 }
 
 
-/* STATUS */
-
 function showTranslationStatus(text){
 
     const box =
-        document.getElementById("translateStatus");
+        document.getElementById(
+            "translateStatus"
+        );
 
     if(!box){
         return;
@@ -1336,7 +1820,9 @@ function showTranslationStatus(text){
 function hideTranslationStatus(){
 
     const box =
-        document.getElementById("translateStatus");
+        document.getElementById(
+            "translateStatus"
+        );
 
     if(!box){
         return;
@@ -1347,12 +1833,18 @@ function hideTranslationStatus(){
 }
 
 
-/* NEWS CARD */
+/* ================= NEWS CARD ================= */
 
-function createNewsCard(item, important=false){
+function createNewsCard(
+    item,
+    important=false
+){
 
     const title =
-        escapeHTML(item.title || "خبر فوتبال");
+        escapeHTML(
+            item.title ||
+            "خبر فوتبال"
+        );
 
     const summary =
         escapeHTML(
@@ -1361,12 +1853,18 @@ function createNewsCard(item, important=false){
         );
 
     const source =
-        escapeHTML(item.source || "BARSAL");
+        escapeHTML(
+            item.source ||
+            "BARSAL"
+        );
 
     const time =
-        escapeHTML(formatDate(item.time));
+        escapeHTML(
+            formatDate(item.time)
+        );
 
-    let link = item.url || "#";
+    let link =
+        item.url || "#";
 
     if(!/^https?:\/\//i.test(link)){
         link = "#";
@@ -1376,13 +1874,23 @@ function createNewsCard(item, important=false){
 
         <article class="news ${important ? "breaking" : ""}">
 
-            ${important ? '<span class="tag">🚨 مهم</span>' : ""}
+            ${
+                important
+                ?
+                '<span class="tag">🚨 مهم</span>'
+                :
+                ""
+            }
 
             <div class="news-top">
 
-                <span>${source}</span>
+                <span>
+                    ${source}
+                </span>
 
-                <span>${time}</span>
+                <span>
+                    ${time}
+                </span>
 
             </div>
 
@@ -1422,12 +1930,18 @@ function createNewsCard(item, important=false){
 }
 
 
-/* RENDER */
+/* ================= RENDER ================= */
 
-function renderNews(list, elementId, important=false){
+function renderNews(
+    list,
+    elementId,
+    important=false
+){
 
     const box =
-        document.getElementById(elementId);
+        document.getElementById(
+            elementId
+        );
 
     if(!box){
         return;
@@ -1442,40 +1956,80 @@ function renderNews(list, elementId, important=false){
         `;
 
         return;
+
     }
 
     box.innerHTML =
         list
         .slice(0,9)
-        .map(item =>
-            createNewsCard(item,important)
+        .map(
+            item =>
+                createNewsCard(
+                    item,
+                    important
+                )
         )
         .join("");
 
 }
 
 
-/* RENDER EVERYTHING */
+/* ================= EVERYTHING ================= */
 
 function renderEverything(){
 
-    document.getElementById("newsCount").innerText =
-        allNewsData.length;
+    const count =
+        document.getElementById(
+            "newsCount"
+        );
+
+    if(count){
+        count.innerText =
+            allNewsData.length;
+    }
 
     renderImportant();
 
-    showLeague(selectedLeague);
+    showLeague(
+        selectedLeague
+    );
 
-    renderTeamNews(selectedTeam);
+    renderTeamNews(
+        selectedTeam
+    );
 
     renderTransfers();
 
-    renderAllNews();
+    /*
+       عمداً در حالت عادی همه اخبار
+       نمایش داده نمی‌شوند.
+       کاربر باید جستجو کند.
+    */
+
+    const search =
+        document.getElementById("search");
+
+    if(search && search.value.trim()){
+
+        searchNews();
+
+    }else{
+
+        document.getElementById(
+            "allNews"
+        ).innerHTML = `
+            <div class="empty">
+                🔎 برای پیدا کردن خبر،
+                عبارت موردنظر را جستجو کن.
+            </div>
+        `;
+
+    }
 
 }
 
 
-/* LOAD NEWS.JSON */
+/* ================= LOAD NEWS ================= */
 
 async function loadNews(){
 
@@ -1483,42 +2037,63 @@ async function loadNews(){
 
         const response =
             await fetch(
-                "news.json?t=" + Date.now(),
+                "news.json?t=" +
+                Date.now(),
                 {
                     cache:"no-store"
                 }
             );
 
         if(!response.ok){
-            throw new Error("news.json not found");
+
+            throw new Error(
+                "news.json not found"
+            );
+
         }
 
         const data =
             await response.json();
 
         if(!Array.isArray(data)){
-            throw new Error("Invalid news.json");
+
+            throw new Error(
+                "Invalid news.json"
+            );
+
         }
 
         allNewsData = data;
 
-        document.getElementById("newsCount").innerText =
+        document.getElementById(
+            "newsCount"
+        ).innerText =
             allNewsData.length;
 
-        document.getElementById("systemText").innerText =
-            "خبرها با موفقیت از سیستم خودکار دریافت شدند.";
+        document.getElementById(
+            "systemStatus"
+        ).innerHTML = `
+            <span class="status-dot"></span>
+            سیستم فعال است
+        `;
 
-        document.getElementById("systemStatus").innerHTML =
-            "● سیستم فعال است";
-
-        /*
-           اگر کاربر قبلاً فارسی را انتخاب کرده،
-           خبرها را دوباره از کش ترجمه می‌کنیم.
-        */
+        document.getElementById(
+            "lastUpdate"
+        ).innerText =
+            "آخرین بررسی: " +
+            new Date().toLocaleTimeString(
+                "fa-IR",
+                {
+                    hour:"2-digit",
+                    minute:"2-digit"
+                }
+            );
 
         if(isPersian){
 
-            document.getElementById("translateButton").innerHTML =
+            document.getElementById(
+                "translateButton"
+            ).innerHTML =
                 "🇬🇧 نمایش انگلیسی";
 
             await translateAllNews();
@@ -1533,40 +2108,59 @@ async function loadNews(){
 
         console.error(error);
 
-        document.getElementById("newsCount").innerText =
+        document.getElementById(
+            "newsCount"
+        ).innerText =
             "OFF";
 
-        document.getElementById("systemText").innerText =
+        document.getElementById(
+            "systemStatus"
+        ).innerHTML = `
+            <span class="error">
+                ● خطا در دریافت اخبار
+            </span>
+        `;
+
+        document.getElementById(
+            "lastUpdate"
+        ).innerText =
             "اتصال به news.json برقرار نشد.";
 
-        document.getElementById("systemStatus").innerHTML =
-            '<span class="error">● خطا در دریافت اخبار</span>';
-
-        document.getElementById("importantNews").innerHTML = `
+        document.getElementById(
+            "importantNews"
+        ).innerHTML = `
             <div class="empty error">
-                ❌ فایل news.json پیدا نشد یا هنوز قابل دسترسی نیست.
+                ❌ فایل news.json پیدا نشد یا قابل دسترسی نیست.
             </div>
         `;
 
-        document.getElementById("leagueNews").innerHTML = `
+        document.getElementById(
+            "leagueNews"
+        ).innerHTML = `
             <div class="empty">
-                ⏳ اخبار بعد از در دسترس قرار گرفتن news.json نمایش داده می‌شوند.
+                ⏳ اخبار لیگ در دسترس نیست.
             </div>
         `;
 
-        document.getElementById("teamNews").innerHTML = `
+        document.getElementById(
+            "teamNews"
+        ).innerHTML = `
             <div class="empty">
-                ⏳ اخبار تیم بعد از اتصال به سیستم نمایش داده می‌شوند.
+                ⏳ اخبار تیم در دسترس نیست.
             </div>
         `;
 
-        document.getElementById("transferNews").innerHTML = `
+        document.getElementById(
+            "transferNews"
+        ).innerHTML = `
             <div class="empty">
-                ⏳ اخبار نقل‌وانتقالات بعد از اتصال نمایش داده می‌شوند.
+                ⏳ اخبار نقل‌وانتقالات در دسترس نیست.
             </div>
         `;
 
-        document.getElementById("allNews").innerHTML = `
+        document.getElementById(
+            "allNews"
+        ).innerHTML = `
             <div class="empty error">
                 ❌ فعلاً امکان دریافت اخبار وجود ندارد.
             </div>
@@ -1577,21 +2171,28 @@ async function loadNews(){
 }
 
 
-/* IMPORTANT NEWS */
+/* ================= IMPORTANT ================= */
 
 function renderImportant(){
 
     let list =
-        allNewsData.filter(item => {
+        allNewsData.filter(
+            item => {
 
-            return item.important === true ||
-                   item.important === "true" ||
-                   item.category === "important";
+                return (
+                    item.important === true ||
+                    item.important === "true" ||
+                    item.category === "important"
+                );
 
-        });
+            }
+        );
 
     if(list.length === 0){
-        list = allNewsData.slice(0,3);
+
+        list =
+            allNewsData.slice(0,3);
+
     }
 
     renderNews(
@@ -1603,64 +2204,85 @@ function renderImportant(){
 }
 
 
-/* LEAGUES */
+/* ================= LEAGUES ================= */
 
-function showLeague(league,button=null){
+function showLeague(
+    league,
+    button=null
+){
 
-    selectedLeague = league;
+    selectedLeague =
+        league;
 
     if(button){
 
         document
         .querySelectorAll(".tab")
-        .forEach(function(x){
+        .forEach(
+            x =>
+                x.classList.remove(
+                    "active"
+                )
+        );
 
-            x.classList.remove("active");
-
-        });
-
-        button.classList.add("active");
+        button.classList.add(
+            "active"
+        );
 
     }else{
 
         document
         .querySelectorAll(".tab")
-        .forEach(function(x){
-
-            x.classList.remove("active");
-
-        });
+        .forEach(
+            x =>
+                x.classList.remove(
+                    "active"
+                )
+        );
 
         const buttons =
-            document.querySelectorAll(".tab");
+            document.querySelectorAll(
+                ".tab"
+            );
 
-        if(league==="laliga" && buttons[0]){
-            buttons[0].classList.add("active");
+        if(
+            league==="laliga" &&
+            buttons[0]
+        ){
+            buttons[0].classList.add(
+                "active"
+            );
         }
 
-        if(league==="premier" && buttons[1]){
-            buttons[1].classList.add("active");
+        if(
+            league==="premier" &&
+            buttons[1]
+        ){
+            buttons[1].classList.add(
+                "active"
+            );
         }
 
-        if(league==="seriea" && buttons[2]){
-            buttons[2].classList.add("active");
+        if(
+            league==="seriea" &&
+            buttons[2]
+        ){
+            buttons[2].classList.add(
+                "active"
+            );
         }
 
     }
-
 
     if(allNewsData.length === 0){
         return;
     }
 
-
     const list =
-        allNewsData.filter(item => {
-
-            return item.category === league;
-
-        });
-
+        allNewsData.filter(
+            item =>
+                item.category === league
+        );
 
     renderNews(
         list,
@@ -1670,63 +2292,82 @@ function showLeague(league,button=null){
 }
 
 
-/* TEAMS */
+/* ================= TEAMS ================= */
 
-function teamSelect(button,name,teamKey){
+function teamSelect(
+    button,
+    name,
+    teamKey
+){
 
     document
     .querySelectorAll(".team")
-    .forEach(function(x){
+    .forEach(
+        x =>
+            x.classList.remove(
+                "active"
+            )
+    );
 
-        x.classList.remove("active");
+    button.classList.add(
+        "active"
+    );
 
-    });
+    selectedTeam =
+        teamKey;
 
-    button.classList.add("active");
-
-    selectedTeam = teamKey;
-
-    document.getElementById("teamTitle").innerText =
+    document.getElementById(
+        "teamTitle"
+    ).innerText =
         "اخبار " + name;
 
-    renderTeamNews(teamKey);
+    renderTeamNews(
+        teamKey
+    );
 
 }
 
 
-function renderTeamNews(teamKey){
+function renderTeamNews(
+    teamKey
+){
 
     if(allNewsData.length === 0){
         return;
     }
 
     const key =
-        String(teamKey).toLowerCase();
+        String(teamKey)
+        .toLowerCase();
 
     const list =
-        allNewsData.filter(item => {
+        allNewsData.filter(
+            item => {
 
-            const team =
-                String(item.team || "")
-                .toLowerCase();
+                const team =
+                    String(
+                        item.team || ""
+                    ).toLowerCase();
 
-            const teamFa =
-                String(item.team_fa || "")
-                .toLowerCase();
+                const teamFa =
+                    String(
+                        item.team_fa || ""
+                    ).toLowerCase();
 
-            const title =
-                String(item.title || "")
-                .toLowerCase();
+                const title =
+                    String(
+                        item.title || ""
+                    ).toLowerCase();
 
-            return (
-                team === key ||
-                team.includes(key) ||
-                title.includes(key) ||
-                teamFa.includes(key)
-            );
+                return (
+                    team === key ||
+                    team.includes(key) ||
+                    title.includes(key) ||
+                    teamFa.includes(key)
+                );
 
-        });
-
+            }
+        );
 
     renderNews(
         list,
@@ -1736,16 +2377,15 @@ function renderTeamNews(teamKey){
 }
 
 
-/* TRANSFERS */
+/* ================= TRANSFERS ================= */
 
 function renderTransfers(){
 
     const list =
-        allNewsData.filter(item => {
-
-            return item.category === "transfers";
-
-        });
+        allNewsData.filter(
+            item =>
+                item.category === "transfers"
+        );
 
     renderNews(
         list,
@@ -1755,61 +2395,79 @@ function renderTransfers(){
 }
 
 
-/* ALL NEWS */
-
-function renderAllNews(){
-
-    renderNews(
-        allNewsData,
-        "allNews"
-    );
-
-}
-
-
-/* SEARCH */
+/* ================= SEARCH ================= */
 
 function searchNews(){
 
+    const input =
+        document.getElementById(
+            "search"
+        );
+
+    if(!input){
+        return;
+    }
+
     const query =
-        document
-        .getElementById("search")
-        .value
+        input.value
         .trim()
         .toLowerCase();
 
+    const box =
+        document.getElementById(
+            "allNews"
+        );
 
     if(!query){
 
-        renderAllNews();
+        box.innerHTML = `
+            <div class="empty">
+                🔎 برای پیدا کردن خبر،
+                عبارت موردنظر را جستجو کن.
+            </div>
+        `;
 
         return;
 
     }
 
-
     const result =
-        allNewsData.filter(item => {
+        allNewsData.filter(
+            item => {
 
-            const text = [
+                const text = [
 
-                item.title,
-                item.summary,
-                item.source,
-                item.team,
-                item.team_fa,
-                item.category
+                    item.title,
+                    item.summary,
+                    item.source,
+                    item.team,
+                    item.team_fa,
+                    item.category
 
-            ]
-            .filter(Boolean)
-            .join(" ")
-            .toLowerCase();
+                ]
+                .filter(Boolean)
+                .join(" ")
+                .toLowerCase();
 
+                return text.includes(
+                    query
+                );
 
-            return text.includes(query);
+            }
+        );
 
-        });
+    if(result.length === 0){
 
+        box.innerHTML = `
+            <div class="empty">
+                😕 برای «${escapeHTML(query)}»
+                خبری پیدا نشد.
+            </div>
+        `;
+
+        return;
+
+    }
 
     renderNews(
         result,
@@ -1819,20 +2477,23 @@ function searchNews(){
 }
 
 
-/* AUTO REFRESH */
+/* ================= AUTO REFRESH ================= */
 
-setInterval(function(){
+setInterval(
+    function(){
 
-    loadNews();
+        loadNews();
 
-},15 * 60 * 1000);
+    },
+    15 * 60 * 1000
+);
 
 
-/* START */
+/* ================= START ================= */
 
 loadNews();
 
 </script>
 
 </body>
-   </html>
+            </html>

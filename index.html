@@ -4,39 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="BARSAL | اخبار روز فوتبال، بازی‌های امروز، جدول لیگ‌ها، نقل‌وانتقالات و نتایج فوتبال">
+<meta name="description" content="BARSAL | اخبار روز فوتبال، بازی‌های امروز، لیگ‌ها، تیم‌های بزرگ و نقل‌وانتقالات">
 
-<title>BARSAL | اخبار فوتبال</title>
+<title>BARSAL | Football News</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-:root{
-    --bg:#08090d;
-    --bg2:#0d1017;
-    --card:#11141c;
-    --card2:#171b25;
-    --text:#f5f7fb;
-    --muted:#9da5b5;
-    --line:rgba(255,255,255,.08);
-    --red:#ef233c;
-    --red2:#ff4057;
-    --gold:#f4c542;
-    --green:#25d366;
-    --shadow:0 15px 45px rgba(0,0,0,.35);
-}
 
-body.light{
-    --bg:#f4f5f8;
-    --bg2:#ffffff;
-    --card:#ffffff;
-    --card2:#f0f2f6;
-    --text:#10131a;
-    --muted:#606875;
-    --line:rgba(0,0,0,.08);
-    --shadow:0 15px 40px rgba(0,0,0,.10);
+:root{
+    --bg:#050609;
+    --bg2:#090c11;
+    --card:#0d1118;
+    --card2:#121821;
+    --card3:#171e28;
+    --text:#f8fafc;
+    --muted:#8994a3;
+    --line:#202833;
+
+    --red:#e51d32;
+    --red2:#ff3048;
+    --red3:#9d0d1c;
+
+    --gold:#f3c85b;
+    --green:#29d47e;
+    --blue:#4d9fff;
+
+    --radius:20px;
+    --shadow:0 25px 80px rgba(0,0,0,.42);
 }
 
 *{
@@ -51,13 +48,51 @@ html{
 
 body{
     font-family:"Vazirmatn",sans-serif;
-    background:
-        radial-gradient(circle at 10% 10%,rgba(239,35,60,.12),transparent 30%),
-        radial-gradient(circle at 90% 20%,rgba(244,197,66,.08),transparent 28%),
-        var(--bg);
     color:var(--text);
+    background:
+        radial-gradient(
+            circle at 85% -5%,
+            rgba(229,29,50,.22),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 0% 35%,
+            rgba(66,104,155,.09),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #050609 0%,
+            #080c12 55%,
+            #050609 100%
+        );
     min-height:100vh;
-    transition:.3s;
+    line-height:1.8;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    pointer-events:none;
+    opacity:.025;
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,.7) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.7) 1px,
+            transparent 1px
+        );
+    background-size:48px 48px;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
 button,
@@ -66,395 +101,486 @@ input{
 }
 
 button{
-    cursor:pointer;
+    -webkit-tap-highlight-color:transparent;
 }
 
-a{
-    color:inherit;
-    text-decoration:none;
-}
-
-.container{
-    width:min(1200px,92%);
-    margin:auto;
-}
-
-/* HEADER */
+/* ================= HEADER ================= */
 
 header{
     position:sticky;
     top:0;
     z-index:1000;
-    backdrop-filter:blur(20px);
-    background:rgba(8,9,13,.78);
-    border-bottom:1px solid var(--line);
-}
 
-body.light header{
-    background:rgba(255,255,255,.82);
-}
+    min-height:76px;
 
-.navbar{
-    min-height:75px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:20px;
+
+    gap:15px;
+
+    padding:10px max(18px,5vw);
+
+    background:rgba(5,6,9,.78);
+    backdrop-filter:blur(24px);
+    -webkit-backdrop-filter:blur(24px);
+
+    border-bottom:1px solid rgba(255,255,255,.07);
+}
+
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
 .logo{
+    width:48px;
+    height:48px;
+
     display:flex;
     align-items:center;
-    gap:10px;
-    font-size:25px;
+    justify-content:center;
+
+    border-radius:15px;
+
+    font-size:28px;
     font-weight:900;
-    letter-spacing:2px;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--red2),
+            var(--red3)
+        );
+
+    box-shadow:
+        0 10px 35px rgba(229,29,50,.28),
+        inset 0 1px 0 rgba(255,255,255,.25);
+
+    position:relative;
+    overflow:hidden;
 }
 
-.logo-mark{
+.logo::after{
+    content:"";
+
+    position:absolute;
+
+    width:90px;
+    height:14px;
+
+    top:-18px;
+    left:-30px;
+
+    transform:rotate(-45deg);
+
+    background:rgba(255,255,255,.18);
+}
+
+.logo-text strong{
+    display:block;
+    font-size:24px;
+    letter-spacing:3px;
+    line-height:1.1;
+}
+
+.logo-text small{
+    display:block;
+    margin-top:3px;
+
+    color:var(--muted);
+
+    font-size:8px;
+    letter-spacing:3px;
+}
+
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.theme{
     width:43px;
     height:43px;
+
     border-radius:13px;
-    display:grid;
-    place-items:center;
-    background:linear-gradient(135deg,var(--red),#8b0013);
-    box-shadow:0 8px 25px rgba(239,35,60,.3);
+
+    border:1px solid var(--line);
+
+    background:rgba(255,255,255,.035);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.25s;
 }
 
-.logo span{
-    color:var(--red);
+.theme:hover{
+    transform:translateY(-2px);
+    background:rgba(255,255,255,.08);
 }
 
-.nav-links{
+/* ================= NAV ================= */
+
+nav{
+    position:sticky;
+    top:76px;
+    z-index:900;
+
     display:flex;
-    align-items:center;
-    gap:5px;
-    flex-wrap:wrap;
     justify-content:center;
+
+    gap:6px;
+
+    padding:9px max(15px,5vw);
+
+    background:rgba(7,9,13,.88);
+
+    backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    overflow-x:auto;
 }
 
-.nav-links a{
-    color:var(--muted);
-    padding:9px 11px;
+nav::-webkit-scrollbar{
+    display:none;
+}
+
+nav a{
+    white-space:nowrap;
+
+    color:#8b95a3;
+
+    font-size:11px;
+    font-weight:700;
+
+    padding:7px 13px;
+
     border-radius:10px;
-    font-size:13px;
+
     transition:.2s;
 }
 
-.nav-links a:hover{
-    color:var(--text);
-    background:var(--card2);
+nav a:hover{
+    color:white;
+    background:rgba(255,255,255,.06);
 }
 
-.theme-btn{
-    border:1px solid var(--line);
-    background:var(--card);
-    color:var(--text);
-    width:42px;
-    height:42px;
-    border-radius:12px;
-    font-size:18px;
+/* ================= MAIN ================= */
+
+main{
+    width:min(1200px,92%);
+    margin:auto;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 
 .hero{
-    padding:75px 0 55px;
-}
+    min-height:555px;
 
-.hero-grid{
     display:grid;
-    grid-template-columns:1.5fr .8fr;
-    gap:25px;
-    align-items:stretch;
+    grid-template-columns:1.45fr .7fr;
+
+    gap:45px;
+
+    align-items:center;
+
+    padding:80px 0 65px;
 }
 
-.hero-main{
-    min-height:360px;
-    border:1px solid var(--line);
+.live{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+
+    padding:7px 13px;
+
     border-radius:30px;
-    padding:45px;
-    position:relative;
-    overflow:hidden;
-    background:
-        radial-gradient(circle at 85% 20%,rgba(239,35,60,.25),transparent 30%),
-        linear-gradient(145deg,var(--card),var(--bg2));
-    box-shadow:var(--shadow);
+
+    border:1px solid rgba(229,29,50,.25);
+
+    background:rgba(229,29,50,.07);
+
+    color:#ff6d7b;
+
+    font-size:9px;
+    font-weight:900;
+
+    letter-spacing:2px;
 }
 
-.hero-main:after{
-    content:"⚽";
-    position:absolute;
-    font-size:210px;
-    left:-30px;
-    bottom:-65px;
-    opacity:.035;
-    transform:rotate(-18deg);
+.live-dot{
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:#ff3048;
+
+    box-shadow:
+        0 0 0 6px rgba(255,48,72,.12);
+
+    animation:pulse 1.6s infinite;
 }
 
-.hero-kicker{
-    color:var(--red2);
-    font-weight:800;
-    margin-bottom:18px;
+@keyframes pulse{
+
+    0%,100%{
+        box-shadow:
+            0 0 0 5px rgba(255,48,72,.10);
+    }
+
+    50%{
+        box-shadow:
+            0 0 0 9px rgba(255,48,72,.02);
+    }
+
 }
 
 .hero h1{
-    font-size:clamp(38px,6vw,70px);
+    font-size:clamp(45px,7vw,80px);
+
     line-height:1.1;
-    margin-bottom:20px;
-    font-weight:900;
+
+    letter-spacing:-2.5px;
+
+    margin:22px 0 17px;
 }
 
 .hero h1 span{
-    color:var(--red);
+    color:var(--red2);
+
+    text-shadow:
+        0 0 40px rgba(229,29,50,.2);
 }
 
 .hero p{
     color:var(--muted);
+
     max-width:650px;
-    line-height:2;
+
+    font-size:15px;
 }
 
-.hero-actions{
+.buttons{
     display:flex;
-    gap:12px;
-    margin-top:30px;
+    gap:10px;
+
     flex-wrap:wrap;
+
+    margin-top:30px;
 }
 
 .btn{
-    border:0;
-    border-radius:13px;
-    padding:13px 20px;
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:7px;
+
+    padding:12px 19px;
+
+    border-radius:12px;
+
+    font-size:12px;
     font-weight:800;
-    transition:.2s;
+
+    transition:.25s;
 }
 
 .btn:hover{
-    transform:translateY(-2px);
+    transform:translateY(-3px);
 }
 
 .btn-red{
-    background:var(--red);
-    color:#fff;
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--red2),
+            var(--red)
+        );
+
+    box-shadow:
+        0 12px 30px rgba(229,29,50,.18);
 }
 
 .btn-dark{
-    background:var(--card2);
-    color:var(--text);
     border:1px solid var(--line);
+
+    background:rgba(255,255,255,.035);
 }
 
-.hero-stat{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:15px;
-}
+/* ================= HERO PANEL ================= */
 
-.stat-card{
-    border:1px solid var(--line);
-    border-radius:22px;
-    padding:25px;
-    background:var(--card);
+.hero-panel{
+    position:relative;
+    overflow:hidden;
+
+    padding:30px;
+
+    border-radius:27px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(229,29,50,.18),
+            transparent 42%
+        ),
+        linear-gradient(
+            145deg,
+            var(--card2),
+            #080b10
+        );
+
     box-shadow:var(--shadow);
 }
 
-.stat-number{
-    font-size:34px;
+.hero-panel::after{
+    content:"BARSAL";
+
+    position:absolute;
+
+    left:-15px;
+    bottom:-42px;
+
+    font-size:82px;
+
     font-weight:900;
-    color:var(--red);
+
+    letter-spacing:-4px;
+
+    color:rgba(255,255,255,.025);
+
+    pointer-events:none;
 }
 
-.stat-label{
+.panel-label{
     color:var(--muted);
-    margin-top:5px;
+    font-size:10px;
 }
 
-/* GENERAL */
+.number{
+    margin-top:7px;
 
-section{
-    padding:45px 0;
+    font-size:54px;
+    font-weight:900;
+
+    color:var(--gold);
+
+    line-height:1.2;
+}
+
+.panel-text{
+    color:var(--muted);
+    font-size:10px;
+}
+
+.status{
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    gap:9px;
+
+    margin-top:22px;
+    padding-top:18px;
+
+    border-top:1px solid var(--line);
+
+    color:var(--green);
+
+    font-size:10px;
+}
+
+.status-dot{
+    width:7px;
+    height:7px;
+
+    border-radius:50%;
+
+    background:var(--green);
+
+    box-shadow:
+        0 0 0 5px rgba(41,212,126,.1);
+}
+
+.last-update{
+    margin-top:10px;
+
+    color:#66717e;
+
+    font-size:9px;
+}
+
+/* ================= SECTION ================= */
+
+.section{
+    padding:55px 0;
 }
 
 .section-head{
     display:flex;
+    align-items:flex-end;
     justify-content:space-between;
-    align-items:end;
-    gap:20px;
+
+    gap:15px;
+
     margin-bottom:22px;
 }
 
-.section-title{
-    font-size:28px;
-    font-weight:900;
-}
-
-.section-title span{
-    color:var(--red);
-}
-
-.section-desc{
-    color:var(--muted);
-    font-size:13px;
-    margin-top:5px;
-}
-
-/* BREAKING */
-
-.breaking{
-    border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);
-    background:var(--card);
-    overflow:hidden;
-}
-
-.breaking-inner{
-    display:flex;
-    align-items:center;
-    height:52px;
-}
-
-.breaking-label{
-    flex:none;
-    background:var(--red);
-    color:white;
-    height:100%;
-    display:flex;
-    align-items:center;
-    padding:0 18px;
-    font-weight:900;
-    z-index:2;
-}
-
-.breaking-track-wrap{
-    overflow:hidden;
-    flex:1;
-}
-
-.breaking-track{
-    display:flex;
-    width:max-content;
-    animation:ticker 45s linear infinite;
-}
-
-.breaking-item{
-    padding:0 35px;
-    color:var(--text);
-    white-space:nowrap;
-    font-size:13px;
-}
-
-.breaking-item:before{
-    content:"•";
-    color:var(--red);
-    margin-left:10px;
-}
-
-@keyframes ticker{
-    from{transform:translateX(0)}
-    to{transform:translateX(50%)}
-}
-
-/* NEWS */
-
-.news-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-}
-
-.news-card{
-    border:1px solid var(--line);
-    border-radius:20px;
-    overflow:hidden;
-    background:var(--card);
-    transition:.25s;
-    cursor:pointer;
-}
-
-.news-card:hover{
-    transform:translateY(-5px);
-    border-color:rgba(239,35,60,.45);
-    box-shadow:var(--shadow);
-}
-
-.news-top{
-    padding:18px 18px 8px;
-    display:flex;
-    justify-content:space-between;
-    gap:10px;
-}
-
-.news-source{
-    color:var(--red2);
-    font-size:12px;
-    font-weight:800;
-}
-
-.news-time{
-    color:var(--muted);
-    font-size:11px;
-}
-
-.news-content{
-    padding:8px 18px 18px;
-}
-
-.news-title{
-    font-size:17px;
-    line-height:1.8;
-    font-weight:800;
-}
-
-.news-summary{
-    color:var(--muted);
-    line-height:1.9;
-    font-size:12px;
-    margin-top:9px;
-}
-
-.news-footer{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding-top:15px;
-    margin-top:15px;
-    border-top:1px solid var(--line);
-}
-
-.read-more{
-    color:var(--red2);
-    font-size:12px;
-    font-weight:800;
-}
-
-.news-hot{
+.eyebrow{
     color:var(--gold);
-    font-size:12px;
+
+    font-size:9px;
+    font-weight:900;
+
+    letter-spacing:2.5px;
 }
 
-/* MATCHES */
+h2{
+    margin-top:3px;
+
+    font-size:28px;
+
+    letter-spacing:-.5px;
+}
+
+/* ================= TODAY MATCHES ================= */
 
 .matches-section{
-    background:linear-gradient(180deg,transparent,rgba(239,35,60,.025),transparent);
+    padding:45px 0 55px;
 }
 
 .matches-head{
     display:flex;
+    align-items:flex-end;
     justify-content:space-between;
-    align-items:center;
-    gap:15px;
-    margin-bottom:20px;
+    gap:20px;
+    margin-bottom:22px;
 }
 
 .matches-date{
     color:var(--muted);
-    font-size:13px;
+    font-size:10px;
 }
 
 .matches-status{
     color:var(--green);
-    font-size:12px;
+    font-size:9px;
+    font-weight:800;
 }
 
 .matches-grid{
@@ -464,1528 +590,2475 @@ section{
 }
 
 .match-card{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:20px;
-    padding:17px;
+    position:relative;
+    overflow:hidden;
+
+    min-height:235px;
+
+    padding:20px;
+
+    border-radius:21px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(229,29,50,.10),
+            transparent 48%
+        ),
+        linear-gradient(
+            145deg,
+            var(--card2),
+            var(--card)
+        );
+
+    transition:.28s;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.16);
+}
+
+.match-card::before{
+    content:"";
+
+    position:absolute;
+    top:0;
+    right:0;
+
+    width:100%;
+    height:2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--red2),
+            transparent
+        );
+
+    opacity:.65;
+}
+
+.match-card:hover{
+    transform:translateY(-6px);
+
+    border-color:
+        rgba(255,255,255,.16);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.28);
 }
 
 .match-league{
     display:flex;
+    align-items:center;
     justify-content:space-between;
+
     color:var(--muted);
-    font-size:11px;
-    margin-bottom:15px;
+
+    font-size:9px;
 }
 
 .match-status{
     padding:4px 8px;
-    border-radius:8px;
-    background:var(--card2);
+    border-radius:7px;
+
+    font-size:8px;
+    font-weight:900;
+
+    background:rgba(255,255,255,.05);
 }
 
 .match-status.live{
-    background:rgba(239,35,60,.15);
-    color:#ff5266;
+    padding:4px 8px;
+    border-color:transparent;
+
+    background:rgba(229,29,50,.14);
+
+    color:#ff6372;
+
+    letter-spacing:0;
 }
 
 .match-status.finished{
-    color:var(--green);
+    color:var(--muted);
 }
 
 .match-teams{
     display:grid;
-    grid-template-columns:1fr 65px 1fr;
+    grid-template-columns:1fr auto 1fr;
+
     align-items:center;
-    gap:5px;
+
+    gap:10px;
+
+    margin-top:25px;
 }
 
 .match-team{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
     text-align:center;
+
+    gap:8px;
 }
 
 .match-logo{
-    width:42px;
-    height:42px;
+    width:57px;
+    height:57px;
+
+    padding:7px;
+
     object-fit:contain;
-    display:block;
-    margin:auto auto 8px;
+
+    border-radius:16px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
 }
 
 .match-team-name{
-    font-size:12px;
-    line-height:1.5;
+    min-height:36px;
+
+    font-size:10px;
+    font-weight:800;
+
+    line-height:1.55;
 }
 
 .match-vs{
-    text-align:center;
-    color:var(--muted);
-    font-size:12px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    color:#596473;
+
+    font-size:9px;
+    font-weight:900;
 }
 
-.match-time,
-.match-score{
-    text-align:center;
+.match-time{
+    color:var(--gold);
+
+    font-size:22px;
     font-weight:900;
-    font-size:18px;
+
+    line-height:1.2;
+}
+
+.match-score{
+    color:white;
+
+    font-size:22px;
+    font-weight:900;
+
+    line-height:1.2;
 }
 
 .match-footer{
-    margin-top:15px;
-    padding-top:12px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    margin-top:18px;
+    padding-top:13px;
+
     border-top:1px solid var(--line);
-    color:var(--muted);
-    font-size:10px;
-    text-align:center;
+
+    color:#66717e;
+
+    font-size:8px;
 }
 
-.match-empty,
+.match-empty{
+    grid-column:1/-1;
+
+    padding:40px 20px;
+
+    text-align:center;
+
+    border:1px dashed var(--line);
+
+    border-radius:19px;
+
+    color:var(--muted);
+
+    background:rgba(255,255,255,.02);
+}
+
 .match-error{
     grid-column:1/-1;
-    padding:35px;
+
+    padding:35px 20px;
+
     text-align:center;
-    border:1px dashed var(--line);
-    border-radius:20px;
+
+    border:1px dashed rgba(229,29,50,.3);
+
+    border-radius:19px;
+
     color:var(--muted);
+
+    background:rgba(229,29,50,.025);
 }
 
-/* PREDICTION */
+/* ================= SEARCH ================= */
 
-.prediction{
-    margin-top:12px;
-    border-top:1px solid var(--line);
-    padding-top:12px;
+.search-wrap{
+    position:relative;
+
+    margin-bottom:24px;
 }
 
-.prediction-title{
-    font-size:11px;
-    color:var(--muted);
-    margin-bottom:8px;
-}
+.search{
+    width:100%;
 
-.prediction-buttons{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap:5px;
-}
+    padding:17px 52px 17px 18px;
 
-.prediction-buttons button{
+    border-radius:16px;
+
     border:1px solid var(--line);
-    background:var(--card2);
-    color:var(--text);
-    border-radius:8px;
-    padding:7px 3px;
-    font-size:10px;
+
+    outline:none;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.045),
+            rgba(255,255,255,.015)
+        );
+
+    color:white;
+
+    font-size:13px;
+
+    transition:.25s;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.15);
 }
 
-.prediction-buttons button.selected{
-    background:var(--red);
-    color:#fff;
-    border-color:var(--red);
+.search:focus{
+    border-color:rgba(229,29,50,.65);
+
+    box-shadow:
+        0 0 0 4px rgba(229,29,50,.08);
 }
 
-/* TABS */
+.search::placeholder{
+    color:#727d8a;
+}
+
+.search-icon{
+    position:absolute;
+
+    right:18px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-size:18px;
+
+    pointer-events:none;
+}
+
+.search-hint{
+    color:#687381;
+
+    font-size:9px;
+
+    margin-top:8px;
+}
+
+/* ================= TABS ================= */
 
 .tabs{
     display:flex;
-    gap:8px;
-    overflow-x:auto;
-    padding-bottom:5px;
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:22px;
 }
 
 .tab{
+    cursor:pointer;
+
+    min-width:150px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+
+    padding:10px 16px;
+
+    border-radius:15px;
+
     border:1px solid var(--line);
-    background:var(--card);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.045),
+            rgba(255,255,255,.018)
+        );
+
     color:var(--muted);
-    border-radius:11px;
-    padding:10px 15px;
-    white-space:nowrap;
+
+    font-size:11px;
+    font-weight:800;
+
+    transition:.25s;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.10);
+}
+
+.tab:hover{
+    color:white;
+
+    border-color:
+        rgba(255,255,255,.18);
+
+    transform:translateY(-2px);
 }
 
 .tab.active{
-    color:#fff;
-    background:var(--red);
-    border-color:var(--red);
+    color:white;
+
+    border-color:
+        rgba(229,29,50,.7);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(229,29,50,.25),
+            rgba(229,29,50,.08)
+        );
+
+    box-shadow:
+        0 10px 30px rgba(229,29,50,.14);
 }
 
-/* TABLE */
+.league-logo{
+    width:34px;
+    height:34px;
 
-.standings-box{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:22px;
-    overflow:auto;
+    padding:5px;
+
+    object-fit:contain;
+
+    border-radius:10px;
+
+    background:
+        rgba(255,255,255,.09);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.25s;
 }
 
-.standings-table{
-    width:100%;
-    min-width:650px;
-    border-collapse:collapse;
+.tab:hover .league-logo,
+.tab.active .league-logo{
+    transform:scale(1.08);
 }
 
-.standings-table th{
-    color:var(--muted);
-    font-size:11px;
-    font-weight:600;
-    padding:14px 10px;
-    background:var(--card2);
-}
-
-.standings-table td{
-    padding:13px 10px;
-    text-align:center;
-    border-top:1px solid var(--line);
-    font-size:12px;
-}
-
-.standings-table tr:hover td{
-    background:rgba(239,35,60,.04);
-}
-
-.rank{
-    font-weight:900;
-    color:var(--red2);
-}
-
-.table-team{
+.tab-name{
     display:flex;
-    align-items:center;
-    gap:10px;
-    text-align:right;
+    flex-direction:column;
+    align-items:flex-start;
+
+    line-height:1.3;
 }
 
-.table-logo{
-    width:27px;
-    height:27px;
-    object-fit:contain;
+.tab-name small{
+    margin-top:2px;
+
+    color:#697482;
+
+    font-size:7px;
+
+    font-weight:500;
 }
 
-.points{
-    color:var(--gold);
-    font-weight:900;
+.tab.active .tab-name small{
+    color:#cbd2da;
 }
 
-/* TEAMS */
+/* ================= NEWS ================= */
 
-.teams-grid{
+.news-grid{
     display:grid;
-    grid-template-columns:repeat(6,1fr);
-    gap:12px;
-}
 
-.team{
-    border:1px solid var(--line);
-    background:var(--card);
-    border-radius:17px;
-    padding:16px 10px;
-    color:var(--text);
-    text-align:center;
-    transition:.2s;
-}
+    grid-template-columns:
+        repeat(3,1fr);
 
-.team:hover,
-.team.active{
-    border-color:var(--red);
-    transform:translateY(-3px);
-}
-
-.team-logo{
-    width:45px;
-    height:45px;
-    object-fit:contain;
-    margin-bottom:8px;
-}
-
-.team-name{
-    font-size:11px;
-}
-
-/* TRANSFERS */
-
-.transfer-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
     gap:15px;
 }
 
-.transfer-card{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:20px;
-    padding:20px;
+.news{
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:235px;
+
+    display:flex;
+    flex-direction:column;
+
+    padding:19px;
+
+    border-radius:19px;
+
+    border:1px solid rgba(255,255,255,.07);
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--card),
+            #090c11
+        );
+
+    transition:.28s ease;
 }
 
-.transfer-tag{
-    display:inline-block;
-    padding:5px 8px;
-    border-radius:7px;
-    background:rgba(239,35,60,.13);
-    color:var(--red2);
+.news::before{
+    content:"";
+
+    position:absolute;
+
+    right:0;
+    top:0;
+
+    width:3px;
+    height:0;
+
+    background:
+        linear-gradient(
+            var(--red2),
+            var(--red)
+        );
+
+    transition:.3s;
+}
+
+.news:hover{
+    transform:translateY(-6px);
+
+    border-color:
+        rgba(255,255,255,.14);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.28);
+}
+
+.news:hover::before{
+    height:100%;
+}
+
+.news-top{
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+    color:#687381;
+
+    font-size:9px;
+}
+
+.news h3{
+    margin:11px 0 8px;
+
+    font-size:15px;
+
+    line-height:1.75;
+}
+
+.news p{
+    color:var(--muted);
+
+    font-size:11px;
+
+    line-height:1.8;
+}
+
+.news-link{
+    margin-top:auto;
+
+    padding-top:15px;
+
+    color:var(--gold);
+
     font-size:10px;
     font-weight:800;
-    margin-bottom:12px;
 }
 
-.transfer-title{
-    font-size:15px;
+.breaking{
+    border-color:
+        rgba(229,29,50,.35);
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(229,29,50,.16),
+            transparent 38%
+        ),
+        linear-gradient(
+            145deg,
+            #1b0c10,
+            #0b1016
+        );
+}
+
+.breaking .tag{
+    width:max-content;
+
+    display:inline-block;
+
+    padding:3px 8px;
+
+    border-radius:6px;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff3048,
+            #c20f21
+        );
+
+    font-size:8px;
     font-weight:800;
-    line-height:1.8;
 }
 
-.transfer-info{
+/* ================= EMPTY ================= */
+
+.loading,
+.empty{
+    grid-column:1/-1;
+
+    text-align:center;
+
+    padding:42px 20px;
+
     color:var(--muted);
-    font-size:11px;
-    line-height:1.8;
-    margin-top:7px;
-}
 
-/* CALENDAR */
+    border:1px dashed var(--line);
 
-.calendar-controls{
-    display:flex;
-    gap:10px;
-    align-items:center;
-    margin-bottom:18px;
-    flex-wrap:wrap;
-}
+    border-radius:18px;
 
-.calendar-controls button,
-.calendar-controls input{
-    border:1px solid var(--line);
-    background:var(--card);
-    color:var(--text);
-    border-radius:11px;
-    padding:10px 13px;
-}
+    background:rgba(255,255,255,.02);
 
-.calendar-date{
-    font-weight:800;
-}
-
-/* SEARCH */
-
-.search-box{
-    display:flex;
-    gap:10px;
-    margin-bottom:20px;
-}
-
-.search-box input{
-    flex:1;
-    border:1px solid var(--line);
-    background:var(--card);
-    color:var(--text);
-    padding:14px 17px;
-    border-radius:13px;
-    outline:none;
-}
-
-.search-box input:focus{
-    border-color:var(--red);
-}
-
-.search-results-info{
-    color:var(--muted);
     font-size:12px;
-    margin-bottom:15px;
 }
 
-/* HOT */
+.error{
+    color:#ff6978;
+}
 
-.hot-grid{
+/* ================= TEAM AREA ================= */
+
+.team-list{
     display:grid;
-    grid-template-columns:repeat(5,1fr);
+
+    grid-template-columns:
+        repeat(4,1fr);
+
     gap:12px;
+
+    margin-bottom:25px;
 }
 
-.hot-card{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:17px;
-    padding:16px;
+.team{
+    position:relative;
+
+    min-height:100px;
+
     cursor:pointer;
-}
 
-.hot-number{
-    font-size:28px;
-    color:var(--red);
-    font-weight:900;
-}
+    display:flex;
 
-.hot-title{
-    font-size:12px;
-    line-height:1.8;
-    margin-top:8px;
-    font-weight:700;
-}
+    align-items:center;
 
-/* POLL */
+    gap:12px;
 
-.poll-layout{
-    display:grid;
-    grid-template-columns:1fr .7fr;
-    gap:18px;
-}
-
-.poll-card{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:22px;
-    padding:25px;
-}
-
-.poll-question{
-    font-size:20px;
-    font-weight:900;
-    line-height:1.8;
-    margin-bottom:20px;
-}
-
-.poll-option{
-    margin-bottom:10px;
-}
-
-.poll-option button{
-    width:100%;
     text-align:right;
+
     padding:13px;
-    border-radius:11px;
+
+    border-radius:17px;
+
     border:1px solid var(--line);
-    background:var(--card2);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.045),
+            rgba(255,255,255,.018)
+        );
+
     color:var(--text);
-}
 
-.poll-option button:hover{
-    border-color:var(--red);
-}
+    transition:.25s;
 
-.poll-option.selected button{
-    border-color:var(--red);
-    background:rgba(239,35,60,.1);
-}
-
-.poll-progress{
-    margin-top:7px;
-    height:6px;
-    border-radius:20px;
-    background:var(--card2);
     overflow:hidden;
 }
 
-.poll-progress span{
+.team::after{
+    content:"";
+
+    position:absolute;
+
+    width:80px;
+    height:80px;
+
+    left:-35px;
+    bottom:-35px;
+
+    border-radius:50%;
+
+    background:
+        rgba(229,29,50,.05);
+}
+
+.team:hover{
+    transform:translateY(-4px);
+
+    border-color:
+        rgba(255,255,255,.18);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.2);
+}
+
+.team.active{
+    border-color:
+        rgba(229,29,50,.7);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(229,29,50,.17),
+            rgba(255,255,255,.025)
+        );
+
+    box-shadow:
+        0 10px 30px rgba(229,29,50,.10);
+}
+
+.team-logo{
+    width:53px;
+    height:53px;
+
+    flex:0 0 53px;
+
+    padding:7px;
+
+    border-radius:14px;
+
+    object-fit:contain;
+
+    background:
+        rgba(255,255,255,.07);
+
+    border:1px solid rgba(255,255,255,.07);
+
+    transition:.25s;
+}
+
+.team:hover .team-logo{
+    transform:scale(1.07);
+}
+
+.team-name{
+    position:relative;
+    z-index:2;
+
+    font-size:11px;
+
+    font-weight:800;
+
+    line-height:1.5;
+}
+
+.team-name small{
     display:block;
-    height:100%;
-    background:var(--red);
-    width:0;
-    transition:.5s;
-}
 
-.poll-note{
+    margin-top:2px;
+
     color:var(--muted);
-    font-size:10px;
-    margin-top:15px;
+
+    font-size:8px;
+
+    font-weight:500;
 }
 
-.poll-side{
-    background:linear-gradient(145deg,var(--red),#8b0013);
-    border-radius:22px;
-    padding:30px;
-    color:white;
+.team.active .team-name small{
+    color:#d2d8df;
 }
 
-.poll-side h3{
-    font-size:25px;
-    margin-bottom:10px;
-}
+.team-title{
+    margin-bottom:15px;
 
-.poll-side p{
-    line-height:2;
+    color:var(--gold);
+
     font-size:13px;
-    opacity:.85;
+
+    font-weight:800;
 }
 
-/* QR */
+/* ================= FOLLOW ================= */
+
+.follow{
+    margin:45px 0;
+
+    padding:38px;
+
+    border-radius:26px;
+
+    border:
+        1px solid rgba(229,29,50,.3);
+
+    background:
+        radial-gradient(
+            circle at 90% 30%,
+            rgba(229,29,50,.24),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 10% 100%,
+            rgba(70,110,160,.08),
+            transparent 30%
+        ),
+        linear-gradient(
+            120deg,
+            #18090c,
+            #0d1218
+        );
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    gap:25px;
+
+    box-shadow:var(--shadow);
+}
+
+.follow h2{
+    margin:5px 0;
+}
+
+.follow p{
+    color:var(--muted);
+
+    font-size:12px;
+}
+
+/* ================= QR ================= */
+
+.qr-section{
+    padding:55px 0;
+}
 
 .qr-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:18px;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:16px;
 }
 
 .qr-card{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:22px;
-    padding:25px;
     display:flex;
+
     align-items:center;
-    gap:25px;
-}
 
-.qr-card img{
-    width:130px;
-    height:130px;
-    border-radius:12px;
-    background:white;
-    padding:6px;
-}
-
-.qr-card h3{
-    margin-bottom:8px;
-}
-
-.qr-card p{
-    color:var(--muted);
-    font-size:12px;
-    line-height:1.8;
-}
-
-/* BALE */
-
-.bale{
-    border-radius:25px;
-    padding:35px;
-    background:
-        radial-gradient(circle at 85% 50%,rgba(37,211,102,.15),transparent 30%),
-        var(--card);
-    border:1px solid var(--line);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
     gap:20px;
-}
 
-/* MODAL */
+    padding:22px;
 
-.modal-overlay{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.75);
-    backdrop-filter:blur(10px);
-    z-index:3000;
-    display:none;
-    align-items:center;
-    justify-content:center;
-    padding:20px;
-}
+    border-radius:20px;
 
-.modal-overlay.show{
-    display:flex;
-}
-
-.modal{
-    width:min(750px,100%);
-    max-height:90vh;
-    overflow:auto;
-    background:var(--card);
     border:1px solid var(--line);
-    border-radius:25px;
-    padding:28px;
-    box-shadow:0 30px 100px rgba(0,0,0,.5);
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--card2),
+            var(--card)
+        );
 }
 
-.modal-close{
-    float:left;
-    width:38px;
-    height:38px;
-    border:0;
-    border-radius:10px;
-    background:var(--card2);
-    color:var(--text);
-    font-size:20px;
+.qr-box{
+    width:135px;
+    height:135px;
+
+    flex:0 0 135px;
+
+    padding:8px;
+
+    border-radius:15px;
+
+    background:white;
 }
 
-.modal-source{
-    color:var(--red2);
-    font-size:12px;
+.qr-box img{
+    display:block;
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+}
+
+.qr-info h3{
+    font-size:17px;
+
+    margin-bottom:4px;
+}
+
+.qr-info p{
+    color:var(--muted);
+
+    font-size:10px;
+}
+
+.qr-btn{
+    display:inline-block;
+
+    margin-top:13px;
+
+    padding:7px 11px;
+
+    border-radius:9px;
+
+    border:1px solid var(--line);
+
+    background:rgba(255,255,255,.05);
+
+    color:var(--gold);
+
+    font-size:9px;
+
     font-weight:800;
-    margin-bottom:10px;
 }
 
-.modal h2{
-    font-size:25px;
-    line-height:1.8;
-    margin-bottom:15px;
-}
+/* ================= ABOUT ================= */
 
-.modal-meta{
+.about p{
+    max-width:850px;
+
+    margin-top:12px;
+
     color:var(--muted);
-    font-size:11px;
-    margin-bottom:20px;
+
+    font-size:13px;
 }
 
-.modal-summary{
-    color:var(--muted);
-    line-height:2.1;
-    font-size:14px;
-}
+.about-grid{
+    display:grid;
 
-.modal-actions{
-    display:flex;
-    gap:10px;
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:13px;
+
     margin-top:25px;
-    flex-wrap:wrap;
 }
 
-/* BACK TOP */
+.about-card{
+    padding:20px;
 
-.back-top{
-    position:fixed;
-    left:18px;
-    bottom:18px;
-    width:45px;
-    height:45px;
+    border-radius:17px;
+
     border:1px solid var(--line);
-    background:var(--card);
-    color:var(--text);
-    border-radius:13px;
-    z-index:500;
+
+    background:
+        rgba(255,255,255,.025);
+
+    transition:.25s;
 }
 
-/* FOOTER */
+.about-card:hover{
+    transform:translateY(-4px);
+
+    border-color:#ffffff18;
+}
+
+.about-card b{
+    display:block;
+
+    margin-bottom:5px;
+}
+
+.about-card span{
+    color:var(--muted);
+
+    font-size:11px;
+}
+
+/* ================= FOOTER ================= */
 
 footer{
-    border-top:1px solid var(--line);
-    margin-top:50px;
-    padding:35px 0;
-    color:var(--muted);
-}
-
-.footer-inner{
     display:flex;
+
     justify-content:space-between;
-    gap:20px;
-    flex-wrap:wrap;
+
+    padding:30px max(18px,5vw);
+
+    margin-top:35px;
+
+    border-top:1px solid var(--line);
+
+    color:var(--muted);
+
+    font-size:10px;
 }
 
-.footer-logo{
-    color:var(--text);
-    font-size:20px;
-    font-weight:900;
+/* ================= LIGHT ================= */
+
+body.light{
+    --bg:#f2f4f7;
+    --bg2:#fff;
+    --card:#fff;
+    --card2:#fff;
+    --card3:#fff;
+
+    --text:#16191f;
+    --muted:#68717d;
+    --line:#dce1e7;
+
+    background:#f2f4f7;
 }
 
-/* RESPONSIVE */
+body.light::before{
+    opacity:.015;
+}
 
-@media(max-width:1000px){
-    .hero-grid,
-    .poll-layout{
-        grid-template-columns:1fr;
+body.light header{
+    background:rgba(255,255,255,.9);
+}
+
+body.light nav{
+    background:rgba(255,255,255,.94);
+}
+
+body.light .theme{
+    color:#111;
+    background:#fff;
+}
+
+body.light .hero-panel{
+    background:#fff;
+}
+
+body.light .news{
+    background:
+        linear-gradient(
+            145deg,
+            #fff,
+            #f8f9fb
+        );
+}
+
+body.light .search{
+    color:#111;
+    background:#fff;
+}
+
+body.light .team{
+    background:#fff;
+}
+
+body.light .qr-card{
+    background:#fff;
+}
+
+body.light .tab{
+    background:#fff;
+}
+
+body.light .league-logo{
+    background:#f4f5f7;
+}
+
+body.light .match-card{
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(229,29,50,.07),
+            transparent 48%
+        ),
+        linear-gradient(
+            145deg,
+            #fff,
+            #f7f8fa
+        );
+}
+
+body.light .match-logo{
+    background:#f3f4f6;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:950px){
+
+    .team-list{
+        grid-template-columns:
+            repeat(3,1fr);
     }
 
-    .news-grid,
     .matches-grid{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:
+            repeat(2,1fr);
     }
 
-    .teams-grid{
-        grid-template-columns:repeat(4,1fr);
-    }
-
-    .transfer-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .hot-grid{
-        grid-template-columns:repeat(3,1fr);
-    }
 }
 
-@media(max-width:700px){
-    .navbar{
-        padding:10px 0;
+@media(max-width:850px){
+
+    header{
+        padding:9px 14px;
     }
 
-    .nav-links{
-        display:none;
+    .logo{
+        width:43px;
+        height:43px;
+    }
+
+    .logo-text strong{
+        font-size:20px;
+    }
+
+    .logo-text small{
+        font-size:7px;
+    }
+
+    nav{
+        top:62px;
+        justify-content:flex-start;
     }
 
     .hero{
-        padding-top:40px;
-    }
+        grid-template-columns:1fr;
 
-    .hero-main{
-        padding:28px;
-        min-height:330px;
+        gap:25px;
+
+        padding:55px 0 45px;
     }
 
     .hero h1{
-        font-size:42px;
+        font-size:47px;
     }
 
-    .news-grid,
-    .matches-grid,
-    .transfer-grid,
+    .news-grid{
+        grid-template-columns:1fr;
+    }
+
+    .team-list{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
     .qr-grid{
         grid-template-columns:1fr;
     }
 
-    .teams-grid{
-        grid-template-columns:repeat(3,1fr);
+    .about-grid{
+        grid-template-columns:1fr;
     }
 
-    .hot-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .section-title{
-        font-size:23px;
-    }
-
-    .bale{
+    .follow{
         flex-direction:column;
+
         align-items:flex-start;
+
+        padding:28px;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:8px;
+    }
+
+}
+
+@media(max-width:650px){
+
+    .matches-grid{
+        grid-template-columns:1fr;
+    }
+
+    .matches-head{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+}
+
+@media(max-width:560px){
+
+    .tabs{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+
+    .tab{
+        width:100%;
+        min-width:0;
+        justify-content:flex-start;
+        padding:10px 13px;
+    }
+
+    .tab-name{
+        align-items:flex-start;
+    }
+
+}
+
+@media(max-width:480px){
+
+    main{
+        width:92%;
+    }
+
+    .hero h1{
+        font-size:41px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+    .team-list{
+        grid-template-columns:1fr;
+    }
+
+    .team{
+        min-height:80px;
     }
 
     .qr-card{
         flex-direction:column;
-        text-align:center;
+
+        align-items:flex-start;
     }
 
-    .breaking-label{
-        padding:0 10px;
-        font-size:11px;
-    }
 }
 
-@media(max-width:430px){
-    .teams-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
+/* ================= CARD ANIMATION ================= */
 
-    .hot-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero-main{
-        padding:22px;
-    }
-
-    .hero h1{
-        font-size:35px;
-    }
+.news,
+.match-card{
+    animation:
+        fadeUp .45s ease both;
 }
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="container navbar">
 
-<a href="#" class="logo">
-    <div class="logo-mark">⚽</div>
-    BARS<span>AL</span>
-</a>
+    <div class="logo-box">
 
-<nav class="nav-links">
-    <a href="#important">اخبار</a>
-    <a href="#matches">بازی‌ها</a>
-    <a href="#standings">جدول</a>
-    <a href="#calendar">تقویم</a>
-    <a href="#leagues">لیگ‌ها</a>
-    <a href="#teams">تیم‌ها</a>
-    <a href="#transfers">نقل‌وانتقالات</a>
-    <a href="#hot">داغ‌ترین</a>
-    <a href="#poll">نظرسنجی</a>
-    <a href="#latest">جستجو</a>
-</nav>
+        <div class="logo">
+            B
+        </div>
 
-<button class="theme-btn" onclick="toggleTheme()" id="themeButton">🌙</button>
+        <div class="logo-text">
 
-</div>
+            <strong>BARSAL</strong>
+
+            <small>
+                FOOTBALL NEWS
+            </small>
+
+        </div>
+
+    </div>
+
+    <div class="header-actions">
+
+        <button
+            class="theme"
+            id="themeButton"
+            onclick="toggleTheme()"
+            title="تغییر حالت"
+        >
+            ☾
+        </button>
+
+    </div>
+
 </header>
 
-<!-- BREAKING -->
 
-<div class="breaking">
-<div class="container breaking-inner">
+<nav>
 
-<div class="breaking-label">
-🔴 خبر فوری
-</div>
+    <a href="#home">خانه</a>
 
-<div class="breaking-track-wrap">
-<div class="breaking-track" id="breakingTrack">
-    <div class="breaking-item">در حال دریافت آخرین اخبار فوتبال...</div>
-</div>
-</div>
+    <a href="#important">اخبار فوری</a>
 
-</div>
-</div>
+    <a href="#matches">بازی‌های امروز</a>
+
+    <a href="#leagues">لیگ‌ها</a>
+
+    <a href="#teams">تیم‌ها</a>
+
+    <a href="#transfers">نقل‌وانتقالات</a>
+
+    <a href="#latest">جستجو</a>
+
+    <a href="#qr">QR</a>
+
+    <a href="#about">درباره BARSAL</a>
+
+</nav>
+
 
 <main>
 
-<!-- HERO -->
 
-<section class="hero">
-<div class="container hero-grid">
-
-<div class="hero-main">
-
-<div class="hero-kicker">BARSAL FOOTBALL MEDIA</div>
-
-<h1>
-فوتبال را<br>
-<span>سریع‌تر</span> دنبال کن.
-</h1>
-
-<p>
-اخبار فوتبال، نتایج بازی‌ها، جدول لیگ‌ها، نقل‌وانتقالات و اتفاقات داغ دنیای فوتبال؛
-همه در یک خانه.
-</p>
-
-<div class="hero-actions">
-<a href="#important" class="btn btn-red">مشاهده اخبار 🔥</a>
-<a href="#matches" class="btn btn-dark">بازی‌های امروز ⚽</a>
-</div>
-
-</div>
-
-<div class="hero-stat">
-
-<div class="stat-card">
-<div class="stat-number" id="newsCount">0</div>
-<div class="stat-label">خبر دریافت‌شده</div>
-</div>
-
-<div class="stat-card">
-<div class="stat-number" id="matchCount">0</div>
-<div class="stat-label">بازی امروز</div>
-</div>
-
-<div class="stat-card">
-<div class="stat-number">24/7</div>
-<div class="stat-label">پوشش فوتبال</div>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<!-- IMPORTANT -->
-
-<section id="important">
-<div class="container">
-
-<div class="section-head">
-<div>
-<div class="section-title">اخبار <span>مهم</span></div>
-<div class="section-desc">مهم‌ترین اتفاقات فوتبال را سریع ببین.</div>
-</div>
-</div>
-
-<div class="news-grid" id="importantNews">
-<div class="match-empty">در حال دریافت اخبار...</div>
-</div>
-
-</div>
-</section>
-
-<!-- MATCHES -->
-
-<section id="matches" class="matches-section">
-<div class="container">
-
-<div class="matches-head">
-<div>
-<div class="section-title">بازی‌های <span>امروز</span></div>
-<div class="matches-date" id="matchesDate">در حال دریافت...</div>
-</div>
-
-<div class="matches-status" id="matchesStatus">
-● اتصال به اطلاعات بازی‌ها
-</div>
-</div>
-
-<div class="matches-grid" id="matchesGrid">
-<div class="match-empty">در حال دریافت بازی‌های امروز...</div>
-</div>
-
-</div>
-</section>
-
-<!-- STANDINGS -->
-
-<section id="standings">
-<div class="container">
-
-<div class="section-head">
-<div>
-<div class="section-title">جدول <span>زنده لیگ‌ها</span></div>
-<div class="section-desc">آخرین جدول موجود از سرویس فوتبال.</div>
-</div>
-</div>
-
-<div class="tabs">
-<button class="tab active" onclick="showStandings('laliga',this)">🇪🇸 لالیگا</button>
-<button class="tab" onclick="showStandings('premier',this)">🏴 لیگ برتر</button>
-<button class="tab" onclick="showStandings('seriea',this)">🇮🇹 سری A</button>
-</div>
-
-<br>
-
-<div class="standings-box">
-<table class="standings-table">
-<thead>
-<tr>
-<th>#</th>
-<th style="text-align:right">تیم</th>
-<th>بازی</th>
-<th>برد</th>
-<th>مساوی</th>
-<th>باخت</th>
-<th>تفاضل</th>
-<th>امتیاز</th>
-</tr>
-</thead>
-
-<tbody id="standingsBody">
-<tr>
-<td colspan="8">در حال دریافت جدول...</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-</div>
-</section>
-
-<!-- CALENDAR -->
-
-<section id="calendar">
-<div class="container">
-
-<div class="section-head">
-<div>
-<div class="section-title">تقویم <span>بازی‌ها</span></div>
-<div class="section-desc">بازی‌های روز انتخاب‌شده را بررسی کن.</div>
-</div>
-</div>
-
-<div class="calendar-controls">
-
-<button onclick="changeCalendarDate(-1)">← روز قبل</button>
-
-<input type="date" id="calendarDate" onchange="loadCalendarMatches()">
-
-<button onclick="changeCalendarDate(1)">روز بعد →</button>
-
-<button onclick="setCalendarToday()">امروز</button>
-
-</div>
-
-<div class="matches-grid" id="calendarGrid">
-<div class="match-empty">یک تاریخ انتخاب کن.</div>
-</div>
-
-</div>
-</section>
-
-<!-- LEAGUES -->
-
-<section id="leagues">
-<div class="container">
-
-<div class="section-head">
-<div>
-<div class="section-title">لیگ‌های <span>مهم</span></div>
-<div class="section-desc">اخبار اختصاصی لیگ‌های بزرگ.</div>
-</div>
-</div>
-
-<div class="tabs">
-
-<button class="tab active" onclick="showLeague('laliga',this)">
-🇪🇸 La Liga
-</button>
-
-<button class="tab" onclick="showLeague('premier',this)">
-🏴 Premier League
-</button>
-
-<button class="tab" onclick="showLeague('seriea',this)">
-🇮🇹 Serie A
-</button>
-
-</div>
-
-<br>
-
-<div class="news-grid" id="leagueNews">
-<div class="match-empty">در حال دریافت...</div>
-</div>
-
-</div>
-</section>
-
-<!-- TEAMS -->
-
-<section id="teams">
-<div class="container">
-
-<div class="section-head">
-<div>
-<div class="section-title">تیم‌های <span>بزرگ</span></div>
-<div class="section-desc">اخبار تیم موردعلاقه‌ات را انتخاب کن.</div>
-</div>
-</div>
-
-<div class="teams-grid">
-
-<button class="team active" onclick="teamSelect(this,'بارسلونا','Barcelona')">
-<img class="team-logo" src="https://media.api-sports.io/football/teams/529.png">
-<div class="team-name">بارسلونا</div>
-</button>
-
-<button class="team" onclick="teamSelect(this,'رئال مادرید','Real Madrid')">
-<img class="team-logo" src="https://media.api-sports.io/football/teams/541.png">
-<div class="team-name">رئال مادرید</div>
-</button>
-
-<button class="team" onclick="teamSelect(this,'اتلتیکو مادرید','Atletico Madrid')">
-<img class="team-logo" src="https://media.api-sports.io/football/teams/530.png">
-<div class="team-name">اتلتیکو</div>
-</button>
-
-<button class="team" onclick="teamSelect(this,'آرسنال','Arsenal')">
-<img class="team-logo" src="https://media.api-sports.io/football/teams/42.png">
-<div class="team-name">آرسنال</div>
-</button>
-
-<button class="team" onclick="teamSelect(this,'لیورپول','Liverpool')">
-<img class="team-logo" src="https://media.api-sports.io/football/teams/40.png">
-<div class="team-name">لیورپول</div>
-</button>
-
-<button class="team" onclick="teamSelect(this,'منچسترسیتی','Manchester City')">
-<img class="team-logo" src="https://media.api-sports.io/football/teams/50.png">
-<div class="team-name">منچسترسیتی</div>
-</button>
-
-<button class="team" onclick="teamSelect(this,'منچستریونایتد','Manchester United')">
-<img class="team-logo" src="https://media.api-sports.io/football/teams/33.png">
-<div class="team-name">منچستریونایتد</div>
-</button>
-
-<button class="team" onclick="teamSelect(this,'اینتر میامی','Inter Miami')">
-<img class="team-logo" src="https://media.api-sports.io/football/teams/9568.png">
-<div class="team-name">اینتر میامی</div>
-</button>
-
-<button class="team" onclick="teamSelect(this,'النصر','Al Nassr')">
-<img class="team-logo" src="https://media.api-sports.io/football/teams/2939.png">
-<div class="team-name">النصر</div>
-</button>
-
-<button class="team" onclick="teamSelect(this,'پاری‌سن‌ژرمن','PSG')">
-<img class="team-logo" src="https://media.api-sports.io/football/teams/85.png">
-<div class="team-name">PSG</div>
-</button>
-
-<button class="team" onclick="teamSelect(this,'بایرن مونیخ','Bayern Munich')">
-<img class="team-logo" src="https://media.api-sports.io/football/teams/157.png">
-<div class="team-name">بایرن</div>
-</button>
-
-<button class="team" onclick="teamSelect(this,'اینتر','Inter Milan')">
-<img class="team-logo" src="https://media.api-sports.io/football/teams/505.png">
-<div class="team-name">اینتر</div>
-</button>
-
-</div>
-
-<br>
-
-<div class="news-grid" id="teamNews">
-<div class="match-empty">اخبار بارسلونا در حال دریافت است...</div>
-</div>
-
-</div>
-</section>
-
-<!-- TRANSFERS -->
-
-<section id="transfers">
-<div class="container">
-
-<div class="section-head">
-<div>
-<div class="section-title">مرکز <span>نقل‌وانتقالات</span></div>
-<div class="section-desc">اخبار رسمی و شایعات نقل‌وانتقالاتی.</div>
-</div>
-</div>
-
-<div class="transfer-grid" id="transferGrid">
-<div class="match-empty">در حال دریافت نقل‌وانتقالات...</div>
-</div>
-
-</div>
-</section>
-
-<!-- HOT -->
-
-<section id="hot">
-<div class="container">
-
-<div class="section-head">
-<div>
-<div class="section-title">🔥 داغ‌ترین <span>اخبار</span></div>
-<div class="section-desc">اخباری که بیشتر مورد توجه کاربران این دستگاه قرار گرفته‌اند.</div>
-</div>
-</div>
-
-<div class="hot-grid" id="hotNews">
-<div class="match-empty">در حال آماده‌سازی...</div>
-</div>
-
-</div>
-</section>
-
-<!-- POLL -->
-
-<section id="poll">
-<div class="container">
-
-<div class="section-head">
-<div>
-<div class="section-title">📊 نظرسنجی <span>BARSAL</span></div>
-<div class="section-desc">نظر خودت را ثبت کن.</div>
-</div>
-</div>
-
-<div class="poll-layout">
-
-<div class="poll-card">
-
-<div class="poll-question" id="pollQuestion">
-بهترین لیگ اروپا کدام است؟
-</div>
-
-<div id="pollOptions"></div>
-
-<div class="poll-note">
-رأی‌ها در همین مرورگر ذخیره می‌شوند و نظرسنجی فعلاً سرور مرکزی ندارد.
-</div>
-
-</div>
-
-<div class="poll-side">
-
-<h3>BARSAL POLL</h3>
-
-<p>
-هر هفته یک سؤال فوتبالی جدید؛
-انتخاب کن، نتیجه را ببین و نظر فوتبالی خودت را ثبت کن.
-</p>
-
-</div>
-
-</div>
-
-</div>
-</section>
-
-<!-- SEARCH -->
-
-<section id="latest">
-<div class="container">
-
-<div class="section-head">
-<div>
-<div class="section-title">جستجوی <span>اخبار</span></div>
-<div class="section-desc">تیم، بازیکن، لیگ یا هر کلمه‌ای را جستجو کن.</div>
-</div>
-</div>
-
-<div class="search-box">
-<input
-id="searchInput"
-type="search"
-placeholder="مثلاً بارسلونا، رئال، لیگ قهرمانان..."
-oninput="searchNews()"
->
-<button class="btn btn-red" onclick="searchNews()">جستجو</button>
-</div>
-
-<div class="search-results-info" id="searchInfo">
-برای شروع جستجو چیزی بنویس.
-</div>
-
-<div class="news-grid" id="searchResults"></div>
-
-</div>
-</section>
-
-<!-- BALE -->
-
-<section>
-<div class="container">
-
-<div class="bale">
-
-<div>
-<div class="section-title">📲 BARSAL در بله</div>
-<p style="color:var(--muted);margin-top:8px;line-height:1.8">
-اخبار فوتبالی را مستقیم در کانال BARSAL دنبال کن.
-</p>
-</div>
-
-<a
-href="https://ble.ir/barsal10"
-target="_blank"
-class="btn btn-red"
->
-ورود به کانال
-</a>
-
-</div>
-
-</div>
-</section>
-
-<!-- QR -->
-
-<section id="qr">
-<div class="container">
-
-<div class="section-head">
-<div>
-<div class="section-title">QR <span>BARSAL</span></div>
-<div class="section-desc">اسکن کن و مستقیم وارد شو.</div>
-</div>
-</div>
-
-<div class="qr-grid">
-
-<div class="qr-card">
-
-<img
-src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fble.ir%2Fbarsal10"
-alt="QR کانال BARSAL"
+<section
+    class="hero"
+    id="home"
 >
 
-<div>
-<h3>کانال BARSAL</h3>
-<p>
-QR را اسکن کن تا وارد کانال فوتبالی BARSAL در بله شوی.
-</p>
-</div>
+    <div>
 
-</div>
+        <div class="live">
 
-<div class="qr-card">
+            <span class="live-dot"></span>
 
-<img
-src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fkiannabifar-sys.github.io%2FBARSAL%2F"
-alt="QR سایت BARSAL"
->
+            BARSAL LIVE · FOOTBALL NEWS
 
-<div>
-<h3>سایت BARSAL</h3>
-<p>
-QR سایت را اسکن کن و آخرین نسخه وب‌سایت را باز کن.
-</p>
-</div>
+        </div>
 
-</div>
 
-</div>
+        <h1>
 
-</div>
+            فوتبال را
+
+            <span>
+                سریع‌تر
+            </span>
+
+            دنبال کن.
+
+        </h1>
+
+
+        <p>
+
+            آخرین اخبار فوتبال جهان،
+            لیگ‌های معتبر، تیم‌های بزرگ
+            و نقل‌وانتقالات؛
+            همه در یک رسانه سریع و مرتب.
+
+        </p>
+
+
+        <div class="buttons">
+
+            <a
+                class="btn btn-red"
+                href="#latest"
+            >
+                🔎 جستجوی اخبار
+            </a>
+
+            <a
+                class="btn btn-dark"
+                href="#matches"
+            >
+                ⚽ بازی‌های امروز
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-panel">
+
+        <div class="panel-label">
+            وضعیت سیستم اخبار خودکار
+        </div>
+
+        <div
+            class="number"
+            id="newsCount"
+        >
+            ...
+        </div>
+
+        <div class="panel-text">
+            خبر در پایگاه BARSAL
+        </div>
+
+
+        <div
+            class="status"
+            id="systemStatus"
+        >
+
+            <span class="status-dot"></span>
+
+            در حال اتصال...
+
+        </div>
+
+
+        <div
+            class="last-update"
+            id="lastUpdate"
+        >
+            آخرین بررسی: در حال دریافت...
+        </div>
+
+    </div>
+
 </section>
 
-<!-- ABOUT -->
 
-<section id="about">
-<div class="container">
+<section
+    class="section"
+    id="important"
+>
 
-<div class="section-head">
-<div>
-<div class="section-title">درباره <span>BARSAL</span></div>
-</div>
-</div>
+    <div class="section-head">
 
-<div class="stat-card">
+        <div>
 
-<p style="color:var(--muted);line-height:2">
-BARSAL یک رسانه فوتبالی مستقل برای دنبال‌کردن سریع اخبار،
-نتایج، بازی‌ها، جدول لیگ‌ها و نقل‌وانتقالات فوتبال است.
-</p>
+            <div class="eyebrow">
+                BREAKING NEWS
+            </div>
 
-</div>
+            <h2>
+                🚨 اخبار فوری و مهم
+            </h2>
 
-</div>
+        </div>
+
+    </div>
+
+
+    <div
+        class="news-grid"
+        id="importantNews"
+    >
+
+        <div class="loading">
+            ⏳ در حال دریافت اخبار مهم...
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TODAY MATCHES ================= -->
+
+<section
+    class="matches-section"
+    id="matches"
+>
+
+    <div class="matches-head">
+
+        <div>
+
+            <div class="eyebrow">
+                TODAY'S FOOTBALL
+            </div>
+
+            <h2>
+                ⚽ بازی‌های امروز
+            </h2>
+
+            <div
+                class="matches-date"
+                id="matchesDate"
+            >
+                در حال دریافت تاریخ...
+            </div>
+
+        </div>
+
+        <div
+            class="matches-status"
+            id="matchesStatus"
+        >
+            ● در حال دریافت بازی‌ها...
+        </div>
+
+    </div>
+
+
+    <div
+        class="matches-grid"
+        id="matchesGrid"
+    >
+
+        <div class="match-empty">
+            ⏳ در حال دریافت بازی‌های امروز...
+        </div>
+
+    </div>
+
+</section>
+
+
+<section
+    class="section"
+    id="leagues"
+>
+
+    <div class="section-head">
+
+        <div>
+
+            <div class="eyebrow">
+                TOP LEAGUES
+            </div>
+
+            <h2>
+                🏆 لیگ‌ها
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="tabs">
+
+        <button
+            class="tab active"
+            onclick="showLeague('laliga',this)"
+        >
+
+            <img
+                class="league-logo"
+                src="https://media.api-sports.io/football/leagues/140.png"
+                alt="La Liga"
+            >
+
+            <span class="tab-name">
+
+                <span>
+                    لالیگا
+                </span>
+
+                <small>
+                    LA LIGA
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="tab"
+            onclick="showLeague('premier',this)"
+        >
+
+            <img
+                class="league-logo"
+                src="https://media.api-sports.io/football/leagues/39.png"
+                alt="Premier League"
+            >
+
+            <span class="tab-name">
+
+                <span>
+                    لیگ انگلیس
+                </span>
+
+                <small>
+                    PREMIER LEAGUE
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="tab"
+            onclick="showLeague('seriea',this)"
+        >
+
+            <img
+                class="league-logo"
+                src="https://media.api-sports.io/football/leagues/135.png"
+                alt="Serie A"
+            >
+
+            <span class="tab-name">
+
+                <span>
+                    سری A
+                </span>
+
+                <small>
+                    SERIE A
+                </small>
+
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <div
+        id="leagueNews"
+        class="news-grid"
+    >
+
+        <div class="loading">
+            ⏳ در حال دریافت اخبار لیگ...
+        </div>
+
+    </div>
+
+</section>
+
+
+<section
+    class="section"
+    id="teams"
+>
+
+    <div class="section-head">
+
+        <div>
+
+            <div class="eyebrow">
+                BIG TEAMS
+            </div>
+
+            <h2>
+                تیم‌های بزرگ
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="team-list">
+
+
+        <button
+            class="team active"
+            onclick="teamSelect(this,'بارسلونا','Barcelona')"
+        >
+
+            <img
+                class="team-logo"
+                src="https://media.api-sports.io/football/teams/529.png"
+                alt="Barcelona"
+            >
+
+            <span class="team-name">
+
+                بارسلونا
+
+                <small>
+                    FC Barcelona
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="team"
+            onclick="teamSelect(this,'رئال مادرید','Real Madrid')"
+        >
+
+            <img
+                class="team-logo"
+                src="https://media.api-sports.io/football/teams/541.png"
+                alt="Real Madrid"
+            >
+
+            <span class="team-name">
+
+                رئال مادرید
+
+                <small>
+                    Real Madrid
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="team"
+            onclick="teamSelect(this,'اتلتیکو مادرید','Atletico Madrid')"
+        >
+
+            <img
+                class="team-logo"
+                src="https://media.api-sports.io/football/teams/530.png"
+                alt="Atletico Madrid"
+            >
+
+            <span class="team-name">
+
+                اتلتیکو مادرید
+
+                <small>
+                    Atlético Madrid
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="team"
+            onclick="teamSelect(this,'آرسنال','Arsenal')"
+        >
+
+            <img
+                class="team-logo"
+                src="https://media.api-sports.io/football/teams/42.png"
+                alt="Arsenal"
+            >
+
+            <span class="team-name">
+
+                آرسنال
+
+                <small>
+                    Arsenal FC
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="team"
+            onclick="teamSelect(this,'لیورپول','Liverpool')"
+        >
+
+            <img
+                class="team-logo"
+                src="https://media.api-sports.io/football/teams/40.png"
+                alt="Liverpool"
+            >
+
+            <span class="team-name">
+
+                لیورپول
+
+                <small>
+                    Liverpool FC
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="team"
+            onclick="teamSelect(this,'منچسترسیتی','Manchester City')"
+        >
+
+            <img
+                class="team-logo"
+                src="https://media.api-sports.io/football/teams/50.png"
+                alt="Manchester City"
+            >
+
+            <span class="team-name">
+
+                منچسترسیتی
+
+                <small>
+                    Manchester City
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="team"
+            onclick="teamSelect(this,'منچستریونایتد','Manchester United')"
+        >
+
+            <img
+                class="team-logo"
+                src="https://media.api-sports.io/football/teams/33.png"
+                alt="Manchester United"
+            >
+
+            <span class="team-name">
+
+                منچستریونایتد
+
+                <small>
+                    Manchester United
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="team"
+            onclick="teamSelect(this,'اینتر میامی','Inter Miami')"
+        >
+
+            <img
+                class="team-logo"
+                src="https://media.api-sports.io/football/teams/9568.png"
+                alt="Inter Miami CF"
+            >
+
+            <span class="team-name">
+
+                اینتر میامی
+
+                <small>
+                    Inter Miami CF
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="team"
+            onclick="teamSelect(this,'النصر','Al Nassr')"
+        >
+
+            <img
+                class="team-logo"
+                src="https://media.api-sports.io/football/teams/2939.png"
+                alt="Al Nassr FC"
+            >
+
+            <span class="team-name">
+
+                النصر
+
+                <small>
+                    Al Nassr FC
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="team"
+            onclick="teamSelect(this,'پاری‌سن‌ژرمن','Paris Saint-Germain')"
+        >
+
+            <img
+                class="team-logo"
+                src="https://media.api-sports.io/football/teams/85.png"
+                alt="Paris Saint-Germain"
+            >
+
+            <span class="team-name">
+
+                پاری‌سن‌ژرمن
+
+                <small>
+                    Paris Saint-Germain
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="team"
+            onclick="teamSelect(this,'بایرن مونیخ','Bayern Munich')"
+        >
+
+            <img
+                class="team-logo"
+                src="https://media.api-sports.io/football/teams/157.png"
+                alt="Bayern Munich"
+            >
+
+            <span class="team-name">
+
+                بایرن مونیخ
+
+                <small>
+                    FC Bayern München
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="team"
+            onclick="teamSelect(this,'اینتر','Inter Milan')"
+        >
+
+            <img
+                class="team-logo"
+                src="https://media.api-sports.io/football/teams/505.png"
+                alt="Inter Milan"
+            >
+
+            <span class="team-name">
+
+                اینتر
+
+                <small>
+                    Inter Milano
+                </small>
+
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <div
+        class="team-title"
+        id="teamTitle"
+    >
+        اخبار بارسلونا
+    </div>
+
+
+    <div
+        id="teamNews"
+        class="news-grid"
+    >
+
+        <div class="loading">
+            ⏳ در حال دریافت اخبار بارسلونا...
+        </div>
+
+    </div>
+
+</section>
+
+
+<section
+    class="section"
+    id="transfers"
+>
+
+    <div class="section-head">
+
+        <div>
+
+            <div class="eyebrow">
+                TRANSFER MARKET
+            </div>
+
+            <h2>
+                🔄 نقل‌وانتقالات
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div
+        class="news-grid"
+        id="transferNews"
+    >
+
+        <div class="loading">
+            ⏳ در حال دریافت اخبار نقل‌وانتقالات...
+        </div>
+
+    </div>
+
+</section>
+
+
+<section
+    class="section"
+    id="latest"
+>
+
+    <div class="section-head">
+
+        <div>
+
+            <div class="eyebrow">
+                SEARCH ENGINE
+            </div>
+
+            <h2>
+                🔎 جستجوی اخبار
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="search-wrap">
+
+        <span class="search-icon">
+            🔎
+        </span>
+
+        <input
+            class="search"
+            id="search"
+            type="search"
+            placeholder="نام تیم، بازیکن، لیگ یا موضوع خبر را جستجو کن..."
+            oninput="searchNews()"
+        >
+
+        <div class="search-hint">
+            مثال: Barcelona · Real Madrid · Mbappe · Transfer · Premier League
+        </div>
+
+    </div>
+
+
+    <div
+        class="news-grid"
+        id="allNews"
+    >
+
+        <div class="empty">
+            🔎 برای پیدا کردن خبر، عبارت موردنظر را جستجو کن.
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="follow">
+
+    <div>
+
+        <div class="eyebrow">
+            BARSAL ON BALE
+        </div>
+
+        <h2>
+            📲 اخبار فوتبال را در بله بگیر
+        </h2>
+
+        <p>
+            برای دریافت سریع‌تر اخبار فوتبال و خبرهای فوری،
+            کانال رسمی BARSAL را در بله دنبال کن.
+        </p>
+
+    </div>
+
+
+    <a
+        class="btn btn-red"
+        href="https://ble.ir/barsal10"
+        target="_blank"
+        rel="noopener"
+    >
+        🚀 ورود به کانال BARSAL
+    </a>
+
+</section>
+
+
+<section
+    class="qr-section"
+    id="qr"
+>
+
+    <div class="section-head">
+
+        <div>
+
+            <div class="eyebrow">
+                SCAN & FOLLOW
+            </div>
+
+            <h2>
+                📱 BARSAL را اسکن کن
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="qr-grid">
+
+
+        <div class="qr-card">
+
+            <div class="qr-box">
+
+                <img
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fble.ir%2Fbarsal10"
+                    alt="QR Code کانال BARSAL"
+                >
+
+            </div>
+
+
+            <div class="qr-info">
+
+                <h3>
+                    📲 کانال BARSAL
+                </h3>
+
+                <p>
+                    برای ورود سریع به کانال بله،
+                    این QR Code را اسکن کن.
+                </p>
+
+                <a
+                    class="qr-btn"
+                    href="https://ble.ir/barsal10"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    @barsal10
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="qr-card">
+
+            <div class="qr-box">
+
+                <img
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fkiannabifar-sys.github.io%2FBARSAL%2F"
+                    alt="QR Code سایت BARSAL"
+                >
+
+            </div>
+
+
+            <div class="qr-info">
+
+                <h3>
+                    🌐 سایت BARSAL
+                </h3>
+
+                <p>
+                    برای باز کردن سریع سایت خبری BARSAL،
+                    این QR Code را اسکن کن.
+                </p>
+
+                <a
+                    class="qr-btn"
+                    href="https://kiannabifar-sys.github.io/BARSAL/"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    BARSAL Website
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section
+    class="section about"
+    id="about"
+>
+
+    <div class="eyebrow">
+        ABOUT BARSAL
+    </div>
+
+    <h2>
+        درباره BARSAL
+    </h2>
+
+    <p>
+        BARSAL یک رسانه فوتبالی برای دنبال‌کردن
+        اخبار روز فوتبال، لیگ‌های معتبر،
+        تیم‌های بزرگ و نقل‌وانتقالات است.
+        هدف BARSAL ارائه سریع، مرتب و منبع‌محور اخبار فوتبال است.
+    </p>
+
+
+    <div class="about-grid">
+
+        <div class="about-card">
+
+            <b>
+                ⚡ سریع
+            </b>
+
+            <span>
+                اخبار جدید با سیستم بروزرسانی خودکار
+            </span>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <b>
+                🎯 مرتب
+            </b>
+
+            <span>
+                دسته‌بندی اخبار بر اساس لیگ و تیم
+            </span>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <b>
+                🔗 منبع‌محور
+            </b>
+
+            <span>
+                لینک هر خبر به منبع اصلی
+            </span>
+
+        </div>
+
+    </div>
+
 </section>
 
 </main>
 
+
 <footer>
-<div class="container footer-inner">
 
-<div>
-<div class="footer-logo">BARSAL ⚽</div>
-<div style="margin-top:6px;font-size:12px">
-Football News • Results • Transfers
-</div>
-</div>
+    <strong>
+        BARSAL · FOOTBALL NEWS
+    </strong>
 
-<div>
-© BARSAL — تمامی حقوق طراحی برای BARSAL
-</div>
+    <span>
+        © 2026 BARSAL
+    </span>
 
-</div>
 </footer>
 
-<!-- NEWS MODAL -->
-
-<div class="modal-overlay" id="newsModal" onclick="closeModalOutside(event)">
-
-<div class="modal">
-
-<button class="modal-close" onclick="closeNewsModal()">×</button>
-
-<div class="modal-source" id="modalSource"></div>
-
-<h2 id="modalTitle"></h2>
-
-<div class="modal-meta" id="modalMeta"></div>
-
-<div class="modal-summary" id="modalSummary"></div>
-
-<div class="modal-actions">
-
-<a
-id="modalLink"
-href="#"
-target="_blank"
-class="btn btn-red"
->
-مشاهده منبع اصلی
-</a>
-
-<button class="btn btn-dark" onclick="shareCurrentNews()">
-اشتراک‌گذاری
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-<button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-↑
-</button>
 
 <script>
 
-/* =========================
-   GLOBAL
-========================= */
+/* ================= DATA ================= */
 
 let allNewsData = [];
-let selectedTeam = "Barcelona";
-let selectedLeague = "laliga";
-let currentNews = null;
 
-const newsCacheKey = "barsalNewsClicks";
-const pollStorageKey = "barsalPoll";
-const predictionStorageKey = "barsalPredictions";
+let selectedTeam =
+    "Barcelona";
 
-/* =========================
-   THEME
-========================= */
+let selectedLeague =
+    "laliga";
+
+
+/* ================= THEME ================= */
 
 function toggleTheme(){
 
-    document.body.classList.toggle("light");
+    document.body.classList.toggle(
+        "light"
+    );
 
     const light =
-        document.body.classList.contains("light");
+        document.body.classList.contains(
+            "light"
+        );
 
     localStorage.setItem(
-        "barsalTheme",
+        "theme",
         light ? "light" : "dark"
     );
 
     updateThemeButton();
+
 }
+
 
 function updateThemeButton(){
 
-    const btn =
-        document.getElementById("themeButton");
+    const button =
+        document.getElementById(
+            "themeButton"
+        );
 
-    if(!btn) return;
-
-    btn.textContent =
-        document.body.classList.contains("light")
-        ? "☀️"
-        : "🌙";
-}
-
-(function(){
-
-    const theme =
-        localStorage.getItem("barsalTheme");
-
-    if(theme === "light"){
-        document.body.classList.add("light");
+    if(!button){
+        return;
     }
 
-    updateThemeButton();
+    button.innerText =
+        document.body.classList.contains(
+            "light"
+        )
+        ? "☀"
+        : "☾";
 
-})();
+}
 
-/* =========================
-   UTILS
-========================= */
+
+if(
+    localStorage.getItem(
+        "theme"
+    ) === "light"
+){
+
+    document.body.classList.add(
+        "light"
+    );
+
+}
+
+updateThemeButton();
+
+
+/* ================= ESCAPE ================= */
 
 function escapeHTML(value){
 
-    if(value === null || value === undefined){
+    if(
+        value === null ||
+        value === undefined
+    ){
+
         return "";
+
     }
 
     return String(value)
-        .replaceAll("&","&amp;")
-        .replaceAll("<","&lt;")
-        .replaceAll(">","&gt;")
-        .replaceAll('"',"&quot;")
-        .replaceAll("'","&#039;");
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+
 }
 
-function formatDate(date){
 
-    if(!date) return "";
+/* ================= DATE ================= */
+
+function formatDate(value){
+
+    if(!value){
+        return "جدید";
+    }
 
     try{
 
-        return new Date(date).toLocaleString(
+        const date =
+            new Date(value);
+
+        if(
+            isNaN(
+                date.getTime()
+            )
+        ){
+
+            return value;
+
+        }
+
+        return date.toLocaleDateString(
             "fa-IR",
             {
-                dateStyle:"medium",
-                timeStyle:"short"
+                month:"short",
+                day:"numeric"
             }
         );
 
-    }catch{
-        return date;
+    }catch(e){
+
+        return value;
+
     }
+
 }
 
-function getItemText(item){
 
-    return [
-        item.title,
-        item.summary,
-        item.description,
-        item.team,
-        item.team_fa,
-        item.league,
-        item.category
-    ]
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-}
+/* ================= NEWS CARD ================= */
 
-function getItemLink(item){
-
-    return (
-        item.link ||
-        item.url ||
-        item.source_url ||
-        "#"
-    );
-}
-
-/* =========================
-   NEWS CARD
-========================= */
-
-function createNewsCard(item,important=false,index=null){
+function createNewsCard(
+    item,
+    important=false
+){
 
     const title =
-        item.title ||
-        "خبر فوتبالی";
+        escapeHTML(
+            item.title ||
+            "خبر فوتبال"
+        );
 
     const summary =
-        item.summary ||
-        item.description ||
-        "برای مشاهده جزئیات خبر کلیک کنید.";
+        escapeHTML(
+            item.summary ||
+            "برای مشاهده جزئیات این خبر به منبع اصلی مراجعه کنید."
+        );
 
     const source =
-        item.source ||
-        item.publisher ||
-        "BARSAL";
+        escapeHTML(
+            item.source ||
+            "BARSAL"
+        );
 
-    const date =
-        item.published ||
-        item.pubDate ||
-        item.date ||
-        "";
+    const time =
+        escapeHTML(
+            formatDate(
+                item.time
+            )
+        );
 
-    const hotClass =
-        important
-        ? `<span class="news-hot">🔥 مهم</span>`
-        : "";
+    let link =
+        item.url || "#";
 
-    let safeIndex = index;
+    if(
+        !/^https?:\/\//i.test(
+            link
+        )
+    ){
 
-    if(safeIndex === null){
-        safeIndex = allNewsData.indexOf(item);
+        link = "#";
+
     }
+
 
     return `
 
-    <article
-        class="news-card"
-        onclick="openNewsModal(${safeIndex})"
-    >
+        <article
+            class="news ${
+                important
+                ? "breaking"
+                : ""
+            }"
+        >
 
-        <div class="news-top">
+            ${
+                important
+                ?
+                `
+                <span class="tag">
+                    🚨 مهم
+                </span>
+                `
+                :
+                ""
+            }
 
-            <span class="news-source">
-                ${escapeHTML(source)}
-            </span>
 
-            <span class="news-time">
-                ${escapeHTML(formatDate(date))}
-            </span>
+            <div class="news-top">
 
-        </div>
-
-        <div class="news-content">
-
-            <div class="news-title">
-                ${escapeHTML(title)}
-            </div>
-
-            <div class="news-summary">
-                ${escapeHTML(summary)}
-            </div>
-
-            <div class="news-footer">
-
-                <span class="read-more">
-                    مشاهده جزئیات ←
+                <span>
+                    ${source}
                 </span>
 
-                ${hotClass}
+                <span>
+                    ${time}
+                </span>
 
             </div>
 
-        </div>
 
-    </article>
+            <h3>
+                ${title}
+            </h3>
+
+
+            <p>
+                ${summary}
+            </p>
+
+
+            ${
+                link !== "#"
+                ?
+                `
+                <a
+                    class="news-link"
+                    href="${escapeHTML(link)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    مشاهده خبر در منبع اصلی ←
+                </a>
+                `
+                :
+                `
+                <span class="news-link">
+                    جزئیات خبر ←
+                </span>
+                `
+            }
+
+        </article>
+
     `;
+
 }
 
-/* =========================
-   NEWS RENDER
-========================= */
+
+/* ================= RENDER ================= */
 
 function renderNews(
     list,
@@ -1993,89 +3066,109 @@ function renderNews(
     important=false
 ){
 
-    const el =
-        document.getElementById(elementId);
+    const box =
+        document.getElementById(
+            elementId
+        );
 
-    if(!el) return;
-
-    if(!list || !list.length){
-
-        el.innerHTML = `
-            <div class="match-empty">
-                خبری برای نمایش پیدا نشد.
-            </div>
-        `;
-
+    if(!box){
         return;
     }
 
-    el.innerHTML =
-        list.map(item =>
-            createNewsCard(
-                item,
-                important,
-                allNewsData.indexOf(item)
-            )
-        ).join("");
+
+    if(
+        !list ||
+        list.length === 0
+    ){
+
+        box.innerHTML = `
+
+            <div class="empty">
+
+                😕 فعلاً خبری
+                در این بخش پیدا نشد.
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    box.innerHTML =
+        list
+        .slice(0,9)
+        .map(
+            item =>
+                createNewsCard(
+                    item,
+                    important
+                )
+        )
+        .join("");
+
 }
 
+
+/* ================= EVERYTHING ================= */
+
 function renderEverything(){
+
+    document.getElementById(
+        "newsCount"
+    ).innerText =
+        allNewsData.length;
+
 
     renderImportant();
 
     showLeague(
-        selectedLeague,
-        document.querySelector(
-            "#leagues .tab.active"
-        )
+        selectedLeague
     );
 
-    renderTeamNews(selectedTeam);
+    renderTeamNews(
+        selectedTeam
+    );
 
     renderTransfers();
 
-    renderBreakingTicker();
 
-    renderHotNews();
+    const search =
+        document.getElementById(
+            "search"
+        );
 
-    renderSearchIfNeeded();
 
-    document.getElementById("newsCount").textContent =
-        allNewsData.length;
-}
+    if(
+        search &&
+        search.value.trim()
+    ){
 
-function renderImportant(){
+        searchNews();
 
-    let important =
-        allNewsData.filter(item => {
+    }else{
 
-            const text =
-                getItemText(item);
+        document.getElementById(
+            "allNews"
+        ).innerHTML = `
 
-            return (
-                item.important === true ||
-                item.important === "true" ||
-                item.featured === true ||
-                /breaking|مهم|فوری|رسمی|انتقال|transfer|official/i
-                    .test(text)
-            );
+            <div class="empty">
 
-        });
+                🔎 برای پیدا کردن خبر،
+                عبارت موردنظر را جستجو کن.
 
-    if(!important.length){
-        important = allNewsData.slice(0,6);
+            </div>
+
+        `;
+
     }
 
-    renderNews(
-        important.slice(0,6),
-        "importantNews",
-        true
-    );
 }
 
-/* =========================
-   LOAD NEWS
-========================= */
+
+/* ================= LOAD NEWS ================= */
 
 async function loadNews(){
 
@@ -2083,164 +3176,328 @@ async function loadNews(){
 
         const response =
             await fetch(
-                "news.json?t=" + Date.now(),
+                "news.json?t=" +
+                Date.now(),
                 {
                     cache:"no-store"
                 }
             );
 
+
         if(!response.ok){
-            throw new Error("news.json unavailable");
+
+            throw new Error(
+                "news.json not found"
+            );
+
         }
+
 
         const data =
             await response.json();
 
-        if(Array.isArray(data)){
-            allNewsData = data;
+
+        if(!Array.isArray(data)){
+
+            throw new Error(
+                "Invalid news.json"
+            );
+
         }
-        else if(Array.isArray(data.news)){
-            allNewsData = data.news;
-        }
-        else{
-            allNewsData = [];
-        }
+
+
+        allNewsData =
+            data;
+
+
+        document.getElementById(
+            "newsCount"
+        ).innerText =
+            allNewsData.length;
+
+
+        document.getElementById(
+            "systemStatus"
+        ).innerHTML = `
+
+            <span class="status-dot"></span>
+
+            سیستم فعال است
+
+        `;
+
+
+        document.getElementById(
+            "lastUpdate"
+        ).innerText =
+            "آخرین بررسی: " +
+            new Date().toLocaleTimeString(
+                "fa-IR",
+                {
+                    hour:"2-digit",
+                    minute:"2-digit"
+                }
+            );
+
 
         renderEverything();
 
+
     }catch(error){
 
-        console.error(error);
+        console.error(
+            error
+        );
 
-        document.getElementById("importantNews").innerHTML = `
-            <div class="match-error">
-                دریافت اخبار با مشکل مواجه شد.
-                <br>
-                فایل news.json را بررسی کن.
-            </div>
+
+        document.getElementById(
+            "newsCount"
+        ).innerText =
+            "OFF";
+
+
+        document.getElementById(
+            "systemStatus"
+        ).innerHTML = `
+
+            <span class="error">
+                ● خطا در دریافت اخبار
+            </span>
+
         `;
 
-        document.getElementById("newsCount").textContent = "—";
+
+        document.getElementById(
+            "lastUpdate"
+        ).innerText =
+            "اتصال به news.json برقرار نشد.";
+
+
+        document.getElementById(
+            "importantNews"
+        ).innerHTML = `
+
+            <div class="empty error">
+
+                ❌ فایل news.json
+                پیدا نشد یا قابل دسترسی نیست.
+
+            </div>
+
+        `;
+
+
+        document.getElementById(
+            "leagueNews"
+        ).innerHTML = `
+
+            <div class="empty">
+
+                ⏳ اخبار لیگ
+                در دسترس نیست.
+
+            </div>
+
+        `;
+
+
+        document.getElementById(
+            "teamNews"
+        ).innerHTML = `
+
+            <div class="empty">
+
+                ⏳ اخبار تیم
+                در دسترس نیست.
+
+            </div>
+
+        `;
+
+
+        document.getElementById(
+            "transferNews"
+        ).innerHTML = `
+
+            <div class="empty">
+
+                ⏳ اخبار نقل‌وانتقالات
+                در دسترس نیست.
+
+            </div>
+
+        `;
+
+
+        document.getElementById(
+            "allNews"
+        ).innerHTML = `
+
+            <div class="empty error">
+
+                ❌ فعلاً امکان دریافت اخبار وجود ندارد.
+
+            </div>
+
+        `;
+
     }
+
 }
 
-/* =========================
-   BREAKING TICKER
-========================= */
 
-function renderBreakingTicker(){
+/* ================= IMPORTANT ================= */
 
-    const track =
-        document.getElementById("breakingTrack");
-
-    if(!track) return;
+function renderImportant(){
 
     let list =
-        allNewsData.slice(0,8);
+        allNewsData.filter(
+            item => {
 
-    if(!list.length){
-        track.innerHTML =
-            `<div class="breaking-item">در حال دریافت اخبار فوتبال...</div>`;
-        return;
+                return (
+                    item.important === true ||
+                    item.important === "true" ||
+                    item.category === "important"
+                );
+
+            }
+        );
+
+
+    if(
+        list.length === 0
+    ){
+
+        list =
+            allNewsData.slice(
+                0,
+                3
+            );
+
     }
 
-    const html =
-        list.map(item => `
-            <div
-                class="breaking-item"
-                onclick="openNewsModal(${allNewsData.indexOf(item)})"
-            >
-                ${escapeHTML(item.title || "خبر جدید فوتبال")}
-            </div>
-        `).join("");
 
-    track.innerHTML =
-        html + html;
+    renderNews(
+        list,
+        "importantNews",
+        true
+    );
+
 }
 
-/* =========================
-   LEAGUES
-========================= */
+
+/* ================= LEAGUES ================= */
 
 function showLeague(
     league,
     button=null
 ){
 
-    selectedLeague = league;
+    selectedLeague =
+        league;
+
 
     if(button){
 
         document
-            .querySelectorAll("#leagues .tab")
-            .forEach(btn =>
-                btn.classList.remove("active")
+        .querySelectorAll(
+            ".tab"
+        )
+        .forEach(
+            x =>
+                x.classList.remove(
+                    "active"
+                )
+        );
+
+
+        button.classList.add(
+            "active"
+        );
+
+    }else{
+
+        document
+        .querySelectorAll(
+            ".tab"
+        )
+        .forEach(
+            x =>
+                x.classList.remove(
+                    "active"
+                )
+        );
+
+
+        const buttons =
+            document.querySelectorAll(
+                ".tab"
             );
 
-        button.classList.add("active");
+
+        if(
+            league === "laliga" &&
+            buttons[0]
+        ){
+
+            buttons[0].classList.add(
+                "active"
+            );
+
+        }
+
+
+        if(
+            league === "premier" &&
+            buttons[1]
+        ){
+
+            buttons[1].classList.add(
+                "active"
+            );
+
+        }
+
+
+        if(
+            league === "seriea" &&
+            buttons[2]
+        ){
+
+            buttons[2].classList.add(
+                "active"
+            );
+
+        }
 
     }
 
-    const keywords = {
 
-        laliga:[
-            "laliga",
-            "la liga",
-            "لیگا",
-            "اسپانیا",
-            "بارسلونا",
-            "رئال مادرید",
-            "atletico"
-        ],
+    if(
+        allNewsData.length === 0
+    ){
 
-        premier:[
-            "premier",
-            "لیگ برتر انگلیس",
-            "انگلیس",
-            "arsenal",
-            "liverpool",
-            "manchester",
-            "chelsea"
-        ],
+        return;
 
-        seriea:[
-            "serie a",
-            "سری آ",
-            "ایتالیا",
-            "inter",
-            "milan",
-            "juventus"
-        ]
+    }
 
-    };
 
-    const words =
-        keywords[league] || [];
+    const list =
+        allNewsData.filter(
+            item =>
+                item.category === league
+        );
 
-    const result =
-        allNewsData.filter(item => {
-
-            const text =
-                getItemText(item);
-
-            return words.some(
-                word =>
-                    text.includes(
-                        word.toLowerCase()
-                    )
-            );
-
-        });
 
     renderNews(
-        result.slice(0,9),
+        list,
         "leagueNews"
     );
+
 }
 
-/* =========================
-   TEAMS
-========================= */
+
+/* ================= TEAMS ================= */
 
 function teamSelect(
     button,
@@ -2249,441 +3506,302 @@ function teamSelect(
 ){
 
     document
-        .querySelectorAll(".team")
-        .forEach(btn =>
-            btn.classList.remove("active")
+    .querySelectorAll(
+        ".team"
+    )
+    .forEach(
+        x =>
+            x.classList.remove(
+                "active"
+            )
+    );
+
+
+    button.classList.add(
+        "active"
+    );
+
+
+    selectedTeam =
+        teamKey;
+
+
+    document.getElementById(
+        "teamTitle"
+    ).innerText =
+        "اخبار " + name;
+
+
+    renderTeamNews(
+        teamKey
+    );
+
+}
+
+
+function renderTeamNews(
+    teamKey
+){
+
+    if(
+        allNewsData.length === 0
+    ){
+
+        return;
+
+    }
+
+
+    const key =
+        String(
+            teamKey
+        ).toLowerCase();
+
+
+    const list =
+        allNewsData.filter(
+            item => {
+
+                const team =
+                    String(
+                        item.team || ""
+                    ).toLowerCase();
+
+
+                const teamFa =
+                    String(
+                        item.team_fa || ""
+                    ).toLowerCase();
+
+
+                const title =
+                    String(
+                        item.title || ""
+                    ).toLowerCase();
+
+
+                return (
+
+                    team === key ||
+
+                    team.includes(key) ||
+
+                    title.includes(key) ||
+
+                    teamFa.includes(key)
+
+                );
+
+            }
         );
 
-    button.classList.add("active");
-
-    selectedTeam = teamKey;
-
-    renderTeamNews(teamKey);
-}
-
-function renderTeamNews(teamKey){
-
-    const result =
-        allNewsData.filter(item => {
-
-            const text =
-                getItemText(item);
-
-            return text.includes(
-                teamKey.toLowerCase()
-            );
-
-        });
 
     renderNews(
-        result.slice(0,9),
+        list,
         "teamNews"
     );
+
 }
 
-/* =========================
-   TRANSFERS
-========================= */
+
+/* ================= TRANSFERS ================= */
 
 function renderTransfers(){
 
-    const el =
-        document.getElementById("transferGrid");
-
-    if(!el) return;
-
-    let transfers =
-        allNewsData.filter(item => {
-
-            const text =
-                getItemText(item);
-
-            return (
-                item.category === "transfers" ||
-                item.category === "transfer" ||
-                /transfer|transfers|انتقال|نقل و انتقال|نقل‌وانتقال|رسمی.*خرید|خرید.*بازیکن|قرارداد/i
-                    .test(text)
-            );
-
-        });
-
-    if(!transfers.length){
-
-        el.innerHTML = `
-            <div class="match-empty">
-                فعلاً خبر نقل‌وانتقالاتی جدیدی پیدا نشد.
-            </div>
-        `;
-
-        return;
-    }
-
-    el.innerHTML =
-        transfers.slice(0,9)
-        .map((item,index)=>{
-
-            const text =
-                getItemText(item);
-
-            const official =
-                /official|رسمی|confirmed|تایید/i
-                    .test(text);
-
-            return `
-
-            <article
-                class="transfer-card"
-                onclick="openNewsModal(${allNewsData.indexOf(item)})"
-            >
-
-                <div class="transfer-tag">
-                    ${official ? "رسمی" : "شایعه / گزارش"}
-                </div>
-
-                <div class="transfer-title">
-                    ${escapeHTML(item.title || "خبر نقل‌وانتقالاتی")}
-                </div>
-
-                <div class="transfer-info">
-                    ${escapeHTML(
-                        item.summary ||
-                        item.description ||
-                        "برای مشاهده جزئیات کلیک کنید."
-                    )}
-                </div>
-
-            </article>
-
-            `;
-
-        })
-        .join("");
-}
-
-/* =========================
-   HOT NEWS
-========================= */
-
-function getClickStats(){
-
-    try{
-        return JSON.parse(
-            localStorage.getItem(newsCacheKey) || "{}"
+    const list =
+        allNewsData.filter(
+            item =>
+                item.category === "transfers"
         );
-    }catch{
-        return {};
-    }
-}
 
-function saveClickStats(stats){
 
-    localStorage.setItem(
-        newsCacheKey,
-        JSON.stringify(stats)
+    renderNews(
+        list,
+        "transferNews"
     );
+
 }
 
-function registerNewsClick(index){
 
-    const stats =
-        getClickStats();
-
-    stats[index] =
-        Number(stats[index] || 0) + 1;
-
-    saveClickStats(stats);
-}
-
-function renderHotNews(){
-
-    const el =
-        document.getElementById("hotNews");
-
-    if(!el) return;
-
-    const stats =
-        getClickStats();
-
-    const sorted =
-        [...allNewsData]
-        .map((item,index)=>({
-            item,
-            index,
-            clicks:Number(stats[index] || 0)
-        }))
-        .sort((a,b)=>{
-
-            if(b.clicks !== a.clicks){
-                return b.clicks - a.clicks;
-            }
-
-            return a.index - b.index;
-
-        })
-        .slice(0,5);
-
-    if(!sorted.length){
-
-        el.innerHTML = `
-            <div class="match-empty">
-                هنوز خبری برای نمایش نیست.
-            </div>
-        `;
-
-        return;
-    }
-
-    el.innerHTML =
-        sorted.map((obj,i)=>`
-
-            <article
-                class="hot-card"
-                onclick="openNewsModal(${obj.index})"
-            >
-
-                <div class="hot-number">
-                    ${String(i+1).padStart(2,"0")}
-                </div>
-
-                <div class="hot-title">
-                    ${escapeHTML(
-                        obj.item.title ||
-                        "خبر فوتبالی"
-                    )}
-                </div>
-
-            </article>
-
-        `).join("");
-}
-
-/* =========================
-   NEWS MODAL
-========================= */
-
-function openNewsModal(index){
-
-    const item =
-        allNewsData[index];
-
-    if(!item) return;
-
-    currentNews = item;
-
-    registerNewsClick(index);
-
-    document.getElementById("modalSource").textContent =
-        item.source ||
-        item.publisher ||
-        "BARSAL";
-
-    document.getElementById("modalTitle").textContent =
-        item.title ||
-        "خبر فوتبالی";
-
-    document.getElementById("modalMeta").textContent =
-        formatDate(
-            item.published ||
-            item.pubDate ||
-            item.date
-        );
-
-    document.getElementById("modalSummary").textContent =
-        item.summary ||
-        item.description ||
-        "برای مشاهده متن کامل خبر به منبع اصلی مراجعه کنید.";
-
-    const link =
-        getItemLink(item);
-
-    const modalLink =
-        document.getElementById("modalLink");
-
-    modalLink.href = link;
-
-    document
-        .getElementById("newsModal")
-        .classList.add("show");
-
-    document.body.style.overflow =
-        "hidden";
-
-    renderHotNews();
-}
-
-function closeNewsModal(){
-
-    document
-        .getElementById("newsModal")
-        .classList.remove("show");
-
-    document.body.style.overflow =
-        "";
-}
-
-function closeModalOutside(event){
-
-    if(event.target.id === "newsModal"){
-        closeNewsModal();
-    }
-}
-
-document.addEventListener(
-    "keydown",
-    event => {
-
-        if(event.key === "Escape"){
-            closeNewsModal();
-        }
-
-    }
-);
-
-async function shareCurrentNews(){
-
-    if(!currentNews) return;
-
-    const title =
-        currentNews.title ||
-        "خبر BARSAL";
-
-    const url =
-        getItemLink(currentNews);
-
-    if(navigator.share){
-
-        try{
-
-            await navigator.share({
-                title,
-                text:title,
-                url
-            });
-
-        }catch{}
-
-        return;
-    }
-
-    try{
-
-        await navigator.clipboard.writeText(
-            `${title}\n${url}`
-        );
-
-        alert("لینک خبر کپی شد.");
-
-    }catch{
-
-        alert("امکان اشتراک‌گذاری وجود ندارد.");
-
-    }
-}
-
-/* =========================
-   SEARCH
-========================= */
+/* ================= SEARCH ================= */
 
 function searchNews(){
 
     const input =
-        document.getElementById("searchInput");
+        document.getElementById(
+            "search"
+        );
 
-    const query =
-        input.value.trim().toLowerCase();
 
-    const info =
-        document.getElementById("searchInfo");
-
-    const results =
-        document.getElementById("searchResults");
-
-    if(!query){
-
-        info.textContent =
-            "برای شروع جستجو چیزی بنویس.";
-
-        results.innerHTML = "";
-
+    if(!input){
         return;
     }
 
-    const filtered =
-        allNewsData.filter(item =>
-            getItemText(item).includes(query)
+
+    const query =
+        input.value
+        .trim()
+        .toLowerCase();
+
+
+    const box =
+        document.getElementById(
+            "allNews"
         );
 
-    info.textContent =
-        `${filtered.length} نتیجه برای «${query}»`;
+
+    if(!query){
+
+        box.innerHTML = `
+
+            <div class="empty">
+
+                🔎 برای پیدا کردن خبر،
+                عبارت موردنظر را جستجو کن.
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    const result =
+        allNewsData.filter(
+            item => {
+
+                const text = [
+
+                    item.title,
+                    item.summary,
+                    item.source,
+                    item.team,
+                    item.team_fa,
+                    item.category
+
+                ]
+                .filter(Boolean)
+                .join(" ")
+                .toLowerCase();
+
+
+                return text.includes(
+                    query
+                );
+
+            }
+        );
+
+
+    if(
+        result.length === 0
+    ){
+
+        box.innerHTML = `
+
+            <div class="empty">
+
+                😕 برای «
+                ${escapeHTML(query)}
+                »
+                خبری پیدا نشد.
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
 
     renderNews(
-        filtered.slice(0,30),
-        "searchResults"
+        result,
+        "allNews"
     );
+
 }
 
-function renderSearchIfNeeded(){
 
-    const input =
-        document.getElementById("searchInput");
+/* ===================================================== */
+/* ================= TODAY MATCHES ===================== */
+/* ===================================================== */
 
-    if(input && input.value.trim()){
-        searchNews();
+/*
+   منبع بازی‌ها:
+   ESPN public scoreboard API
+
+   این بخش کاملاً مستقل از news.json است.
+   اگر دریافت بازی‌ها با مشکل مواجه شود،
+   اخبار BARSAL همچنان کار می‌کنند.
+*/
+
+const MATCH_ENDPOINTS = [
+
+    {
+        name:"La Liga",
+        url:"https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard"
+    },
+
+    {
+        name:"Premier League",
+        url:"https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard"
+    },
+
+    {
+        name:"Serie A",
+        url:"https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard"
+    },
+
+    {
+        name:"Bundesliga",
+        url:"https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard"
+    },
+
+    {
+        name:"Ligue 1",
+        url:"https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard"
+    },
+
+    {
+        name:"MLS",
+        url:"https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard"
     }
-}
 
-/* =========================
-   ESPN MATCHES
-========================= */
+];
 
-const MATCH_ENDPOINTS = {
-
-    laliga:
-        "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard",
-
-    premier:
-        "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard",
-
-    seriea:
-        "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard",
-
-    bundesliga:
-        "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard",
-
-    ligue1:
-        "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard",
-
-    mls:
-        "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard"
-
-};
 
 function getTodayDate(){
 
-    const d = new Date();
+    const now =
+        new Date();
 
-    const y =
-        d.getFullYear();
+    const year =
+        now.getFullYear();
 
-    const m =
-        String(d.getMonth()+1)
-        .padStart(2,"0");
+    const month =
+        String(
+            now.getMonth()+1
+        ).padStart(2,"0");
 
     const day =
-        String(d.getDate())
-        .padStart(2,"0");
+        String(
+            now.getDate()
+        ).padStart(2,"0");
 
-    return `${y}${m}${day}`;
+    return `${year}${month}${day}`;
+
 }
 
-function dateToESPN(dateString){
-
-    return dateString.replaceAll("-","");
-}
 
 function formatMatchDate(){
 
-    return new Date().toLocaleDateString(
+    const date =
+        new Date();
+
+    return date.toLocaleDateString(
         "fa-IR",
         {
             weekday:"long",
@@ -2692,218 +3810,508 @@ function formatMatchDate(){
             day:"numeric"
         }
     );
+
 }
 
-function formatMatchTime(date){
 
-    if(!date) return "—";
+function formatMatchTime(dateString){
 
-    try{
-
-        return new Date(date)
-            .toLocaleTimeString(
-                "fa-IR",
-                {
-                    hour:"2-digit",
-                    minute:"2-digit"
-                }
-            );
-
-    }catch{
-        return "—";
+    if(!dateString){
+        return "--:--";
     }
+
+    const date =
+        new Date(dateString);
+
+    if(
+        isNaN(
+            date.getTime()
+        )
+    ){
+
+        return "--:--";
+
+    }
+
+    return date.toLocaleTimeString(
+        "fa-IR",
+        {
+            hour:"2-digit",
+            minute:"2-digit"
+        }
+    );
+
 }
+
 
 function cleanTeamName(name){
 
-    if(!name) return "نامشخص";
+    if(!name){
+        return "تیم";
+    }
 
-    return name
-        .replace(/\s+/g," ")
-        .trim();
+    return name;
+
 }
+
 
 function getTeamLogo(team){
 
-    return (
-        team?.logo ||
-        team?.logos?.[0]?.href ||
-        ""
-    );
+    if(
+        team &&
+        team.logo
+    ){
+
+        return team.logo;
+
+    }
+
+    if(
+        team &&
+        team.logos &&
+        team.logos.length
+    ){
+
+        return team.logos[0].href;
+
+    }
+
+    return
+        "https://a.espncdn.com/i/teamlogos/soccer/500/default-team-logo.png";
+
 }
+
 
 function getMatchStatus(event){
 
-    const state =
-        event?.competitions?.[0]
-        ?.status?.type;
-
-    if(!state) return "آینده";
-
-    if(state.completed){
-        return "پایان";
-    }
-
-    if(state.state === "in"){
-        return "زنده";
-    }
-
-    return "آینده";
-}
-
-function getCompetitionName(event){
-
-    return (
-        event?.league?.name ||
-        event?.season?.name ||
-        event?.competitions?.[0]
-        ?.league?.name ||
-        "فوتبال"
-    );
-}
-
-function convertMatch(
-    event,
-    leagueKey
-){
-
     const competition =
-        event?.competitions?.[0];
-
-    if(!competition){
-        return null;
-    }
-
-    const competitors =
-        competition.competitors || [];
-
-    const home =
-        competitors.find(
-            c => c.homeAway === "home"
-        ) ||
-        competitors[0];
-
-    const away =
-        competitors.find(
-            c => c.homeAway === "away"
-        ) ||
-        competitors[1];
-
-    if(!home || !away){
-        return null;
-    }
+        event.competitions &&
+        event.competitions[0];
 
     const status =
-        getMatchStatus(event);
+        competition &&
+        competition.status
+        ? competition.status
+        : event.status;
 
-    return {
 
-        id:
-            event.id ||
-            `${leagueKey}-${event.date}`,
+    if(!status){
 
-        league:
-            getCompetitionName(event),
+        return {
+            text:"برنامه‌ریزی شده",
+            type:"scheduled"
+        };
 
-        status,
-
-        date:
-            event.date,
-
-        home:{
-            name:
-                cleanTeamName(
-                    home.team?.displayName ||
-                    home.team?.shortDisplayName
-                ),
-            logo:
-                getTeamLogo(home.team),
-            score:
-                home.score
-        },
-
-        away:{
-            name:
-                cleanTeamName(
-                    away.team?.displayName ||
-                    away.team?.shortDisplayName
-                ),
-            logo:
-                getTeamLogo(away.team),
-            score:
-                away.score
-        }
-
-    };
-}
-
-async function fetchLeagueMatches(
-    leagueKey,
-    date
-){
-
-    const endpoint =
-        MATCH_ENDPOINTS[leagueKey];
-
-    if(!endpoint) return [];
-
-    const response =
-        await fetch(
-            endpoint +
-            "?dates=" +
-            date
-        );
-
-    if(!response.ok){
-        throw new Error(
-            `${leagueKey} failed`
-        );
     }
 
-    const data =
-        await response.json();
 
-    return (
-        data.events || []
-    )
-    .map(event =>
-        convertMatch(
-            event,
-            leagueKey
-        )
-    )
-    .filter(Boolean);
+    const state =
+        status.type &&
+        status.type.state
+        ?
+        status.type.state
+        :
+        "";
+
+
+    const detail =
+        status.type &&
+        status.type.detail
+        ?
+        status.type.detail
+        :
+        "";
+
+
+    const shortDetail =
+        status.type &&
+        status.type.shortDetail
+        ?
+        status.type.shortDetail
+        :
+        "";
+
+
+    if(
+        state === "in"
+    ){
+
+        return {
+            text:
+                detail ||
+                "LIVE",
+            type:"live"
+        };
+
+    }
+
+
+    if(
+        state === "post"
+    ){
+
+        return {
+            text:"پایان",
+            type:"finished"
+        };
+
+    }
+
+
+    return {
+        text:
+            shortDetail ||
+            detail ||
+            "شروع نشده",
+        type:"scheduled"
+    };
 
 }
 
-async function getAllMatches(date){
 
-    const keys =
-        Object.keys(MATCH_ENDPOINTS);
+function getCompetitionName(event,fallback){
+
+    try{
+
+        const competition =
+            event.competitions[0];
+
+        if(
+            competition &&
+            competition.league &&
+            competition.league.name
+        ){
+
+            return competition.league.name;
+
+        }
+
+        if(
+            event.league &&
+            event.league.name
+        ){
+
+            return event.league.name;
+
+        }
+
+    }catch(e){}
+
+    return fallback;
+
+}
+
+
+function convertMatch(event,leagueName){
+
+    try{
+
+        const competition =
+            event.competitions &&
+            event.competitions[0];
+
+        if(!competition){
+            return null;
+        }
+
+
+        const competitors =
+            competition.competitors || [];
+
+
+        if(
+            competitors.length < 2
+        ){
+
+            return null;
+
+        }
+
+
+        let home =
+            competitors.find(
+                team =>
+                    team.homeAway === "home"
+            );
+
+
+        let away =
+            competitors.find(
+                team =>
+                    team.homeAway === "away"
+            );
+
+
+        if(!home){
+            home = competitors[0];
+        }
+
+        if(!away){
+            away = competitors[1];
+        }
+
+
+        const status =
+            getMatchStatus(event);
+
+
+        const homeScore =
+            home &&
+            home.score !== undefined
+            ?
+            home.score
+            :
+            "";
+
+
+        const awayScore =
+            away &&
+            away.score !== undefined
+            ?
+            away.score
+            :
+            "";
+
+
+        return {
+
+            id:
+                event.id ||
+                Math.random().toString(),
+
+            league:
+                getCompetitionName(
+                    event,
+                    leagueName
+                ),
+
+            home:{
+                name:
+                    cleanTeamName(
+                        home.team &&
+                        home.team.displayName
+                    ),
+
+                logo:
+                    getTeamLogo(
+                        home.team
+                    )
+            },
+
+            away:{
+                name:
+                    cleanTeamName(
+                        away.team &&
+                        away.team.displayName
+                    ),
+
+                logo:
+                    getTeamLogo(
+                        away.team
+                    )
+            },
+
+            date:
+                event.date ||
+                "",
+
+            status:
+                status.text,
+
+            statusType:
+                status.type,
+
+            homeScore:
+                homeScore,
+
+            awayScore:
+                awayScore
+
+        };
+
+    }catch(error){
+
+        console.error(
+            "Match conversion error:",
+            error
+        );
+
+        return null;
+
+    }
+
+}
+
+
+async function fetchLeagueMatches(
+    endpoint
+){
+
+    try{
+
+        const url =
+            endpoint.url +
+            "?dates=" +
+            getTodayDate();
+
+
+        const response =
+            await fetch(
+                url,
+                {
+                    cache:"no-store"
+                }
+            );
+
+
+        if(!response.ok){
+
+            throw new Error(
+                "HTTP " +
+                response.status
+            );
+
+        }
+
+
+        const data =
+            await response.json();
+
+
+        if(
+            !data.events ||
+            !Array.isArray(
+                data.events
+            )
+        ){
+
+            return [];
+
+        }
+
+
+        return data.events
+            .map(
+                event =>
+                    convertMatch(
+                        event,
+                        endpoint.name
+                    )
+            )
+            .filter(Boolean);
+
+    }catch(error){
+
+        console.warn(
+            "Match API failed:",
+            endpoint.name,
+            error
+        );
+
+        return [];
+
+    }
+
+}
+
+
+async function loadTodayMatches(){
+
+    const grid =
+        document.getElementById(
+            "matchesGrid"
+        );
+
+
+    const statusBox =
+        document.getElementById(
+            "matchesStatus"
+        );
+
+
+    const dateBox =
+        document.getElementById(
+            "matchesDate"
+        );
+
+
+    if(!grid){
+        return;
+    }
+
+
+    if(dateBox){
+
+        dateBox.innerText =
+            formatMatchDate();
+
+    }
+
+
+    if(statusBox){
+
+        statusBox.innerText =
+            "● در حال بروزرسانی...";
+
+        statusBox.style.color =
+            "var(--gold)";
+
+    }
+
+
+    grid.innerHTML = `
+
+        <div class="match-empty">
+
+            ⏳ در حال دریافت برنامه بازی‌های امروز...
+
+        </div>
+
+    `;
+
 
     const results =
-        await Promise.allSettled(
-            keys.map(key =>
-                fetchLeagueMatches(
-                    key,
-                    date
-                )
+        await Promise.all(
+            MATCH_ENDPOINTS.map(
+                endpoint =>
+                    fetchLeagueMatches(
+                        endpoint
+                    )
             )
         );
 
-    const matches = [];
 
-    results.forEach(result => {
+    let matches =
+        results.flat();
 
-        if(
-            result.status === "fulfilled"
-        ){
-            matches.push(
-                ...result.value
-            );
-        }
 
-    });
+    const seen =
+        new Set();
+
+
+    matches =
+        matches.filter(
+            match => {
+
+                if(
+                    seen.has(
+                        match.id
+                    )
+                ){
+
+                    return false;
+
+                }
+
+                seen.add(
+                    match.id
+                );
+
+                return true;
+
+            }
+        );
+
 
     matches.sort(
         (a,b) =>
@@ -2911,981 +4319,306 @@ async function getAllMatches(date){
             new Date(b.date)
     );
 
-    return matches;
+
+    if(
+        matches.length === 0
+    ){
+
+        grid.innerHTML = `
+
+            <div class="match-empty">
+
+                <div style="font-size:30px;margin-bottom:8px;">
+                    ⚽
+                </div>
+
+                <strong>
+                    امروز بازی‌ای از لیگ‌های اصلی پیدا نشد.
+                </strong>
+
+                <div style="margin-top:6px;font-size:9px;">
+                    برای دیدن بازی‌های روزهای دیگر،
+                    بعداً می‌توانیم تقویم کامل مسابقات را هم اضافه کنیم.
+                </div>
+
+            </div>
+
+        `;
+
+
+        if(statusBox){
+
+            statusBox.innerText =
+                "● بروزرسانی شد";
+
+            statusBox.style.color =
+                "var(--green)";
+
+        }
+
+        return;
+
+    }
+
+
+    grid.innerHTML =
+        matches
+        .map(
+            match =>
+                createMatchCard(
+                    match
+                )
+        )
+        .join("");
+
+
+    if(statusBox){
+
+        statusBox.innerText =
+            "● " +
+            matches.length +
+            " بازی امروز";
+
+        statusBox.style.color =
+            "var(--green)";
+
+    }
+
 }
+
 
 function createMatchCard(match){
 
-    const statusClass =
-        match.status === "زنده"
-        ? "live"
-        : match.status === "پایان"
-        ? "finished"
-        : "";
+    const isLive =
+        match.statusType ===
+        "live";
+
 
     const isFinished =
-        match.status === "پایان" ||
-        match.status === "زنده";
+        match.statusType ===
+        "finished";
 
-    const score =
-        isFinished
-        ? `
-            <div class="match-score">
-                ${escapeHTML(match.home.score ?? "0")}
-                -
-                ${escapeHTML(match.away.score ?? "0")}
-            </div>
-        `
-        : `
-            <div class="match-time">
-                ${formatMatchTime(match.date)}
-            </div>
-        `;
 
-    return `
+    let centerContent;
 
-    <article class="match-card">
-
-        <div class="match-league">
-
-            <span>
-                ${escapeHTML(match.league)}
-            </span>
-
-            <span class="match-status ${statusClass}">
-                ${match.status}
-            </span>
-
-        </div>
-
-        <div class="match-teams">
-
-            <div class="match-team">
-
-                ${
-                    match.home.logo
-                    ?
-                    `<img
-                        class="match-logo"
-                        src="${escapeHTML(match.home.logo)}"
-                        onerror="this.style.display='none'"
-                    >`
-                    :
-                    ""
-                }
-
-                <div class="match-team-name">
-                    ${escapeHTML(match.home.name)}
-                </div>
-
-            </div>
-
-            <div>
-                ${score}
-            </div>
-
-            <div class="match-team">
-
-                ${
-                    match.away.logo
-                    ?
-                    `<img
-                        class="match-logo"
-                        src="${escapeHTML(match.away.logo)}"
-                        onerror="this.style.display='none'"
-                    >`
-                    :
-                    ""
-                }
-
-                <div class="match-team-name">
-                    ${escapeHTML(match.away.name)}
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="match-footer">
-            ${formatMatchTime(match.date)}
-        </div>
-
-        ${
-            !isFinished
-            ? createPrediction(match)
-            : ""
-        }
-
-    </article>
-
-    `;
-}
-
-/* =========================
-   PREDICTIONS
-========================= */
-
-function getPredictions(){
-
-    try{
-
-        return JSON.parse(
-            localStorage.getItem(
-                predictionStorageKey
-            ) || "{}"
-        );
-
-    }catch{
-
-        return {};
-
-    }
-}
-
-function savePredictions(data){
-
-    localStorage.setItem(
-        predictionStorageKey,
-        JSON.stringify(data)
-    );
-}
-
-function createPrediction(match){
-
-    const predictions =
-        getPredictions();
-
-    const selected =
-        predictions[match.id];
-
-    return `
-
-    <div class="prediction">
-
-        <div class="prediction-title">
-            پیش‌بینی شما
-        </div>
-
-        <div class="prediction-buttons">
-
-            <button
-                class="${selected === "home" ? "selected" : ""}"
-                onclick="event.stopPropagation();votePrediction('${escapeHTML(match.id)}','home')"
-            >
-                ${escapeHTML(match.home.name.slice(0,12))}
-            </button>
-
-            <button
-                class="${selected === "draw" ? "selected" : ""}"
-                onclick="event.stopPropagation();votePrediction('${escapeHTML(match.id)}','draw')"
-            >
-                مساوی
-            </button>
-
-            <button
-                class="${selected === "away" ? "selected" : ""}"
-                onclick="event.stopPropagation();votePrediction('${escapeHTML(match.id)}','away')"
-            >
-                ${escapeHTML(match.away.name.slice(0,12))}
-            </button>
-
-        </div>
-
-    </div>
-
-    `;
-}
-
-function votePrediction(
-    matchId,
-    choice
-){
-
-    const predictions =
-        getPredictions();
-
-    predictions[matchId] =
-        choice;
-
-    savePredictions(predictions);
-
-    alert(
-        choice === "home"
-        ? "پیش‌بینی شما: برد تیم میزبان ⚽"
-        : choice === "away"
-        ? "پیش‌بینی شما: برد تیم مهمان ⚽"
-        : "پیش‌بینی شما: مساوی 🤝"
-    );
 
     if(
-        window.currentDisplayedMatches
+        isLive ||
+        isFinished
     ){
-        renderMatches(
-            window.currentDisplayedMatches,
-            "matchesGrid"
-        );
-    }
 
-}
+        centerContent = `
 
-function renderMatches(
-    matches,
-    elementId
-){
+            <div class="match-score">
 
-    const el =
-        document.getElementById(elementId);
-
-    if(!el) return;
-
-    if(!matches.length){
-
-        el.innerHTML = `
-            <div class="match-empty">
-                برای این تاریخ بازی‌ای پیدا نشد.
-            </div>
-        `;
-
-        return;
-    }
-
-    el.innerHTML =
-        matches.map(
-            createMatchCard
-        ).join("");
-
-}
-
-async function loadTodayMatches(){
-
-    const date =
-        getTodayDate();
-
-    document.getElementById(
-        "matchesDate"
-    ).textContent =
-        formatMatchDate();
-
-    try{
-
-        const matches =
-            await getAllMatches(date);
-
-        window.currentDisplayedMatches =
-            matches;
-
-        renderMatches(
-            matches,
-            "matchesGrid"
-        );
-
-        document.getElementById(
-            "matchCount"
-        ).textContent =
-            matches.length;
-
-        document.getElementById(
-            "matchesStatus"
-        ).textContent =
-            "● اطلاعات بازی‌ها به‌روز شد";
-
-    }catch(error){
-
-        console.error(error);
-
-        document.getElementById(
-            "matchesGrid"
-        ).innerHTML = `
-            <div class="match-error">
-                دریافت بازی‌ها با مشکل مواجه شد.
-                دوباره تلاش می‌کنیم.
-            </div>
-        `;
-
-        document.getElementById(
-            "matchesStatus"
-        ).textContent =
-            "● خطا در دریافت اطلاعات";
-
-    }
-
-}
-
-/* =========================
-   CALENDAR
-========================= */
-
-function setCalendarToday(){
-
-    const input =
-        document.getElementById(
-            "calendarDate"
-        );
-
-    const now =
-        new Date();
-
-    const y =
-        now.getFullYear();
-
-    const m =
-        String(now.getMonth()+1)
-        .padStart(2,"0");
-
-    const d =
-        String(now.getDate())
-        .padStart(2,"0");
-
-    input.value =
-        `${y}-${m}-${d}`;
-
-    loadCalendarMatches();
-}
-
-function changeCalendarDate(days){
-
-    const input =
-        document.getElementById(
-            "calendarDate"
-        );
-
-    let date =
-        input.value
-        ? new Date(input.value + "T12:00:00")
-        : new Date();
-
-    date.setDate(
-        date.getDate() + days
-    );
-
-    const y =
-        date.getFullYear();
-
-    const m =
-        String(date.getMonth()+1)
-        .padStart(2,"0");
-
-    const d =
-        String(date.getDate())
-        .padStart(2,"0");
-
-    input.value =
-        `${y}-${m}-${d}`;
-
-    loadCalendarMatches();
-}
-
-async function loadCalendarMatches(){
-
-    const input =
-        document.getElementById(
-            "calendarDate"
-        );
-
-    const grid =
-        document.getElementById(
-            "calendarGrid"
-        );
-
-    if(!input.value){
-        return;
-    }
-
-    grid.innerHTML = `
-        <div class="match-empty">
-            در حال دریافت بازی‌های این تاریخ...
-        </div>
-    `;
-
-    try{
-
-        const date =
-            dateToESPN(
-                input.value
-            );
-
-        const matches =
-            await getAllMatches(date);
-
-        renderMatches(
-            matches,
-            "calendarGrid"
-        );
-
-    }catch(error){
-
-        grid.innerHTML = `
-            <div class="match-error">
-                دریافت تقویم بازی‌ها با مشکل مواجه شد.
-            </div>
-        `;
-
-    }
-
-}
-
-/* =========================
-   STANDINGS
-========================= */
-
-const STANDING_ENDPOINTS = {
-
-    laliga:
-        "https://site.api.espn.com/apis/v2/sports/soccer/esp.1/standings",
-
-    premier:
-        "https://site.api.espn.com/apis/v2/sports/soccer/eng.1/standings",
-
-    seriea:
-        "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings"
-
-};
-
-function statValue(stats,names){
-
-    if(!Array.isArray(stats)){
-        return null;
-    }
-
-    const found =
-        stats.find(stat =>
-            names.includes(
-                String(
-                    stat.name ||
-                    stat.abbreviation ||
-                    ""
-                ).toLowerCase()
-            )
-        );
-
-    if(!found) return null;
-
-    return (
-        found.displayValue ??
-        found.value ??
-        null
-    );
-}
-
-async function loadStandings(
-    league="laliga"
-){
-
-    const body =
-        document.getElementById(
-            "standingsBody"
-        );
-
-    body.innerHTML = `
-        <tr>
-            <td colspan="8">
-                در حال دریافت جدول...
-            </td>
-        </tr>
-    `;
-
-    try{
-
-        const response =
-            await fetch(
-                STANDING_ENDPOINTS[league]
-            );
-
-        if(!response.ok){
-            throw new Error("standings failed");
-        }
-
-        const data =
-            await response.json();
-
-        let entries = [];
-
-        if(
-            data.children &&
-            data.children[0] &&
-            Array.isArray(
-                data.children[0].standings?.entries
-            )
-        ){
-
-            entries =
-                data.children[0]
-                .standings
-                .entries;
-
-        }
-        else if(
-            Array.isArray(
-                data.standings?.entries
-            )
-        ){
-
-            entries =
-                data.standings.entries;
-
-        }
-
-        if(!entries.length){
-            throw new Error("No standings");
-        }
-
-        body.innerHTML =
-            entries.map(
-                (entry,index)=>{
-
-                    const team =
-                        entry.team || {};
-
-                    const stats =
-                        entry.stats || [];
-
-                    const rank =
-                        statValue(
-                            stats,
-                            ["rank","rk"]
-                        ) ??
-                        index + 1;
-
-                    const games =
-                        statValue(
-                            stats,
-                            ["gamesPlayed","gp"]
-                        ) ??
-                        statValue(
-                            stats,
-                            ["games","g"]
-                        ) ??
-                        "—";
-
-                    const wins =
-                        statValue(
-                            stats,
-                            ["wins","w"]
-                        ) ?? "—";
-
-                    const ties =
-                        statValue(
-                            stats,
-                            ["ties","draws","d"]
-                        ) ?? "—";
-
-                    const losses =
-                        statValue(
-                            stats,
-                            ["losses","l"]
-                        ) ?? "—";
-
-                    const diff =
-                        statValue(
-                            stats,
-                            [
-                                "differential",
-                                "goalDifference",
-                                "gd"
-                            ]
-                        ) ?? "—";
-
-                    const points =
-                        statValue(
-                            stats,
-                            ["points","pts"]
-                        ) ?? "—";
-
-                    const logo =
-                        team.logos?.[0]?.href ||
-                        "";
-
-                    return `
-
-                    <tr>
-
-                        <td class="rank">
-                            ${escapeHTML(rank)}
-                        </td>
-
-                        <td>
-
-                            <div class="table-team">
-
-                                ${
-                                    logo
-                                    ?
-                                    `<img
-                                        class="table-logo"
-                                        src="${escapeHTML(logo)}"
-                                        onerror="this.style.display='none'"
-                                    >`
-                                    :
-                                    ""
-                                }
-
-                                <span>
-                                    ${escapeHTML(
-                                        team.displayName ||
-                                        team.name ||
-                                        "تیم"
-                                    )}
-                                </span>
-
-                            </div>
-
-                        </td>
-
-                        <td>${escapeHTML(games)}</td>
-                        <td>${escapeHTML(wins)}</td>
-                        <td>${escapeHTML(ties)}</td>
-                        <td>${escapeHTML(losses)}</td>
-                        <td>${escapeHTML(diff)}</td>
-
-                        <td class="points">
-                            ${escapeHTML(points)}
-                        </td>
-
-                    </tr>
-
-                    `;
-
-                }
-            ).join("");
-
-    }catch(error){
-
-        console.error(error);
-
-        body.innerHTML = `
-            <tr>
-                <td colspan="8">
-                    اطلاعات جدول فعلاً در دسترس نیست.
-                </td>
-            </tr>
-        `;
-
-    }
-
-}
-
-function showStandings(
-    league,
-    button
-){
-
-    document
-        .querySelectorAll(
-            "#standings .tab"
-        )
-        .forEach(btn =>
-            btn.classList.remove("active")
-        );
-
-    if(button){
-        button.classList.add("active");
-    }
-
-    loadStandings(league);
-}
-
-/* =========================
-   POLL
-========================= */
-
-const polls = [
-
-    {
-        question:
-            "بهترین لیگ اروپا کدام است؟",
-
-        options:[
-            "لالیگا",
-            "لیگ برتر انگلیس",
-            "سری A",
-            "بوندسلیگا"
-        ]
-    },
-
-    {
-        question:
-            "کدام سبک فوتبال را بیشتر دوست داری؟",
-
-        options:[
-            "پاس‌کاری",
-            "حمله سریع",
-            "دفاع منظم",
-            "فوتبال فیزیکی"
-        ]
-    },
-
-    {
-        question:
-            "کدام بخش فوتبال برایت جذاب‌تر است؟",
-
-        options:[
-            "بازی‌ها",
-            "نقل‌وانتقالات",
-            "اخبار",
-            "جدول لیگ‌ها"
-        ]
-    }
-
-];
-
-let currentPoll =
-    new Date().getDate()
-    % polls.length;
-
-function getPollData(){
-
-    try{
-
-        return JSON.parse(
-            localStorage.getItem(
-                pollStorageKey
-            ) || "{}"
-        );
-
-    }catch{
-
-        return {};
-
-    }
-}
-
-function renderPoll(){
-
-    const poll =
-        polls[currentPoll];
-
-    const data =
-        getPollData();
-
-    const pollId =
-        String(currentPoll);
-
-    if(!data[pollId]){
-        data[pollId] = {
-            votes:{},
-            selected:null
-        };
-    }
-
-    const state =
-        data[pollId];
-
-    document.getElementById(
-        "pollQuestion"
-    ).textContent =
-        poll.question;
-
-    const total =
-        Object.values(
-            state.votes
-        ).reduce(
-            (a,b)=>a+b,
-            0
-        );
-
-    document.getElementById(
-        "pollOptions"
-    ).innerHTML =
-
-        poll.options.map(
-            (option,index)=>{
-
-                const votes =
-                    Number(
-                        state.votes[index] || 0
-                    );
-
-                const percent =
-                    total
-                    ? Math.round(
-                        votes / total * 100
+                ${escapeHTML(
+                    String(
+                        match.homeScore ??
+                        ""
                     )
-                    : 0;
+                )}
 
-                const selected =
-                    state.selected === index
-                    ? "selected"
-                    : "";
+                -
 
-                return `
+                ${escapeHTML(
+                    String(
+                        match.awayScore ??
+                        ""
+                    )
+                )}
 
-                <div class="poll-option ${selected}">
+            </div>
 
-                    <button
-                        onclick="votePoll(${index})"
+        `;
+
+    }else{
+
+        centerContent = `
+
+            <div class="match-time">
+
+                ${escapeHTML(
+                    formatMatchTime(
+                        match.date
+                    )
+                )}
+
+            </div>
+
+        `;
+
+    }
+
+
+    return `
+
+        <article
+            class="match-card"
+        >
+
+            <div class="match-league">
+
+                <span>
+                    🏆 ${escapeHTML(
+                        match.league
+                    )}
+                </span>
+
+                <span
+                    class="match-status ${
+                        isLive
+                        ? "live"
+                        :
+                        isFinished
+                        ? "finished"
+                        :
+                        ""
+                    }"
+                >
+                    ${
+                        isLive
+                        ? "🔴 LIVE"
+                        :
+                        escapeHTML(
+                            match.status
+                        )
+                    }
+                </span>
+
+            </div>
+
+
+            <div class="match-teams">
+
+
+                <div class="match-team">
+
+                    <img
+                        class="match-logo"
+                        src="${escapeHTML(
+                            match.home.logo
+                        )}"
+                        alt="${escapeHTML(
+                            match.home.name
+                        )}"
+                        loading="lazy"
+                        onerror="this.src='https://a.espncdn.com/i/teamlogos/soccer/500/default-team-logo.png'"
                     >
 
-                        <div style="
-                            display:flex;
-                            justify-content:space-between;
-                            gap:10px;
-                        ">
+                    <div class="match-team-name">
 
-                            <span>
-                                ${escapeHTML(option)}
-                            </span>
+                        ${escapeHTML(
+                            match.home.name
+                        )}
 
-                            <span>
-                                ${percent}%
-                            </span>
-
-                        </div>
-
-                        <div class="poll-progress">
-                            <span
-                                style="width:${percent}%"
-                            ></span>
-                        </div>
-
-                    </button>
+                    </div>
 
                 </div>
 
-                `;
 
-            }
-        ).join("");
+                <div class="match-vs">
 
-    localStorage.setItem(
-        pollStorageKey,
-        JSON.stringify(data)
-    );
+                    ${centerContent}
+
+                    ${
+                        !isLive &&
+                        !isFinished
+                        ?
+                        `
+                        <span>
+                            VS
+                        </span>
+                        `
+                        :
+                        ""
+                    }
+
+                </div>
+
+
+                <div class="match-team">
+
+                    <img
+                        class="match-logo"
+                        src="${escapeHTML(
+                            match.away.logo
+                        )}"
+                        alt="${escapeHTML(
+                            match.away.name
+                        )}"
+                        loading="lazy"
+                        onerror="this.src='https://a.espncdn.com/i/teamlogos/soccer/500/default-team-logo.png'"
+                    >
+
+                    <div class="match-team-name">
+
+                        ${escapeHTML(
+                            match.away.name
+                        )}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="match-footer">
+
+                <span>
+                    ${escapeHTML(
+                        formatMatchTime(
+                            match.date
+                        )
+                    )}
+                </span>
+
+                <span>
+                    BARSAL
+                </span>
+
+                <span>
+                    ⚽ Football
+                </span>
+
+            </div>
+
+        </article>
+
+    `;
+
 }
 
-function votePoll(index){
 
-    const data =
-        getPollData();
+/* ================= MATCH AUTO REFRESH ================= */
 
-    const pollId =
-        String(currentPoll);
+setInterval(
+    function(){
 
-    if(!data[pollId]){
+        loadTodayMatches();
 
-        data[pollId] = {
-            votes:{},
-            selected:null
-        };
+    },
+    15 * 60 * 1000
+);
 
-    }
 
-    const state =
-        data[pollId];
+/* ================= NEWS AUTO REFRESH ================= */
 
-    if(state.selected !== null){
-        return;
-    }
+setInterval(
+    function(){
 
-    state.votes[index] =
-        Number(
-            state.votes[index] || 0
-        ) + 1;
+        loadNews();
 
-    state.selected =
-        index;
+    },
+    15 * 60 * 1000
+);
 
-    localStorage.setItem(
-        pollStorageKey,
-        JSON.stringify(data)
-    );
 
-    renderPoll();
-}
-
-/* =========================
-   START
-========================= */
-
-function initializeCalendar(){
-
-    const input =
-        document.getElementById(
-            "calendarDate"
-        );
-
-    const now =
-        new Date();
-
-    const y =
-        now.getFullYear();
-
-    const m =
-        String(now.getMonth()+1)
-        .padStart(2,"0");
-
-    const d =
-        String(now.getDate())
-        .padStart(2,"0");
-
-    input.value =
-        `${y}-${m}-${d}`;
-}
+/* ================= START ================= */
 
 loadNews();
 
 loadTodayMatches();
-
-loadStandings("laliga");
-
-renderPoll();
-
-initializeCalendar();
-
-setTimeout(
-    loadCalendarMatches,
-    800
-);
-
-/*
-    اخبار هر 15 دقیقه
-*/
-setInterval(
-    loadNews,
-    15 * 60 * 1000
-);
-
-/*
-    بازی‌های امروز هر 15 دقیقه
-*/
-setInterval(
-    loadTodayMatches,
-    15 * 60 * 1000
-);
-
-/*
-    جدول هر 30 دقیقه
-*/
-setInterval(
-    () => loadStandings(
-        selectedStandingsLeague()
-    ),
-    30 * 60 * 1000
-);
-
-function selectedStandingsLeague(){
-
-    const active =
-        document.querySelector(
-            "#standings .tab.active"
-        );
-
-    if(!active){
-        return "laliga";
-    }
-
-    const text =
-        active.textContent;
-
-    if(text.includes("برتر")){
-        return "premier";
-    }
-
-    if(text.includes("سری")){
-        return "seriea";
-    }
-
-    return "laliga";
-}
 
 </script>
 

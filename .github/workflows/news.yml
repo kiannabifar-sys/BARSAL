@@ -1,0 +1,48 @@
+name: BARSAL Auto News
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+
+  update-news:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: دریافت فایل‌های BARSAL
+        uses: actions/checkout@v4
+
+      - name: راه‌اندازی Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: نصب کتابخانه‌ها
+        run: |
+          pip install requests
+          pip install feedparser
+
+      - name: دریافت اخبار جدید فوتبال
+        run: |
+          python scripts/update_news.py
+
+      - name: ذخیره اخبار جدید در GitHub
+        run: |
+
+          git config user.name "BARSAL News Bot"
+
+          git config user.email "actions@users.noreply.github.com"
+
+          git add news.json
+
+          git diff --cached --quiet || git commit -m "BARSAL Auto News Update"
+
+          git push

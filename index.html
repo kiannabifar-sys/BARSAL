@@ -1,83 +1,35 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="BARSAL | رسانه حرفه‌ای اخبار فوتبال">
-<meta name="theme-color" content="#08080a">
+<meta name="description" content="BARSAL | اخبار روز فوتبال، لیگ‌ها، تیم‌های بزرگ و نقل‌وانتقالات">
 
-<title>BARSAL | Football Media</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-<!-- QR CODE LIBRARY -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<title>BARSAL | اخبار فوتبال</title>
 
 <style>
 
-/* =====================================================
-   ROOT
-===================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
 
 :root{
-
-    --bg:#050507;
-    --bg2:#09090c;
-
-    --card:rgba(18,18,23,.72);
-    --card-solid:#111116;
-
-    --text:#ffffff;
-    --muted:#92929c;
-
-    --red:#e50914;
-    --red2:#ff3340;
-
-    --gold:#f4c542;
-
-    --green:#29e36d;
-
-    --line:rgba(255,255,255,.085);
-
-    --glass:rgba(255,255,255,.045);
-
-    --shadow:0 25px 80px rgba(0,0,0,.45);
-
-    --radius:22px;
+    --bg:#07090d;
+    --bg2:#0d1118;
+    --card:#11161e;
+    --card2:#151b24;
+    --text:#f5f7fa;
+    --muted:#9aa4b2;
+    --line:#252c36;
+    --red:#e21d2d;
+    --red2:#a90f1b;
+    --gold:#f0c75e;
+    --green:#25c477;
 }
-
-body.light{
-
-    --bg:#f3f4f6;
-    --bg2:#ffffff;
-
-    --card:rgba(255,255,255,.78);
-    --card-solid:#ffffff;
-
-    --text:#111217;
-    --muted:#666872;
-
-    --line:rgba(0,0,0,.09);
-
-    --glass:rgba(0,0,0,.035);
-
-    --shadow:0 20px 60px rgba(0,0,0,.10);
-}
-
-
-/* =====================================================
-   RESET
-===================================================== */
 
 *{
+    box-sizing:border-box;
     margin:0;
     padding:0;
-    box-sizing:border-box;
 }
 
 html{
@@ -85,60 +37,18 @@ html{
 }
 
 body{
-
     font-family:"Vazirmatn",sans-serif;
-
     background:
-
-        radial-gradient(
-            circle at 10% 0%,
-            rgba(229,9,20,.15),
-            transparent 28%
-        ),
-
-        radial-gradient(
-            circle at 90% 20%,
-            rgba(244,197,66,.06),
-            transparent 25%
-        ),
-
-        var(--bg);
-
+    radial-gradient(circle at 85% 0%,#3a1015 0%,transparent 30%),
+    radial-gradient(circle at 0% 30%,#17100b 0%,transparent 25%),
+    var(--bg);
     color:var(--text);
-
     line-height:1.8;
-
-    overflow-x:hidden;
-
-    transition:.35s;
-}
-
-body::before{
-
-    content:"";
-
-    position:fixed;
-
-    width:550px;
-    height:550px;
-
-    left:-300px;
-    bottom:-300px;
-
-    background:rgba(229,9,20,.07);
-
-    filter:blur(130px);
-
-    border-radius:50%;
-
-    pointer-events:none;
-
-    z-index:-1;
 }
 
 a{
-    color:inherit;
     text-decoration:none;
+    color:inherit;
 }
 
 button,
@@ -146,1414 +56,542 @@ input{
     font-family:inherit;
 }
 
-button{
-    cursor:pointer;
-}
-
-.container{
-
-    width:min(1180px,92%);
-
-    margin:auto;
-}
-
-
-/* =====================================================
-   HEADER
-===================================================== */
-
 header{
-
     position:sticky;
-
     top:0;
-
     z-index:1000;
-
-    background:rgba(5,5,7,.72);
-
-    backdrop-filter:blur(22px);
-
+    min-height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+    padding:10px 6%;
+    background:rgba(7,9,13,.88);
+    backdrop-filter:blur(18px);
     border-bottom:1px solid var(--line);
 }
 
-body.light header{
-    background:rgba(255,255,255,.78);
-}
-
-.header-inner{
-
-    min-height:76px;
-
+.logo-box{
     display:flex;
-
     align-items:center;
-
-    justify-content:space-between;
-
-    gap:20px;
+    gap:12px;
 }
 
 .logo{
-
-    font-size:29px;
-
-    font-weight:900;
-
-    letter-spacing:3px;
-
-    position:relative;
-}
-
-.logo span{
-    color:var(--red);
-}
-
-.logo::after{
-
-    content:"";
-
-    position:absolute;
-
-    width:6px;
-    height:6px;
-
-    background:var(--red);
-
-    border-radius:50%;
-
-    right:-9px;
-    bottom:8px;
-
-    box-shadow:0 0 15px var(--red);
-}
-
-nav{
-
+    width:45px;
+    height:45px;
+    border-radius:14px;
     display:flex;
-
-    gap:22px;
-
     align-items:center;
+    justify-content:center;
+    font-size:27px;
+    font-weight:900;
+    background:linear-gradient(135deg,var(--red),#26090c);
+    box-shadow:0 8px 30px #e21d2d40;
 }
 
-nav a{
+.logo-text strong{
+    display:block;
+    font-size:23px;
+    letter-spacing:2px;
+}
 
+.logo-text small{
     color:var(--muted);
-
-    font-size:12px;
-
-    font-weight:700;
-
-    position:relative;
-
-    transition:.25s;
-}
-
-nav a:hover{
-    color:var(--text);
-}
-
-nav a::after{
-
-    content:"";
-
-    position:absolute;
-
-    height:2px;
-
-    width:0;
-
-    background:var(--red);
-
-    bottom:-8px;
-
-    right:0;
-
-    transition:.25s;
-}
-
-nav a:hover::after{
-    width:100%;
+    font-size:9px;
+    letter-spacing:2px;
 }
 
 .header-actions{
-
     display:flex;
-
-    gap:7px;
+    align-items:center;
+    gap:8px;
 }
 
-.lang-btn,
-.theme-btn{
-
+.theme,
+.translate-btn{
     border:1px solid var(--line);
-
-    background:var(--glass);
-
-    color:var(--text);
-
+    background:var(--card);
+    color:white;
+    height:42px;
     border-radius:12px;
-
-    padding:9px 12px;
-
-    font-size:11px;
-
-    font-weight:800;
-
-    transition:.25s;
+    cursor:pointer;
+    transition:.2s;
 }
 
-.lang-btn:hover,
-.theme-btn:hover{
+.theme{
+    width:42px;
+    font-size:18px;
+}
 
-    border-color:var(--red);
+.translate-btn{
+    padding:0 14px;
+    font-size:12px;
+    font-weight:800;
+}
 
+.theme:hover,
+.translate-btn:hover{
+    border-color:#ffffff45;
     transform:translateY(-2px);
 }
 
+.translate-btn.active{
+    background:var(--red);
+    border-color:var(--red);
+}
 
-/* =====================================================
-   HERO
-===================================================== */
+.translate-status{
+    position:fixed;
+    top:90px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:2000;
+    padding:9px 16px;
+    border-radius:12px;
+    background:var(--card2);
+    border:1px solid var(--line);
+    box-shadow:0 10px 40px #0008;
+    color:var(--text);
+    font-size:11px;
+    opacity:0;
+    pointer-events:none;
+    transition:.25s;
+}
+
+.translate-status.show{
+    opacity:1;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:12px 5%;
+    background:#0a0d12;
+    border-bottom:1px solid var(--line);
+    overflow-x:auto;
+}
+
+nav a{
+    color:var(--muted);
+    font-size:13px;
+    white-space:nowrap;
+    transition:.2s;
+}
+
+nav a:hover{
+    color:white;
+}
+
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:0 22px;
+}
 
 .hero{
-
-    min-height:690px;
-
-    display:flex;
-
+    min-height:470px;
+    display:grid;
+    grid-template-columns:1.5fr .7fr;
+    gap:35px;
     align-items:center;
-
-    position:relative;
-
-    overflow:hidden;
-
-    border-bottom:1px solid var(--line);
-}
-
-.hero::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:700px;
-    height:700px;
-
-    right:-300px;
-    top:-250px;
-
-    background:rgba(229,9,20,.13);
-
-    filter:blur(120px);
-
-    border-radius:50%;
-}
-
-.hero::after{
-
-    content:"⚽";
-
-    position:absolute;
-
-    font-size:420px;
-
-    opacity:.025;
-
-    left:-70px;
-    bottom:-100px;
-
-    transform:rotate(-15deg);
-
-    pointer-events:none;
-}
-
-.hero-content{
-
-    position:relative;
-
-    z-index:2;
-
-    max-width:850px;
+    padding:70px 0;
 }
 
 .live{
-
     display:inline-flex;
-
     align-items:center;
-
     gap:9px;
-
-    padding:7px 13px;
-
-    border:1px solid rgba(229,9,20,.35);
-
-    background:rgba(229,9,20,.08);
-
-    color:#ff6871;
-
-    border-radius:100px;
-
+    color:#ff6974;
     font-size:11px;
-
-    font-weight:900;
-
-    margin-bottom:22px;
+    font-weight:800;
+    letter-spacing:1px;
 }
 
 .live-dot{
-
-    width:7px;
-    height:7px;
-
+    width:9px;
+    height:9px;
+    background:#ff3948;
     border-radius:50%;
-
-    background:#ff2935;
-
-    box-shadow:0 0 15px #ff2935;
-
-    animation:blink 1.5s infinite;
+    box-shadow:0 0 0 7px #ff394820;
 }
 
-@keyframes blink{
-
-    0%,100%{
-        opacity:1;
-    }
-
-    50%{
-        opacity:.3;
-    }
+.hero h1{
+    font-size:clamp(42px,7vw,76px);
+    line-height:1.15;
+    margin:18px 0;
 }
 
-.hero-logo{
-
-    font-size:clamp(70px,12vw,145px);
-
-    line-height:.9;
-
-    font-weight:900;
-
-    letter-spacing:8px;
-
-    margin-bottom:25px;
-
-    text-shadow:
-        0 20px 70px rgba(0,0,0,.5);
-}
-
-.hero-logo span{
-
+.hero h1 span{
     color:var(--red);
-
-    text-shadow:
-        0 0 50px rgba(229,9,20,.35);
 }
 
-.hero-title{
-
-    font-size:clamp(26px,4vw,47px);
-
-    line-height:1.35;
-
-    font-weight:900;
-
-    max-width:760px;
-}
-
-.hero-description{
-
+.hero p{
     color:var(--muted);
-
-    font-size:14px;
-
-    max-width:690px;
-
-    margin-top:14px;
+    font-size:16px;
+    max-width:650px;
 }
 
-.hero-buttons{
-
+.buttons{
     display:flex;
-
+    gap:12px;
+    margin-top:30px;
     flex-wrap:wrap;
-
-    gap:10px;
-
-    margin-top:28px;
 }
 
 .btn{
-
-    border:0;
-
-    border-radius:14px;
-
-    padding:12px 22px;
-
-    font-size:12px;
-
-    font-weight:900;
-
-    transition:.3s;
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:7px;
-}
-
-.btn:hover{
-
-    transform:translateY(-3px);
-
-}
-
-.btn-red{
-
-    color:white;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--red),
-            #a80008
-        );
-
-    box-shadow:
-        0 14px 40px rgba(229,9,20,.23);
-}
-
-.btn-glass{
-
-    color:var(--text);
-
-    background:var(--glass);
-
-    border:1px solid var(--line);
-}
-
-.hero-info{
-
-    display:flex;
-
-    gap:9px;
-
-    flex-wrap:wrap;
-
-    margin-top:35px;
-}
-
-.info-pill{
-
-    padding:10px 14px;
-
-    border:1px solid var(--line);
-
-    background:var(--glass);
-
-    backdrop-filter:blur(12px);
-
-    border-radius:13px;
-
-    font-size:11px;
-
-    color:var(--muted);
-}
-
-.info-pill strong{
-
-    color:var(--text);
-
-    font-size:16px;
-
-    margin-left:5px;
-}
-
-
-/* =====================================================
-   SECTIONS
-===================================================== */
-
-section{
-    padding:85px 0;
-}
-
-.section-head{
-    margin-bottom:28px;
-}
-
-.eyebrow{
-
-    color:var(--red);
-
-    font-size:10px;
-
-    font-weight:900;
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-}
-
-.section-title{
-
-    font-size:34px;
-
-    font-weight:900;
-
-    line-height:1.3;
-
-    margin-top:4px;
-}
-
-.section-desc{
-
-    color:var(--muted);
-
-    font-size:12px;
-
-    margin-top:5px;
-}
-
-
-/* =====================================================
-   BREAKING
-===================================================== */
-
-.breaking-bar{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
-    padding:11px 14px;
-
-    border:1px solid rgba(229,9,20,.22);
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(229,9,20,.13),
-            var(--glass)
-        );
-
-    border-radius:15px;
-
-    margin-bottom:20px;
-
-    overflow:hidden;
-}
-
-.breaking-label{
-
-    flex:none;
-
-    background:var(--red);
-
-    color:white;
-
-    border-radius:8px;
-
-    padding:4px 9px;
-
-    font-size:9px;
-
-    font-weight:900;
-}
-
-.breaking-text{
-
-    color:var(--muted);
-
-    white-space:nowrap;
-
-    overflow:hidden;
-
-    text-overflow:ellipsis;
-
-    font-size:11px;
-}
-
-
-/* =====================================================
-   NEWS
-===================================================== */
-
-.news-grid{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap:17px;
-}
-
-.news-card{
-
-    position:relative;
-
-    overflow:hidden;
-
-    background:
-        linear-gradient(
-            145deg,
-            var(--card),
-            rgba(255,255,255,.015)
-        );
-
-    border:1px solid var(--line);
-
-    border-radius:20px;
-
-    padding:20px;
-
-    box-shadow:var(--shadow);
-
-    transition:.35s;
-}
-
-.news-card::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:120px;
-    height:120px;
-
-    right:-65px;
-    top:-65px;
-
-    background:rgba(229,9,20,.09);
-
-    filter:blur(30px);
-
-    transition:.35s;
-}
-
-.news-card:hover{
-
-    transform:translateY(-7px);
-
-    border-color:
-        rgba(229,9,20,.4);
-}
-
-.news-card:hover::before{
-
-    background:
-        rgba(229,9,20,.2);
-}
-
-.news-card.important{
-
-    border-color:
-        rgba(244,197,66,.3);
-}
-
-.news-card.important::after{
-
-    content:"★";
-
-    position:absolute;
-
-    top:13px;
-
-    left:14px;
-
-    color:var(--gold);
-
-    font-size:12px;
-}
-
-.news-tag{
-
     display:inline-block;
-
-    padding:4px 8px;
-
-    border-radius:7px;
-
-    background:
-        rgba(229,9,20,.1);
-
-    border:
-        1px solid rgba(229,9,20,.15);
-
-    color:#ff5c66;
-
-    font-size:9px;
-
-    font-weight:900;
-
-    margin-bottom:11px;
-}
-
-.news-card h3{
-
-    font-size:16px;
-
-    line-height:1.7;
-
-    margin-bottom:8px;
-}
-
-.news-card p{
-
-    color:var(--muted);
-
-    font-size:11px;
-
-    line-height:2;
-}
-
-.news-meta{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    gap:10px;
-
-    border-top:1px solid var(--line);
-
-    margin-top:16px;
-
-    padding-top:11px;
-
-    color:var(--muted);
-
-    font-size:9px;
-}
-
-.news-link{
-
-    display:inline-block;
-
-    margin-top:12px;
-
-    color:var(--gold);
-
-    font-size:10px;
-
-    font-weight:900;
-}
-
-
-/* =====================================================
-   LEAGUES
-===================================================== */
-
-.league-tabs{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:8px;
-
-    margin-bottom:22px;
-}
-
-.league-tab{
-
-    border:1px solid var(--line);
-
-    background:var(--glass);
-
-    color:var(--muted);
-
+    padding:11px 19px;
     border-radius:11px;
-
-    padding:9px 15px;
-
-    font-size:11px;
-
-    font-weight:800;
-
-    transition:.25s;
-}
-
-.league-tab:hover,
-.league-tab.active{
-
-    color:white;
-
-    background:var(--red);
-
-    border-color:var(--red);
-
-    box-shadow:
-        0 9px 30px rgba(229,9,20,.2);
-}
-
-
-/* =====================================================
-   TEAMS
-===================================================== */
-
-.team-grid{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(6,1fr);
-
-    gap:9px;
-}
-
-.team-btn{
-
-    border:1px solid var(--line);
-
-    background:var(--glass);
-
-    color:var(--text);
-
-    border-radius:14px;
-
-    padding:14px 6px;
-
-    font-size:10px;
-
-    font-weight:800;
-
-    transition:.3s;
-}
-
-.team-btn:hover{
-
-    transform:translateY(-3px);
-
-    border-color:
-        rgba(229,9,20,.4);
-}
-
-.team-btn.active{
-
-    color:white;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--red),
-            #a80008
-        );
-
-    border-color:var(--red);
-}
-
-
-/* =====================================================
-   SEARCH
-===================================================== */
-
-.search-panel{
-
-    position:relative;
-
-    max-width:900px;
-
-    margin:0 auto 35px;
-}
-
-.search-panel::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:180px;
-    height:180px;
-
-    background:
-        rgba(229,9,20,.1);
-
-    filter:blur(60px);
-
-    top:-70px;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-    pointer-events:none;
-}
-
-.search-box{
-
-    position:relative;
-
-    display:flex;
-
-    align-items:center;
-
-    background:var(--glass);
-
-    border:1px solid var(--line);
-
-    border-radius:18px;
-
-    padding:7px;
-
-    transition:.3s;
-
-    backdrop-filter:blur(15px);
-}
-
-.search-box:focus-within{
-
-    border-color:
-        rgba(229,9,20,.55);
-
-    box-shadow:
-        0 0 0 4px
-        rgba(229,9,20,.06);
-}
-
-.search-icon{
-
-    width:46px;
-
-    text-align:center;
-
-    font-size:17px;
-
-    opacity:.6;
-}
-
-.search-box input{
-
-    flex:1;
-
-    border:0;
-
-    outline:0;
-
-    background:transparent;
-
-    color:var(--text);
-
-    padding:14px 5px;
-
+    font-weight:700;
     font-size:13px;
 }
 
-.search-btn{
-
-    border:0;
-
+.btn-red{
     background:var(--red);
-
     color:white;
-
-    border-radius:12px;
-
-    padding:11px 18px;
-
-    font-size:11px;
-
-    font-weight:900;
 }
 
-.search-hint{
-
-    text-align:center;
-
-    color:var(--muted);
-
-    font-size:10px;
-
-    margin-top:10px;
-}
-
-.search-results{
-
-    display:none;
-}
-
-.search-results.active{
-
-    display:block;
-}
-
-
-/* =====================================================
-   QR SECTION
-===================================================== */
-
-.qr-section{
-
-    position:relative;
-
-    overflow:hidden;
-}
-
-.qr-section::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:500px;
-    height:300px;
-
-    left:50%;
-
-    top:50%;
-
-    transform:translate(-50%,-50%);
-
-    background:
-        rgba(229,9,20,.08);
-
-    filter:blur(100px);
-
-    pointer-events:none;
-}
-
-.qr-container{
-
-    position:relative;
-
-    display:grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap:20px;
-
-    max-width:900px;
-
-    margin:auto;
-}
-
-.qr-card{
-
-    background:
-        linear-gradient(
-            145deg,
-            var(--card),
-            var(--glass)
-        );
-
+.btn-dark{
+    background:var(--card);
     border:1px solid var(--line);
-
-    border-radius:24px;
-
-    padding:28px;
-
-    text-align:center;
-
-    box-shadow:var(--shadow);
-
-    transition:.3s;
 }
 
-.qr-card:hover{
-
-    transform:translateY(-6px);
-
-    border-color:
-        rgba(229,9,20,.35);
+.hero-panel{
+    background:linear-gradient(145deg,var(--card2),#0c1016);
+    border:1px solid var(--line);
+    border-radius:23px;
+    padding:30px;
+    box-shadow:0 25px 70px #0008;
 }
 
-.qr-icon{
-
-    font-size:28px;
-
-    margin-bottom:8px;
-}
-
-.qr-card h3{
-
-    font-size:18px;
-
+.hero-panel .number{
+    font-size:42px;
     font-weight:900;
-
-    margin-bottom:5px;
+    color:var(--gold);
 }
 
-.qr-card p{
-
+.hero-panel small{
     color:var(--muted);
+}
 
-    font-size:11px;
+.status{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:20px;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+    color:#65e3a1;
+    font-size:12px;
+}
 
+.section{
+    padding:55px 0;
+}
+
+.section-head{
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
     margin-bottom:20px;
 }
 
-.qr-box{
-
-    width:190px;
-    height:190px;
-
-    background:white;
-
-    padding:10px;
-
-    border-radius:16px;
-
-    margin:auto;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-}
-
-.qr-box img,
-.qr-box canvas{
-
-    max-width:100%;
-
-    max-height:100%;
-}
-
-.qr-address{
-
-    margin-top:14px;
-
-    color:var(--muted);
-
+.eyebrow{
+    color:var(--gold);
     font-size:10px;
-
-    direction:ltr;
-
-    word-break:break-all;
-}
-
-
-/* =====================================================
-   CTA
-===================================================== */
-
-.cta{
-
-    position:relative;
-
-    overflow:hidden;
-
-    text-align:center;
-
-    padding:65px 25px;
-
-    border-radius:28px;
-
-    background:
-        radial-gradient(
-            circle at 50% 0%,
-            rgba(255,255,255,.1),
-            transparent 35%
-        ),
-        linear-gradient(
-            135deg,
-            #690007,
-            #df0813 55%,
-            #790006
-        );
-
-    border:1px solid rgba(229,9,20,.35);
-
-    box-shadow:
-        0 30px 90px rgba(229,9,20,.18);
-}
-
-.cta::after{
-
-    content:"⚽";
-
-    position:absolute;
-
-    font-size:250px;
-
-    opacity:.04;
-
-    right:-30px;
-    bottom:-90px;
-
-    transform:rotate(-15deg);
-}
-
-.cta h2{
-
-    position:relative;
-
-    z-index:2;
-
-    font-size:35px;
-
     font-weight:900;
+    letter-spacing:2px;
 }
 
-.cta p{
-
-    position:relative;
-
-    z-index:2;
-
-    max-width:620px;
-
-    margin:8px auto 22px;
-
-    color:#ffe1e3;
-
-    font-size:12px;
+h2{
+    font-size:29px;
+    margin-top:3px;
 }
 
-.cta .btn{
-
-    position:relative;
-
-    z-index:2;
-
-    background:white;
-
-    color:#111;
+.tabs{
+    display:flex;
+    gap:9px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
 }
 
+.tab{
+    cursor:pointer;
+    padding:9px 15px;
+    border-radius:30px;
+    background:var(--card);
+    border:1px solid var(--line);
+    color:var(--muted);
+}
 
-/* =====================================================
-   ABOUT
-===================================================== */
+.tab.active{
+    background:var(--red);
+    border-color:var(--red);
+    color:white;
+}
 
-.about-grid{
-
+.news-grid{
     display:grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
+    grid-template-columns:repeat(3,1fr);
     gap:16px;
 }
 
-.about-card{
-
-    background:var(--glass);
-
+.news{
+    min-height:225px;
+    padding:19px;
+    border-radius:17px;
     border:1px solid var(--line);
-
-    border-radius:20px;
-
-    padding:25px;
-
-    transition:.3s;
-}
-
-.about-card:hover{
-
-    transform:translateY(-5px);
-
-    border-color:
-        rgba(229,9,20,.35);
-}
-
-.about-icon{
-
-    width:43px;
-    height:43px;
-
+    background:linear-gradient(145deg,var(--card),#0d1015);
+    transition:.2s;
     display:flex;
-
-    align-items:center;
-    justify-content:center;
-
-    background:
-        rgba(229,9,20,.1);
-
-    border-radius:12px;
-
-    margin-bottom:14px;
-
-    font-size:20px;
+    flex-direction:column;
 }
 
-.about-card h3{
-
-    font-size:16px;
-
-    margin-bottom:5px;
+.news:hover{
+    transform:translateY(-4px);
+    border-color:#ffffff35;
 }
 
-.about-card p{
-
+.news-top{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
     color:var(--muted);
-
-    font-size:11px;
-}
-
-
-/* =====================================================
-   EMPTY
-===================================================== */
-
-.empty{
-
-    grid-column:1/-1;
-
-    padding:35px;
-
-    text-align:center;
-
-    background:var(--glass);
-
-    border:1px dashed var(--line);
-
-    border-radius:18px;
-
-    color:var(--muted);
-
-    font-size:12px;
-}
-
-
-/* =====================================================
-   FOOTER
-===================================================== */
-
-footer{
-
-    border-top:1px solid var(--line);
-
-    padding:42px 0;
-
-    text-align:center;
-
-    color:var(--muted);
-
     font-size:10px;
 }
 
-.footer-logo{
-
-    color:var(--text);
-
-    font-size:27px;
-
-    font-weight:900;
-
-    letter-spacing:3px;
+.news h3{
+    font-size:17px;
+    line-height:1.7;
+    margin:12px 0 8px;
 }
 
-.footer-logo span{
-    color:var(--red);
+.news p{
+    color:var(--muted);
+    font-size:12px;
 }
 
-.footer-links{
+.news-link{
+    margin-top:auto;
+    padding-top:14px;
+    color:var(--gold);
+    font-size:11px;
+    font-weight:800;
+}
 
+.breaking{
+    border-color:#6b1b22;
+    background:
+    linear-gradient(145deg,#241013,#10141b);
+}
+
+.breaking .tag{
+    display:inline-block;
+    width:max-content;
+    background:var(--red);
+    color:white;
+    padding:2px 7px;
+    border-radius:5px;
+    font-size:9px;
+    margin-bottom:7px;
+}
+
+.team-list{
     display:flex;
-
-    justify-content:center;
-
-    gap:8px;
-
-    margin-top:13px;
+    flex-wrap:wrap;
+    gap:9px;
+    margin-bottom:20px;
 }
 
-.footer-links a{
-
-    padding:7px 11px;
-
+.team{
+    cursor:pointer;
     border:1px solid var(--line);
-
-    border-radius:9px;
-
-    transition:.25s;
+    background:var(--card);
+    color:var(--muted);
+    padding:8px 13px;
+    border-radius:30px;
 }
 
-.footer-links a:hover{
-
+.team.active{
+    color:white;
+    background:var(--red);
     border-color:var(--red);
-
-    color:var(--red);
 }
 
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media(max-width:950px){
-
-    nav{
-        display:none;
-    }
-
-    .news-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .team-grid{
-        grid-template-columns:
-            repeat(3,1fr);
-    }
-
+.search{
+    width:100%;
+    padding:14px 17px;
+    border-radius:12px;
+    border:1px solid var(--line);
+    background:var(--card);
+    color:white;
+    outline:none;
+    font-family:inherit;
+    margin-bottom:18px;
 }
 
-@media(max-width:650px){
+.search::placeholder{
+    color:var(--muted);
+}
 
-    .header-inner{
-        min-height:67px;
+.follow{
+    margin:50px 0;
+    padding:35px;
+    border-radius:23px;
+    border:1px solid #762027;
+    background:
+    radial-gradient(circle at 90% 30%,#641820,transparent 35%),
+    linear-gradient(120deg,#210c0f,#11151c);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+}
+
+.follow h2{
+    margin:5px 0;
+}
+
+.follow p{
+    color:var(--muted);
+    font-size:13px;
+}
+
+.about p{
+    color:var(--muted);
+    max-width:850px;
+    margin-top:12px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:13px;
+    margin-top:25px;
+}
+
+.about-card{
+    padding:20px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:15px;
+}
+
+.about-card b{
+    display:block;
+    margin-bottom:5px;
+}
+
+.about-card span{
+    color:var(--muted);
+    font-size:12px;
+}
+
+.loading{
+    grid-column:1/-1;
+    text-align:center;
+    padding:40px 20px;
+    color:var(--muted);
+    border:1px solid var(--line);
+    border-radius:17px;
+    background:var(--card);
+}
+
+.empty{
+    grid-column:1/-1;
+    text-align:center;
+    padding:35px;
+    color:var(--muted);
+    border:1px solid var(--line);
+    border-radius:17px;
+    background:var(--card);
+}
+
+.error{
+    color:#ff6974;
+}
+
+.badge{
+    display:inline-block;
+    padding:3px 8px;
+    border-radius:6px;
+    background:#ffffff0d;
+    color:var(--gold);
+    font-size:9px;
+}
+
+footer{
+    border-top:1px solid var(--line);
+    padding:27px 6%;
+    display:flex;
+    justify-content:space-between;
+    color:var(--muted);
+    font-size:12px;
+}
+
+body.light{
+    --bg:#f3f5f8;
+    --bg2:#ffffff;
+    --card:#ffffff;
+    --card2:#ffffff;
+    --text:#16191f;
+    --muted:#66707c;
+    --line:#dce1e7;
+    background:#f3f5f8;
+}
+
+body.light header{
+    background:#ffffffeb;
+}
+
+body.light nav{
+    background:white;
+}
+
+body.light .theme,
+body.light .translate-btn{
+    color:#111;
+}
+
+body.light .news{
+    background:linear-gradient(145deg,#fff,#f8f9fb);
+}
+
+body.light .hero-panel{
+    background:#fff;
+}
+
+@media(max-width:800px){
+
+    header{
+        padding:10px 16px;
     }
 
-    .logo{
-        font-size:22px;
+    .logo-text strong{
+        font-size:19px;
+    }
+
+    .logo-text small{
+        font-size:7px;
+    }
+
+    .translate-btn{
+        padding:0 10px;
+        font-size:10px;
     }
 
     .hero{
-        min-height:650px;
+        grid-template-columns:1fr;
+        padding:50px 0;
     }
 
-    .hero-logo{
-        font-size:70px;
-    }
-
-    .hero-title{
-        font-size:26px;
-    }
-
-    .hero-description{
-        font-size:12px;
-    }
-
-    .hero-info{
-        display:grid;
-
-        grid-template-columns:
-            1fr 1fr;
-    }
-
-    .info-pill{
-        text-align:center;
-    }
-
-    section{
-        padding:60px 0;
-    }
-
-    .section-title{
-        font-size:28px;
+    .hero h1{
+        font-size:46px;
     }
 
     .news-grid{
-        grid-template-columns:1fr;
-    }
-
-    .team-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .qr-container{
         grid-template-columns:1fr;
     }
 
@@ -1561,2295 +599,1240 @@ footer{
         grid-template-columns:1fr;
     }
 
-    .search-btn{
-        padding:10px 13px;
+    .follow{
+        flex-direction:column;
+        align-items:flex-start;
     }
 
-    .cta{
-        padding:45px 18px;
+    footer{
+        flex-direction:column;
+        gap:8px;
     }
-
-    .cta h2{
-        font-size:27px;
-    }
-
 }
 
 </style>
 </head>
 
-
 <body>
 
-
-<!-- =====================================================
-     HEADER
-===================================================== -->
+<div class="translate-status" id="translateStatus">
+    🌐 در حال ترجمه اخبار...
+</div>
 
 <header>
 
-<div class="container header-inner">
+    <div class="logo-box">
 
-<a href="#home" class="logo">
-BAR<span>SAL</span>
-</a>
+        <div class="logo">B</div>
 
-<nav>
+        <div class="logo-text">
+            <strong>BARSAL</strong>
+            <small>FOOTBALL NEWS</small>
+        </div>
 
-<a href="#home" data-i18n="nav_home">خانه</a>
+    </div>
 
-<a href="#important" data-i18n="nav_important">
-فوری
-</a>
+    <div class="header-actions">
 
-<a href="#leagues" data-i18n="nav_leagues">
-لیگ‌ها
-</a>
+        <button
+            class="translate-btn"
+            id="translateButton"
+            onclick="toggleTranslation()"
+        >
+            🌐 ترجمه فارسی
+        </button>
 
-<a href="#teams" data-i18n="nav_teams">
-تیم‌ها
-</a>
+        <button
+            class="theme"
+            onclick="toggleTheme()"
+            title="تغییر حالت"
+        >
+            ☾
+        </button>
 
-<a href="#transfers" data-i18n="nav_transfers">
-نقل‌وانتقالات
-</a>
-
-<a href="#search" data-i18n="nav_search">
-جستجو
-</a>
-
-<a href="#qr" data-i18n="nav_qr">
-QR
-</a>
-
-</nav>
-
-<div class="header-actions">
-
-<button
-class="lang-btn"
-id="languageBtn">
-🇬🇧 English
-</button>
-
-<button
-class="theme-btn"
-id="themeBtn">
-🌙
-</button>
-
-</div>
-
-</div>
+    </div>
 
 </header>
 
 
-<!-- =====================================================
-     HERO
-===================================================== -->
+<nav>
+
+    <a href="#home">خانه</a>
+    <a href="#important">فوری و مهم</a>
+    <a href="#leagues">لیگ‌ها</a>
+    <a href="#teams">تیم‌ها</a>
+    <a href="#transfers">نقل‌وانتقالات</a>
+    <a href="#latest">آخرین اخبار</a>
+    <a href="#about">درباره ما</a>
+
+</nav>
+
+
+<main>
 
 <section class="hero" id="home">
 
-<div class="container">
+    <div>
 
-<div class="hero-content">
+        <div class="live">
+            <span class="live-dot"></span>
+            BARSAL LIVE
+        </div>
 
-<div class="live">
+        <h1>
+            فوتبال را
+            <span>سریع‌تر</span>
+            دنبال کن.
+        </h1>
 
-<span class="live-dot"></span>
+        <p>
+            آخرین اخبار فوتبال جهان، لیگ‌های معتبر،
+            تیم‌های بزرگ و نقل‌وانتقالات در BARSAL.
+        </p>
 
-<span data-i18n="live">
-BARSAL LIVE
-</span>
+        <div class="buttons">
 
-</div>
+            <a class="btn btn-red" href="#important">
+                🔥 اخبار مهم امروز
+            </a>
 
+            <a class="btn btn-dark" href="#teams">
+                ⚽ تیم مورد علاقه من
+            </a>
 
-<div class="hero-logo">
-BAR<span>SAL</span>
-</div>
+        </div>
 
-
-<h1 class="hero-title"
-data-i18n="hero_title">
-
-نبض فوتبال، همین‌جا
-
-</h1>
-
-
-<p class="hero-description"
-data-i18n="hero_text">
-
-آخرین اخبار، نقل‌وانتقالات، اتفاقات مهم و اخبار تیم‌های بزرگ فوتبال را سریع و حرفه‌ای دنبال کن.
-
-</p>
+    </div>
 
 
-<div class="hero-buttons">
+    <div class="hero-panel">
 
-<a
-href="#search"
-class="btn btn-red"
-data-i18n="search_news">
+        <small>وضعیت سیستم اخبار</small>
 
-🔎 جستجوی اخبار
+        <div class="number" id="newsCount">
+            ...
+        </div>
 
-</a>
+        <p id="systemText">
+            در حال اتصال به سیستم اخبار خودکار BARSAL...
+        </p>
 
+        <div class="status" id="systemStatus">
+            ● در حال اتصال
+        </div>
 
-<a
-href="#important"
-class="btn btn-glass"
-data-i18n="breaking_news">
-
-🔥 خبرهای داغ
-
-</a>
-
-</div>
-
-
-<div class="hero-info">
-
-<div class="info-pill">
-
-<strong id="newsCount">
-0
-</strong>
-
-<span data-i18n="news_count">
-خبر
-</span>
-
-</div>
-
-
-<div class="info-pill">
-
-<strong>
-24/7
-</strong>
-
-<span data-i18n="coverage">
-پوشش فوتبال
-</span>
-
-</div>
-
-
-<div class="info-pill">
-
-<strong>
-⚡
-</strong>
-
-<span data-i18n="fast">
-سریع
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- =====================================================
-     BREAKING
-===================================================== -->
+<section class="section" id="important">
 
-<section id="important">
+    <div class="section-head">
 
-<div class="container">
+        <div>
+            <div class="eyebrow">BREAKING NEWS</div>
+            <h2>🚨 اخبار فوری و مهم</h2>
+        </div>
 
-<div class="section-head">
+    </div>
 
-<div class="eyebrow">
-BREAKING
-</div>
+    <div class="news-grid" id="importantNews">
 
-<h2
-class="section-title"
-data-i18n="important_title">
+        <div class="loading">
+            ⏳ در حال دریافت اخبار مهم...
+        </div>
 
-فوری و مهم
-
-</h2>
-
-<p
-class="section-desc"
-data-i18n="important_desc">
-
-منتخب مهم‌ترین اخبار فوتبال
-
-</p>
-
-</div>
-
-
-<div class="breaking-bar">
-
-<div
-class="breaking-label"
-data-i18n="breaking_label">
-
-فوری
-
-</div>
-
-<div
-class="breaking-text"
-id="breakingText">
-
-BARSAL • Football News
-
-</div>
-
-</div>
-
-
-<div
-id="importantNews"
-class="news-grid">
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- =====================================================
-     LEAGUES
-===================================================== -->
+<section class="section" id="leagues">
 
-<section id="leagues">
+    <div class="section-head">
 
-<div class="container">
+        <div>
+            <div class="eyebrow">TOP LEAGUES</div>
+            <h2>🏆 لیگ‌ها</h2>
+        </div>
 
-<div class="section-head">
-
-<div class="eyebrow">
-LEAGUES
-</div>
-
-<h2
-class="section-title"
-data-i18n="leagues_title">
-
-لیگ‌های بزرگ
-
-</h2>
-
-<p
-class="section-desc"
-data-i18n="leagues_desc">
-
-آخرین اخبار لیگ‌های مهم اروپا
-
-</p>
-
-</div>
+    </div>
 
 
-<div class="league-tabs">
+    <div class="tabs">
 
-<button
-class="league-tab active"
-data-league="laliga"
-data-i18n="laliga">
+        <button class="tab active" onclick="showLeague('laliga',this)">
+            🇪🇸 لالیگا
+        </button>
 
-لالیگا
+        <button class="tab" onclick="showLeague('premier',this)">
+            🏴 لیگ انگلیس
+        </button>
 
-</button>
+        <button class="tab" onclick="showLeague('seriea',this)">
+            🇮🇹 سری A
+        </button>
 
-<button
-class="league-tab"
-data-league="premier"
-data-i18n="premier">
-
-لیگ برتر انگلیس
-
-</button>
-
-<button
-class="league-tab"
-data-league="seriea"
-data-i18n="seriea">
-
-سری آ
-
-</button>
-
-</div>
+    </div>
 
 
-<div
-id="leagueNews"
-class="news-grid">
-</div>
+    <div id="leagueNews" class="news-grid">
 
-</div>
+        <div class="loading">
+            ⏳ در حال دریافت اخبار لیگ...
+        </div>
+
+    </div>
 
 </section>
 
 
-<!-- =====================================================
-     TEAMS
-===================================================== -->
+<section class="section" id="teams">
 
-<section id="teams">
+    <div class="section-head">
 
-<div class="container">
+        <div>
+            <div class="eyebrow">BIG TEAMS</div>
+            <h2>⭐ تیم‌های بزرگ</h2>
+        </div>
 
-<div class="section-head">
+    </div>
 
-<div class="eyebrow">
-TEAMS
-</div>
 
-<h2
-class="section-title"
-data-i18n="teams_title">
+    <div class="team-list">
 
-تیم‌ها
+        <button class="team active" onclick="teamSelect(this,'بارسلونا','Barcelona')">
+            🔵🔴 بارسلونا
+        </button>
 
-</h2>
+        <button class="team" onclick="teamSelect(this,'رئال مادرید','Real Madrid')">
+            ⚪ رئال مادرید
+        </button>
 
-<p
-class="section-desc"
-data-i18n="teams_desc">
+        <button class="team" onclick="teamSelect(this,'اتلتیکو مادرید','Atletico Madrid')">
+            🔴 اتلتیکو مادرید
+        </button>
 
-تیم مورد علاقه‌ات را انتخاب کن
+        <button class="team" onclick="teamSelect(this,'آرسنال','Arsenal')">
+            🔴 آرسنال
+        </button>
 
-</p>
+        <button class="team" onclick="teamSelect(this,'لیورپول','Liverpool')">
+            🔴 لیورپول
+        </button>
 
-</div>
+        <button class="team" onclick="teamSelect(this,'منچسترسیتی','Manchester City')">
+            🔵 منچسترسیتی
+        </button>
 
+        <button class="team" onclick="teamSelect(this,'منچستریونایتد','Manchester United')">
+            🔴 منچستریونایتد
+        </button>
 
-<div class="team-grid">
+        <button class="team" onclick="teamSelect(this,'اینتر میامی','Inter Miami')">
+            🩷 اینتر میامی
+        </button>
 
+        <button class="team" onclick="teamSelect(this,'النصر','Al Nassr')">
+            🟡 النصر
+        </button>
 
-<button class="team-btn"
-data-team="Barcelona"
-data-i18n="barcelona">
+        <button class="team" onclick="teamSelect(this,'پاریسن ژرمن','PSG')">
+            🔵🔴 پاریسن ژرمن
+        </button>
 
-بارسلونا
+        <button class="team" onclick="teamSelect(this,'بایرن مونیخ','Bayern Munich')">
+            🔴 بایرن مونیخ
+        </button>
 
-</button>
+        <button class="team" onclick="teamSelect(this,'اینتر','Inter Milan')">
+            🔵⚫ اینتر
+        </button>
 
+    </div>
 
-<button class="team-btn"
-data-team="Real Madrid"
-data-i18n="realmadrid">
 
-رئال مادرید
+    <div id="teamTitle" style="margin-bottom:15px;color:#f0c75e;font-weight:800;">
+        اخبار بارسلونا
+    </div>
 
-</button>
 
+    <div id="teamNews" class="news-grid">
 
-<button class="team-btn"
-data-team="Atletico Madrid"
-data-i18n="atletico">
+        <div class="loading">
+            ⏳ در حال دریافت اخبار بارسلونا...
+        </div>
 
-اتلتیکو مادرید
-
-</button>
-
-
-<button class="team-btn"
-data-team="Arsenal"
-data-i18n="arsenal">
-
-آرسنال
-
-</button>
-
-
-<button class="team-btn"
-data-team="Liverpool"
-data-i18n="liverpool">
-
-لیورپول
-
-</button>
-
-
-<button class="team-btn"
-data-team="Manchester City"
-data-i18n="city">
-
-منچسترسیتی
-
-</button>
-
-
-<button class="team-btn"
-data-team="Manchester United"
-data-i18n="united">
-
-منچستریونایتد
-
-</button>
-
-
-<button class="team-btn"
-data-team="Inter Miami"
-data-i18n="miami">
-
-اینتر میامی
-
-</button>
-
-
-<button class="team-btn"
-data-team="Al Nassr"
-data-i18n="nassr">
-
-النصر
-
-</button>
-
-
-<button class="team-btn"
-data-team="PSG"
-data-i18n="psg">
-
-پاری‌سن‌ژرمن
-
-</button>
-
-
-<button class="team-btn"
-data-team="Bayern Munich"
-data-i18n="bayern">
-
-بایرن مونیخ
-
-</button>
-
-
-<button class="team-btn"
-data-team="Inter Milan"
-data-i18n="inter">
-
-اینتر میلان
-
-</button>
-
-
-</div>
-
-
-<div
-id="teamTitle"
-style="margin-top:35px">
-</div>
-
-
-<div
-id="teamNews"
-class="news-grid">
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- =====================================================
-     TRANSFERS
-===================================================== -->
+<section class="section" id="transfers">
 
-<section id="transfers">
+    <div class="section-head">
 
-<div class="container">
+        <div>
+            <div class="eyebrow">TRANSFER MARKET</div>
+            <h2>🔄 نقل‌وانتقالات</h2>
+        </div>
 
-<div class="section-head">
-
-<div class="eyebrow">
-TRANSFER MARKET
-</div>
-
-<h2
-class="section-title"
-data-i18n="transfers_title">
-
-نقل‌وانتقالات
-
-</h2>
-
-<p
-class="section-desc"
-data-i18n="transfers_desc">
-
-داغ‌ترین اخبار بازار نقل‌وانتقالات
-
-</p>
-
-</div>
+    </div>
 
 
-<div
-id="transferNews"
-class="news-grid">
-</div>
+    <div class="news-grid" id="transferNews">
 
-</div>
+        <div class="loading">
+            ⏳ در حال دریافت اخبار نقل‌وانتقالات...
+        </div>
+
+    </div>
 
 </section>
 
 
-<!-- =====================================================
-     SEARCH
-===================================================== -->
+<section class="section" id="latest">
 
-<section id="search">
+    <div class="section-head">
 
-<div class="container">
+        <div>
+            <div class="eyebrow">LATEST NEWS</div>
+            <h2>📰 آخرین اخبار</h2>
+        </div>
 
-<div class="section-head"
-style="text-align:center">
-
-<div class="eyebrow">
-SEARCH
-</div>
-
-<h2
-class="section-title"
-data-i18n="search_title">
-
-جستجوی اخبار
-
-</h2>
-
-<p
-class="section-desc"
-data-i18n="search_desc">
-
-خبر مورد نظرت را پیدا کن
-
-</p>
-
-</div>
+    </div>
 
 
-<div class="search-panel">
-
-<div class="search-box">
-
-<div class="search-icon">
-🔎
-</div>
-
-<input
-id="searchInput"
-type="search"
-data-i18n-placeholder="search_placeholder"
-placeholder="نام تیم، بازیکن یا موضوع را جستجو کن..."
->
-
-<button
-class="search-btn"
-id="searchButton"
-data-i18n="search_button">
-
-جستجو
-
-</button>
-
-</div>
+    <input
+        class="search"
+        id="search"
+        type="search"
+        placeholder="🔎 جستجوی خبر، تیم یا لیگ..."
+        oninput="searchNews()"
+    >
 
 
-<div
-class="search-hint"
-data-i18n="search_hint">
+    <div class="news-grid" id="allNews">
 
-مثلاً: Barcelona ، Real Madrid ، Mbappe ، Transfer
+        <div class="loading">
+            ⏳ در حال دریافت آخرین اخبار...
+        </div>
 
-</div>
-
-</div>
-
-
-<div
-id="searchResults"
-class="search-results">
-
-<div
-id="searchNews"
-class="news-grid">
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- =====================================================
-     QR CODES
-===================================================== -->
+<section class="follow">
 
-<section id="qr" class="qr-section">
+    <div>
 
-<div class="container">
+        <div class="eyebrow">
+            BARSAL ON BALE
+        </div>
 
-<div class="section-head"
-style="text-align:center">
+        <h2>
+            📲 ما رو در بله دنبال کنید
+        </h2>
 
-<div class="eyebrow">
-SCAN BARSAL
-</div>
+        <p>
+            برای دریافت سریع‌تر اخبار فوتبال و خبرهای فوری،
+            کانال BARSAL را در بله دنبال کن.
+        </p>
 
-<h2
-class="section-title"
-data-i18n="qr_title">
-
-BARSAL را اسکن کن
-
-</h2>
-
-<p
-class="section-desc"
-data-i18n="qr_desc">
-
-با دوربین گوشی، سایت یا کانال BARSAL را سریع باز کن.
-
-</p>
-
-</div>
+    </div>
 
 
-<div class="qr-container">
-
-
-<!-- WEBSITE QR -->
-
-<div class="qr-card">
-
-<div class="qr-icon">
-🌐
-</div>
-
-<h3
-data-i18n="site_qr_title">
-
-QR سایت BARSAL
-
-</h3>
-
-<p
-data-i18n="site_qr_desc">
-
-برای باز کردن مستقیم سایت
-
-</p>
-
-<div class="qr-box">
-
-<div id="siteQR"></div>
-
-</div>
-
-<div class="qr-address">
-https://kiannabifar-sys.github.io/BARSAL/
-</div>
-
-</div>
-
-
-<!-- BALE QR -->
-
-<div class="qr-card">
-
-<div class="qr-icon">
-📲
-</div>
-
-<h3
-data-i18n="bale_qr_title">
-
-QR کانال BARSAL
-
-</h3>
-
-<p
-data-i18n="bale_qr_desc">
-
-برای ورود سریع به کانال بله
-
-</p>
-
-<div class="qr-box">
-
-<div id="baleQR"></div>
-
-</div>
-
-<div class="qr-address">
-https://ble.ir/barsal10
-</div>
-
-</div>
-
-
-</div>
-
-</div>
+    <a
+        class="btn btn-red"
+        href="https://ble.ir/barsal10"
+        target="_blank"
+        rel="noopener"
+    >
+        ورود به کانال BARSAL
+    </a>
 
 </section>
 
 
-<!-- =====================================================
-     BALE CTA
-===================================================== -->
+<section class="section" id="about">
 
-<section>
+    <div class="eyebrow">
+        ABOUT BARSAL
+    </div>
 
-<div class="container">
+    <h2>
+        درباره BARSAL
+    </h2>
 
-<div class="cta">
-
-<h2
-data-i18n="bale_title">
-
-BARSAL در بله
-
-</h2>
-
-<p
-data-i18n="bale_text">
-
-برای دریافت سریع اخبار فوتبال، کانال BARSAL را در بله دنبال کن.
-
-</p>
-
-<a
-href="https://ble.ir/barsal10"
-target="_blank"
-class="btn"
-data-i18n="bale_btn">
-
-📲 ورود به کانال
-
-</a>
-
-</div>
-
-</div>
-
-</section>
+    <p>
+        BARSAL یک رسانه فوتبالی برای دنبال‌کردن
+        اخبار روز فوتبال، لیگ‌های معتبر،
+        تیم‌های بزرگ و نقل‌وانتقالات است.
+        هدف BARSAL ارائه سریع، مرتب و منبع‌محور اخبار فوتبال است.
+    </p>
 
 
-<!-- =====================================================
-     ABOUT
-===================================================== -->
+    <div class="about-grid">
 
-<section>
+        <div class="about-card">
+            <b>⚡ سریع</b>
+            <span>
+                اخبار جدید با سیستم بروزرسانی خودکار
+            </span>
+        </div>
 
-<div class="container">
+        <div class="about-card">
+            <b>🎯 مرتب</b>
+            <span>
+                دسته‌بندی اخبار بر اساس لیگ و تیم
+            </span>
+        </div>
 
-<div class="section-head">
+        <div class="about-card">
+            <b>🔗 منبع‌محور</b>
+            <span>
+                لینک هر خبر به منبع اصلی
+            </span>
+        </div>
 
-<div class="eyebrow">
-ABOUT
-</div>
-
-<h2
-class="section-title"
-data-i18n="about_title">
-
-درباره BARSAL
-
-</h2>
-
-<p
-class="section-desc"
-data-i18n="about_desc">
-
-یک رسانه فوتبالی مدرن برای دنبال کردن فوتبال
-
-</p>
-
-</div>
-
-
-<div class="about-grid">
-
-
-<div class="about-card">
-
-<div class="about-icon">
-⚡
-</div>
-
-<h3
-data-i18n="fast_title">
-
-سرعت
-
-</h3>
-
-<p
-data-i18n="fast_text">
-
-اخبار مهم فوتبال را سریع و ساده دنبال کن.
-
-</p>
-
-</div>
-
-
-<div class="about-card">
-
-<div class="about-icon">
-🏆
-</div>
-
-<h3
-data-i18n="complete_title">
-
-جامع
-
-</h3>
-
-<p
-data-i18n="complete_text">
-
-لیگ‌ها، تیم‌ها و نقل‌وانتقالات در یکجا.
-
-</p>
-
-</div>
-
-
-<div class="about-card">
-
-<div class="about-icon">
-🔥
-</div>
-
-<h3
-data-i18n="football_title">
-
-فوتبالی
-
-</h3>
-
-<p
-data-i18n="football_text">
-
-برای کسانی که فوتبال را با جدیت دنبال می‌کنند.
-
-</p>
-
-</div>
-
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
+</main>
 
-<!-- =====================================================
-     FOOTER
-===================================================== -->
 
 <footer>
 
-<div class="container">
+    <strong>BARSAL · FOOTBALL NEWS</strong>
 
-<div class="footer-logo">
-BAR<span>SAL</span>
-</div>
-
-<div
-data-i18n="footer_text">
-
-اخبار فوتبال، سریع و حرفه‌ای
-
-</div>
-
-
-<div class="footer-links">
-
-<a
-href="https://ble.ir/barsal10"
-target="_blank">
-
-Bale
-
-</a>
-
-<a href="#qr">
-QR
-</a>
-
-<a href="#home">
-BARSAL
-</a>
-
-</div>
-
-
-<div style="margin-top:14px">
-
-© <span id="year"></span> BARSAL
-
-</div>
-
-</div>
+    <span>
+        © 2026 BARSAL
+    </span>
 
 </footer>
 
 
 <script>
 
-/* =====================================================
-   TRANSLATIONS
-===================================================== */
+let allNewsData = [];
 
-const translations={
+let selectedTeam = "Barcelona";
+let selectedLeague = "laliga";
 
-fa:{
+let isPersian = localStorage.getItem("barsalLanguage") === "fa";
 
-nav_home:"خانه",
-nav_important:"فوری",
-nav_leagues:"لیگ‌ها",
-nav_teams:"تیم‌ها",
-nav_transfers:"نقل‌وانتقالات",
-nav_search:"جستجو",
-nav_qr:"QR",
+let translationCache = {};
 
-live:"BARSAL LIVE",
-
-hero_title:"نبض فوتبال، همین‌جا",
-
-hero_text:
-"آخرین اخبار، نقل‌وانتقالات، اتفاقات مهم و اخبار تیم‌های بزرگ فوتبال را سریع و حرفه‌ای دنبال کن.",
-
-search_news:"🔎 جستجوی اخبار",
-breaking_news:"🔥 خبرهای داغ",
-
-news_count:"خبر",
-coverage:"پوشش فوتبال",
-fast:"سریع",
-
-important_title:"فوری و مهم",
-important_desc:"منتخب مهم‌ترین اخبار فوتبال",
-breaking_label:"فوری",
-
-leagues_title:"لیگ‌های بزرگ",
-leagues_desc:"آخرین اخبار لیگ‌های مهم اروپا",
-
-laliga:"لالیگا",
-premier:"لیگ برتر انگلیس",
-seriea:"سری آ",
-
-teams_title:"تیم‌ها",
-teams_desc:"تیم مورد علاقه‌ات را انتخاب کن",
-
-barcelona:"بارسلونا",
-realmadrid:"رئال مادرید",
-atletico:"اتلتیکو مادرید",
-arsenal:"آرسنال",
-liverpool:"لیورپول",
-city:"منچسترسیتی",
-united:"منچستریونایتد",
-miami:"اینتر میامی",
-nassr:"النصر",
-psg:"پاری‌سن‌ژرمن",
-bayern:"بایرن مونیخ",
-inter:"اینتر میلان",
-
-transfers_title:"نقل‌وانتقالات",
-transfers_desc:"داغ‌ترین اخبار بازار نقل‌وانتقالات",
-
-search_title:"جستجوی اخبار",
-search_desc:"خبر مورد نظرت را پیدا کن",
-search_placeholder:"نام تیم، بازیکن یا موضوع را جستجو کن...",
-search_button:"جستجو",
-search_hint:"مثلاً: Barcelona ، Real Madrid ، Mbappe ، Transfer",
-
-qr_title:"BARSAL را اسکن کن",
-qr_desc:"با دوربین گوشی، سایت یا کانال BARSAL را سریع باز کن.",
-
-site_qr_title:"QR سایت BARSAL",
-site_qr_desc:"برای باز کردن مستقیم سایت",
-
-bale_qr_title:"QR کانال BARSAL",
-bale_qr_desc:"برای ورود سریع به کانال بله",
-
-bale_title:"BARSAL در بله",
-bale_text:"برای دریافت سریع اخبار فوتبال، کانال BARSAL را در بله دنبال کن.",
-bale_btn:"📲 ورود به کانال",
-
-about_title:"درباره BARSAL",
-about_desc:"یک رسانه فوتبالی مدرن برای دنبال کردن فوتبال",
-
-fast_title:"سرعت",
-fast_text:"اخبار مهم فوتبال را سریع و ساده دنبال کن.",
-
-complete_title:"جامع",
-complete_text:"لیگ‌ها، تیم‌ها و نقل‌وانتقالات در یکجا.",
-
-football_title:"فوتبالی",
-football_text:"برای کسانی که فوتبال را با جدیت دنبال می‌کنند.",
-
-footer_text:"اخبار فوتبال، سریع و حرفه‌ای",
-
-no_news:"خبری برای نمایش وجود ندارد.",
-no_team:"برای این تیم خبری پیدا نشد.",
-no_transfer:"خبر نقل‌وانتقالاتی پیدا نشد.",
-no_search:"نتیجه‌ای برای جستجوی شما پیدا نشد.",
-error:"خطا در دریافت اخبار.",
-read_more:"مشاهده خبر",
-team_news:"اخبار تیم",
-date_unknown:"زمان نامشخص"
-
-},
-
-en:{
-
-nav_home:"Home",
-nav_important:"Breaking",
-nav_leagues:"Leagues",
-nav_teams:"Teams",
-nav_transfers:"Transfers",
-nav_search:"Search",
-nav_qr:"QR",
-
-live:"BARSAL LIVE",
-
-hero_title:"The Pulse of Football",
-
-hero_text:
-"Follow the latest football news, transfers, major stories and top teams quickly and professionally.",
-
-search_news:"🔎 Search News",
-breaking_news:"🔥 Breaking News",
-
-news_count:"News",
-coverage:"Football Coverage",
-fast:"Fast",
-
-important_title:"Breaking News",
-important_desc:"Selected top football stories",
-breaking_label:"BREAKING",
-
-leagues_title:"Top Leagues",
-leagues_desc:"Latest news from Europe's biggest leagues",
-
-laliga:"La Liga",
-premier:"Premier League",
-seriea:"Serie A",
-
-teams_title:"Teams",
-teams_desc:"Choose your favorite team",
-
-barcelona:"Barcelona",
-realmadrid:"Real Madrid",
-atletico:"Atletico Madrid",
-arsenal:"Arsenal",
-liverpool:"Liverpool",
-city:"Manchester City",
-united:"Manchester United",
-miami:"Inter Miami",
-nassr:"Al Nassr",
-psg:"Paris Saint-Germain",
-bayern:"Bayern Munich",
-inter:"Inter Milan",
-
-transfers_title:"Transfers",
-transfers_desc:"The hottest transfer news",
-
-search_title:"Search News",
-search_desc:"Find the news you are looking for",
-search_placeholder:"Search for a team, player or topic...",
-search_button:"Search",
-search_hint:"For example: Barcelona, Real Madrid, Mbappe, Transfer",
-
-qr_title:"Scan BARSAL",
-qr_desc:"Scan with your phone to quickly open the BARSAL website or channel.",
-
-site_qr_title:"BARSAL Website QR",
-site_qr_desc:"Scan to open the website",
-
-bale_qr_title:"BARSAL Channel QR",
-bale_qr_desc:"Scan to open our Bale channel",
-
-bale_title:"BARSAL on Bale",
-bale_text:"Follow the BARSAL channel on Bale for the latest football news.",
-bale_btn:"📲 Open Channel",
-
-about_title:"About BARSAL",
-about_desc:"A modern football media platform",
-
-fast_title:"Fast",
-fast_text:"Follow important football news quickly and simply.",
-
-complete_title:"Complete",
-complete_text:"Leagues, teams and transfers in one place.",
-
-football_title:"Football",
-football_text:"Built for people who seriously follow football.",
-
-footer_text:"Football news, fast and professional",
-
-no_news:"No news available.",
-no_team:"No news found for this team.",
-no_transfer:"No transfer news found.",
-no_search:"No results found.",
-error:"Failed to load news.",
-read_more:"Read News",
-team_news:"Team News",
-date_unknown:"Unknown time"
-
-}
-
-};
-
-
-/* =====================================================
-   VARIABLES
-===================================================== */
-
-let currentLang=
-localStorage.getItem("barsalLanguage")||"fa";
-
-let allNewsData=[];
-
-let selectedLeague="laliga";
-
-let selectedTeam=null;
-
-
-/* =====================================================
-   TRANSLATION
-===================================================== */
-
-function t(key){
-
-return translations[currentLang][key]||key;
-
+try{
+    translationCache =
+        JSON.parse(
+            localStorage.getItem("barsalTranslationCache") || "{}"
+        );
+}catch(e){
+    translationCache = {};
 }
 
 
-function setLanguage(lang){
+/* THEME */
 
-currentLang=lang;
+function toggleTheme(){
 
-localStorage.setItem(
-"barsalLanguage",
-lang
-);
+    document.body.classList.toggle("light");
 
-document.documentElement.lang=lang;
-
-document.documentElement.dir=
-lang==="fa"?"rtl":"ltr";
-
-
-document
-.querySelectorAll("[data-i18n]")
-.forEach(el=>{
-
-const key=el.dataset.i18n;
-
-if(translations[lang][key]){
-
-el.textContent=
-translations[lang][key];
+    if(document.body.classList.contains("light")){
+        localStorage.setItem("theme","light");
+    }else{
+        localStorage.setItem("theme","dark");
+    }
 
 }
 
-});
-
-
-document
-.querySelectorAll("[data-i18n-placeholder]")
-.forEach(el=>{
-
-const key=
-el.dataset.i18nPlaceholder;
-
-if(translations[lang][key]){
-
-el.placeholder=
-translations[lang][key];
-
-}
-
-});
-
-
-document.getElementById(
-"languageBtn"
-).textContent=
-
-lang==="fa"
-?"🇬🇧 English"
-:"🇮🇷 فارسی";
-
-
-renderAll();
-
+if(localStorage.getItem("theme")==="light"){
+    document.body.classList.add("light");
 }
 
 
-/* =====================================================
-   LANGUAGE BUTTON
-===================================================== */
-
-document
-.getElementById("languageBtn")
-.addEventListener("click",()=>{
-
-setLanguage(
-currentLang==="fa"
-?"en"
-:"fa"
-);
-
-});
-
-
-/* =====================================================
-   THEME
-===================================================== */
-
-const themeBtn=
-document.getElementById("themeBtn");
-
-
-if(
-localStorage.getItem("barsalTheme")==="light"
-){
-
-document.body.classList.add("light");
-
-}
-
-
-function updateTheme(){
-
-themeBtn.textContent=
-document.body.classList.contains("light")
-?"☀️"
-:"🌙";
-
-}
-
-updateTheme();
-
-
-themeBtn.addEventListener("click",()=>{
-
-document.body.classList.toggle("light");
-
-localStorage.setItem(
-"barsalTheme",
-
-document.body.classList.contains("light")
-?"light"
-:"dark"
-);
-
-updateTheme();
-
-});
-
-
-/* =====================================================
-   HELPERS
-===================================================== */
+/* ESCAPE HTML */
 
 function escapeHTML(value){
 
-if(value===null||
-value===undefined){
+    if(value === null || value === undefined){
+        return "";
+    }
 
-return "";
-
-}
-
-return String(value)
-
-.replaceAll("&","&amp;")
-.replaceAll("<","&lt;")
-.replaceAll(">","&gt;")
-.replaceAll('"',"&quot;")
-.replaceAll("'","&#039;");
+    return String(value)
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
 
 }
 
+
+/* DATE */
 
 function formatDate(value){
 
-if(!value){
+    if(!value){
+        return "جدید";
+    }
 
-return t("date_unknown");
+    try{
 
-}
+        const date = new Date(value);
 
-const date=
-new Date(value);
+        if(isNaN(date.getTime())){
+            return value;
+        }
 
-if(
-Number.isNaN(
-date.getTime()
-)
-){
+        return date.toLocaleDateString("fa-IR",{
+            month:"short",
+            day:"numeric"
+        });
 
-return escapeHTML(value);
+    }catch(e){
 
-}
+        return value;
 
-return new Intl.DateTimeFormat(
-
-currentLang==="fa"
-?"fa-IR"
-:"en-US",
-
-{
-dateStyle:"medium",
-timeStyle:"short"
-}
-
-).format(date);
+    }
 
 }
 
 
-/* =====================================================
-   NEWS CARD
-===================================================== */
+/* TRANSLATION API */
 
-function createNewsCard(news){
+async function translateText(text){
 
-const title=
+    if(!text){
+        return "";
+    }
 
-currentLang==="en"
+    const cacheKey = String(text).trim();
 
-?(news.title_en||news.title)
+    if(translationCache[cacheKey]){
+        return translationCache[cacheKey];
+    }
 
-:news.title;
+    try{
 
+        const url =
+            "https://api.mymemory.translated.net/get?q=" +
+            encodeURIComponent(text) +
+            "&langpair=auto|fa";
 
-const summary=
+        const response = await fetch(url);
 
-currentLang==="en"
+        if(!response.ok){
+            throw new Error("Translation request failed");
+        }
 
-?(news.summary_en||news.summary)
+        const data = await response.json();
 
-:news.summary;
+        const translated =
+            data &&
+            data.responseData &&
+            data.responseData.translatedText
+            ?
+            data.responseData.translatedText
+            :
+            text;
 
+        translationCache[cacheKey] = translated;
 
-const categories={
+        return translated;
 
-fa:{
-laliga:"لالیگا",
-premier:"لیگ برتر انگلیس",
-seriea:"سری آ",
-transfers:"نقل‌وانتقالات"
-},
+    }catch(error){
 
-en:{
-laliga:"La Liga",
-premier:"Premier League",
-seriea:"Serie A",
-transfers:"Transfers"
-}
+        console.error("Translation error:",error);
 
-};
+        return text;
 
-
-const tag=
-
-categories[currentLang]
-[String(news.category||"")]
-
-||
-
-String(news.category||"")
-
-||
-
-"Football";
-
-
-return `
-
-<article class="news-card
-${news.important?"important":""}">
-
-<div class="news-tag">
-
-${escapeHTML(tag)}
-
-</div>
-
-<h3>
-
-${escapeHTML(title||"")}
-
-</h3>
-
-<p>
-
-${escapeHTML(summary||"")}
-
-</p>
-
-<div class="news-meta">
-
-<span>
-
-${escapeHTML(
-news.source||"BARSAL"
-)}
-
-</span>
-
-<span>
-
-${formatDate(news.time)}
-
-</span>
-
-</div>
-
-
-${
-news.url
-?
-
-`
-
-<a
-
-href="${escapeHTML(news.url)}"
-
-target="_blank"
-
-rel="noopener"
-
-class="news-link">
-
-${t("read_more")} ←
-
-</a>
-
-`
-
-:""
-
-}
-
-</article>
-
-`;
+    }
 
 }
 
 
-/* =====================================================
-   IMPORTANT NEWS
-===================================================== */
+/* TRANSLATE ONE NEWS */
 
-function renderImportant(){
+async function translateNewsItem(item){
 
-const box=
-document.getElementById(
-"importantNews"
-);
+    if(!item){
+        return item;
+    }
 
+    const translatedItem = {
+        ...item
+    };
 
-const list=
-allNewsData
-.filter(n=>n.important)
-.slice(0,6);
+    translatedItem.originalTitle =
+        item.originalTitle || item.title;
 
+    translatedItem.originalSummary =
+        item.originalSummary || item.summary;
 
-if(!list.length){
+    translatedItem.title =
+        await translateText(item.title || "خبر فوتبال");
 
-box.innerHTML=
-`
-<div class="empty">
-${t("no_news")}
-</div>
-`;
+    if(item.summary){
 
-return;
+        translatedItem.summary =
+            await translateText(item.summary);
 
-}
+    }
 
-
-box.innerHTML=
-list
-.map(createNewsCard)
-.join("");
-
-
-if(list[0]){
-
-const first=
-
-currentLang==="en"
-
-?(list[0].title_en||
-list[0].title)
-
-:list[0].title;
-
-
-document.getElementById(
-"breakingText"
-).textContent=
-first||"BARSAL";
-
-}
+    return translatedItem;
 
 }
 
 
-/* =====================================================
-   LEAGUES
-===================================================== */
+/* TRANSLATE ALL NEWS */
 
-function showLeague(league){
+async function translateAllNews(){
 
-selectedLeague=league;
+    if(!allNewsData.length){
+        return;
+    }
 
+    showTranslationStatus("🌐 در حال ترجمه اخبار...");
 
-document
-.querySelectorAll(".league-tab")
-.forEach(btn=>{
+    const result = [];
 
-btn.classList.toggle(
-"active",
-btn.dataset.league===league
-);
+    /*
+       ترجمه یکی‌یکی انجام می‌شود تا فشار زیادی
+       به سرویس رایگان وارد نشود.
+    */
 
-});
+    for(let i=0;i<allNewsData.length;i++){
 
+        const item = allNewsData[i];
 
-const list=
-allNewsData.filter(n=>
+        const translated =
+            await translateNewsItem(item);
 
-String(n.category)
-.toLowerCase()
+        result.push(translated);
 
-===
+        if(i % 3 === 0){
 
-league.toLowerCase()
+            showTranslationStatus(
+                "🌐 در حال ترجمه اخبار " +
+                (i + 1) +
+                " از " +
+                allNewsData.length
+            );
 
-);
+        }
 
+    }
 
-const box=
-document.getElementById(
-"leagueNews"
-);
+    allNewsData = result;
 
+    try{
 
-if(!list.length){
+        localStorage.setItem(
+            "barsalTranslationCache",
+            JSON.stringify(translationCache)
+        );
 
-box.innerHTML=
-`
-<div class="empty">
-${t("no_news")}
-</div>
-`;
+    }catch(e){
 
-return;
+        console.warn("Translation cache could not be saved.");
 
-}
+    }
 
+    hideTranslationStatus();
 
-box.innerHTML=
-
-list
-.slice(0,6)
-.map(createNewsCard)
-.join("");
+    renderEverything();
 
 }
 
 
-document
-.querySelectorAll(".league-tab")
-.forEach(btn=>{
+/* ORIGINAL NEWS */
 
-btn.addEventListener(
-"click",
-()=>{
+function restoreOriginalNews(){
 
-showLeague(
-btn.dataset.league
-);
+    allNewsData = allNewsData.map(item => {
 
-});
+        return {
+            ...item,
+            title:
+                item.originalTitle ||
+                item.title,
 
-});
+            summary:
+                item.originalSummary ||
+                item.summary
+        };
 
+    });
 
-/* =====================================================
-   TEAMS
-===================================================== */
+    localStorage.setItem("barsalLanguage","en");
 
-const teamNames={
-
-"Barcelona":{
-fa:"بارسلونا",
-en:"Barcelona"
-},
-
-"Real Madrid":{
-fa:"رئال مادرید",
-en:"Real Madrid"
-},
-
-"Atletico Madrid":{
-fa:"اتلتیکو مادرید",
-en:"Atletico Madrid"
-},
-
-"Arsenal":{
-fa:"آرسنال",
-en:"Arsenal"
-},
-
-"Liverpool":{
-fa:"لیورپول",
-en:"Liverpool"
-},
-
-"Manchester City":{
-fa:"منچسترسیتی",
-en:"Manchester City"
-},
-
-"Manchester United":{
-fa:"منچستریونایتد",
-en:"Manchester United"
-},
-
-"Inter Miami":{
-fa:"اینتر میامی",
-en:"Inter Miami"
-},
-
-"Al Nassr":{
-fa:"النصر",
-en:"Al Nassr"
-},
-
-"PSG":{
-fa:"پاری‌سن‌ژرمن",
-en:"Paris Saint-Germain"
-},
-
-"Bayern Munich":{
-fa:"بایرن مونیخ",
-en:"Bayern Munich"
-},
-
-"Inter Milan":{
-fa:"اینتر میلان",
-en:"Inter Milan"
-}
-
-};
-
-
-function teamSelect(team){
-
-selectedTeam=team;
-
-
-document
-.querySelectorAll(".team-btn")
-.forEach(btn=>{
-
-btn.classList.toggle(
-"active",
-btn.dataset.team===team
-);
-
-});
-
-
-renderTeamNews();
+    renderEverything();
 
 }
 
 
-function renderTeamNews(){
+/* TRANSLATION BUTTON */
 
-const titleBox=
-document.getElementById(
-"teamTitle"
-);
+async function toggleTranslation(){
 
-const box=
-document.getElementById(
-"teamNews"
-);
+    const button =
+        document.getElementById("translateButton");
 
+    if(isPersian){
 
-if(!selectedTeam){
+        isPersian = false;
 
-titleBox.innerHTML="";
+        localStorage.setItem(
+            "barsalLanguage",
+            "en"
+        );
 
-box.innerHTML="";
+        button.innerHTML =
+            "🌐 ترجمه فارسی";
 
-return;
+        restoreOriginalNews();
 
-}
+        return;
+    }
 
+    isPersian = true;
 
-const name=
+    localStorage.setItem(
+        "barsalLanguage",
+        "fa"
+    );
 
-teamNames[selectedTeam]
+    button.innerHTML =
+        "🇬🇧 نمایش انگلیسی";
 
-?
-
-teamNames[selectedTeam][currentLang]
-
-:selectedTeam;
-
-
-titleBox.innerHTML=
-
-`
-
-<div class="section-head">
-
-<div class="eyebrow">
-${t("team_news")}
-</div>
-
-<h2 class="section-title">
-${escapeHTML(name)}
-</h2>
-
-</div>
-
-`;
-
-
-const key=
-selectedTeam.toLowerCase();
-
-
-const list=
-allNewsData.filter(news=>{
-
-const team=
-String(news.team||"")
-.toLowerCase();
-
-const teamFa=
-String(news.team_fa||"")
-.toLowerCase();
-
-return(
-
-team.includes(key)||
-teamFa.includes(key)
-
-);
-
-});
-
-
-if(!list.length){
-
-box.innerHTML=
-
-`
-<div class="empty">
-${t("no_team")}
-</div>
-`;
-
-return;
+    await translateAllNews();
 
 }
 
 
-box.innerHTML=
+/* STATUS */
 
-list
-.slice(0,6)
-.map(createNewsCard)
-.join("");
+function showTranslationStatus(text){
 
-}
+    const box =
+        document.getElementById("translateStatus");
 
+    if(!box){
+        return;
+    }
 
-document
-.querySelectorAll(".team-btn")
-.forEach(btn=>{
+    box.innerText = text;
 
-btn.addEventListener(
-"click",
-()=>{
-
-teamSelect(
-btn.dataset.team
-);
-
-});
-
-});
-
-
-/* =====================================================
-   TRANSFERS
-===================================================== */
-
-function renderTransfers(){
-
-const box=
-document.getElementById(
-"transferNews"
-);
-
-
-const list=
-allNewsData
-.filter(n=>
-String(n.category)
-.toLowerCase()
-==="transfers"
-)
-.slice(0,6);
-
-
-if(!list.length){
-
-box.innerHTML=
-`
-<div class="empty">
-${t("no_transfer")}
-</div>
-`;
-
-return;
+    box.classList.add("show");
 
 }
 
 
-box.innerHTML=
-list
-.map(createNewsCard)
-.join("");
+function hideTranslationStatus(){
+
+    const box =
+        document.getElementById("translateStatus");
+
+    if(!box){
+        return;
+    }
+
+    box.classList.remove("show");
 
 }
 
 
-/* =====================================================
-   SEARCH
-===================================================== */
+/* NEWS CARD */
 
-function performSearch(){
+function createNewsCard(item, important=false){
 
-const query=
-document
-.getElementById("searchInput")
-.value
-.trim()
-.toLowerCase();
+    const title =
+        escapeHTML(item.title || "خبر فوتبال");
 
+    const summary =
+        escapeHTML(
+            item.summary ||
+            "برای مشاهده جزئیات این خبر به منبع اصلی مراجعه کنید."
+        );
 
-const resultsBox=
-document.getElementById(
-"searchResults"
-);
+    const source =
+        escapeHTML(item.source || "BARSAL");
 
-const newsBox=
-document.getElementById(
-"searchNews"
-);
+    const time =
+        escapeHTML(formatDate(item.time));
 
+    let link = item.url || "#";
 
-if(!query){
+    if(!/^https?:\/\//i.test(link)){
+        link = "#";
+    }
 
-resultsBox.classList.remove(
-"active"
-);
+    return `
 
-newsBox.innerHTML="";
+        <article class="news ${important ? "breaking" : ""}">
 
-return;
+            ${important ? '<span class="tag">🚨 مهم</span>' : ""}
 
-}
+            <div class="news-top">
 
+                <span>${source}</span>
 
-const results=
-allNewsData.filter(news=>{
+                <span>${time}</span>
 
-const text=[
+            </div>
 
-news.title,
-news.title_en,
-news.summary,
-news.summary_en,
-news.source,
-news.team,
-news.team_fa,
-news.category
+            <h3>
+                ${title}
+            </h3>
 
-]
+            <p>
+                ${summary}
+            </p>
 
-.filter(Boolean)
+            ${
+                link !== "#"
+                ?
+                `
+                <a
+                    class="news-link"
+                    href="${escapeHTML(link)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    مشاهده خبر در منبع اصلی ←
+                </a>
+                `
+                :
+                `
+                <span class="news-link">
+                    جزئیات خبر ←
+                </span>
+                `
+            }
 
-.join(" ")
+        </article>
 
-.toLowerCase();
-
-
-return text.includes(query);
-
-});
-
-
-resultsBox.classList.add(
-"active"
-);
-
-
-if(!results.length){
-
-newsBox.innerHTML=
-
-`
-<div class="empty">
-${t("no_search")}
-</div>
-`;
-
-return;
+    `;
 
 }
 
 
-newsBox.innerHTML=
+/* RENDER */
 
-results
-.slice(0,12)
-.map(createNewsCard)
-.join("");
+function renderNews(list, elementId, important=false){
 
-}
+    const box =
+        document.getElementById(elementId);
 
+    if(!box){
+        return;
+    }
 
-document
-.getElementById("searchButton")
-.addEventListener(
-"click",
-performSearch
-);
+    if(!list || list.length === 0){
 
+        box.innerHTML = `
+            <div class="empty">
+                😕 فعلاً خبری در این بخش پیدا نشد.
+            </div>
+        `;
 
-document
-.getElementById("searchInput")
-.addEventListener(
-"keydown",
-event=>{
+        return;
+    }
 
-if(event.key==="Enter"){
-
-performSearch();
-
-}
-
-});
-
-
-document
-.getElementById("searchInput")
-.addEventListener(
-"input",
-()=>{
-
-if(
-document
-.getElementById("searchInput")
-.value.trim()
-===""
-
-){
-
-document
-.getElementById(
-"searchResults"
-)
-.classList.remove(
-"active"
-);
-
-}
-
-});
-
-
-/* =====================================================
-   QR CODES
-===================================================== */
-
-function generateQR(){
-
-const siteBox=
-document.getElementById(
-"siteQR"
-);
-
-const baleBox=
-document.getElementById(
-"baleQR"
-);
-
-
-siteBox.innerHTML="";
-
-baleBox.innerHTML="";
-
-
-if(typeof QRCode==="undefined"){
-
-siteBox.innerHTML=
-"QR";
-
-baleBox.innerHTML=
-"QR";
-
-return;
+    box.innerHTML =
+        list
+        .slice(0,9)
+        .map(item =>
+            createNewsCard(item,important)
+        )
+        .join("");
 
 }
 
 
-new QRCode(
-siteBox,
-{
+/* RENDER EVERYTHING */
 
-text:
-"https://kiannabifar-sys.github.io/BARSAL/",
+function renderEverything(){
 
-width:170,
+    document.getElementById("newsCount").innerText =
+        allNewsData.length;
 
-height:170,
+    renderImportant();
 
-colorDark:"#111111",
+    showLeague(selectedLeague);
 
-colorLight:"#ffffff",
+    renderTeamNews(selectedTeam);
 
-correctLevel:
-QRCode.CorrectLevel.H
+    renderTransfers();
 
-}
-);
-
-
-new QRCode(
-baleBox,
-{
-
-text:
-"https://ble.ir/barsal10",
-
-width:170,
-
-height:170,
-
-colorDark:"#111111",
-
-colorLight:"#ffffff",
-
-correctLevel:
-QRCode.CorrectLevel.H
-
-}
-);
+    renderAllNews();
 
 }
 
 
-/* =====================================================
-   RENDER ALL
-===================================================== */
-
-function renderAll(){
-
-renderImportant();
-
-showLeague(
-selectedLeague
-);
-
-if(selectedTeam){
-
-renderTeamNews();
-
-}
-
-renderTransfers();
-
-
-const search=
-document
-.getElementById(
-"searchInput"
-)
-.value
-.trim();
-
-
-if(search){
-
-performSearch();
-
-}
-
-}
-
-
-/* =====================================================
-   LOAD NEWS
-===================================================== */
+/* LOAD NEWS.JSON */
 
 async function loadNews(){
 
-try{
+    try{
 
-const response=
-await fetch(
-"news.json?t="+Date.now(),
-{
-cache:"no-store"
+        const response =
+            await fetch(
+                "news.json?t=" + Date.now(),
+                {
+                    cache:"no-store"
+                }
+            );
+
+        if(!response.ok){
+            throw new Error("news.json not found");
+        }
+
+        const data =
+            await response.json();
+
+        if(!Array.isArray(data)){
+            throw new Error("Invalid news.json");
+        }
+
+        allNewsData = data;
+
+        document.getElementById("newsCount").innerText =
+            allNewsData.length;
+
+        document.getElementById("systemText").innerText =
+            "خبرها با موفقیت از سیستم خودکار دریافت شدند.";
+
+        document.getElementById("systemStatus").innerHTML =
+            "● سیستم فعال است";
+
+        /*
+           اگر کاربر قبلاً فارسی را انتخاب کرده،
+           خبرها را دوباره از کش ترجمه می‌کنیم.
+        */
+
+        if(isPersian){
+
+            document.getElementById("translateButton").innerHTML =
+                "🇬🇧 نمایش انگلیسی";
+
+            await translateAllNews();
+
+        }else{
+
+            renderEverything();
+
+        }
+
+    }catch(error){
+
+        console.error(error);
+
+        document.getElementById("newsCount").innerText =
+            "OFF";
+
+        document.getElementById("systemText").innerText =
+            "اتصال به news.json برقرار نشد.";
+
+        document.getElementById("systemStatus").innerHTML =
+            '<span class="error">● خطا در دریافت اخبار</span>';
+
+        document.getElementById("importantNews").innerHTML = `
+            <div class="empty error">
+                ❌ فایل news.json پیدا نشد یا هنوز قابل دسترسی نیست.
+            </div>
+        `;
+
+        document.getElementById("leagueNews").innerHTML = `
+            <div class="empty">
+                ⏳ اخبار بعد از در دسترس قرار گرفتن news.json نمایش داده می‌شوند.
+            </div>
+        `;
+
+        document.getElementById("teamNews").innerHTML = `
+            <div class="empty">
+                ⏳ اخبار تیم بعد از اتصال به سیستم نمایش داده می‌شوند.
+            </div>
+        `;
+
+        document.getElementById("transferNews").innerHTML = `
+            <div class="empty">
+                ⏳ اخبار نقل‌وانتقالات بعد از اتصال نمایش داده می‌شوند.
+            </div>
+        `;
+
+        document.getElementById("allNews").innerHTML = `
+            <div class="empty error">
+                ❌ فعلاً امکان دریافت اخبار وجود ندارد.
+            </div>
+        `;
+
+    }
+
 }
-);
 
 
-if(!response.ok){
+/* IMPORTANT NEWS */
 
-throw new Error(
-"news.json not found"
-);
+function renderImportant(){
 
-}
+    let list =
+        allNewsData.filter(item => {
 
+            return item.important === true ||
+                   item.important === "true" ||
+                   item.category === "important";
 
-const data=
-await response.json();
+        });
 
+    if(list.length === 0){
+        list = allNewsData.slice(0,3);
+    }
 
-if(Array.isArray(data)){
-
-allNewsData=data;
-
-}
-
-else if(
-Array.isArray(data.news)
-){
-
-allNewsData=data.news;
-
-}
-
-else{
-
-allNewsData=[];
+    renderNews(
+        list,
+        "importantNews",
+        true
+    );
 
 }
 
 
-document
-.getElementById(
-"newsCount"
-)
-.textContent=
-allNewsData.length;
+/* LEAGUES */
+
+function showLeague(league,button=null){
+
+    selectedLeague = league;
+
+    if(button){
+
+        document
+        .querySelectorAll(".tab")
+        .forEach(function(x){
+
+            x.classList.remove("active");
+
+        });
+
+        button.classList.add("active");
+
+    }else{
+
+        document
+        .querySelectorAll(".tab")
+        .forEach(function(x){
+
+            x.classList.remove("active");
+
+        });
+
+        const buttons =
+            document.querySelectorAll(".tab");
+
+        if(league==="laliga" && buttons[0]){
+            buttons[0].classList.add("active");
+        }
+
+        if(league==="premier" && buttons[1]){
+            buttons[1].classList.add("active");
+        }
+
+        if(league==="seriea" && buttons[2]){
+            buttons[2].classList.add("active");
+        }
+
+    }
 
 
-renderAll();
+    if(allNewsData.length === 0){
+        return;
+    }
 
+
+    const list =
+        allNewsData.filter(item => {
+
+            return item.category === league;
+
+        });
+
+
+    renderNews(
+        list,
+        "leagueNews"
+    );
 
 }
 
-catch(error){
 
-console.error(error);
+/* TEAMS */
 
+function teamSelect(button,name,teamKey){
 
-document
-.getElementById(
-"importantNews"
-)
-.innerHTML=
+    document
+    .querySelectorAll(".team")
+    .forEach(function(x){
 
-`
-<div class="empty">
-${t("error")}
-</div>
-`;
+        x.classList.remove("active");
+
+    });
+
+    button.classList.add("active");
+
+    selectedTeam = teamKey;
+
+    document.getElementById("teamTitle").innerText =
+        "اخبار " + name;
+
+    renderTeamNews(teamKey);
 
 }
 
+
+function renderTeamNews(teamKey){
+
+    if(allNewsData.length === 0){
+        return;
+    }
+
+    const key =
+        String(teamKey).toLowerCase();
+
+    const list =
+        allNewsData.filter(item => {
+
+            const team =
+                String(item.team || "")
+                .toLowerCase();
+
+            const teamFa =
+                String(item.team_fa || "")
+                .toLowerCase();
+
+            const title =
+                String(item.title || "")
+                .toLowerCase();
+
+            return (
+                team === key ||
+                team.includes(key) ||
+                title.includes(key) ||
+                teamFa.includes(key)
+            );
+
+        });
+
+
+    renderNews(
+        list,
+        "teamNews"
+    );
+
 }
 
 
-/* =====================================================
-   START
-===================================================== */
+/* TRANSFERS */
 
-document
-.getElementById("year")
-.textContent=
-new Date().getFullYear();
+function renderTransfers(){
+
+    const list =
+        allNewsData.filter(item => {
+
+            return item.category === "transfers";
+
+        });
+
+    renderNews(
+        list,
+        "transferNews"
+    );
+
+}
 
 
-setLanguage(
-currentLang
-);
+/* ALL NEWS */
+
+function renderAllNews(){
+
+    renderNews(
+        allNewsData,
+        "allNews"
+    );
+
+}
 
 
-generateQR();
+/* SEARCH */
 
+function searchNews(){
+
+    const query =
+        document
+        .getElementById("search")
+        .value
+        .trim()
+        .toLowerCase();
+
+
+    if(!query){
+
+        renderAllNews();
+
+        return;
+
+    }
+
+
+    const result =
+        allNewsData.filter(item => {
+
+            const text = [
+
+                item.title,
+                item.summary,
+                item.source,
+                item.team,
+                item.team_fa,
+                item.category
+
+            ]
+            .filter(Boolean)
+            .join(" ")
+            .toLowerCase();
+
+
+            return text.includes(query);
+
+        });
+
+
+    renderNews(
+        result,
+        "allNews"
+    );
+
+}
+
+
+/* AUTO REFRESH */
+
+setInterval(function(){
+
+    loadNews();
+
+},15 * 60 * 1000);
+
+
+/* START */
 
 loadNews();
-
-
-/* =====================================================
-   AUTO REFRESH
-===================================================== */
-
-setInterval(
-()=>{
-
-loadNews();
-
-},
-15*60*1000
-);
 
 </script>
 
 </body>
-</html>
-
-
-
+   </html>

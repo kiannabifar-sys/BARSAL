@@ -60,12 +60,11 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
-    min-height:75px;
+    height:75px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:15px;
-    padding:10px 6%;
+    padding:0 6%;
     background:rgba(7,9,13,.88);
     backdrop-filter:blur(18px);
     border-bottom:1px solid var(--line);
@@ -102,65 +101,15 @@ header{
     letter-spacing:2px;
 }
 
-.header-actions{
-    display:flex;
-    align-items:center;
-    gap:8px;
-}
-
-.theme,
-.translate-btn{
+.theme{
     border:1px solid var(--line);
     background:var(--card);
     color:white;
+    width:42px;
     height:42px;
     border-radius:12px;
-    cursor:pointer;
-    transition:.2s;
-}
-
-.theme{
-    width:42px;
     font-size:18px;
-}
-
-.translate-btn{
-    padding:0 14px;
-    font-size:12px;
-    font-weight:800;
-}
-
-.theme:hover,
-.translate-btn:hover{
-    border-color:#ffffff45;
-    transform:translateY(-2px);
-}
-
-.translate-btn.active{
-    background:var(--red);
-    border-color:var(--red);
-}
-
-.translate-status{
-    position:fixed;
-    top:90px;
-    left:50%;
-    transform:translateX(-50%);
-    z-index:2000;
-    padding:9px 16px;
-    border-radius:12px;
-    background:var(--card2);
-    border:1px solid var(--line);
-    box-shadow:0 10px 40px #0008;
-    color:var(--text);
-    font-size:11px;
-    opacity:0;
-    pointer-events:none;
-    transition:.25s;
-}
-
-.translate-status.show{
-    opacity:1;
+    cursor:pointer;
 }
 
 nav{
@@ -550,8 +499,7 @@ body.light nav{
     background:white;
 }
 
-body.light .theme,
-body.light .translate-btn{
+body.light .theme{
     color:#111;
 }
 
@@ -566,20 +514,7 @@ body.light .hero-panel{
 @media(max-width:800px){
 
     header{
-        padding:10px 16px;
-    }
-
-    .logo-text strong{
-        font-size:19px;
-    }
-
-    .logo-text small{
-        font-size:7px;
-    }
-
-    .translate-btn{
-        padding:0 10px;
-        font-size:10px;
+        padding:0 20px;
     }
 
     .hero{
@@ -615,10 +550,6 @@ body.light .hero-panel{
 
 <body>
 
-<div class="translate-status" id="translateStatus">
-    🌐 در حال ترجمه اخبار...
-</div>
-
 <header>
 
     <div class="logo-box">
@@ -632,25 +563,7 @@ body.light .hero-panel{
 
     </div>
 
-    <div class="header-actions">
-
-        <button
-            class="translate-btn"
-            id="translateButton"
-            onclick="toggleTranslation()"
-        >
-            🌐 ترجمه فارسی
-        </button>
-
-        <button
-            class="theme"
-            onclick="toggleTheme()"
-            title="تغییر حالت"
-        >
-            ☾
-        </button>
-
-    </div>
+    <button class="theme" onclick="toggleTheme()">☾</button>
 
 </header>
 
@@ -1018,22 +931,8 @@ body.light .hero-panel{
 <script>
 
 let allNewsData = [];
-
 let selectedTeam = "Barcelona";
 let selectedLeague = "laliga";
-
-let isPersian = localStorage.getItem("barsalLanguage") === "fa";
-
-let translationCache = {};
-
-try{
-    translationCache =
-        JSON.parse(
-            localStorage.getItem("barsalTranslationCache") || "{}"
-        );
-}catch(e){
-    translationCache = {};
-}
 
 
 /* THEME */
@@ -1103,268 +1002,18 @@ function formatDate(value){
 }
 
 
-/* TRANSLATION API */
-
-async function translateText(text){
-
-    if(!text){
-        return "";
-    }
-
-    const cacheKey = String(text).trim();
-
-    if(translationCache[cacheKey]){
-        return translationCache[cacheKey];
-    }
-
-    try{
-
-        const url =
-            "https://api.mymemory.translated.net/get?q=" +
-            encodeURIComponent(text) +
-            "&langpair=auto|fa";
-
-        const response = await fetch(url);
-
-        if(!response.ok){
-            throw new Error("Translation request failed");
-        }
-
-        const data = await response.json();
-
-        const translated =
-            data &&
-            data.responseData &&
-            data.responseData.translatedText
-            ?
-            data.responseData.translatedText
-            :
-            text;
-
-        translationCache[cacheKey] = translated;
-
-        return translated;
-
-    }catch(error){
-
-        console.error("Translation error:",error);
-
-        return text;
-
-    }
-
-}
-
-
-/* TRANSLATE ONE NEWS */
-
-async function translateNewsItem(item){
-
-    if(!item){
-        return item;
-    }
-
-    const translatedItem = {
-        ...item
-    };
-
-    translatedItem.originalTitle =
-        item.originalTitle || item.title;
-
-    translatedItem.originalSummary =
-        item.originalSummary || item.summary;
-
-    translatedItem.title =
-        await translateText(item.title || "خبر فوتبال");
-
-    if(item.summary){
-
-        translatedItem.summary =
-            await translateText(item.summary);
-
-    }
-
-    return translatedItem;
-
-}
-
-
-/* TRANSLATE ALL NEWS */
-
-async function translateAllNews(){
-
-    if(!allNewsData.length){
-        return;
-    }
-
-    showTranslationStatus("🌐 در حال ترجمه اخبار...");
-
-    const result = [];
-
-    /*
-       ترجمه یکی‌یکی انجام می‌شود تا فشار زیادی
-       به سرویس رایگان وارد نشود.
-    */
-
-    for(let i=0;i<allNewsData.length;i++){
-
-        const item = allNewsData[i];
-
-        const translated =
-            await translateNewsItem(item);
-
-        result.push(translated);
-
-        if(i % 3 === 0){
-
-            showTranslationStatus(
-                "🌐 در حال ترجمه اخبار " +
-                (i + 1) +
-                " از " +
-                allNewsData.length
-            );
-
-        }
-
-    }
-
-    allNewsData = result;
-
-    try{
-
-        localStorage.setItem(
-            "barsalTranslationCache",
-            JSON.stringify(translationCache)
-        );
-
-    }catch(e){
-
-        console.warn("Translation cache could not be saved.");
-
-    }
-
-    hideTranslationStatus();
-
-    renderEverything();
-
-}
-
-
-/* ORIGINAL NEWS */
-
-function restoreOriginalNews(){
-
-    allNewsData = allNewsData.map(item => {
-
-        return {
-            ...item,
-            title:
-                item.originalTitle ||
-                item.title,
-
-            summary:
-                item.originalSummary ||
-                item.summary
-        };
-
-    });
-
-    localStorage.setItem("barsalLanguage","en");
-
-    renderEverything();
-
-}
-
-
-/* TRANSLATION BUTTON */
-
-async function toggleTranslation(){
-
-    const button =
-        document.getElementById("translateButton");
-
-    if(isPersian){
-
-        isPersian = false;
-
-        localStorage.setItem(
-            "barsalLanguage",
-            "en"
-        );
-
-        button.innerHTML =
-            "🌐 ترجمه فارسی";
-
-        restoreOriginalNews();
-
-        return;
-    }
-
-    isPersian = true;
-
-    localStorage.setItem(
-        "barsalLanguage",
-        "fa"
-    );
-
-    button.innerHTML =
-        "🇬🇧 نمایش انگلیسی";
-
-    await translateAllNews();
-
-}
-
-
-/* STATUS */
-
-function showTranslationStatus(text){
-
-    const box =
-        document.getElementById("translateStatus");
-
-    if(!box){
-        return;
-    }
-
-    box.innerText = text;
-
-    box.classList.add("show");
-
-}
-
-
-function hideTranslationStatus(){
-
-    const box =
-        document.getElementById("translateStatus");
-
-    if(!box){
-        return;
-    }
-
-    box.classList.remove("show");
-
-}
-
-
 /* NEWS CARD */
 
 function createNewsCard(item, important=false){
 
-    const title =
-        escapeHTML(item.title || "خبر فوتبال");
+    const title = escapeHTML(item.title || "خبر فوتبال");
+    const summary = escapeHTML(
+        item.summary ||
+        "برای مشاهده جزئیات این خبر به منبع اصلی مراجعه کنید."
+    );
 
-    const summary =
-        escapeHTML(
-            item.summary ||
-            "برای مشاهده جزئیات این خبر به منبع اصلی مراجعه کنید."
-        );
-
-    const source =
-        escapeHTML(item.source || "BARSAL");
-
-    const time =
-        escapeHTML(formatDate(item.time));
+    const source = escapeHTML(item.source || "BARSAL");
+    const time = escapeHTML(formatDate(item.time));
 
     let link = item.url || "#";
 
@@ -1379,11 +1028,8 @@ function createNewsCard(item, important=false){
             ${important ? '<span class="tag">🚨 مهم</span>' : ""}
 
             <div class="news-top">
-
                 <span>${source}</span>
-
                 <span>${time}</span>
-
             </div>
 
             <h3>
@@ -1426,8 +1072,7 @@ function createNewsCard(item, important=false){
 
 function renderNews(list, elementId, important=false){
 
-    const box =
-        document.getElementById(elementId);
+    const box = document.getElementById(elementId);
 
     if(!box){
         return;
@@ -1444,33 +1089,10 @@ function renderNews(list, elementId, important=false){
         return;
     }
 
-    box.innerHTML =
-        list
+    box.innerHTML = list
         .slice(0,9)
-        .map(item =>
-            createNewsCard(item,important)
-        )
+        .map(item => createNewsCard(item,important))
         .join("");
-
-}
-
-
-/* RENDER EVERYTHING */
-
-function renderEverything(){
-
-    document.getElementById("newsCount").innerText =
-        allNewsData.length;
-
-    renderImportant();
-
-    showLeague(selectedLeague);
-
-    renderTeamNews(selectedTeam);
-
-    renderTransfers();
-
-    renderAllNews();
 
 }
 
@@ -1481,20 +1103,18 @@ async function loadNews(){
 
     try{
 
-        const response =
-            await fetch(
-                "news.json?t=" + Date.now(),
-                {
-                    cache:"no-store"
-                }
-            );
+        const response = await fetch(
+            "news.json?t=" + Date.now(),
+            {
+                cache:"no-store"
+            }
+        );
 
         if(!response.ok){
             throw new Error("news.json not found");
         }
 
-        const data =
-            await response.json();
+        const data = await response.json();
 
         if(!Array.isArray(data)){
             throw new Error("Invalid news.json");
@@ -1511,30 +1131,17 @@ async function loadNews(){
         document.getElementById("systemStatus").innerHTML =
             "● سیستم فعال است";
 
-        /*
-           اگر کاربر قبلاً فارسی را انتخاب کرده،
-           خبرها را دوباره از کش ترجمه می‌کنیم.
-        */
-
-        if(isPersian){
-
-            document.getElementById("translateButton").innerHTML =
-                "🇬🇧 نمایش انگلیسی";
-
-            await translateAllNews();
-
-        }else{
-
-            renderEverything();
-
-        }
+        renderImportant();
+        showLeague(selectedLeague);
+        renderTeamNews(selectedTeam);
+        renderTransfers();
+        renderAllNews();
 
     }catch(error){
 
         console.error(error);
 
-        document.getElementById("newsCount").innerText =
-            "OFF";
+        document.getElementById("newsCount").innerText = "OFF";
 
         document.getElementById("systemText").innerText =
             "اتصال به news.json برقرار نشد.";
@@ -1581,24 +1188,19 @@ async function loadNews(){
 
 function renderImportant(){
 
-    let list =
-        allNewsData.filter(item => {
+    let list = allNewsData.filter(item => {
 
-            return item.important === true ||
-                   item.important === "true" ||
-                   item.category === "important";
+        return item.important === true ||
+               item.important === "true" ||
+               item.category === "important";
 
-        });
+    });
 
     if(list.length === 0){
         list = allNewsData.slice(0,3);
     }
 
-    renderNews(
-        list,
-        "importantNews",
-        true
-    );
+    renderNews(list,"importantNews",true);
 
 }
 
@@ -1611,28 +1213,21 @@ function showLeague(league,button=null){
 
     if(button){
 
-        document
-        .querySelectorAll(".tab")
-        .forEach(function(x){
-
+        document.querySelectorAll(".tab").forEach(function(x){
             x.classList.remove("active");
-
         });
 
         button.classList.add("active");
 
     }else{
 
-        document
-        .querySelectorAll(".tab")
-        .forEach(function(x){
+        document.querySelectorAll(".tab").forEach(function(x){
 
             x.classList.remove("active");
 
         });
 
-        const buttons =
-            document.querySelectorAll(".tab");
+        const buttons = document.querySelectorAll(".tab");
 
         if(league==="laliga" && buttons[0]){
             buttons[0].classList.add("active");
@@ -1654,18 +1249,14 @@ function showLeague(league,button=null){
     }
 
 
-    const list =
-        allNewsData.filter(item => {
+    let list = allNewsData.filter(item => {
 
-            return item.category === league;
+        return item.category === league;
 
-        });
+    });
 
 
-    renderNews(
-        list,
-        "leagueNews"
-    );
+    renderNews(list,"leagueNews");
 
 }
 
@@ -1674,12 +1265,8 @@ function showLeague(league,button=null){
 
 function teamSelect(button,name,teamKey){
 
-    document
-    .querySelectorAll(".team")
-    .forEach(function(x){
-
+    document.querySelectorAll(".team").forEach(function(x){
         x.classList.remove("active");
-
     });
 
     button.classList.add("active");
@@ -1700,38 +1287,29 @@ function renderTeamNews(teamKey){
         return;
     }
 
-    const key =
-        String(teamKey).toLowerCase();
+    const key = String(teamKey).toLowerCase();
 
-    const list =
-        allNewsData.filter(item => {
+    const list = allNewsData.filter(item => {
 
-            const team =
-                String(item.team || "")
-                .toLowerCase();
+        const team =
+            String(item.team || "").toLowerCase();
 
-            const teamFa =
-                String(item.team_fa || "")
-                .toLowerCase();
+        const teamFa =
+            String(item.team_fa || "").toLowerCase();
 
-            const title =
-                String(item.title || "")
-                .toLowerCase();
+        const title =
+            String(item.title || "").toLowerCase();
 
-            return (
-                team === key ||
-                team.includes(key) ||
-                title.includes(key) ||
-                teamFa.includes(key)
-            );
+        return (
+            team === key ||
+            team.includes(key) ||
+            title.includes(key) ||
+            teamFa.includes(key)
+        );
 
-        });
+    });
 
-
-    renderNews(
-        list,
-        "teamNews"
-    );
+    renderNews(list,"teamNews");
 
 }
 
@@ -1740,17 +1318,13 @@ function renderTeamNews(teamKey){
 
 function renderTransfers(){
 
-    const list =
-        allNewsData.filter(item => {
+    const list = allNewsData.filter(item => {
 
-            return item.category === "transfers";
+        return item.category === "transfers";
 
-        });
+    });
 
-    renderNews(
-        list,
-        "transferNews"
-    );
+    renderNews(list,"transferNews");
 
 }
 
@@ -1782,39 +1356,34 @@ function searchNews(){
     if(!query){
 
         renderAllNews();
-
         return;
 
     }
 
 
-    const result =
-        allNewsData.filter(item => {
+    const result = allNewsData.filter(item => {
 
-            const text = [
+        const text = [
 
-                item.title,
-                item.summary,
-                item.source,
-                item.team,
-                item.team_fa,
-                item.category
+            item.title,
+            item.summary,
+            item.source,
+            item.team,
+            item.team_fa,
+            item.category
 
-            ]
-            .filter(Boolean)
-            .join(" ")
-            .toLowerCase();
-
-
-            return text.includes(query);
-
-        });
+        ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
 
 
-    renderNews(
-        result,
-        "allNews"
-    );
+        return text.includes(query);
+
+    });
+
+
+    renderNews(result,"allNews");
 
 }
 

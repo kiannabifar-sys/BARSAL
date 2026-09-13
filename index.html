@@ -1510,6 +1510,171 @@ h2{
     font-size:11px;
 }
 
+/* ================= LEAGUE STANDINGS ================= */
+
+.standings-box{
+    overflow:hidden;
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--card2),
+            var(--card)
+        );
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.18);
+}
+
+.standings-top{
+    display:flex;
+
+    align-items:center;
+    justify-content:space-between;
+
+    gap:15px;
+
+    padding:18px 20px;
+
+    border-bottom:1px solid var(--line);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(229,29,50,.08),
+            transparent
+        );
+}
+
+.standings-top strong{
+    font-size:14px;
+}
+
+.standings-top span{
+    color:var(--muted);
+
+    font-size:9px;
+}
+
+.standings-scroll{
+    width:100%;
+
+    overflow-x:auto;
+}
+
+.standings-table{
+    width:100%;
+
+    min-width:720px;
+
+    border-collapse:collapse;
+}
+
+.standings-table th{
+    padding:14px 10px;
+
+    color:var(--muted);
+
+    background:var(--card2);
+
+    font-size:9px;
+
+    font-weight:800;
+
+    white-space:nowrap;
+}
+
+.standings-table td{
+    padding:12px 10px;
+
+    text-align:center;
+
+    border-top:1px solid var(--line);
+
+    font-size:11px;
+
+    white-space:nowrap;
+}
+
+.standings-table tbody tr{
+    transition:.2s;
+}
+
+.standings-table tbody tr:hover{
+    background:rgba(229,29,50,.045);
+}
+
+.standings-table .team-column{
+    text-align:right;
+}
+
+.standing-rank{
+    width:45px;
+
+    font-weight:900;
+
+    color:var(--red2);
+}
+
+.standing-team{
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-align:right;
+
+    font-weight:800;
+}
+
+.standing-logo{
+    width:32px;
+    height:32px;
+
+    padding:4px;
+
+    object-fit:contain;
+
+    border-radius:9px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.07);
+}
+
+.standing-points{
+    color:var(--gold);
+
+    font-size:13px;
+
+    font-weight:900;
+}
+
+.standing-position-good{
+    border-right:3px solid var(--green);
+}
+
+.standing-position-mid{
+    border-right:3px solid var(--blue);
+}
+
+.standing-position-bad{
+    border-right:3px solid var(--red2);
+}
+
+.standings-loading{
+    padding:35px !important;
+
+    color:var(--muted);
+
+    text-align:center !important;
+}
+
 /* ================= FOOTER ================= */
 
 footer{
@@ -1610,6 +1775,18 @@ body.light .match-card{
 }
 
 body.light .match-logo{
+    background:#f3f4f6;
+}
+
+body.light .standings-box{
+    background:#fff;
+}
+
+body.light .standings-table th{
+    background:#f7f8fa;
+}
+
+body.light .standing-logo{
     background:#f3f4f6;
 }
 
@@ -1728,6 +1905,15 @@ body.light .match-logo{
         align-items:flex-start;
     }
 
+    .standings-top{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .standings-table{
+        min-width:680px;
+    }
+
 }
 
 @media(max-width:480px){
@@ -1830,6 +2016,8 @@ body.light .match-logo{
     <a href="#important">اخبار فوری</a>
 
     <a href="#matches">بازی‌های امروز</a>
+
+    <a href="#standings">جدول لیگ‌ها</a>
 
     <a href="#leagues">لیگ‌ها</a>
 
@@ -2032,6 +2220,202 @@ body.light .match-logo{
 
         <div class="match-empty">
             ⏳ در حال دریافت بازی‌های امروز...
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LEAGUE STANDINGS ================= -->
+
+<section
+    class="section"
+    id="standings"
+>
+
+    <div class="section-head">
+
+        <div>
+
+            <div class="eyebrow">
+                LIVE STANDINGS
+            </div>
+
+            <h2>
+                🏆 جدول لیگ‌ها
+            </h2>
+
+            <div style="color:var(--muted);font-size:10px;margin-top:4px;">
+                آخرین جدول تیم‌ها در لیگ‌های معتبر اروپا
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="tabs standings-tabs">
+
+        <button
+            class="tab active"
+            onclick="showStandings('laliga',this)"
+        >
+
+            <img
+                class="league-logo"
+                src="https://media.api-sports.io/football/leagues/140.png"
+                alt="La Liga"
+            >
+
+            <span class="tab-name">
+
+                <span>
+                    لالیگا
+                </span>
+
+                <small>
+                    LA LIGA
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="tab"
+            onclick="showStandings('premier',this)"
+        >
+
+            <img
+                class="league-logo"
+                src="https://media.api-sports.io/football/leagues/39.png"
+                alt="Premier League"
+            >
+
+            <span class="tab-name">
+
+                <span>
+                    لیگ برتر انگلیس
+                </span>
+
+                <small>
+                    PREMIER LEAGUE
+                </small>
+
+            </span>
+
+        </button>
+
+
+        <button
+            class="tab"
+            onclick="showStandings('seriea',this)"
+        >
+
+            <img
+                class="league-logo"
+                src="https://media.api-sports.io/football/leagues/135.png"
+                alt="Serie A"
+            >
+
+            <span class="tab-name">
+
+                <span>
+                    سری A
+                </span>
+
+                <small>
+                    SERIE A
+                </small>
+
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <div class="standings-box">
+
+        <div class="standings-top">
+
+            <strong id="standingsTitle">
+                جدول لالیگا
+            </strong>
+
+            <span id="standingsUpdate">
+                در حال دریافت...
+            </span>
+
+        </div>
+
+
+        <div class="standings-scroll">
+
+            <table class="standings-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>#</th>
+
+                        <th
+                            class="team-column"
+                        >
+                            تیم
+                        </th>
+
+                        <th>
+                            بازی
+                        </th>
+
+                        <th>
+                            برد
+                        </th>
+
+                        <th>
+                            مساوی
+                        </th>
+
+                        <th>
+                            باخت
+                        </th>
+
+                        <th>
+                            تفاضل
+                        </th>
+
+                        <th>
+                            امتیاز
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="standingsBody">
+
+                    <tr>
+
+                        <td
+                            colspan="8"
+                            class="standings-loading"
+                        >
+
+                            ⏳ در حال دریافت جدول...
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
         </div>
 
     </div>
@@ -3401,7 +3785,7 @@ function showLeague(
 
         document
         .querySelectorAll(
-            ".tab"
+            "#leagues .tab"
         )
         .forEach(
             x =>
@@ -3419,7 +3803,7 @@ function showLeague(
 
         document
         .querySelectorAll(
-            ".tab"
+            "#leagues .tab"
         )
         .forEach(
             x =>
@@ -3431,7 +3815,7 @@ function showLeague(
 
         const buttons =
             document.querySelectorAll(
-                ".tab"
+                "#leagues .tab"
             );
 
 
@@ -3728,15 +4112,6 @@ function searchNews(){
 /* ===================================================== */
 /* ================= TODAY MATCHES ===================== */
 /* ===================================================== */
-
-/*
-   منبع بازی‌ها:
-   ESPN public scoreboard API
-
-   این بخش کاملاً مستقل از news.json است.
-   اگر دریافت بازی‌ها با مشکل مواجه شود،
-   اخبار BARSAL همچنان کار می‌کنند.
-*/
 
 const MATCH_ENDPOINTS = [
 
@@ -4602,6 +4977,760 @@ setInterval(
 );
 
 
+/* ===================================================== */
+/* ================= LEAGUE STANDINGS ================== */
+/* ===================================================== */
+
+const STANDINGS_ENDPOINTS = {
+
+    laliga:
+        "https://site.api.espn.com/apis/v2/sports/soccer/esp.1/standings",
+
+    premier:
+        "https://site.api.espn.com/apis/v2/sports/soccer/eng.1/standings",
+
+    seriea:
+        "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings"
+
+};
+
+
+const STANDINGS_NAMES = {
+
+    laliga:
+        "جدول لالیگا",
+
+    premier:
+        "جدول لیگ برتر انگلیس",
+
+    seriea:
+        "جدول سری A"
+
+};
+
+
+function getStandingStat(
+    stats,
+    names
+){
+
+    if(!Array.isArray(stats)){
+        return 0;
+    }
+
+
+    const wanted =
+        names.map(
+            x =>
+                String(x)
+                .toLowerCase()
+        );
+
+
+    const stat =
+        stats.find(
+            item => {
+
+                const values = [
+
+                    item.name,
+                    item.abbreviation,
+                    item.displayName,
+                    item.shortDisplayName
+
+                ]
+                .filter(Boolean)
+                .map(
+                    x =>
+                        String(x)
+                        .toLowerCase()
+                );
+
+
+                return values.some(
+                    value =>
+                        wanted.includes(
+                            value
+                        )
+                );
+
+            }
+        );
+
+
+    if(!stat){
+        return 0;
+    }
+
+
+    const value =
+        stat.value ??
+        stat.displayValue ??
+        0;
+
+
+    const number =
+        Number(value);
+
+
+    return Number.isFinite(
+        number
+    )
+    ?
+    number
+    :
+    0;
+
+}
+
+
+function getStandingRank(
+    entry,
+    index
+){
+
+    const stats =
+        entry.stats || [];
+
+
+    const rank =
+        getStandingStat(
+            stats,
+            [
+                "rank",
+                "ranking"
+            ]
+        );
+
+
+    return rank || index + 1;
+
+}
+
+
+function getStandingTeamLogo(
+    team
+){
+
+    if(
+        team &&
+        team.logos &&
+        team.logos.length
+    ){
+
+        return team.logos[0].href;
+
+    }
+
+
+    if(
+        team &&
+        team.logo
+    ){
+
+        return team.logo;
+
+    }
+
+
+    return
+        "https://a.espncdn.com/i/teamlogos/soccer/500/default-team-logo.png";
+
+}
+
+
+function getStandingValue(
+    stats,
+    names
+){
+
+    return getStandingStat(
+        stats,
+        names
+    );
+
+}
+
+
+function showStandings(
+    league,
+    button=null
+){
+
+    const body =
+        document.getElementById(
+            "standingsBody"
+        );
+
+
+    const title =
+        document.getElementById(
+            "standingsTitle"
+        );
+
+
+    const update =
+        document.getElementById(
+            "standingsUpdate"
+        );
+
+
+    if(!body){
+        return;
+    }
+
+
+    if(title){
+
+        title.innerText =
+            STANDINGS_NAMES[league] ||
+            "جدول لیگ";
+
+    }
+
+
+    if(button){
+
+        document
+        .querySelectorAll(
+            ".standings-tabs .tab"
+        )
+        .forEach(
+            item =>
+                item.classList.remove(
+                    "active"
+                )
+        );
+
+
+        button.classList.add(
+            "active"
+        );
+
+    }
+
+
+    body.innerHTML = `
+
+        <tr>
+
+            <td
+                colspan="8"
+                class="standings-loading"
+            >
+
+                ⏳ در حال دریافت جدول...
+
+            </td>
+
+        </tr>
+
+    `;
+
+
+    if(update){
+
+        update.innerText =
+            "در حال بروزرسانی...";
+
+    }
+
+
+    loadStandings(
+        league
+    );
+
+}
+
+
+async function loadStandings(
+    league="laliga"
+){
+
+    const body =
+        document.getElementById(
+            "standingsBody"
+        );
+
+
+    const update =
+        document.getElementById(
+            "standingsUpdate"
+        );
+
+
+    if(!body){
+        return;
+    }
+
+
+    try{
+
+        const response =
+            await fetch(
+                STANDINGS_ENDPOINTS[league],
+                {
+                    cache:"no-store"
+                }
+            );
+
+
+        if(!response.ok){
+
+            throw new Error(
+                "HTTP " +
+                response.status
+            );
+
+        }
+
+
+        const data =
+            await response.json();
+
+
+        let entries = [];
+
+
+        if(
+            data.children &&
+            data.children[0] &&
+            data.children[0].standings &&
+            Array.isArray(
+                data.children[0]
+                    .standings
+                    .entries
+            )
+        ){
+
+            entries =
+                data.children[0]
+                    .standings
+                    .entries;
+
+        }
+
+
+        if(
+            !entries.length &&
+            data.standings &&
+            Array.isArray(
+                data.standings.entries
+            )
+        ){
+
+            entries =
+                data.standings.entries;
+
+        }
+
+
+        if(!entries.length){
+
+            throw new Error(
+                "Standings not found"
+            );
+
+        }
+
+
+        body.innerHTML =
+            entries
+            .map(
+                (entry,index) => {
+
+                    const team =
+                        entry.team || {};
+
+
+                    const stats =
+                        entry.stats || [];
+
+
+                    const rank =
+                        getStandingRank(
+                            entry,
+                            index
+                        );
+
+
+                    const games =
+                        getStandingValue(
+                            stats,
+                            [
+                                "gamesPlayed",
+                                "gp",
+                                "games"
+                            ]
+                        );
+
+
+                    const wins =
+                        getStandingValue(
+                            stats,
+                            [
+                                "wins",
+                                "w"
+                            ]
+                        );
+
+
+                    const draws =
+                        getStandingValue(
+                            stats,
+                            [
+                                "ties",
+                                "draws",
+                                "d"
+                            ]
+                        );
+
+
+                    const losses =
+                        getStandingValue(
+                            stats,
+                            [
+                                "losses",
+                                "l"
+                            ]
+                        );
+
+
+                    const points =
+                        getStandingValue(
+                            stats,
+                            [
+                                "points",
+                                "pts"
+                            ]
+                        );
+
+
+                    let differential =
+                        getStandingValue(
+                            stats,
+                            [
+                                "pointDifferential",
+                                "goalDifference",
+                                "gd",
+                                "differential"
+                            ]
+                        );
+
+
+                    if(
+                        differential === 0
+                    ){
+
+                        const goalsFor =
+                            getStandingValue(
+                                stats,
+                                [
+                                    "goalsFor",
+                                    "gf"
+                                ]
+                            );
+
+
+                        const goalsAgainst =
+                            getStandingValue(
+                                stats,
+                                [
+                                    "goalsAgainst",
+                                    "ga"
+                                ]
+                            );
+
+
+                        if(
+                            goalsFor ||
+                            goalsAgainst
+                        ){
+
+                            differential =
+                                goalsFor -
+                                goalsAgainst;
+
+                        }
+
+                    }
+
+
+                    const logo =
+                        getStandingTeamLogo(
+                            team
+                        );
+
+
+                    let positionClass =
+                        "";
+
+
+                    if(
+                        rank <= 4
+                    ){
+
+                        positionClass =
+                            "standing-position-good";
+
+                    }
+                    else if(
+                        rank >= 17
+                    ){
+
+                        positionClass =
+                            "standing-position-bad";
+
+                    }
+                    else{
+
+                        positionClass =
+                            "standing-position-mid";
+
+                    }
+
+
+                    return `
+
+                        <tr
+                            class="${positionClass}"
+                        >
+
+                            <td
+                                class="standing-rank"
+                            >
+                                ${escapeHTML(
+                                    String(rank)
+                                )}
+                            </td>
+
+
+                            <td>
+
+                                <div
+                                    class="standing-team"
+                                >
+
+                                    <img
+                                        class="standing-logo"
+                                        src="${escapeHTML(
+                                            logo
+                                        )}"
+                                        alt="${escapeHTML(
+                                            team.displayName ||
+                                            team.name ||
+                                            "Team"
+                                        )}"
+                                        loading="lazy"
+                                        onerror="this.src='https://a.espncdn.com/i/teamlogos/soccer/500/default-team-logo.png'"
+                                    >
+
+
+                                    <span>
+
+                                        ${escapeHTML(
+                                            team.displayName ||
+                                            team.name ||
+                                            "تیم"
+                                        )}
+
+                                    </span>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                ${escapeHTML(
+                                    String(games)
+                                )}
+                            </td>
+
+
+                            <td>
+                                ${escapeHTML(
+                                    String(wins)
+                                )}
+                            </td>
+
+
+                            <td>
+                                ${escapeHTML(
+                                    String(draws)
+                                )}
+                            </td>
+
+
+                            <td>
+                                ${escapeHTML(
+                                    String(losses)
+                                )}
+                            </td>
+
+
+                            <td>
+
+                                ${
+                                    differential > 0
+                                    ? "+"
+                                    : ""
+                                }
+
+                                ${escapeHTML(
+                                    String(
+                                        differential
+                                    )
+                                )}
+
+                            </td>
+
+
+                            <td
+                                class="standing-points"
+                            >
+
+                                ${escapeHTML(
+                                    String(points)
+                                )}
+
+                            </td>
+
+                        </tr>
+
+                    `;
+
+                }
+            )
+            .join("");
+
+
+        if(update){
+
+            update.innerText =
+                "آخرین بروزرسانی: " +
+                new Date()
+                .toLocaleTimeString(
+                    "fa-IR",
+                    {
+                        hour:"2-digit",
+                        minute:"2-digit"
+                    }
+                );
+
+        }
+
+
+    }
+    catch(error){
+
+        console.error(
+            "Standings error:",
+            error
+        );
+
+
+        body.innerHTML = `
+
+            <tr>
+
+                <td
+                    colspan="8"
+                    class="standings-loading"
+                >
+
+                    ❌ دریافت جدول
+                    در حال حاضر ممکن نیست.
+
+                    <div
+                        style="
+                            margin-top:6px;
+                            font-size:9px;
+                        "
+                    >
+
+                        لطفاً چند لحظه بعد
+                        دوباره امتحان کن.
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+        `;
+
+
+        if(update){
+
+            update.innerText =
+                "خطا در بروزرسانی";
+
+        }
+
+    }
+
+}
+
+
+/* ================= STANDINGS AUTO REFRESH ================= */
+
+setInterval(
+    function(){
+
+        const active =
+            document.querySelector(
+                ".standings-tabs .tab.active"
+            );
+
+
+        let league =
+            "laliga";
+
+
+        if(active){
+
+            const buttons =
+                Array.from(
+                    document.querySelectorAll(
+                        ".standings-tabs .tab"
+                    )
+                );
+
+
+            const index =
+                buttons.indexOf(
+                    active
+                );
+
+
+            if(index === 1){
+
+                league =
+                    "premier";
+
+            }
+
+
+            if(index === 2){
+
+                league =
+                    "seriea";
+
+            }
+
+        }
+
+
+        loadStandings(
+            league
+        );
+
+    },
+    30 * 60 * 1000
+);
+
+
 /* ================= NEWS AUTO REFRESH ================= */
 
 setInterval(
@@ -4619,6 +5748,10 @@ setInterval(
 loadNews();
 
 loadTodayMatches();
+
+loadStandings(
+    "laliga"
+);
 
 </script>
 

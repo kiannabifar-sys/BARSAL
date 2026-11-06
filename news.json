@@ -3,17 +3,6 @@
     "category": "seriea",
     "team": "",
     "team_fa": "",
-    "title": "Tear Italian football down, cancel Serie A and start again - FourFourTwo",
-    "summary": "Tear Italian football down, cancel Serie A and start again &nbsp;&nbsp; FourFourTwo",
-    "source": "FourFourTwo",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZWlzRXA4SjFiR2loRFliNWpiYTc3LTNZT2h1QnNsTWNqLWJiN2hzbGs2SVJyNjBfX0xEeHdFY0lVbXpjczg2LUtCOTdXM3lhbkRMMnVqWUFFdFRidldOX3YyVE0yVVY1eUJUR3VpRzZmNUVaMEdsb1BlV25mSVNZRmE2OFptaVB2TDlMZW9FOEJueXNi?oc=5",
-    "time": "Wed, 25 Feb 2026 08:00:00 GMT",
-    "important": false
-  },
-  {
-    "category": "seriea",
-    "team": "",
-    "team_fa": "",
     "title": "BBC to show 38 live matches from Serie A this season - BBC",
     "summary": "BBC to show 38 live matches from Serie A this season &nbsp;&nbsp; BBC",
     "source": "BBC",
@@ -55,6 +44,17 @@
     "important": false
   },
   {
+    "category": "premier",
+    "team": "",
+    "team_fa": "",
+    "title": "Research shows Premier League’s growing contribution to UK economy - Premier League",
+    "summary": "Research shows Premier League’s growing contribution to UK economy &nbsp;&nbsp; Premier League",
+    "source": "Premier League",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOLTBuQWthdmw3U2lKdGI4M2k1Ny04U0RyYm83TGdhbDZjZjc2ZngtNTdxRXp1QlJ4ektDSG9DeTY5MUtac2JOOTFZMEYxQlBlY3EzRmxjZy11RV85TnhwZlM2bzYzdWNkcHprdXU0SmpIcVhJUElYd3cySTFYdGVScVFoSmNXZlRFd2RPcWVOMXNMSWZxdUJLd1pCdkEwb0kxYTVtcFE3OXJvb1ZlMHNwdA?oc=5",
+    "time": "Wed, 12 Nov 2025 08:00:00 GMT",
+    "important": false
+  },
+  {
     "category": "seriea",
     "team": "",
     "team_fa": "",
@@ -66,29 +66,18 @@
     "important": false
   },
   {
-    "category": "Manchester City",
-    "team": "Manchester City",
-    "team_fa": "منچسترسیتی",
-    "title": "Watch Champions League Match of the Day, plus reaction after Arsenal and Man City win - BBC",
-    "summary": "Watch Champions League Match of the Day, plus reaction after Arsenal and Man City win &nbsp;&nbsp; BBC",
-    "source": "BBC",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9LalViUVQ0YlFPTWtaUXZldHpSVmppVFlyc2J0MEU4WURuUnRid1lTUE9jVTJFUGNQTnhodEVmYlppSjVqMnUzU3lqQ1MxaWcxUzUtZW00Q3NreU1ELTZyWjA5WGUzZw?oc=5",
-    "time": "Wed, 04 Nov 2026 23:31:06 GMT",
-    "important": false
-  },
-  {
-    "category": "Atletico Madrid",
-    "team": "Atletico Madrid",
-    "team_fa": "اتلتیکو مادرید",
-    "title": "Aaron Danks satisfied with Bayern Munich’s ‘fantastic’ win over Atlético Madrid - Bavarian Football Works",
-    "summary": "Aaron Danks satisfied with Bayern Munich’s ‘fantastic’ win over Atlético Madrid &nbsp;&nbsp; Bavarian Football Works",
-    "source": "Bavarian Football Works",
-    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUUtKdnR0RlpHa3lGcFpkWk00cDdNV3ZkU29TTzI1TWxXb2RfOEx2Tk9pZlo0LTBsUHVpVkphRXJqcll5V3lad25uUW82ZjhTOXZQSU9qWVBrT0JGY0hGX3NiTzZ4d3FiRy1RRTVIclR3RTVCZTRHaWdNdnZDeUJSdW5ocXhOSjZlOU9LX0YtS3BrLWdsVGUwZDQwOWdxejAzNFZRSnV5dlV2RjVad3d6ZXQ2eWpJVmx0QkY0MlJlY2tyblFjeTVIUUpQUEpjRWM?oc=5",
+    "category": "Barcelona",
+    "team": "Barcelona",
+    "team_fa": "بارسلونا",
+    "title": "Rodri Injury: Progress, Potential Return Date for Barcelona Star Midfielder - Sports Illustrated",
+    "summary": "Rodri Injury: Progress, Potential Return Date for Barcelona Star Midfielder &nbsp;&nbsp; Sports Illustrated",
+    "source": "Sports Illustrated",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcTJHU3RtYWkxOW9yb3Z1SnNBQy1tQXZrUEZ5X1gzaUhSa1UySHhvalpCZC1EbENrdnVyS1dzSDB6VnZGcmVMaU1TdGdDVmR5bjJWdjBRT1BLU0RJa2dDWkNLVDFVY3FWOVZ1RnkxOFN0YXJmMEoxZGJDT2d5TklXN0lfdXRNSDBSNE9hM09nbU5aV2VO?oc=5",
     "time": "Wed, 04 Nov 2026 23:30:00 GMT",
     "important": false
   },
   {
-    "category": "transfers",
+    "category": "Arsenal",
     "team": "Arsenal",
     "team_fa": "آرسنال",
     "title": "Mikel Arteta is using NASA to help fix Arsenal's injury woes with Google and Apple helping too - Paper Talk - Sky Sports",
@@ -135,44 +124,11 @@
     "category": "Borussia Dortmund",
     "team": "Borussia Dortmund",
     "team_fa": "بوروسیا دورتموند",
-    "title": "Champions League highlights - Borussia Dortmund 2-1 Real Betis - BBC",
-    "summary": "Champions League highlights - Borussia Dortmund 2-1 Real Betis &nbsp;&nbsp; BBC",
-    "source": "BBC",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9faTk0OWdfZnViLU00MktqMmY5N3k1THprSU02QjVxX21MX2NZS0MxQ3NFUGhRZ0tid0RjU25SWVVPNkpJYmNoOHN3NTVxSTR5dkw2Y3JlMTA1bzdOTkxiVG80Tk1YUQ?oc=5",
-    "time": "Wed, 04 Nov 2026 22:31:57 GMT",
-    "important": false
-  },
-  {
-    "category": "Borussia Dortmund",
-    "team": "Borussia Dortmund",
-    "team_fa": "بوروسیا دورتموند",
     "title": "Borussia Dortmund player ratings vs Real Betis: Fabio Silva and Konstantinos Karetsas strike as BVB edge past Spaniards - Goal.com",
     "summary": "Borussia Dortmund player ratings vs Real Betis: Fabio Silva and Konstantinos Karetsas strike as BVB edge past Spaniards &nbsp;&nbsp; Goal.com",
     "source": "Goal.com",
     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOejlYMjkwcDYwMUdUT0R5Y1M0VEJuWWQzX01pbUotaTlSMGh1NjU3Z0NZVmlIaENyemoyczBaeTVzRjlYTzBsWDRLNW41Z3A0bi1BeWEyTW1DOFhib0NwZXVRc2dBZGs3ZG1UVFFybGdjazFib3dQUnZPbGl6M3duRkkwNjF5ZW44OW1CY1haRzRSaFVoLU5HeXBycVFnbXFRWjh3OUp4Z2tRYjVSZ0l3VUZB?oc=5",
     "time": "Wed, 04 Nov 2026 22:31:16 GMT",
-    "important": false
-  },
-  {
-    "category": "laliga",
-    "team": "Barcelona",
-    "team_fa": "بارسلونا",
-    "title": "Barcelona set their sights on Serie A’s top scorer - Get Spanish Football News",
-    "summary": "Barcelona set their sights on Serie A’s top scorer &nbsp;&nbsp; Get Spanish Football News",
-    "source": "Get Spanish Football News",
-    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSnhyOWFQaFE4dmtZa3Bzc1BfVDEtdWJCbWtJb0tIVTJJQVBUWGxkaXQyd2lmVFZxNmN4RWVvNEpFSWtqc0VFRzEwYlR4Smxsd0oyMmVMWUZ6dnNCM1BCeW5nOGdPOXh1emhwd1JTNXFUdnZHenRMakhYX2N0OUJKRHpXdS1XdEtZMkhr?oc=5",
-    "time": "Wed, 04 Nov 2026 22:30:00 GMT",
-    "important": false
-  },
-  {
-    "category": "Manchester United",
-    "team": "Manchester United",
-    "team_fa": "منچستریونایتد",
-    "title": "Carlos Baleba Injury: Progress, Potential Return Date for Man Utd Midfielder - Sports Illustrated",
-    "summary": "Carlos Baleba Injury: Progress, Potential Return Date for Man Utd Midfielder &nbsp;&nbsp; Sports Illustrated",
-    "source": "Sports Illustrated",
-    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaXFoSFF0TTBHRXlGdElpVlNINUdqc1BjbkVpOTV6T3MzeW1Hd2xMWUZQSXp4OWlFY1B1QmpJLU45UjhmU0hSc3hwNUlwclBkSmJJdmtVeTVWYm1MWE0tNzJSSE8tMEk1aTRDaUJzd0htbm1CenBTMWdCWmlCeGdXM0ZtTV83M240ZGJJOWlSNFRkcldkekZLTW5ydkk?oc=5",
-    "time": "Wed, 04 Nov 2026 22:30:00 GMT",
     "important": false
   },
   {
@@ -187,17 +143,6 @@
     "important": false
   },
   {
-    "category": "Manchester City",
-    "team": "Manchester City",
-    "team_fa": "منچسترسیتی",
-    "title": "Erling Haaland settles thriller for Manchester City to end RB Leipzig resistance - The Guardian",
-    "summary": "Erling Haaland settles thriller for Manchester City to end RB Leipzig resistance &nbsp;&nbsp; The Guardian",
-    "source": "The Guardian",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNk9LMi1PQThkYTlVV0didUpVQ2xqemJxSlFURjVWQ0lFSVQyeUxwWlVvRE9GQmJEWGF4UzF4MHQtRzFuMlZjaG1jdlBfV2x4YURaRE1iWUZBTDY3ZFFnUy14ajVSV3hXc3YtVFZxYTRiTVlpWHM0LUs4bG52RDBEclIyZUVObklKSXcxSVJQamtmVmEwU2NTeXJ2RGQwVE9NMDlYN0NCQUM?oc=5",
-    "time": "Wed, 04 Nov 2026 22:04:00 GMT",
-    "important": false
-  },
-  {
     "category": "Juventus",
     "team": "Juventus",
     "team_fa": "یوونتوس",
@@ -209,9 +154,9 @@
     "important": false
   },
   {
-    "category": "Arsenal",
-    "team": "Arsenal",
-    "team_fa": "آرسنال",
+    "category": "Juventus",
+    "team": "Juventus",
+    "team_fa": "یوونتوس",
     "title": "Transfer rumors, news: Juventus eye moves for Šeško, Balogun - ESPN",
     "summary": "Transfer rumors, news: Juventus eye moves for Šeško, Balogun &nbsp;&nbsp; ESPN",
     "source": "ESPN",
@@ -223,11 +168,11 @@
     "category": "laliga",
     "team": "Barcelona",
     "team_fa": "بارسلونا",
-    "title": "Napoli make contact over deal for Barcelona star - Get Spanish Football News",
-    "summary": "Napoli make contact over deal for Barcelona star &nbsp;&nbsp; Get Spanish Football News",
+    "title": "Barcelona handed double injury boost before Atlético clash - Get Spanish Football News",
+    "summary": "Barcelona handed double injury boost before Atlético clash &nbsp;&nbsp; Get Spanish Football News",
     "source": "Get Spanish Football News",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNckN5X1JKeFNWNGxxbjlDSU1Cb0F6TnZHM2E2SWRRMzA4dUFfVllNOW1nNHhoMFNXNkcxZE03Z1h0QW11bnN2Zi1GcjZSTTdlNFNjcDVhQWpJZ2Q3ZFd3SUgyOUc4enV0bXR5aXJ4OU92ckxjQVpTN2tWSDNrRTc1bTFZbkxlNTlucFE?oc=5",
-    "time": "Wed, 04 Nov 2026 20:30:00 GMT",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTDFMX0RnbHljQ2Y1bzJwTUM5LVRzRno3WmVISDRvamFuSkx5c1VKREVwcUdqQ2plYzd6a1lwNW5ud3dQN1hlV2o1VjRUVEVMSDJVRnE1QzFBZHY1U0YtRUM2ekwyLWg3Rzk4aUJ0Qnh5a0tBYkRWMElEbWFhTEItUDFEYzBqZkxtbHM5b0I1MUFXZWctWUVN?oc=5",
+    "time": "Wed, 04 Nov 2026 21:10:00 GMT",
     "important": false
   },
   {
@@ -242,14 +187,14 @@
     "important": false
   },
   {
-    "category": "laliga",
+    "category": "Real Madrid",
     "team": "Real Madrid",
     "team_fa": "رئال مادرید",
-    "title": "Who won Man of the Match award for Real Madrid vs AEK Athens? - Get Spanish Football News",
-    "summary": "Who won Man of the Match award for Real Madrid vs AEK Athens? &nbsp;&nbsp; Get Spanish Football News",
-    "source": "Get Spanish Football News",
-    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYXkxdS02clFZRVRZNnBCREN3M3h2T1UxQ1BQczlzWmdYaFJ2SE1sT2haZm5sWFphYnVJdzU2aUxvSXBhSjdUaVdyZmh5b0FWUE5Dc2Q2REtTUnpaX05IR0xTOFhpdDlXNFM4STJocnVSdnBpcmJzdEN2WFNUc0Z5cTE2N2ZYZG5IeVFqNU13SDF3TDNzNGpOREZn?oc=5",
-    "time": "Wed, 04 Nov 2026 20:07:00 GMT",
+    "title": "Bellingham, MVP of the match: “This is the mindset we need to maintain” - Real Madrid CF | Web Oficial",
+    "summary": "Bellingham, MVP of the match: “This is the mindset we need to maintain” &nbsp;&nbsp; Real Madrid CF | Web Oficial",
+    "source": "Real Madrid CF | Web Oficial",
+    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPLTRDOS1HT3U3YmhsaHdOTDNxQVNKb1RyUnUzc2lRUV9nWFYwQm05ZGxRa29Pc1BvX3hId2tQR2p0VnZzcERjekY4SnM1bGFIOGNXcmdEMFNDYXp0NGJMSTZ5TWRUU1VnSXhkZG1RNUs0SGtsMHNaMGdCaDhOZ3RpRVFuT0oyT1ZseEtpOFVMU3FpZC1pVVJyNUd4bENrNTEyS1pQdHdQWXljdG1rR01ubUhjT1hWdkxCdGE1NU1xUGpXMVhSeWNaOTFKc005R1ByVlpIOXc4RVJNRnBmbEhHUVNWN3JnR0lkakJUNG9mYw?oc=5",
+    "time": "Wed, 04 Nov 2026 20:11:00 GMT",
     "important": false
   },
   {
@@ -264,25 +209,80 @@
     "important": false
   },
   {
-    "category": "Tottenham",
-    "team": "Tottenham",
-    "team_fa": "تاتنهام",
-    "title": "Boost for goal-shy Tottenham with Xavi Simons to return ahead of schedule - The Times",
-    "summary": "Boost for goal-shy Tottenham with Xavi Simons to return ahead of schedule &nbsp;&nbsp; The Times",
-    "source": "The Times",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLW9UTXR3MXQ1NHhYN1Z4MV9Rc3JqWUpMUEFfMjFpaDVuR1FKQ19GTmhVaGdUc0hpRTZvbHNMcEtKNURwUWh2cEFJaEpCc3l4QVFPNHRUdnAtcXJtNDRLSlJSTWZGamhYeXBVSUlMSXpBckxhYW9QRy1WaVlfcGlnQnJkelNySm1CX25ZR000bmxRcW0zNWhnNFRtSS14dWhCSHprNXRkb25YVDZELWF0aHhrOHI?oc=5",
-    "time": "Wed, 04 Nov 2026 19:35:00 GMT",
+    "category": "Manchester City",
+    "team": "Manchester City",
+    "team_fa": "منچسترسیتی",
+    "title": "Erling Haaland settles thriller for Manchester City to end RB Leipzig resistance - The Guardian",
+    "summary": "Erling Haaland settles thriller for Manchester City to end RB Leipzig resistance &nbsp;&nbsp; The Guardian",
+    "source": "The Guardian",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNk9LMi1PQThkYTlVV0didUpVQ2xqemJxSlFURjVWQ0lFSVQyeUxwWlVvRE9GQmJEWGF4UzF4MHQtRzFuMlZjaG1jdlBfV2x4YURaRE1iWUZBTDY3ZFFnUy14ajVSV3hXc3YtVFZxYTRiTVlpWHM0LUs4bG52RDBEclIyZUVObklKSXcxSVJQamtmVmEwU2NTeXJ2RGQwVE9NMDlYN0NCQUM?oc=5",
+    "time": "Wed, 04 Nov 2026 20:00:00 GMT",
     "important": false
   },
   {
-    "category": "Inter Milan",
-    "team": "Inter Milan",
-    "team_fa": "اینتر",
-    "title": "Why Spence was named best player with first assist in Feyenoord 0-3 Inter - Football Italia",
-    "summary": "Why Spence was named best player with first assist in Feyenoord 0-3 Inter &nbsp;&nbsp; Football Italia",
+    "category": "laliga",
+    "team": "Barcelona",
+    "team_fa": "بارسلونا",
+    "title": "Real Madrid beat Barcelona to deal for youngster - Get Spanish Football News",
+    "summary": "Real Madrid beat Barcelona to deal for youngster &nbsp;&nbsp; Get Spanish Football News",
+    "source": "Get Spanish Football News",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQc2tnWEtDZGszeXJQNmdObTktQWpXU0pqMjNacTdWR2IzRFE4N1dUWngySC1HSU5hY0VrV1lvT0cxbTRIcHN1ODhyT1NSQ2tGMkxra1NZdnRhN1J3a3F6Z000NmpXN2IzTi1obGpORzlpYTZ4VHE2b3dtWUVRS2Fhdl9hbDZ6ZmVFOGc?oc=5",
+    "time": "Wed, 04 Nov 2026 19:54:33 GMT",
+    "important": false
+  },
+  {
+    "category": "Liverpool",
+    "team": "Liverpool",
+    "team_fa": "لیورپول",
+    "title": "Liverpool and Boston Red Sox owners looking to purchase stake in Cadillac Formula 1 Team - The New York Times",
+    "summary": "Liverpool and Boston Red Sox owners looking to purchase stake in Cadillac Formula 1 Team &nbsp;&nbsp; The New York Times",
+    "source": "The New York Times",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUmVMRF82WGdzMFdBUGdrT1Z5eVpqVXVUNmFsdDExSVZyekxlR2NzWndQUTFMY3F3b2Vaa0p4UC1fT20xN0RMWWwxd3JFVG9OUlpBbUJ1Um9TTDlYTmJoaGdkeXl2eV9oa2JEN1Z1bzhhUGxtS2hXRlBUdVBURXFhWTJKcnBHTXlKbnlyM25SN0hTT0pQTVNVZ0dFNG9mVlRJV0ZV?oc=5",
+    "time": "Wed, 04 Nov 2026 19:00:18 GMT",
+    "important": false
+  },
+  {
+    "category": "transfers",
+    "team": "",
+    "team_fa": "",
+    "title": "Aston Villa transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
+    "summary": "Aston Villa transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts &nbsp;&nbsp; Sky Sports",
+    "source": "Sky Sports",
+    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNcjdXYWthZjE3ZWY0LXVtNzl0Ulg2T0ZlcEt5MnAtQURWWGpXOVlwQm53dUtxLTRBZDJNQXRSYzRDYmg5V2NsZmFjZGJVVjYtNlpXdnFqVU40U253dUppX2FqcEN5VGVlZkoxamdFakpFclFrZWFGWUxFOVRSNG1Sb3lhb2VxNW5OTHdZRHZzZGFPNUdJREFiUlYzckcyWkxTUW50TU5BMUxZeFVKMmpVVFl6SFM3S0t3cWlkUFk3UThlZmVhem80akl6S1ZVMzR4a3hYQVh4OG8xS3dFZ291OVdoeWY4MWxBeW1FbU5qd2c2QQ?oc=5",
+    "time": "Wed, 04 Nov 2026 18:45:21 GMT",
+    "important": false
+  },
+  {
+    "category": "Manchester City",
+    "team": "Manchester City",
+    "team_fa": "منچسترسیتی",
+    "title": "Champions League: Slavia Prague 1-2 Arsenal, RB Leipzig 2-3 Manchester City and more – as it happened - The Guardian",
+    "summary": "Champions League: Slavia Prague 1-2 Arsenal, RB Leipzig 2-3 Manchester City and more – as it happened &nbsp;&nbsp; The Guardian",
+    "source": "The Guardian",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOb294ekZNaXplNGVPY3NyNWN1SGVIdFpBVlFGUWNyb0FFVDgzT0FNX2dWbVNsOUZISXdxQ3V6SDdpZ1FueEV3WWplaUt2SzBuYlhUb3Vkdkdaeko4V182QzNQTTQtTXpYel84R2x0UTYwQmJnWFFCeVk3VkN6WmpmUHV3QXdQRDRZd2ZXRDZ3cDZZdUdOUkJGcHNXU3lmN1lNbTI4Mzd5dFhSN1NBNG84SkljaGt1b0kyYWVRM1djb0x2Q3Z0ZXN3bzlZcE16NnR1cUNJ?oc=5",
+    "time": "Wed, 04 Nov 2026 18:30:00 GMT",
+    "important": false
+  },
+  {
+    "category": "seriea",
+    "team": "Tottenham",
+    "team_fa": "تاتنهام",
+    "title": "Varela named Serie A Rising Star for October, targeted by Tottenham too - LiveScore",
+    "summary": "Varela named Serie A Rising Star for October, targeted by Tottenham too &nbsp;&nbsp; LiveScore",
+    "source": "LiveScore",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZ2N1NUpjQUFreUpyaEpTMzk5LTdCclZLT01GaEEyaUFkU2lXdlh6T1Jqek9zRzY2RG5MZUpnTzAzVDFmRV9zREdWS1BrYmhPR29ZTFNkb2pnckxWTFRZR29qSllsb3dSNTkxMDJjNVRPbS1aOW5DXzVUNk5iMUNnVjE1YU5NN2l5ckhnSTlZWlZPamJGcmFMcmx4YkE0eWllaTZNaV96aXIxamlKVG16Unc1RU9WaVVRMEtJN3lkc3ppdHVudUlRTXdqMXVQUnJWTEVGeA?oc=5",
+    "time": "Wed, 04 Nov 2026 17:58:55 GMT",
+    "important": false
+  },
+  {
+    "category": "Juventus",
+    "team": "Juventus",
+    "team_fa": "یوونتوس",
+    "title": "Juventus hope to sign new striker, eyeing Sesko, Balogun, Brobbey and more - Football Italia",
+    "summary": "Juventus hope to sign new striker, eyeing Sesko, Balogun, Brobbey and more &nbsp;&nbsp; Football Italia",
     "source": "Football Italia",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAzNUpQY0RqbzFCaDRlNV9NNVdoRllTaElCeUtHM0ZzdElZbk9QVTY5eTR3MEk3aTl3bGlLNnM1SWNzQWpNX3JJTWt6MnV4bWpMVTR4Y1dLSkhYZ3BkOUJmTzVQUU5tc2E0VTRpdXNqZDNQOGhNM2xFdGl3c29qRVHSAYQBQVVfeXFMTlFrc09PUmRjRXI1aE93dV9mRFlSRUg3cjkzNk55SDVWbnpmY2pweUFoUFJ4ZlZhUk1EZ0hXU2xhV0dFbzh5SzF6SjhTOXJqU1J4aDgzbm1jZ3p1MVBmU3FSTDBXZVRoT1BOWThZWHVKRUF6cWc4ZGZ3bHhDZWhFZnd5Qkk3?oc=5",
-    "time": "Wed, 04 Nov 2026 17:31:47 GMT",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBWNkhKR05aREJYRG8tRHBQVEt5ZGJrMDdiNHVVa092RjdwVXlTZUlQcUUwM0xVTHZNQldVMkgtc0JoRVVjUWtWVGp6dzVBVDNGOTFxOVp2T2V4cnltQWhJWDJGMXlfQVVQbXR3N2g5MkFPMlJOM2FnVzlxb9IBgAFBVV95cUxPNHh2WUJIYW41NEhkZVFQSFZ4SWp5eUtYeVZKR0NMU1hnVk92NXY0U05xdG1UdTBvLWZxZ25vNy02cVlfSVY1Z3VVd2hlREJmWjJ3QnI3MWplbzY3TU0zak1RTWNocXh5cms3SHpib1RfeFdmSVhCdTdLS09yRzY2aw?oc=5",
+    "time": "Wed, 04 Nov 2026 17:25:43 GMT",
     "important": false
   },
   {
@@ -297,14 +297,25 @@
     "important": false
   },
   {
-    "category": "Real Madrid",
-    "team": "Real Madrid",
-    "team_fa": "رئال مادرید",
+    "category": "Manchester United",
+    "team": "Manchester United",
+    "team_fa": "منچستریونایتد",
     "title": "Manchester United’s JJ Gabriel expected to join Real Madrid in January - The Athletic - The New York Times",
     "summary": "Manchester United’s JJ Gabriel expected to join Real Madrid in January - The Athletic &nbsp;&nbsp; The New York Times",
     "source": "The New York Times",
     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSnpnSkxPd1l4cklfZG1TaWw3RHBaR0ZTTDZ5MmFkdmE2N19xSkozdHRfTXIwOEFmUkNnQk1HekJyT1dKSW4wemxoRE9sS3I1WmVydFpzYi1LZi1idjctLVFkdFlybnc2VGYtY2RCTTZ3NmZWWmJsNmcwVUg2T2ZidjRHdkwtU2pOWWR1X2hnTmZSZzU2eWI5MQ?oc=5",
     "time": "Wed, 04 Nov 2026 16:58:39 GMT",
+    "important": false
+  },
+  {
+    "category": "Inter Milan",
+    "team": "Inter Milan",
+    "team_fa": "اینتر",
+    "title": "Why Spence was named best player with first assist in Feyenoord 0-3 Inter - Yahoo Sports",
+    "summary": "Why Spence was named best player with first assist in Feyenoord 0-3 Inter &nbsp;&nbsp; Yahoo Sports",
+    "source": "Yahoo Sports",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSzEtMjU0RjN1bzJUMllMQlFnRDBNNWNCaVE0WHROY0pNRFVKWE9sN0FQUUNoVHhWeVY2RW8ycXp6S0RlNkgyempWR1JiWE1MNUFaWDhqSmJCXzkwekpHanR6TkNRVnlIcXFuUDNud0NBR2NJX3ppZm94MG5NTGgxc0w4Zw?oc=5",
+    "time": "Wed, 04 Nov 2026 16:26:00 GMT",
     "important": false
   },
   {
@@ -316,6 +327,17 @@
     "source": "Football Italia",
     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBuRW0wd3c5RndNa2dMOFZrMmdZVFBKbmQ3ZHp1NE9OWEVIQ0c1MXhwVmZqb3YyYWxONVM4MEVXdmtZcE1Nb3haVi1wcWNfYVRmSS1uZlR4d0J0b01YNnR1dEpkT2dEMWVETkVkTFJSUkpBMk0xU3FPZTFYcFPSAYIBQVVfeXFMTUlxVkdkamZ0dXVMdVZuNms1S0VjQlgxWUJhaUtwYUk0Rk0xekNUNnN2NHUtbE8zSEtuY3hRa0J5Zi1sWVlwTzZ4QUVRV0pxSDF5M0JISjM3WUUzeFNWV05hQlQ4aGhMZ1ZpNVBsN2VFZlJESjlPaGtGNm5aa0M1NHFhZw?oc=5",
     "time": "Wed, 04 Nov 2026 16:05:01 GMT",
+    "important": false
+  },
+  {
+    "category": "AC Milan",
+    "team": "AC Milan",
+    "team_fa": "آث میلان",
+    "title": "Chukwueze’s return from injury delayed as Milan winger undergoes surgery - Football Italia",
+    "summary": "Chukwueze’s return from injury delayed as Milan winger undergoes surgery &nbsp;&nbsp; Football Italia",
+    "source": "Football Italia",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBpbG5USkN4aXM0UXN6V0kzMGVsMzBjdWkxLVotdlZKUFV2LUt2cUtTcVh6NW5CT0tCQlBTa3ZQSHd3ckc4YWcxeWdvR1RuSzVueHJCcGVrVFNSYVdjNmV2SUt3Znc5RGJjcWJxbGVqMmNVSU1MWlkyUlE5X0prUTTSAYQBQVVfeXFMTlhvMzJyVGprbDI1TGlYcWg2NzdRbUFkanduTnRFdE5pNjFGcDNmWFB3Tndadl9wOUMzRFJoRHJHLWRCSWRhTmdOREt6Q3VOa254M3BDX1dDTm1sWEs3WnZ0ZnBlbjhlcjd0czk5eEF3aDdPQ2JkbWVqNHl4eUQ5eUFYZ1FZ?oc=5",
+    "time": "Wed, 04 Nov 2026 15:33:27 GMT",
     "important": false
   },
   {
@@ -341,17 +363,6 @@
     "important": false
   },
   {
-    "category": "Real Madrid",
-    "team": "Real Madrid",
-    "team_fa": "رئال مادرید",
-    "title": "Tennis great Rafael Nadal set to join Real Madrid board - Al Jazeera",
-    "summary": "Tennis great Rafael Nadal set to join Real Madrid board &nbsp;&nbsp; Al Jazeera",
-    "source": "Al Jazeera",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcDNqN3ppNFNkSWFiWUhyNjQyLURad0t3dS15NnNtczJoUU9ETzIyYVB1VktKNldJZzl4cjZ6LUNMN3M3dVdqalIzYUZROElpSnJUVm4wMU5uTnp6dVdKSjV2SkxhNEpxbDdUYjlsaWNadVlxWllUY2hWMmtPVE0zdmRzQXQ1blRNeUFOOUY4X3VTQnM0THlLVzRZTzd4SWPSAaQBQVVfeXFMUGlmN3RiZVk4Wk1VVUhRbXNiUDVhUHJRaC1lUjdyUDhzSWpUdWhJYk5WZ2VsamlOaVVIU0RDNWpqN0xTSTNQZ1QzYjBEZHRSWlI0TTFmX0U0Q243VFRIeGNQVF9FTGQzcHp3dnA1b1ItSmNkVC1EMFliUFpRdEJjSlJjNWxfOXd1NTZqaHhVZjBLM24tX21aS2oyRHVORVgzbEFXVGE?oc=5",
-    "time": "Wed, 04 Nov 2026 13:33:16 GMT",
-    "important": false
-  },
-  {
     "category": "laliga",
     "team": "Real Madrid",
     "team_fa": "رئال مادرید",
@@ -360,17 +371,6 @@
     "source": "BBC",
     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9JV09aVmhOdTFEaS1xM00zZmo4bGtKekxWZ1FBUUhGekJoX3pkRkZVUTdfcmFZYkV5VFRLeDJtYUdSQUtJSVRnSUZRSkVraGxQR2wxMnpfSnV5YlQ1?oc=5",
     "time": "Wed, 04 Nov 2026 13:21:01 GMT",
-    "important": false
-  },
-  {
-    "category": "Real Madrid",
-    "team": "Real Madrid",
-    "team_fa": "رئال مادرید",
-    "title": "Real Madrid transfer target JJ Gabriel scores sublime goal for Man Utd under 21s in PL2 - Sky Sports",
-    "summary": "Real Madrid transfer target JJ Gabriel scores sublime goal for Man Utd under 21s in PL2 &nbsp;&nbsp; Sky Sports",
-    "source": "Sky Sports",
-    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOd0R5NmplaC10dEV1RzFndGc0V2dpOTBXY1pGOHVBT1BoamtybXBjanUzTGFqRC1oMVhudkluQURRNkIzQ1U3aWxFamRtLU0tc1d5dWU4NXFOMTY2ZDR6M1VDeGs3SjloNUc1U3V2eml5bGQ1VEhScGJ4c2MtUnZVc3ROUUZScEU5WDc1ZlUxWVlGV3BTc29Qc01YaGhmM2RVcEVWV1d3amYwNlVJbGJ0NjdCaXpZbnhWS1F2VFFuakZVd0tlaXZjejBiRG1rT0hfaEw4?oc=5",
-    "time": "Wed, 04 Nov 2026 12:23:14 GMT",
     "important": false
   },
   {
@@ -396,28 +396,6 @@
     "important": false
   },
   {
-    "category": "Tottenham",
-    "team": "Tottenham",
-    "team_fa": "تاتنهام",
-    "title": "Tottenham set to welcome back two players for Leeds as Roberto De Zerbi faces midfield headache - Football London",
-    "summary": "Tottenham set to welcome back two players for Leeds as Roberto De Zerbi faces midfield headache &nbsp;&nbsp; Football London",
-    "source": "Football London",
-    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQT2sxZVdGUFQzeHNyeEMxckpBamQzTk9CeFloRExJdmI1NjN3WFlDQWppbWZSbW8xeFNjS0wtckRNWVdKbGh6VFJtQzhPcEFSN1dBTk1LRGZJUGFwdDJLT2JzbWF1RjI2Mm1aYVZBYkFjcldFdW1hbGRPOHlqX3JhbUZrSlQteUFHdlBZT05vMURMZVJPeW1pX9IBngFBVV95cUxPYXFWaU51VVpiWTZQRDh3TV84RzdBd0hDZWFkckhYU2w0OGlnS085UFlra1dPXzJSOXdJeEp2Q0NPVWVfT3RmZ25vcFhTc3lwRkYwTy0zMHhNakhyMEk3U3VTbFRES2VJeGROOE9jdFNyTDROUW5jeS10VTdSanNiRERCODBXVmVCRHRrSEpkUE5fTHJaNUJTZXJtV1pFQQ?oc=5",
-    "time": "Wed, 04 Nov 2026 11:59:44 GMT",
-    "important": false
-  },
-  {
-    "category": "Manchester United",
-    "team": "Manchester United",
-    "team_fa": "منچستریونایتد",
-    "title": "Mainoo and Lacey raise the spirits but systemic change still required at Manchester United - The Guardian",
-    "summary": "Mainoo and Lacey raise the spirits but systemic change still required at Manchester United &nbsp;&nbsp; The Guardian",
-    "source": "The Guardian",
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQalNDSmRjWUtXenZ6aHRmX1NjNkkwVG95UERlWWNpLUVyazJZeklLUWhhbmdjdW5OLW5hdU9MNkFYMENGT214VUpFZmtZaVA5YmcyeXZJS19OZUVxaC00T1JxR1ZEVXF0bHJRT201eUMyWURYZFBHcHZpNjZVXzdsVGE5SWplUVJfVGlvb1FCNUZfSE9qdU5ZNDBKTmRaVE5feXhReWo4MFFlRjNtM3prYlk0Tlp0bENz?oc=5",
-    "time": "Wed, 04 Nov 2026 11:41:00 GMT",
-    "important": false
-  },
-  {
     "category": "Juventus",
     "team": "Juventus",
     "team_fa": "یوونتوس",
@@ -429,25 +407,14 @@
     "important": false
   },
   {
-    "category": "Real Madrid",
-    "team": "Real Madrid",
-    "team_fa": "رئال مادرید",
-    "title": "JJ Gabriel close to joining Real Madrid - sources - ESPN",
-    "summary": "JJ Gabriel close to joining Real Madrid - sources &nbsp;&nbsp; ESPN",
-    "source": "ESPN",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUXhHcURrSHdVYWFCV0txTGtnNGUtWnZpTTFYeWVXdmZRb0VNV2ItYTBCOE5NSldqeV9kSzB2RGlvUnl5c3JsMVFRV25GcGNzYW9uLUstME1iSFliaTJrdUFXTm1IT2xGVkRNNnhDRzZNYU1zVkk1c01VaGgwMl84RUU0V2l1dVZDQy1rUUU4N3FPR1RsS1hreXdGaVZiUQ?oc=5",
-    "time": "Wed, 04 Nov 2026 11:17:49 GMT",
-    "important": false
-  },
-  {
-    "category": "laliga",
-    "team": "",
-    "team_fa": "",
-    "title": "Jesus de Miguel, the Spanish striker whose tragic death has shocked football - The New York Times",
-    "summary": "Jesus de Miguel, the Spanish striker whose tragic death has shocked football &nbsp;&nbsp; The New York Times",
-    "source": "The New York Times",
-    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVHFFYlBPMkpJTDR6b0pwWHZyZGxmN1JmY1IxeHdwYU9hbkV1d00xdmczTC1mTzBUTjRsMWxfNnpnZkxUaktEbEN5b1pjby1tc1cxZHg1N1Rkb0V3clVBaGF1U0xFOVhmV0VCWUFSMlFKWUREVTUzdUcySHpiN1Bhd2Z5UWs3bWFHSzJyQWhYT1g2MU1yUVE?oc=5",
-    "time": "Wed, 04 Nov 2026 10:39:53 GMT",
+    "category": "Paris Saint-Germain",
+    "team": "Paris Saint-Germain",
+    "team_fa": "پاری‌سن‌ژرمن",
+    "title": "Sports - Champions League: Paris Saint-Germain make easy work of Villarreal - France 24",
+    "summary": "Sports - Champions League: Paris Saint-Germain make easy work of Villarreal &nbsp;&nbsp; France 24",
+    "source": "France 24",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZ3dsNWpVQ2lWUEpPN1VJTWpGVnQ5bzJmd3hXcUEwWmI1am84VU5LYWV1UkxKODFmYXdkZG1xY0JVSU9CMVQzNjZPQ0EwY1NmeWtjQnZxbnpQREZiY2I3M3hLVDl6SllqUm1kd0V0SE9zMWlMa3dLSy1sRXZ3ZkdibWYwejFDeF9MZW81Y2ZrUVNPanV3UmRJUjFGOHBJc3gwQWJBOHNtMW1HTzI3ai1XZGc0a0R1RVhtbWc?oc=5",
+    "time": "Wed, 04 Nov 2026 10:31:25 GMT",
     "important": false
   },
   {
@@ -462,6 +429,17 @@
     "important": false
   },
   {
+    "category": "Paris Saint-Germain",
+    "team": "Paris Saint-Germain",
+    "team_fa": "پاری‌سن‌ژرمن",
+    "title": "Fabián Ruiz scores twice as PSG hit Villarreal for six in record-quick start - Yahoo Sports",
+    "summary": "Fabián Ruiz scores twice as PSG hit Villarreal for six in record-quick start &nbsp;&nbsp; Yahoo Sports",
+    "source": "Yahoo Sports",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Ca3VRSDgydktYQjVlLUthcVpYWURkaEdzNEZ1Nk1BQS0yQXlETHI2TkZqZTF5MFNNbkstZExmOTgtVjY5VFlGQ3FiSWpveHBKNUNGQkpWeVB3RC1fOTZUTE83bC1ya1NLWjFTTkljLUxWdmFOaHJqaHNCelNYZw?oc=5",
+    "time": "Wed, 04 Nov 2026 08:16:00 GMT",
+    "important": false
+  },
+  {
     "category": "transfers",
     "team": "",
     "team_fa": "",
@@ -473,25 +451,14 @@
     "important": false
   },
   {
-    "category": "Barcelona",
-    "team": "Barcelona",
-    "team_fa": "بارسلونا",
-    "title": "What makes Fermin and Raphinha such precious attackers for Barcelona? Their defending - The New York Times",
-    "summary": "What makes Fermin and Raphinha such precious attackers for Barcelona? Their defending &nbsp;&nbsp; The New York Times",
-    "source": "The New York Times",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNS0FMWFI2UXRPbkJ6STA1ZTAxbTBFNzAtM1VkY1p4Slo4TlpmRkQzUXFqdktOQzhNVWJfQUNIdXZvekJpR1Z6NHV1X2UyajhaX3o1Ny1NdmcycE9GRTV2YVRybUpSczZjZld0UVVfWkYtc3hhSHRLeXR0NFlMcmlmU3hWbGtzYlR0MlREWEVjNVN6bGsxRVllaW9peF81TjBHc0lF?oc=5",
-    "time": "Wed, 04 Nov 2026 06:56:00 GMT",
-    "important": false
-  },
-  {
-    "category": "laliga",
-    "team": "Real Madrid",
-    "team_fa": "رئال مادرید",
-    "title": "What now for Vinicius Jr at Real Madrid? - The Athletic - The New York Times",
-    "summary": "What now for Vinicius Jr at Real Madrid? - The Athletic &nbsp;&nbsp; The New York Times",
-    "source": "The New York Times",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOT0k4Mko0TU1CdktrQWN3S2VFM25FOWRkVFRjTjBiWDRQRUNRc085VVE0ZmR5SjRfOXVMZ0MzMEFSa3BhclluRks5UnFVRDFJclZWcVlOU3hFWjRhc0I4cC1JdnRFdEFRWVBCSWZRVE9veEtvTkVXb0RROURaMEhGM1NQX1R3ZFNwbmVPNXJ1eko2YkhQa1hvSnJVVUtUdVhUXzYw?oc=5",
-    "time": "Wed, 04 Nov 2026 05:20:00 GMT",
+    "category": "Borussia Dortmund",
+    "team": "Borussia Dortmund",
+    "team_fa": "بوروسیا دورتموند",
+    "title": "Borussia Dortmund vs Real Betis – Predicted lineup and team news - Yahoo Sports",
+    "summary": "Borussia Dortmund vs Real Betis – Predicted lineup and team news &nbsp;&nbsp; Yahoo Sports",
+    "source": "Yahoo Sports",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTnBYSFZvcHd3MjdFRGQ1N3ZlOEdLNTdHUlYwTjNmVFVDVkZRQ3BQTEVaS3ZSTGFwSmFiWDlPaXNqcldVNFpJMm9wR2xxdk5BbDBDQmZsZHZjTGt0SHBlWWthVFFGNUl5VlVMWVAyYzZ4UGp6cFRKNVVhM1h5VnBiaUFYa3d1VVU?oc=5",
+    "time": "Wed, 04 Nov 2026 04:46:00 GMT",
     "important": false
   },
   {
@@ -525,6 +492,17 @@
     "source": "Metro.co.uk",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQNXN4R0ZoOTZ0MWVsMUpJcXFoQUZZTVBqZnV4RHRRVkxqeVZLRmhZSGVvOUM0N1Ribjd6MWs2QzdFMzdHRnNsZHFjTVQ3TW8xSTJQTDFrb05STnU4SXZ3R3RtMkFaeVFvNUNoQXJCempIZURsQzFvMlNiVmZMM2hNVTZyVjdZdTI1bkwxcjR4SE83bkV6a0lOUFZtSdIBoAFBVV95cUxPSVc2VkpyQzQ3WXVLUkZpNUpIZVRsOTFtZ2l4a2VYR3RZU0pUbWNPSG80Zlpma0lPTHRoSkEya3F3bmxmcy1FUjZBOHhPRGVPSnMtR1lyb2FTbjVIdmlwVUtnS1BycC1BdnQ3VUJoaFNvQ1pKV3pTUTRkWjJSYWIwTk5WWkM5S2ZpQjZQa3JUcTVNN0JYN3RSdWd1bTduUHBV?oc=5",
     "time": "Wed, 04 Nov 2026 00:43:00 GMT",
+    "important": false
+  },
+  {
+    "category": "laliga",
+    "team": "Real Madrid",
+    "team_fa": "رئال مادرید",
+    "title": "Real Madrid call for La Liga president’s removal over his response to derby complaints - The Guardian",
+    "summary": "Real Madrid call for La Liga president’s removal over his response to derby complaints &nbsp;&nbsp; The Guardian",
+    "source": "The Guardian",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOXRBY0RsTmsybFpKVUEyMjRsZWp5cnJiandIckFsMGtBQkd1Zi1aLWsxVWRidEx6aVJCNTU5dDR6VEZ6RldjdmlXZ29GRUt5NHZkWGhmME92cDhiU3ZWZTU2c3VkNHBfMS1ITjhMMHdrQnlId09ZaXE2Q0JkelhnVEpNTmdiVk9aNzh6eWtPY0ZxS0lXaVdZNmhIbFVJUVdlWndtUG51NlFIYUJEQ1BXa2xwM2tuWDZIanpwZTh0NA?oc=5",
+    "time": "Tue, 22 Sep 2026 07:00:00 GMT",
     "important": false
   },
   {
@@ -616,28 +594,6 @@
     "important": false
   },
   {
-    "category": "transfers",
-    "team": "",
-    "team_fa": "",
-    "title": "Aston Villa transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
-    "summary": "Aston Villa transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts &nbsp;&nbsp; Sky Sports",
-    "source": "Sky Sports",
-    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNcjdXYWthZjE3ZWY0LXVtNzl0Ulg2T0ZlcEt5MnAtQURWWGpXOVlwQm53dUtxLTRBZDJNQXRSYzRDYmg5V2NsZmFjZGJVVjYtNlpXdnFqVU40U253dUppX2FqcEN5VGVlZkoxamdFakpFclFrZWFGWUxFOVRSNG1Sb3lhb2VxNW5OTHdZRHZzZGFPNUdJREFiUlYzckcyWkxTUW50TU5BMUxZeFVKMmpVVFl6SFM3S0t3cWlkUFk3UThlZmVhem80akl6S1ZVMzR4a3hYQVh4OG8xS3dFZ291OVdoeWY4MWxBeW1FbU5qd2c2QQ?oc=5",
-    "time": "Tue, 03 Nov 2026 22:36:31 GMT",
-    "important": false
-  },
-  {
-    "category": "Atletico Madrid",
-    "team": "Atletico Madrid",
-    "team_fa": "اتلتیکو مادرید",
-    "title": "Match report: Champions League, Atlético Madrid v FC Bayern - FC Bayern",
-    "summary": "Match report: Champions League, Atlético Madrid v FC Bayern &nbsp;&nbsp; FC Bayern",
-    "source": "FC Bayern",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQaVlxcU1heVR1enA0akxtY1JjMnVuVnk3TGd5ZTE5MF84Nkg0aWVjTnU0a2E5YXZPeE5yWXU1R2xFM2p1U0NsbXJ0V3YzM1Q5Z3VGdEJSaC1GT0VGV0g1NVZiYUZaRG9rVTJick5PV0QyUk4xWGFGN2twWl9xR0hCQ1ZwcDFvc2tVSjNoRzlRQnRkOTFZYUIwc19GNnRJaU5SNVZzSEZqX2tMMmFMOThGTm4tNTE?oc=5",
-    "time": "Tue, 03 Nov 2026 22:26:30 GMT",
-    "important": false
-  },
-  {
     "category": "Paris Saint-Germain",
     "team": "Paris Saint-Germain",
     "team_fa": "پاری‌سن‌ژرمن",
@@ -682,28 +638,6 @@
     "important": false
   },
   {
-    "category": "Paris Saint-Germain",
-    "team": "Paris Saint-Germain",
-    "team_fa": "پاری‌سن‌ژرمن",
-    "title": "🚨 Villarreal vs PSG: official line-ups, Mayulu starts! - Yahoo Sports",
-    "summary": "🚨 Villarreal vs PSG: official line-ups, Mayulu starts! &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOa0N5TkdXcXE0YXM2UXNCX2NvTjVZcndFQ0NXNFpNWmh3TmozVVVXOURDY2xfMGp6ZXhSaDdSX1loNm5FSUJBV0FDUlJGQUhfeEEwU0V0aThRZ3dXVEpDd01jX2F3bTZsM2xzbzMwQmpZcHlUZkhibG4zeGt0ZnlaWGJrR2FZMlE?oc=5",
-    "time": "Tue, 03 Nov 2026 18:49:00 GMT",
-    "important": false
-  },
-  {
-    "category": "Paris Saint-Germain",
-    "team": "Paris Saint-Germain",
-    "team_fa": "پاری‌سن‌ژرمن",
-    "title": "How to Watch Villarreal vs. Paris Saint-Germain Online? Start Time, Live Streaming and TV Channels in USA, UK & Other Countries - Athlon Sports",
-    "summary": "How to Watch Villarreal vs. Paris Saint-Germain Online? Start Time, Live Streaming and TV Channels in USA, UK & Other Countries &nbsp;&nbsp; Athlon Sports",
-    "source": "Athlon Sports",
-    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOaE5LM1NEcWViUVI5T3NFbkRKWWpJT1VsZWZHRXFtVU5uQ2ZtSVNpT0ZSaVN4OFQ2QVRiYkNSWW95YUxFMFRGTU5GQ2xXb2NSTVJNSndYLW4ydUM3NFJYdnRZSml5ekZrUEpLT1ZZeTc5bFUtSU16VWN2UndCTnBsbjZDcnV6aVRXV2djaUJmQTd3N2swWU03LW9ndHhQaXRyNkVzZ2h4NjAycEVXcFNya3ZnNUhUU1hLb0lqVHFPNGhpV3c3NW5wV0FyTml3UHctM0h2V2VJaGMtcjZham5MdDNBQ2xJODJS?oc=5",
-    "time": "Tue, 03 Nov 2026 18:40:00 GMT",
-    "important": false
-  },
-  {
     "category": "Juventus",
     "team": "Juventus",
     "team_fa": "یوونتوس",
@@ -712,17 +646,6 @@
     "source": "Sports Mole",
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRWFERzRFOTlDME9MbllmTDk2eVJuTGJVck5HNXVJcFZIbEdoZ1JmdlRncnp3TXdMbVJNZHRsTUlsd3dxV2o1aXRuMlFDejd2Z291dkpHRUkzOWRzcllGaktFZHloOURPZDNvdVlzUUdsS3p3Yndzc0x1ZVB1bkVPSGVPNWtobjRjUU9uX0xZd3E2ek5Tdk83SVZtQzZXcmtIeE04M2M5Qmg3ajBDZlBHX2ZJRVQzUGFrYVE?oc=5",
     "time": "Tue, 03 Nov 2026 16:54:00 GMT",
-    "important": false
-  },
-  {
-    "category": "laliga",
-    "team": "",
-    "team_fa": "",
-    "title": "Spanish police investigate footballer Jesús de Miguel's death after on-field collision - MARCA",
-    "summary": "Spanish police investigate footballer Jesús de Miguel's death after on-field collision &nbsp;&nbsp; MARCA",
-    "source": "MARCA",
-    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPT1pDOUctYVJobER1REt3aldaWGt6Z3BYazdkRXJyVk1CZEE1M05tYkVRS09SYW02Sk9UOE5HckR4ZTNSM0wtLXR5dkpFZGFBeGVnYjJRTC1WMXFPZThWcWpfRUVXRVhKUllTNnJLc09vZDZZXzMtaEdwNnZ6RUl4dFFNaFZpNGxvdlQ1WFJjazNzcG1pLUV6aVoyUVZRdEdHTDE1UEFTTVg3ZFRPSkROZ2hTTDE2WXMwNVFwM1pIOXg5ZENpSWdoc3ptcE1faVd3NEV6LXRlM3JxYWhQX2p3TnFxZGXSAeQBQVVfeXFMTUlXdWhLMjJjOHBfRFlaZWRQYnVrLXNWNW5iTDVUNWo5YVJMQkxOclNTVlVSU0pwNTBUWnBvaUVFdTlaV0ZLV2hLSTVLU1N6ZkRhblRfMS1pVERHLUlhSnI4ZURqX0hWX21kbVdfT3UtTW10czVfeXRIYktwS0RZREZvQVhxQ1VKR1V3Q3RzVVpmUnhNT0pLcGJDdzZmak1qRGxKbmxYT1ppUDJWcTlFQVFibzBzN3hENzZDYnBNR2ZPZnhCQ29QTW9KeWY5RjlvdlZNTm4tdFZrenFtZXJINkphVmk4?oc=5",
-    "time": "Tue, 03 Nov 2026 13:37:36 GMT",
     "important": false
   },
   {
@@ -770,17 +693,6 @@
     "important": false
   },
   {
-    "category": "Inter Milan",
-    "team": "Inter Milan",
-    "team_fa": "اینتر",
-    "title": "Inter and AC Milan unveil Generali Stadium: a new home for the fans, a new landmark for Milano - Inter.it",
-    "summary": "Inter and AC Milan unveil Generali Stadium: a new home for the fans, a new landmark for Milano &nbsp;&nbsp; Inter.it",
-    "source": "Inter.it",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeWRvT0g1MU93OFQxWENFZGg1emdmZHhNdWhETDdRVC1YV0dfcWlzUVp1NXFBWFNIZXpra0tVai1weUk0NFdsc2VfWTBDNGhSZW5NN3V4aDRINzgycVljTVlNRUJETWQ3NDBwV1RCOFRpNnlVYXNiWWNJVlNEcUxVZWJ3?oc=5",
-    "time": "Thu, 29 Oct 2026 07:00:00 GMT",
-    "important": false
-  },
-  {
     "category": "premier",
     "team": "",
     "team_fa": "",
@@ -814,6 +726,17 @@
     "important": false
   },
   {
+    "category": "Inter Miami",
+    "team": "Inter Miami",
+    "team_fa": "اینتر میامی",
+    "title": "Inter Miami CF’s 2026 MLS Regular Season Schedule presented by Ticketmaster Unveiled, Miami Freedom Park’s MLS Home Opener Set for April 4 - Inter Miami CF",
+    "summary": "Inter Miami CF’s 2026 MLS Regular Season Schedule presented by Ticketmaster Unveiled, Miami Freedom Park’s MLS Home Opener Set for April 4 &nbsp;&nbsp; Inter Miami CF",
+    "source": "Inter Miami CF",
+    "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOREd5dU1sRDBBM0pCbDJ5X29DRkxzQ2tLcjc0U1BnX01EQXhyOUlnT3hjMk1FQ2JkdjRULU16TXBkd3VodzRySVJSaktrWUVuZVVOZW1QcHVTalNLbmF2ZTBtYmExTHB2QnBlZmlwTXFIclZISXdJNVNSNEpQMWVwamZndWRyTHIyb1NyRHBFZXNPNVNTSGlaNU5OTWIza1pIOXNHTXlwNWtxa0hPaExLeDliLXROLWdiQW82bll5OFpEYy1zYVBwYVV0bEtNLTBLb2pUN3JEZEt2Sm1CRmh0bEVuSDVna3BzQ0QxcE5ia0hWWEhaWWVUTF8zNmhPQUl0?oc=5",
+    "time": "Thu, 20 Nov 2025 08:00:00 GMT",
+    "important": false
+  },
+  {
     "category": "seriea",
     "team": "",
     "team_fa": "",
@@ -836,14 +759,14 @@
     "important": false
   },
   {
-    "category": "transfers",
-    "team": "Liverpool",
-    "team_fa": "لیورپول",
-    "title": "Liverpool transfer news: AS Roma midfielder Manu Kone on Anfield radar ahaed of January transfer window - Paper Talk - Sky Sports",
-    "summary": "Liverpool transfer news: AS Roma midfielder Manu Kone on Anfield radar ahaed of January transfer window - Paper Talk &nbsp;&nbsp; Sky Sports",
-    "source": "Sky Sports",
-    "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNV1NlRWx1b29kYWVQalJDZ2pVNnBuZnlTSHVtM1VpWkFBNFFneDdYUkpMbnp4MHpsR2VjN1p4S1Vna05CcXg4eWhLNFBvQV8xUFVfQXZRbFdTWDhkbWhwamNFNnE3T1M5em9ackpfWF9EQlFKeWczZk9vY3pyaUk0TkgtMTFfQVRiVXdfOFJXZmNROEtMNXl5VXcwY085b0pCeUVnSnFsc3YwTU5uZDVvdW9mZE1sYkpPZ2s1eHhTOEZYM3NfUUZaNTNhZzY4bTBOTER4LTlRYU1CNUJ6N1RMdl9LbjBrREVoazQyYjd2eWdDSkNEN0hPX1RzZEk0dm5TRUZDeTJPVGk?oc=5",
-    "time": "Thu, 10 Sep 2026 07:00:00 GMT",
+    "category": "premier",
+    "team": "",
+    "team_fa": "",
+    "title": "What are the key dates for the 2026-27 football season? - BBC",
+    "summary": "What are the key dates for the 2026-27 football season? &nbsp;&nbsp; BBC",
+    "source": "BBC",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB2VDJvTGVUbWZHNFhWSVIwNzg2RHFocFkwdjZFMXZER1FUazBfVE1yOGZ3MVJWbDdBWmVLWDVtZmVfWHIwa0F1UXdkbW9JWnZfOEtZcGdwY0V0LW1JcENhR0JKYk4yTk5GR3c?oc=5",
+    "time": "Thu, 09 Jul 2026 07:00:00 GMT",
     "important": false
   },
   {
@@ -858,37 +781,15 @@
     "important": false
   },
   {
-    "category": "AC Milan",
-    "team": "AC Milan",
-    "team_fa": "آث میلان",
-    "title": "AC Milan vs Ferencváros: UEFA Europa League stats & head-to-head - BBC",
-    "summary": "AC Milan vs Ferencváros: UEFA Europa League stats & head-to-head &nbsp;&nbsp; BBC Player Ratings: AC Milan 0-2 Ferencvaros – Torriani howler; several struggle &nbsp;&nbsp; SempreMilan AC Milan vs. Ferencvaros Lineups and Confirmed Team News: Is Christian Pulisic Playing Today? &nbsp;&nbsp; Athlon Sp",
-    "source": "BBC",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5WSGl0OGJyMHJWYUVXNlZMUXNVV3VySUtUbGdMSzdzNzlydmlvalM4N2xyMWJ6V2hrX2RTN2VsZ1V4bGN3eFNGZ1Y0aDNxb24wZnBKQ0NlRzFUcHZHaGtCaEotSQ?oc=5",
-    "time": "Thu, 05 Nov 2026 23:58:07 GMT",
-    "important": false
-  },
-  {
     "category": "Paris Saint-Germain",
     "team": "Paris Saint-Germain",
     "team_fa": "پاری‌سن‌ژرمن",
-    "title": "This Paris Saint-Germain kit with J. Cole's Dreamville is a must-see - Yahoo Sports",
-    "summary": "This Paris Saint-Germain kit with J. Cole's Dreamville is a must-see &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xdGduTUlIVk1TQ0xjUnQ2YUxselZMZHZubmprdzl3ZF9ISDE3d1pFN2JhSkJYdXU0bElPVzd2ZGFGN3BlN0M4dmxwYXJFU0U5ak9EaTUwczVtaGc0NDdVdUdTN0NtMG52TVFlQU9KQ0dOU0puR0hXWFZQZHFOa1U?oc=5",
-    "time": "Thu, 05 Nov 2026 23:47:32 GMT",
+    "title": "This Paris Saint-Germain kit with J. Cole's Dreamville is a must-see - USA Today",
+    "summary": "This Paris Saint-Germain kit with J. Cole's Dreamville is a must-see &nbsp;&nbsp; USA Today",
+    "source": "USA Today",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS2RENEx5a3E4c2FxT3hQMkV1RUoyeFFLVk9CQnRCOEZaYjhTVElVdVNfVlZURGR6ZmN2R3JGWTM0RXJoeHZfTHp1OVlvbng3bzB4SVptcmFHMWpoYTZOcHNLZnRaSUhfdEpQeGNpNjNUM2R0OWo4NlVYYmg1N190cGtnQTRoNDFqS0lLUHRqQ05fV2lqREZLOVFrX0FqQmZ2d0dRYlBGbFh3NmZhVGtXcHplMVJyWFhK?oc=5",
+    "time": "Thu, 05 Nov 2026 23:47:00 GMT",
     "important": false
-  },
-  {
-    "category": "important",
-    "team": "",
-    "team_fa": "",
-    "title": "CIF-SS football playoffs: Steve Fryer’s predictions for all 14 divisions - Orange County Register",
-    "summary": "CIF-SS football playoffs: Steve Fryer’s predictions for all 14 divisions &nbsp;&nbsp; Orange County Register",
-    "source": "Orange County Register",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRGRFRkIwRXJoZnN5dGdvajRFMDM3SERheFFRUXMxeDlkb0JxbVVRem1tcUdER3dHRUh4TkxjbkVXN3NxXzk2VFM3X0xEUnBMZWgwMEYxVVRPRGlMOEEzcW5jeWc3cFZSR2hrUHc0eTViQWwzMHBGTVBfZlZIVHFZdzZqSjhNTVZlSmVhS1hOeFVMMmE1cG1MYzljLXhHenh5akxrYTg4UmxIbzZMeUE?oc=5",
-    "time": "Thu, 05 Nov 2026 23:42:50 GMT",
-    "important": true
   },
   {
     "category": "AC Milan",
@@ -913,47 +814,14 @@
     "important": false
   },
   {
-    "category": "Manchester United",
-    "team": "Manchester United",
-    "team_fa": "منچستریونایتد",
-    "title": "Didier Deschamps turns down Manchester United offer to replace Michael Carrick - Paper Talk - Sky Sports",
-    "summary": "Didier Deschamps turns down Manchester United offer to replace Michael Carrick - Paper Talk &nbsp;&nbsp; Sky Sports",
-    "source": "Sky Sports",
-    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOUmlKekRULXhXZ092bWhsVGwxdUJWd0lkV09NU1BEMFhIN0Ytak1VZ2hHSWhuY29nN19YR3I0N2JwYXRaSTJPd1kzVE5BaVU3VzVmR2ZaekpRdE12emItSmthUTYwOVFEbXNNVnhPZWpSNWxPLUxMODlrbnk0MmtBZ1dfX3prbVh2RXNhWm91bW9ZVzJCRU1ZV2RRUEV4d2FBV2lNdnMzaW9kNVRuVTIyUXMtcHVLX2xNejd5bENaT3R5akQ0U2dTY2pRRk43YldhX2Zwdg?oc=5",
-    "time": "Thu, 05 Nov 2026 23:26:30 GMT",
-    "important": false
-  },
-  {
-    "category": "transfers",
-    "team": "Manchester United",
-    "team_fa": "منچستریونایتد",
-    "title": "Didier Deschamps turns down Manchester United offer to replace Michael Carrick - Paper Talk | Football News - Sky Sports",
-    "summary": "Didier Deschamps turns down Manchester United offer to replace Michael Carrick - Paper Talk | Football News &nbsp;&nbsp; Sky Sports",
-    "source": "Sky Sports",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBobHhRdWhYSTVUMmdLRUdNTEpZdXlWMTU2REstbFYzRjB6RVFReWNDYU1mT3BjQmVab1pnZUtINzZDYkZBYXlvdXFOY3lKSEgyd3BqNURCWFFOVUVGN3ZtTmF4RExRQQ?oc=5",
-    "time": "Thu, 05 Nov 2026 23:21:36 GMT",
-    "important": false
-  },
-  {
-    "category": "Juventus",
-    "team": "Juventus",
-    "team_fa": "یوونتوس",
-    "title": "AZ Alkmaar vs Juventus: UEFA Europa League stats & head-to-head - BBC",
-    "summary": "AZ Alkmaar vs Juventus: UEFA Europa League stats & head-to-head &nbsp;&nbsp; BBC",
-    "source": "BBC",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE90eUtablNGLUdHMTAtRlJBWndrMFZ1c2dJQ2JXaW1zS1NRbVc5dTBZUnNOdWkwTnlVNkd2M2QxZFdxVEpMUkppdVJzN2lBSmdSS3RWU0FWVW05eDJKR0tDVjdQQQ?oc=5",
-    "time": "Thu, 05 Nov 2026 23:18:29 GMT",
-    "important": false
-  },
-  {
-    "category": "transfers",
-    "team": "Arsenal",
-    "team_fa": "آرسنال",
-    "title": "Arsenal 'track new forward signing' after transfer targets revealed - London Evening Standard",
-    "summary": "Arsenal 'track new forward signing' after transfer targets revealed &nbsp;&nbsp; London Evening Standard",
-    "source": "London Evening Standard",
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVzhXNWZqdEswQ1l6aWNkcm1WUi1Ka0JZUHQ3c0pTTDU0NFFVcUZfWnlBcXpqb1JFdnU1MmlWOVpaTEhLY1k4MjZSeEtfbEF2NzN1YXRkekVxZ2hZOVA2U01TeGtqSktjazlmXzJBd0hXVG9YTDdhX2VrS0Npb2YwQmRmNXMxTXI4VUo4SURB?oc=5",
-    "time": "Thu, 05 Nov 2026 23:09:21 GMT",
+    "category": "Chelsea",
+    "team": "Chelsea",
+    "team_fa": "چلسی",
+    "title": "Her school principal told her football wasn’t for girls – she’s now a doctor for a top women’s club in England - CNA Lifestyle",
+    "summary": "Her school principal told her football wasn’t for girls – she’s now a doctor for a top women’s club in England &nbsp;&nbsp; CNA Lifestyle",
+    "source": "CNA Lifestyle",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaWp3Y243aktsQkhPaEF4YzBKS2V4RGFuT0wwa2NUcmMtYnBRdWNBWXJpeEVKeFlZUHpjdFpPNXNzTnVmeDdhazdxclBHb0pPTE1ReXUxY0djSU84ZjAwS1FuMDItU1FRdmJTeXFDNXhYV0tLSDBIT2RFeTRjdG4tRTNmWnZ6X2RySm5MeDI5UlJjTU85MlFObTMySEVTRWRabnVn?oc=5",
+    "time": "Thu, 05 Nov 2026 23:14:32 GMT",
     "important": false
   },
   {
@@ -971,33 +839,55 @@
     "category": "AC Milan",
     "team": "AC Milan",
     "team_fa": "آث میلان",
-    "title": "Amorim blasts dire Milan: ‘We have to improve, otherwise it’s over’ - Yahoo Sports",
-    "summary": "Amorim blasts dire Milan: ‘We have to improve, otherwise it’s over’ &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOXc5bGFoZEIxNEVxc0oyVFVRZXcxMGYxVWRRekEwTVBlRXJhcXZMb2RqLU84Y01TbEl2UWwwb3lfWFRsRXJfRzQwUTlpR295dzVfcnlVWmFlalRYR2QxYnJwazZ2RjlYS0xNSkhrLTlldTd4dTJuM2NOSE12WS0xOXdveXRnZ2Z0?oc=5",
-    "time": "Thu, 05 Nov 2026 23:02:00 GMT",
+    "title": "Ruben Amorim calls out every AC Milan player except one after humiliating Europa League result - SPORTbible",
+    "summary": "Ruben Amorim calls out every AC Milan player except one after humiliating Europa League result &nbsp;&nbsp; SPORTbible",
+    "source": "SPORTbible",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNR2ktTzBxZmV0TzBNeVRFTFhsemRTV1hlZllJQ3h6Zll5cWZBRldQRkJYMm11TzJMSkRSTFZFUmM3TVUzWHp5NjdFWFhwMkt2VklmczJzeGR2dHQ0WTlraGE0SUlVX0RBelVYWXEzT1Y4YlRnZXVuTG80OVRuN1ZuTjZ2M1hNbUdxWmVEd2EwcTZxZklIYldiSVFPbFdmZGJIUGc4UTRKVlFRbV9Nc3ZYWUVwMzFrUDdSNUJZRXl3bmRGQVZrSmwzaXZnb1dFSmxBZVlZWDI3bmxnamM?oc=5",
+    "time": "Thu, 05 Nov 2026 23:05:38 GMT",
     "important": false
   },
   {
-    "category": "Manchester United",
-    "team": "Manchester United",
-    "team_fa": "منچستریونایتد",
-    "title": "'He'll regret it': The day Alex Ferguson quit Aberdeen for Man Utd - BBC",
-    "summary": "'He'll regret it': The day Alex Ferguson quit Aberdeen for Man Utd &nbsp;&nbsp; BBC",
-    "source": "BBC",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9EUjlQNlRqMkdZaGlzMldONExjX0J2NURYVjJuUEJRckt1LW0taE5seUx1aXpyVFNmazJoYTVKSlJmYjkwaTVRcG84eFRwQlFXTG5FdHlmbjZUaEk?oc=5",
-    "time": "Thu, 05 Nov 2026 23:00:10 GMT",
+    "category": "laliga",
+    "team": "Barcelona",
+    "team_fa": "بارسلونا",
+    "title": "Barcelona add yet another name to defender watchlist - Get Spanish Football News",
+    "summary": "Barcelona add yet another name to defender watchlist &nbsp;&nbsp; Get Spanish Football News",
+    "source": "Get Spanish Football News",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQN2tDWk9SMmFrVk9NWDVqRGxEenRHVFZnaEY1TWpRWThYa2RlYjVTNWtoczhkZUJxcGswWG1XTlFwNXBwUERzUmtEU0NDcnkwRlVlQ1FsRzJYWUJqMW85XzlnWHNHMlE1NzVtdGNtM1EzWGhNMzFPa0lKNTVCZUkzZUZTMWZ0TmtkYzdnZG84cw?oc=5",
+    "time": "Thu, 05 Nov 2026 23:05:00 GMT",
     "important": false
   },
   {
-    "category": "Juventus",
-    "team": "Juventus",
-    "team_fa": "یوونتوس",
-    "title": "Gatti warning to Juventus: ‘I need to play, not making most of Kolo Muani’ - Football Italia",
-    "summary": "Gatti warning to Juventus: ‘I need to play, not making most of Kolo Muani’ &nbsp;&nbsp; Football Italia",
-    "source": "Football Italia",
-    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBma1lLSnhEcWJpbWY5RHJOak12QTdlc3lwRjZsZkxmamVwZDhwSkhoYjBuUnA5WllDdGxoQTgtdnI5TTFURS1DMU80QWVYRkZnNUVDRE9vUWVVYXl4Z2ladzV1aE1Pc2xLbVh3RVMxWGpZOTFSSjFKTtIBfkFVX3lxTE1tX3ZsQkpKZU5tb3NWT2ktR0hmSzVFa3JYZXEtc21rRVVYY2lKcEViZGRkMWJGZ2c4MDZ3Unh1NmxtV2ZLeHhKVndDQndrRnk5WkhJdGZUdlF6QWthelVkMTFFbmVVZjk1R1lRTWRkNlhsczdYc2FZYTFyVVdfUQ?oc=5",
-    "time": "Thu, 05 Nov 2026 22:45:47 GMT",
+    "category": "important",
+    "team": "",
+    "team_fa": "",
+    "title": "ZayQuan Dozier: State’s No. 1 prospect for 2029 has Georgia football on top - DawgNation",
+    "summary": "ZayQuan Dozier: State’s No. 1 prospect for 2029 has Georgia football on top &nbsp;&nbsp; DawgNation",
+    "source": "DawgNation",
+    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPclFuYWw5ci1TUEF1d3BrMUZfVG12MXBwUGxHd2FUN1pTaEcyUUFPNlRWajF3UTBadHVaNGV6cFZ5emtjal9ld09GeDJJY3YyUmo4aEZFLTlVelA2UmtQS2ljZjB3aTNGOTQ4WnlTaDltV3c2YXdjeXNoUTN1WVhoXzh6blRZd0c4azc0c0hLQzFYTGUtWUdBWWNCWEpFdXZGa1dwNlRIdlpmVVpNaUktY2Y1b1NkMG85RzZ0eGpwaHNqWlpyaUtORTdkMHFiUV84b21nZVdRdUdta1JEN2Jn?oc=5",
+    "time": "Thu, 05 Nov 2026 23:04:03 GMT",
+    "important": true
+  },
+  {
+    "category": "Tottenham",
+    "team": "Tottenham",
+    "team_fa": "تاتنهام",
+    "title": "Arsenal ‘confident’ of signing Bundesliga wing wizard amid rival Tottenham interest - TEAMtalk",
+    "summary": "Arsenal ‘confident’ of signing Bundesliga wing wizard amid rival Tottenham interest &nbsp;&nbsp; TEAMtalk",
+    "source": "TEAMtalk",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTWt3Ynl0V2RGU1lkZUM1WjU0b2tyWXdYMFF6eE5MVXhiaEJqamY4aFgybEtZS3VYN05oR0NwX1ZlcHQ3YzBBWjl6cEJWaFJMSkkxakppYUN2WEtUQlBTU0R6YmdXbGZvajRlWW9RU2o0M0JXS0Q5YkVqN1o4amxjNnNWOEtZVkVTclZ2cGRfUG43aTAtdkcwb09ZNXJzMUFXQ1BWclVlSU52V1pld19TVg?oc=5",
+    "time": "Thu, 05 Nov 2026 22:51:02 GMT",
+    "important": false
+  },
+  {
+    "category": "Bayern Munich",
+    "team": "Bayern Munich",
+    "team_fa": "بایرن مونیخ",
+    "title": "Preview: Mainz 05 vs Bayern Munich - prediction, team news, lineups - Sports Mole",
+    "summary": "Preview: Mainz 05 vs Bayern Munich - prediction, team news, lineups &nbsp;&nbsp; Sports Mole",
+    "source": "Sports Mole",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQM0ZQc2FfbVhJdktncURweWZ3RHVzMTc1S2tYZmJMMmxxejcyN05IR25wdUc4dW9xcTh5VU1WWWkwMnM0SzhOckVVdzdTcjUxWUhSZFNfYmhjZ3lOcng4WFp3Uk5NVHhTTnF0akVrQmladGhfTmlVWlMtWlo4bnBfWDBabEhVcTdURWk2Q0hXNlBsTXVhVVdWLXRhb0JlNkhWYlAxcl9BZVRXSUtnV3hFckplWWZpVmtTX2ZudkZQRnFsZEE3VWs1RmN1OElyR3pDR1JrTw?oc=5",
+    "time": "Thu, 05 Nov 2026 22:48:42 GMT",
     "important": false
   },
   {
@@ -1012,58 +902,36 @@
     "important": false
   },
   {
-    "category": "Al Nassr",
-    "team": "Al Nassr",
-    "team_fa": "النصر",
-    "title": "The Asian Cup entangles the Roshn League's big guns: what's the story? - Goal.com",
-    "summary": "The Asian Cup entangles the Roshn League's big guns: what's the story? &nbsp;&nbsp; Goal.com",
-    "source": "Goal.com",
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRmdXNHk5LWRSYk96Y01ITzMtVDZINUMtNEJJd09WTlJLVjRVc1ROb081RzkydV9KbmNYZE1VQjBUdUVVUExKSkpwQk16MFdfWkNncHA1bzF4OS1yNHFiLWl5U3NtU21IOWJ2aDJ4dzlNUmFDVjUtZDBhdFhYOE0yck9iWUh3Mm1rakdQSWVkaXdBRzdzcTVkamdIQ0lUdjZmeTVZWFQ4UGRkU21VTE0tNG9wWmh1VlNiYmFMZmhOSkI?oc=5",
-    "time": "Thu, 05 Nov 2026 22:44:33 GMT",
-    "important": false
-  },
-  {
-    "category": "AC Milan",
-    "team": "AC Milan",
-    "team_fa": "آث میلان",
-    "title": "Bournemouth stays perfect in Europa League, AC Milan stunned at home, Leverkusen beaten by Marseille - The Killeen Daily Herald",
-    "summary": "Bournemouth stays perfect in Europa League, AC Milan stunned at home, Leverkusen beaten by Marseille &nbsp;&nbsp; The Killeen Daily Herald",
-    "source": "The Killeen Daily Herald",
-    "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOOHNzVzRnbEIzNmdlSnV2NmJZQ0o4TkktX0w3MlJOWV8xeElVcTEzT1RfaUlMM0U0TmlnZFRuRWh2Y0F5aWFyaXVBUmRDYmtLTTBFT190VGl5WHdkcDNKcGJRLWN5dHROZ0lTSDJfZkFRbnBPcC0yTHdacl9PaWRITTJIb3NxRVdueDRNMS03NFNjUkRFd1BaVjlFMkV1azV0Q2xCNHB4VW9SX2lpWC1SektYUXhvRXJkaG9mN3dEZ05ySEpRdUNuX3lpLTdhSWJnenFfTnNqR3BiNHZ4aU1ldjMycndZOHRWTTc0bXBzcTB6bmZydnlnRHk4V0Z4X0VyaGhoRXBqcHRrd0VucDhB?oc=5",
-    "time": "Thu, 05 Nov 2026 22:44:29 GMT",
-    "important": false
-  },
-  {
-    "category": "AC Milan",
-    "team": "AC Milan",
-    "team_fa": "آث میلان",
-    "title": "Bournemouth stays perfect in Europa League, AC Milan stunned at home, Leverkusen beaten by Marseille - Oskaloosa Herald",
-    "summary": "Bournemouth stays perfect in Europa League, AC Milan stunned at home, Leverkusen beaten by Marseille &nbsp;&nbsp; Oskaloosa Herald",
-    "source": "Oskaloosa Herald",
-    "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxObnZ1V2otMGotaXFSbGRIdzBFLUFMUDM0T2RkQ0lEUHh6RC1sUGNSNngtNDh4WC1QWXB3Sy1RM3NoZFFNbzJrckJhMXFySzNFVDZHeXFNczZWRHk1RVc5RzFQNFVrdllHMWlMTEdwN3RzYjhiVkRTSUxnQWoxRGdwZVowQkpYRUhiRTUxWXNkQ2xFdHJZYjZsZ1h0aEZrTEtZblU4aEk0alhGTnFLQTg5X2p1NVhTdm1PN3F6X05rdXlrdnZFYjZHNnNFWUhiVmhUR1UzdzN6dHczZUtmVERCWW9pYzl5aUlyVndiMnl5eG15andhd1Zoc0M0Y092bEtmUElfVVJtcko3SEtNbE5JTGdsaWVBYmMxYUtEUHJwemJmeTA?oc=5",
-    "time": "Thu, 05 Nov 2026 22:44:29 GMT",
+    "category": "Juventus",
+    "team": "Juventus",
+    "team_fa": "یوونتوس",
+    "title": "Gatti warning to Juventus: ‘I need to play, not making most of Kolo Muani’ - Football Italia",
+    "summary": "Gatti warning to Juventus: ‘I need to play, not making most of Kolo Muani’ &nbsp;&nbsp; Football Italia",
+    "source": "Football Italia",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBma1lLSnhEcWJpbWY5RHJOak12QTdlc3lwRjZsZkxmamVwZDhwSkhoYjBuUnA5WllDdGxoQTgtdnI5TTFURS1DMU80QWVYRkZnNUVDRE9vUWVVYXl4Z2ladzV1aE1Pc2xLbVh3RVMxWGpZOTFSSjFKTtIBfkFVX3lxTE1tX3ZsQkpKZU5tb3NWT2ktR0hmSzVFa3JYZXEtc21rRVVYY2lKcEViZGRkMWJGZ2c4MDZ3Unh1NmxtV2ZLeHhKVndDQndrRnk5WkhJdGZUdlF6QWthelVkMTFFbmVVZjk1R1lRTWRkNlhsczdYc2FZYTFyVVdfUQ?oc=5",
+    "time": "Thu, 05 Nov 2026 22:45:47 GMT",
     "important": false
   },
   {
     "category": "Arsenal",
     "team": "Arsenal",
     "team_fa": "آرسنال",
-    "title": "FPL gameweek 10 tips: Should you keep or sell Ezri Konsa? - BBC",
-    "summary": "FPL gameweek 10 tips: Should you keep or sell Ezri Konsa? &nbsp;&nbsp; BBC",
-    "source": "BBC",
-    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0zNWRwcHhMWE9lVFptcVR5dWxNQXVGNF9ZTUl1alVsenYyNzRqTW5xdV9WM3hHUjBnSlgzUGxrSTFDdWxUSmpqZUlLM0czNUtKWnh6RUR2TU9ZQnlJRjRFMVJ4M0RoSmI4?oc=5",
-    "time": "Thu, 05 Nov 2026 22:26:23 GMT",
+    "title": "Mikel Arteta’s Damning Ezri Konsa Injury Update Comes With a Silver Lining - Sports Illustrated",
+    "summary": "Mikel Arteta’s Damning Ezri Konsa Injury Update Comes With a Silver Lining &nbsp;&nbsp; Sports Illustrated",
+    "source": "Sports Illustrated",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdjlDbnd1cFFncTVfWmd0SGxmajZZVWNHMW96c0lSWVprVlZBRzBmTFExbXNRV0tGUUFMdFJiOEQ2Z0VaR2tvQV9fLTdGUFo0dU5PRHZuVmktdlEzSkd3OWxNNl9GWGhYZlRTUjVuS3luclFLVFpsc096M0dHdXgwaVdsQlgtMDJnRTkwdkl3?oc=5",
+    "time": "Thu, 05 Nov 2026 22:30:00 GMT",
     "important": false
   },
   {
-    "category": "Tottenham",
-    "team": "Tottenham",
-    "team_fa": "تاتنهام",
-    "title": "Everton Keen On Tottenham Star In January: Should They Walk Away? - Yahoo Sports",
-    "summary": "Everton Keen On Tottenham Star In January: Should They Walk Away? &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOS3hlaDZMLVJSVHdSejBBcGN3WlpzZWJfZ0FyMUFTMmVJQXJFSDdKT1Jac0d1cHdvT2lMR0NIOUpGRnZ1YllidU45aXB0OTZ4aE9BRWFma3E4R3hPUmR6LVY3S244Q3pHMzlrZjI4SC12ai0yaHBZbGlWQ2F2TzJNZEN4bUhCVG9majA5Ug?oc=5",
-    "time": "Thu, 05 Nov 2026 22:20:00 GMT",
+    "category": "Liverpool",
+    "team": "Liverpool",
+    "team_fa": "لیورپول",
+    "title": "$384bn Jeff Bezos has two options to take full ownership of Liverpool from FSG - talkSPORT",
+    "summary": "$384bn Jeff Bezos has two options to take full ownership of Liverpool from FSG &nbsp;&nbsp; talkSPORT",
+    "source": "talkSPORT",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9zM1AxUTczQ2tNUnYzU0loSG8tUFEwemQtS3gteF8yYUU0anY1RmYzakFlSHlLeGVDd25US3RVQXh5OENBX2ZueFJXcW45a3o0WU9DWi1maE93WmlJazBVQ2Qxd3EtUWJuNWszcmNURHA2MXhTcWxWY28wVQ?oc=5",
+    "time": "Thu, 05 Nov 2026 22:29:50 GMT",
     "important": false
   },
   {
@@ -1078,6 +946,17 @@
     "important": false
   },
   {
+    "category": "Chelsea",
+    "team": "Chelsea",
+    "team_fa": "چلسی",
+    "title": "Thomas Tuchel makes England squad decision on Cole Palmer after contacting Chelsea - Daily Express",
+    "summary": "Thomas Tuchel makes England squad decision on Cole Palmer after contacting Chelsea &nbsp;&nbsp; Daily Express",
+    "source": "Daily Express",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRUhFbWZlWlhzQ2VxY0tTaVVkd1Y0dFJGbjB2eVBLdlc5d2VxNDQ2Z3lKOHB6TkZaczBab3Jmbm9XWmc4bWZOZDl3clBOZXVyNmJzSXgxakotY2tRZjduRDZUNW5lYTI2a281REswZXVaU0JoaWdqZTNSUTNWWHh6eDlJNVNpYXZDS3VZX0sxUUU1cUdkcDNlcExIQ253N0FaazFv0gGoAUFVX3lxTE1qeEhRUzYtSjQtWlFnSjFhb3hrbEFwX2FNSkplQ3pSa3RWb0JvdUNRVVZ5dGpQUTM2MHNIZEd2SDNPZUVnanFjVHFkRldGSGdxVjY3MFFCSjc4Ym1yaWtMX204ZWgzamFNOUhzTjlmZHBFamRfaHZHcndfems3UHd1V2RnQVRQY19hWlgzWUhEUHhPSWFHM2lCbW1ueHZiMDVTUWJmSVZ2OA?oc=5",
+    "time": "Thu, 05 Nov 2026 21:58:00 GMT",
+    "important": false
+  },
+  {
     "category": "Barcelona",
     "team": "Barcelona",
     "team_fa": "بارسلونا",
@@ -1086,17 +965,6 @@
     "source": "Goal.com",
     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPNFZBR25qc3gwQVVhcFo3WGhRcFVQYzd4aXhlUEY4OWkxYTdDU3laYllWU1RkVGlfSEtnNXp4a0xKemFsZ1doUFYyTWpKNEFmazFiNkR6MWRzeTBuQWJWQlBZX2V6cl9KS0d1QjBOMHFtV0pXem5fZHZnZ244eDlkaXV0OTZ1VzVUczBmS1hjNnBYdjRlWlpkdlZvN1JYVGMybmd3VDBiNjhya21xb3lkMnZUbFRMd09yNDBYVTF6bnVNQ2N3Wm5rQjc0Zk5wR1NoZ1laVy03SzU2c01VU2FMcGx0VXBrMDRKNHZQbg?oc=5",
     "time": "Thu, 05 Nov 2026 21:49:57 GMT",
-    "important": false
-  },
-  {
-    "category": "Barcelona",
-    "team": "Barcelona",
-    "team_fa": "بارسلونا",
-    "title": "Barcelona star sends direct message to Brazil boss Ancelotti - Get Spanish Football News",
-    "summary": "Barcelona star sends direct message to Brazil boss Ancelotti &nbsp;&nbsp; Get Spanish Football News",
-    "source": "Get Spanish Football News",
-    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWVMxcTVQRFFYd0tVVHdwMFU2UE1BSTJZR08zanZBUktJcVFKdUszZ0JCT3V6MXY2LTdUQU5TUHpHVGxXa08xRS1nblM2Q0VhaDI3eWI0R1M0VGNvVTlIbFNiamxQOEVndk81Y0J3RGg3cjVuc25QY0tCUmZQVnpDNndGQzRhWkU2QTZXdktxZ2c2VlFsZmFKek1B?oc=5",
-    "time": "Thu, 05 Nov 2026 21:45:00 GMT",
     "important": false
   },
   {
@@ -1111,17 +979,6 @@
     "important": false
   },
   {
-    "category": "Tottenham",
-    "team": "Tottenham",
-    "team_fa": "تاتنهام",
-    "title": "Tottenham chief reveals ultimate aim to win the Premier League as he insists club is on 'right track' - The Independent",
-    "summary": "Tottenham chief reveals ultimate aim to win the Premier League as he insists club is on 'right track' &nbsp;&nbsp; The Independent",
-    "source": "The Independent",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSlNSaWJ6TUZvR1pfb3NxVi1lVk5idC12WG13LUhjdmVoMU5GaGRKVWF4MUtNWFNneXJFM0R2eWs0eEtCdUJIZkMtcnZraS1yQklsT2w1b3FLSnBrQmE3U2Rsc3RqX2dmREFBS1V4OG9zc3VibzNOdWsxZHZDM0V5R21FUDVyMl9ZcVpIbjVSakhqYXIxZzZjejF5b2U2Y3RackQwblY3bXo1QVlKYVc5eXlhaVI?oc=5",
-    "time": "Thu, 05 Nov 2026 21:43:00 GMT",
-    "important": false
-  },
-  {
     "category": "Manchester United",
     "team": "Manchester United",
     "team_fa": "منچستریونایتد",
@@ -1133,25 +990,36 @@
     "important": false
   },
   {
-    "category": "important",
-    "team": "",
-    "team_fa": "",
-    "title": "SGV football: Previews, predictions for Friday’s first-round playoff games - San Gabriel Valley Tribune",
-    "summary": "SGV football: Previews, predictions for Friday’s first-round playoff games &nbsp;&nbsp; San Gabriel Valley Tribune",
-    "source": "San Gabriel Valley Tribune",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONkVTUGlsaXpYWURfM2dxRF9zdElSZ3dveThhRmp6LW5IN0FkOUMyd0lmejZuSE5Za29GUkRJM3U5RWJOSzZfWFVhT3RlcGdtb2NiXzh2cUtRNG9wV1BNaUdqR3BDRzBhOWU3czFadDEyYUdpUllJWGVXZ2lVUmQ3NUlkeExCVl9odlI1Qzl3SGE4Q0ppSlZ3aTNsSVdGb085Qm9NdnNGek4zbFRuRUE?oc=5",
-    "time": "Thu, 05 Nov 2026 21:33:45 GMT",
-    "important": true
+    "category": "Real Madrid",
+    "team": "Real Madrid",
+    "team_fa": "رئال مادرید",
+    "title": "Real Madrid Locker Rooms For NFL Spain Game Pale In Comparison To Falcons And Bengals' Regular Facilities - BroBible",
+    "summary": "Real Madrid Locker Rooms For NFL Spain Game Pale In Comparison To Falcons And Bengals' Regular Facilities &nbsp;&nbsp; BroBible",
+    "source": "BroBible",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdTJnSjgxOElSZFZLdU5lWlA4WjltSlhQLVpMdFUxSFN5bnlZdTM1ZkxZeUpFSENLSTdhV25Mc3dlRC1NMzF6NTk1ekxrcExpMzJyWG9tUHpIY2dBakpHSFBxQ1pFclc4YWVtV1k0aWw4dGI0VjA5NUtoX2dXdVBFQkdzR0tQMThfT1dyVzFYQUdMXzdXQUM0QXp6cnZ0aWFnQjRvNFFR?oc=5",
+    "time": "Thu, 05 Nov 2026 21:30:58 GMT",
+    "important": false
   },
   {
-    "category": "Al Nassr",
-    "team": "Al Nassr",
-    "team_fa": "النصر",
-    "title": "Cristiano Ronaldo retires from Portugal: why football legend finally called time on international career now - football360.com.au",
-    "summary": "Cristiano Ronaldo retires from Portugal: why football legend finally called time on international career now &nbsp;&nbsp; football360.com.au",
-    "source": "football360.com.au",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9xQkNlSXlicU1ONk9DeXRjVElmYkg2MXh5VVRqOXoxc19sZGZod1dKZFd6a29LalhSb19jRy1mZUl2aEdkekFvUkVjLU5VSFI1RTdWb1lGaExkR0x0dkszUl9jbmNqOUNWcGdJYXJIaw?oc=5",
-    "time": "Thu, 05 Nov 2026 21:22:13 GMT",
+    "category": "laliga",
+    "team": "Real Madrid",
+    "team_fa": "رئال مادرید",
+    "title": "Preview: Valencia vs Real Madrid - prediction, team news, lineups - Sports Mole",
+    "summary": "Preview: Valencia vs Real Madrid - prediction, team news, lineups &nbsp;&nbsp; Sports Mole",
+    "source": "Sports Mole",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNUnpCWGF4RXk5TjhtNGNuSDJFQThaNFVQRk9LMFlaeGZYeWJOVUdTbUxVTWNOX0JzSENjSkNuNml0OTVKRWRMQUFiUHFsZkE0b3cyX1BjV3o4SFJETHVSbTJ1aEdYNHBmR0dYaWRkaVdFVmFObkc2NU0wSERlRERlNzZTa2hsaHhFc3ZrM2JlQkM4aTZHVDYyY3VtcEVjMkxJd1kxZnJUV1dTbHJHNEkxSTY1UGlvQlFMSEtSNlAtNXd5SVpYb2pMaEtYX2VNWGR1QkhfUzNRalFtM3VOcVZtb1dTaw?oc=5",
+    "time": "Thu, 05 Nov 2026 21:21:57 GMT",
+    "important": false
+  },
+  {
+    "category": "Real Madrid",
+    "team": "Real Madrid",
+    "team_fa": "رئال مادرید",
+    "title": "JJ Gabriel development sparks rule change demand as Man United await confirmation - Manchester Evening News",
+    "summary": "JJ Gabriel development sparks rule change demand as Man United await confirmation &nbsp;&nbsp; Manchester Evening News",
+    "source": "Manchester Evening News",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWjIxMjZIYWZrOWtvLWNONkxYNmV2T2NBYTBwSkRLWWxkQktwNzk4aUw3RkdSbDVSZEQ0VFA4c194LUt2NEdWUTdFMHdNSWNpMzJFUUNlQzM0cDlxaldXNUtKWHhPa3ZBOFVSSEI3cnZmVF9maUxUWkE0dHBpcjFCTFlfRi1lYlhuaS1aYzlMNkVseFFUUExlVXdPcnNqR1MzVGFZNHc5a1I2LUnSAbABQVVfeXFMTm16UkVoeDRraUdKSzNnN1hJM1prdGM0TE5ybWE4ZExFMDhwN3NFaU5ZcmhpRTVzXzRnVjcyWlVFbmJHR2lWSXFhcjJpMXpsUnlLN2JGUHNGY3BlN2JoUXc3c1oxc1gwdkIwVVNRbVdzc1E2RkxXMHplUjBncXVaa2o3cUZXU3poUlRZamdiQVdyN054c2EtMWlfdU9mNU8zUy1UNlVBUmtWdzdrUHl4enQ?oc=5",
+    "time": "Thu, 05 Nov 2026 21:20:00 GMT",
     "important": false
   },
   {
@@ -1166,17 +1034,6 @@
     "important": true
   },
   {
-    "category": "Liverpool",
-    "team": "Liverpool",
-    "team_fa": "لیورپول",
-    "title": "Watch: Footage goes viral of Dominik Szoboszlai fuming at Liverpool teammate during Fenerbahce defeat - CaughtOffside",
-    "summary": "Watch: Footage goes viral of Dominik Szoboszlai fuming at Liverpool teammate during Fenerbahce defeat &nbsp;&nbsp; CaughtOffside",
-    "source": "CaughtOffside",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPeEx4RnA5cnY4V3M5VlBPYU9RRFBLU3NVdnM4M3RRMm1zX2VrbjVrVnZtZWxFazJqT3Zjc0V6MnVQOTRBTHlWUS1WVEc4YzhrXy1PSkxMVUhHVlNkTWZtTGVBeVRDckxCekltVjVNM01kc1JaLXk4ek8ySlZQX25uZEpCd25MejFPMW53SWQ5TFRzMDJjWWJicUFWTmd5a3Eyc2pj0gGoAUFVX3lxTE9QZU5vVUFFRVBDa1hFcnJ6dmpmRGdkc3pmYVZsUEpoSTg2QUhZS3JPRzI0ZmpyaDNkaWFDWi1oSFpGSzZaV2hZNFQ0c1l1WDRMWlpxd1hEQmJ3TWxMNExtcGswUVE1NXZheEhINGdzNVNjdm52TFhSQkJzZ1BJbnBXcmdUTGpUVE90aVRnbFBkRDRwbkNiWFJoWmRlQkE1emVQMFQ5cnQ1NA?oc=5",
-    "time": "Thu, 05 Nov 2026 21:19:43 GMT",
-    "important": false
-  },
-  {
     "category": "Bayern Munich",
     "team": "Bayern Munich",
     "team_fa": "بایرن مونیخ",
@@ -1185,17 +1042,6 @@
     "source": "Football London",
     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWDBZdUtoZjBsTHc5a2xxMXU4ZTBkSGRrcERoUU4tVkhkUHhyWGpSYm4zQU9EbXVaZGxGVEtXV254UmdKV01kbGF4ZVRISDkzSVEzWDNTMXNmaEFIZDI2WDdfUGd2UEdDYzUtZFVCNUFrYllDSFBtVWhTZHFiU3JwUEtMQzQ2eU5Bd2QtSEZjNVVCNXBiQ3ZDUUhsTlUxdUh6NHAyVDFsZy1mZ1hh0gGyAUFVX3lxTE9xalN5dTdUVEFYdFRoVHRudGpXNS00Z3NXN3dGcnV6bmczcl80b2Y0U0Jlc1BvaTZUNnNSeW5XOENjeGpjenZOVEZPNUVJdVpzMEdOSDZ6Rl8yMlJ0YVgwdTlKeGgtWVZ2TGQ5Wlh4SFp1eDI0T285UFdNc2pnVGNSZVlRWkRhXzUzWW82RGc1cVdTQXFLMXlrSVBWcHY1aWNKZ0k1WjB2SFlNZTEzVHV3SHc?oc=5",
     "time": "Thu, 05 Nov 2026 21:17:17 GMT",
-    "important": false
-  },
-  {
-    "category": "Al Nassr",
-    "team": "Al Nassr",
-    "team_fa": "النصر",
-    "title": "Cristiano Ronaldo to retire from Portugal after 23 years, hands back No. 7 shirt - WLOS",
-    "summary": "Cristiano Ronaldo to retire from Portugal after 23 years, hands back No. 7 shirt &nbsp;&nbsp; WLOS",
-    "source": "WLOS",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOX1c0NjVPc0NRZVB5ZXhJLUs3WFZTYTBVVHByeTNmZG5GLU9mVXVoSHJHeDJ0ZmhILXJzTFJsUUdRc0VBNXlGZEJva3prbWkxWlo3X1dNblUzRlB6RGxERnJSS3NXM3Mydmo4VDY5VHVMTEtTdjVjZ2l2NXVuZGlpb3E1SVdSWFMteEhDdEFuRXQ0RmNZZUN6b2I1ZjZZV3loNk5xNkNXZUg?oc=5",
-    "time": "Thu, 05 Nov 2026 21:15:51 GMT",
     "important": false
   },
   {
@@ -1210,36 +1056,25 @@
     "important": false
   },
   {
-    "category": "Real Madrid",
-    "team": "Real Madrid",
-    "team_fa": "رئال مادرید",
-    "title": "Real Madrid & Barcelona legends respond to Cristiano Ronaldo’s international retirement - Yahoo Sports",
-    "summary": "Real Madrid & Barcelona legends respond to Cristiano Ronaldo’s international retirement &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQa051R25jN0ZsSnlfa2xtY3A0d0d4b1I1akxLR25JVkpWWjgwbmJ1MGFJeVNaSDBUMnVtSkszMUVlOG1iSlBpRlhnU2tyN3lKQ2lEeXp0bG5EUzMtbEZuazNqX2RiTkoxck4ybk9adkthYmpzUnJVeHk1b0NaSjQyLUdsUjhWR2FGUXNlOWZhdw?oc=5",
-    "time": "Thu, 05 Nov 2026 21:05:00 GMT",
+    "category": "Al Nassr",
+    "team": "Al Nassr",
+    "team_fa": "النصر",
+    "title": "From Manchester United to Al-Nassr: Reactions to Cristiano Ronaldo's retirement | Football News - Hindustan Times",
+    "summary": "From Manchester United to Al-Nassr: Reactions to Cristiano Ronaldo's retirement | Football News &nbsp;&nbsp; Hindustan Times",
+    "source": "Hindustan Times",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdkNvNkw5MVdQX200ZTlnUVRmdzVCcUdUX1YzdXV0R2t5Q0YweHYxamxqa0ZjZUtQWWJpeXNlazJSTjB4bkhTR3lIM19MTXR2eDYyN0R6OEtGdldXTHBWTE5tTm9wbFlNbzM5RHd5blEwYWR3am8wQ0pWSFpaWktWYnpmQnJ0MjI3eVFaSTRMNnRtTTVMWjgzR2FfSDY3cXd2Y25haXl0ZzRKN3Y3WWlYcU5uOEJmSGlJRHfSAb8BQVVfeXFMTmJON2NoUGttT2NEcWtmWGlwMWJlOTEyUFpDUGZrV0RDSjVIcVlVZkdXcXJYRjNZSHNDa21IbzNwcV9ZZTNxXzhuRjh6b2hGYXI1WWdONXNBdFVEV1I4ZktlS2RtV3NxeDViM2JmbnJsNnZ2LTJFY0VzTWEzUktuWTVDTGNZel91eVdFLVFoZVpveEJuM2k2RjlOTjJzN0x0RkN1MDk3dEFxSEREaFRMa19HaC1uOGlkNGhsS2Nmd3M?oc=5",
+    "time": "Thu, 05 Nov 2026 21:12:37 GMT",
     "important": false
   },
   {
-    "category": "Tottenham",
-    "team": "Tottenham",
-    "team_fa": "تاتنهام",
-    "title": "Roberto De Zerbi will reveal more of his plan with Omar Marmoush during Tottenham vs. Leeds - Yahoo Sports",
-    "summary": "Roberto De Zerbi will reveal more of his plan with Omar Marmoush during Tottenham vs. Leeds &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaEE5cmVTX2UyZWFIUFVCRFRJLXpoSW1ESTZnZUZXSVAxNjcxWmRycHczUG1KREdvYUktZmRmR1k4RVlDRFBRdUpWX0QwVm91UkRuR3lsdDlVT0drY3VuWlJnbExlNXFsaGJTSnBzdmJzaXphbk9qWXJ4SUt2Z250b1E4VzYxQQ?oc=5",
-    "time": "Thu, 05 Nov 2026 21:00:03 GMT",
-    "important": false
-  },
-  {
-    "category": "AC Milan",
-    "team": "AC Milan",
-    "team_fa": "آث میلان",
-    "title": "AC Milan, Amorim deeply disappointed by yet another European embarrassment: who risks falling behind - Goal.com",
-    "summary": "AC Milan, Amorim deeply disappointed by yet another European embarrassment: who risks falling behind &nbsp;&nbsp; Goal.com",
-    "source": "Goal.com",
-    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQU2JzMGtHUmFyRHphemVkV3lCZzAyeWlhQmF6SE1QeDJiT2ZGSXREV1pBdjhpaThsMVB0Wl82X3RGb01jUEtFN2tYWFBVUzRiencxUWVxS0dzNlhVLXRMeVVvOVZ5RW4ya3VESFV6enNIdTlDVnRmem1GQU1FN0VRUk81Sy1lbEtIOW1CMWVGbjlrZWc2R08wMXppdlFLSElMV0ZSYU5ldXNJU1lKWHNZOTV2aDNCVHhFcXFWLXlPb05FaGt3WmJUUzJzZHg4eDltZGdRSU5fX3JZdVR6SWc?oc=5",
-    "time": "Thu, 05 Nov 2026 20:54:32 GMT",
+    "category": "Borussia Dortmund",
+    "team": "Borussia Dortmund",
+    "team_fa": "بوروسیا دورتموند",
+    "title": "Preview: Borussia Dortmund vs Elversberg - prediction, team news, lineups - Sports Mole",
+    "summary": "Preview: Borussia Dortmund vs Elversberg - prediction, team news, lineups &nbsp;&nbsp; Sports Mole",
+    "source": "Sports Mole",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQZ09TUC1HRTlVRU9wakJYLWdpYjZIMTU2NzItV0lxaDRIbU1DNm56RXZURnl2U0J3SzRBUVJjZ0xMR0RoMVlNVzZKRElJanVBcS0waU13WUtCRmNIOUZBckwyTkg1cC1wZUY2QlFLd3lONnMxWFluSzJ5Ny1QbkVVUGM2czFha0tOTDNUVXZrOHJveFBZTkU1TkgyaWxsMm9NSUV5N1pFX2Q1STBfczR0TDZwVXZVQkdudUhjZk05TGtybVM0a1E5dF9KM093aktldHhoSjA3V3FPNTBHRnppNndqOA?oc=5",
+    "time": "Thu, 05 Nov 2026 21:01:54 GMT",
     "important": false
   },
   {
@@ -1250,18 +1085,7 @@
     "summary": "Historic Win: Ferencváros Beat Milan at San Siro &nbsp;&nbsp; Hungarian Conservative",
     "source": "Hungarian Conservative",
     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcnFEcW1WNjRybDFObnB6YTlHdmNCY1FPQXcwcXA4T3dfM2tFRGMxRUtZbWFEX3NVcVdvd29ra2J2YmZ4eEZqM201Z0JxamtYN1h5WHhZazVfSFRHQXQtZnA0dnE1Ynd6YnJXOFFqSlZWblZFZEd2NXBTQzFieVJMc3N4dkVLdGJURUxLM2RZYjdBZVVfMk8zNUZkWFgxdC1LOXFVUVJ3?oc=5",
-    "time": "Thu, 05 Nov 2026 20:47:09 GMT",
-    "important": false
-  },
-  {
-    "category": "Tottenham",
-    "team": "Tottenham",
-    "team_fa": "تاتنهام",
-    "title": "After Luca Williams-Barnett, Another Top Tottenham Academy Star Spotted in Training Ahead of Leeds - roundtable.io",
-    "summary": "After Luca Williams-Barnett, Another Top Tottenham Academy Star Spotted in Training Ahead of Leeds &nbsp;&nbsp; roundtable.io",
-    "source": "roundtable.io",
-    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNQTBlbnh5MU90YWZMdzNQX1Q0TS1FdDdUVEkwWWFCOTFKa2dpbEFZMW1XdnRvRTZPZy1xWGxIaXFJUGZlY3ppU2NqNWVxRlFmb0lzYXVCRmpVSlFTUTl0cWNhcTVHLTRLVU11NnNidGtTaXdRS1BrdlZLMDFXZW9sRXRrd2pqcmswSTYtVGVmczE2QkdEUzl2OGRwZllCeUVqRzlnOXpPVjBuRmFxUGd3OWFRYnY1STBFc2p1aUxQZzVOVFphNFlrZE1Id05kdmo0RkNZWnZ3dGd3VlFneFhBZC1BRnBtbU84UjBaSHA4Q2VfazZYX2c?oc=5",
-    "time": "Thu, 05 Nov 2026 20:45:43 GMT",
+    "time": "Thu, 05 Nov 2026 20:53:06 GMT",
     "important": false
   },
   {
@@ -1272,7 +1096,7 @@
     "summary": "Alexander-Arnold reaches final Real Madrid exit decision to delight Chelsea fans &nbsp;&nbsp; Football365",
     "source": "Football365",
     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOckRkM1RzOGU4aDFsSUtDUGdXVGlkQjhHMjVkallRWHZqc0pNOVRaSnpxTzBaOHdZMk1mTm1QeFMtelctWlRjZ085QnQza0p3Yk85djVidUxPejk2c0liSjJWXzBQSm9rX19mQzQtN3EzZE9qNXdNcEU5QnZnRHhuaEQ3UzRQZ2I4dVdNU1BrOXUySGtNWko0Q2VUc190SDlEMlpaRnJNMA?oc=5",
-    "time": "Thu, 05 Nov 2026 20:44:18 GMT",
+    "time": "Thu, 05 Nov 2026 20:45:55 GMT",
     "important": false
   },
   {
@@ -1298,17 +1122,6 @@
     "important": false
   },
   {
-    "category": "Paris Saint-Germain",
-    "team": "Paris Saint-Germain",
-    "team_fa": "پاری‌سن‌ژرمن",
-    "title": "ASSOULINE Announces Paris Saint-Germain Book Chronicling Club's History - House of Heat°",
-    "summary": "ASSOULINE Announces Paris Saint-Germain Book Chronicling Club's History &nbsp;&nbsp; House of Heat°",
-    "source": "House of Heat°",
-    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBDUXRVNFR3UEpCcWYwVTE5RW5YcUU2anB5RnhmdWUzY0ZqdWxKTnNXMk5NMDl1SU5qLVNZWXUzcDJKR3JnNExlRlZIQS1LMWFCT3p5QzBTeGVtVm1MRllvSEt4MEtwdmdDeVZhcHNjZFhWNllzcjVEQQ?oc=5",
-    "time": "Thu, 05 Nov 2026 20:34:02 GMT",
-    "important": false
-  },
-  {
     "category": "Arsenal",
     "team": "Arsenal",
     "team_fa": "آرسنال",
@@ -1331,51 +1144,51 @@
     "important": false
   },
   {
-    "category": "Borussia Dortmund",
-    "team": "Borussia Dortmund",
-    "team_fa": "بوروسیا دورتموند",
-    "title": "Campbell excited for Dortmund return as Elversberg visit Signal Iduna Park - OneFootball",
-    "summary": "Campbell excited for Dortmund return as Elversberg visit Signal Iduna Park &nbsp;&nbsp; OneFootball",
-    "source": "OneFootball",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObm9Ibjg0eWRabzNYX0pERlFRcFdtWmpoMmpYZ2tQbEpIRG5kVjBlNko0RllIeTFsNHNfNDZlOGFjeXlsbmR0X3oxM0dpQXVGdjZNUUNnSmN6QXBUb1VmaFE4Mkl1SHBwU2lTd3BDdU5TN0Q0ZHZ6dlpnZk84cU4zYzhiaWgtTUFuVWN2eFJWM2RpMFhDbkVuM2FUbDEzQ3ZiNXFZTnhQNDQxTjdWQVVUUlRFbnFsdw?oc=5",
-    "time": "Thu, 05 Nov 2026 20:23:39 GMT",
+    "category": "Inter Milan",
+    "team": "Inter Milan",
+    "team_fa": "اینتر",
+    "title": "Simone Lo Schiavo is the new Director of Football Development - Inter.it",
+    "summary": "Simone Lo Schiavo is the new Director of Football Development &nbsp;&nbsp; Inter.it",
+    "source": "Inter.it",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMkRGSTEwNEV2LU14aDZkRlJ3SWREb2R4MjFkVWlxY01OaktxVzVlbmstQ2xZRHo5aWxLVjlheTZTemY3WWlGeDByWUgxb1RveW83ZTRqS3duTy10NlN2WTBrS2oxYVlrVGtRSTg4SVlJeUdKQnZ5Q0F4OXEwMEYyYUlYbHBMNnFOdWpRRWwtdDdpNi1LeHhPeExDNEU?oc=5",
+    "time": "Thu, 05 Nov 2026 20:19:08 GMT",
     "important": false
   },
   {
-    "category": "Liverpool",
-    "team": "Liverpool",
-    "team_fa": "لیورپول",
-    "title": "Liverpool Loan Watch: Scanlon Shines Against West Ham, Pecsi Maintains His Form In Goal - Yahoo Sports",
-    "summary": "Liverpool Loan Watch: Scanlon Shines Against West Ham, Pecsi Maintains His Form In Goal &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQUxUc2dFcnNLeElWZ3BLbDVUSDlRLTVYS2hfUy1HUmRsLUlhVkMxQkpveV85SlBRd29BOWk4MHdoNjktZG9hZ3Nrd1YwUjZpTXNockthekNMZHRMU2l1SmtGU290YTI1MFlEb3NkU0hGTmpxeHJoU2lkOHZKRmRDOU9rT0N4QTRWbmhmeQ?oc=5",
-    "time": "Thu, 05 Nov 2026 20:15:00 GMT",
+    "category": "AC Milan",
+    "team": "AC Milan",
+    "team_fa": "آث میلان",
+    "title": "10-man Ferencvaros stun AC Milan to keep their perfect Europa League record alive - Flashscore.com",
+    "summary": "10-man Ferencvaros stun AC Milan to keep their perfect Europa League record alive &nbsp;&nbsp; Flashscore.com",
+    "source": "Flashscore.com",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTGhzZS1mSEpiN0tvMHBwNDBBXzZuQnU3MDlRVUV4aEVacldhZFhyMDJVRHB5TEZqODVYQmdXa2E4bml3b204Z0ZoRUJvdnNVZWVLVDVHaHhsZFoyb2hvaVZWcENnenBPZE9GaU1Rem9TNlJpVUxDd0pmVmZHTXdtWEhtYjRnTGN2UVI2bEZ6RFhzWkgzOTl4WWxnbzk1VWd4MXVv?oc=5",
+    "time": "Thu, 05 Nov 2026 20:10:57 GMT",
     "important": false
   },
   {
-    "category": "important",
-    "team": "",
-    "team_fa": "",
-    "title": "Don’t write off Ashton Jeanty just yet, plus navigating the Jets’ target squeeze in fantasy - The New York Times",
-    "summary": "Don’t write off Ashton Jeanty just yet, plus navigating the Jets’ target squeeze in fantasy &nbsp;&nbsp; The New York Times",
-    "source": "The New York Times",
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNN0lfTHlkd1FWRTFzN0ZjRlBUbHBxSlpBQ3h3SHVhWnZDX3dLQVNydG9uakRSNGlqTjhNTTVPODJpT2RNNDd0TUxiXzc3WFhGTm0xc0VsLUVDblh5bVdQT19qTVZrM1NfaERCUU5KRm1uaWFjemRsUzFsM3dFWksxRVluRUFHTzYyNnBrWGN4MktkWHVJZkVMX2xsdXNKTTVfV1ZwakdRVndiRHZ2eG1yRHlBeXhEQ1Rx?oc=5",
-    "time": "Thu, 05 Nov 2026 20:05:27 GMT",
-    "important": true
+    "category": "AC Milan",
+    "team": "AC Milan",
+    "team_fa": "آث میلان",
+    "title": "Milan 0-2 Ferencvaros (Nov 5, 2026) Game Analysis - ESPN",
+    "summary": "Milan 0-2 Ferencvaros (Nov 5, 2026) Game Analysis &nbsp;&nbsp; ESPN",
+    "source": "ESPN",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9udUpHc29GNVRselJVdURxZHhERWxTdUNiNElueFVMOEoxX0t2aHJMaDZIM284bmRFWDRoWS1tZ3VsUW14Yy1aR0ViRGVZUExuTHFiajlnVTI0dnU5S2VhNDVsdw?oc=5",
+    "time": "Thu, 05 Nov 2026 20:08:16 GMT",
+    "important": false
+  },
+  {
+    "category": "transfers",
+    "team": "Real Madrid",
+    "team_fa": "رئال مادرید",
+    "title": "Jude Bellingham helps Real Madrid complete first 2027 signing - FootballTransfers.com",
+    "summary": "Jude Bellingham helps Real Madrid complete first 2027 signing &nbsp;&nbsp; FootballTransfers.com",
+    "source": "FootballTransfers.com",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbGE2RTNlWnhEalFGYS1pN1h1Um1sZzI1bzBLSG9RdENzQlRjdy11SjBHSHc2eENBZ1ZCQ250N1lZeWhIaFdGcVpNTnFtdnNlTmJKVU9jZHM2dlZacEFidzloNDJqZld4YmtRdDhYR0dqeGhlS3RCdUwwUFItcWFxdGlSYllONnJGZWZ1Vm9kZS1DZ0o4dFNZNThKY09DTS05VXhVMThNMzZFNFdwY25LNW9jVDB0NjNXc3BKZm9VcnM4ZzV0cEV2Q0Z1TEVCZUdk?oc=5",
+    "time": "Thu, 05 Nov 2026 20:06:00 GMT",
+    "important": false
   },
   {
     "category": "laliga",
-    "team": "Barcelona",
-    "team_fa": "بارسلونا",
-    "title": "Atlético Madrid handed injury boost for Barcelona clash - Yahoo Sports",
-    "summary": "Atlético Madrid handed injury boost for Barcelona clash &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQaWQyS3ZPck1hTkJXcEVxOHNWNTZaOU9DN1p6a3FaNVcxcXNCcmVURzA0N1hZMnJ5ZHlDQjdWa2RseU43Uk5UVjBiWTFqTjgzWWhTdUxpM1oxLTRDX1RjenB2M2hQWUpibWZJVXcyZ2pUWEtINmpmQlNueHlVcF9TOVR5Q18?oc=5",
-    "time": "Thu, 05 Nov 2026 20:05:00 GMT",
-    "important": false
-  },
-  {
-    "category": "Barcelona",
     "team": "Barcelona",
     "team_fa": "بارسلونا",
     "title": "Atlético Madrid handed injury boost for Barcelona clash - Get Spanish Football News",
@@ -1383,6 +1196,17 @@
     "source": "Get Spanish Football News",
     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQM2lEbnVNSG5zQVFyelZXSndfUzREWVYxZWN0c1FZYm5TX1R0Nk40dzRRdEVHamx4ZFg5eGFEOGxsbU5hTzlkYVp2X1E0YWwyQjZUUkJaTEZwbXJDcGJoaXdsZnVUR0lmdDU1NE9yeGpjZUNNeWRwRE5EcHNYYURXMEUwa3NqaHEwLWJGb3ZQMnk1RlU?oc=5",
     "time": "Thu, 05 Nov 2026 20:05:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Juventus",
+    "team": "Juventus",
+    "team_fa": "یوونتوس",
+    "title": "Europa League Liveblog: Milan-Ferencvaros, AZ Alkmaar-Juventus, Atalanta-Kairat - Football Italia",
+    "summary": "Europa League Liveblog: Milan-Ferencvaros, AZ Alkmaar-Juventus, Atalanta-Kairat &nbsp;&nbsp; Football Italia",
+    "source": "Football Italia",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQa3hGTkZqc25GbFI2eTJ1TlBFUDEwNk9aTXJ6RGt3Nk40RU03UC1JdVhQbjFseEFfUENFc0Q1aDQ3SC1EenRHNkh4Z24wWWlFcE9VbGxyQVNXVFZwU01YV3ZhczFCa2oyZ0NRVWo2V1lzb0ZjVTdPZHhjZTFpWUVjLQ?oc=5",
+    "time": "Thu, 05 Nov 2026 20:03:54 GMT",
     "important": false
   },
   {
@@ -1397,14 +1221,14 @@
     "important": false
   },
   {
-    "category": "Arsenal",
-    "team": "Arsenal",
-    "team_fa": "آرسنال",
-    "title": "Arsenal wonderkid gets explosive new market value - Just Arsenal News",
-    "summary": "Arsenal wonderkid gets explosive new market value &nbsp;&nbsp; Just Arsenal News",
-    "source": "Just Arsenal News",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQTJRaFNlRi03Nnl0blRndUxuNlgxM3JKaGxreTJ3N2txZy1VdThkSXNLaTJac19wMmNEeXJvMk1wNTNpcG00ZnVTWmtiMEp5ZWlRNUZGT2JkTTVZUDhQTUFtWFhpWVdUemxtOVk2YVdUR2pQREdianNhQjFqWHNadEEwb2dQaWxZTmt5R9IBkgFBVV95cUxNSTBRTkZaOFRyeGxRZUk5RHVweGdnWVRSRFZ3SmEyazZMWEZJN2hkMGEtU1UzaHoyM2FJS29aQkdVS2E4TWJRa0RnUWJ1TlR0Mk1VN3hTYklWTl9VZDk1QmVZV0xsbDNaY1REZmI1a3VBY19SR0pNa01oVDlybFhxaXoxbW1Sa2o1RldIamkyTG1LQQ?oc=5",
-    "time": "Thu, 05 Nov 2026 20:00:00 GMT",
+    "category": "AC Milan",
+    "team": "AC Milan",
+    "team_fa": "آث میلان",
+    "title": "UEL | Milan 0-2 Ferencvaros: Dismal Rossoneri risk quick Europa exit - Football Italia",
+    "summary": "UEL | Milan 0-2 Ferencvaros: Dismal Rossoneri risk quick Europa exit &nbsp;&nbsp; Football Italia",
+    "source": "Football Italia",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBpTFFzSnNRTGRKakRQREFyVHd0VEtDTFJMUlc4cDY0emZVaGE1SDNFQ3phNFYzWHdKMXVlalhfOUdCMVA3WHRnM3VPa0NoaVVnNl9LbVRNUS1fTUpMU0ZxTmh3bS1nSHdHRkdRNjZfbmZCUHVRdjRJZmxfQQ?oc=5",
+    "time": "Thu, 05 Nov 2026 19:40:43 GMT",
     "important": false
   },
   {
@@ -1416,28 +1240,6 @@
     "source": "Yahoo Sports",
     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12R05oNlltVHVQdFQ1WjFYaHVxNlotSEZrU2FEM0otc0hGLWVKSWlsUVc1Yk55NmtIZXVDbWJheHh3eER2d3p3SUR3R0hCV25JMDVHOFJEaVJ6TmxzTFFrcmVBZlEyZkpGS0lhcXRpaHNwSU5NUUVtNGhVSklaZ28?oc=5",
     "time": "Thu, 05 Nov 2026 19:25:00 GMT",
-    "important": false
-  },
-  {
-    "category": "Manchester City",
-    "team": "Manchester City",
-    "team_fa": "منچسترسیتی",
-    "title": "A major concern for Manchester City is emerging in goal - Yahoo Sports",
-    "summary": "A major concern for Manchester City is emerging in goal &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRzJ5TkhWVGlOZ1hsQ1BMTy13TWFLc3hxSm9NejdjVjllelJMQ2YzT1g1cXpJQXpISW9zZWJIbHhDbFJENE1adUZ6d2h5ZkQ0ZXR2UmVaaTBDZ1lJNlVYWEhiNFlFZEZlY0pUWHBjZlpjWEJFWTBZa0V3Ti02UlpyazVMa0hESkNILUNmMmNXaS0?oc=5",
-    "time": "Thu, 05 Nov 2026 19:25:00 GMT",
-    "important": false
-  },
-  {
-    "category": "Inter Milan",
-    "team": "Inter Milan",
-    "team_fa": "اینتر",
-    "title": "Tottenham striker Mathys Tel in contention with Inter Milan’s Marcus Thuram over France selection - Yahoo Sports",
-    "summary": "Tottenham striker Mathys Tel in contention with Inter Milan’s Marcus Thuram over France selection &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTzM1M1JJaTR2UE53ajNlb0YwOW9adUwtVDlvMHUyZzVHOGloelZYa00zQnB5elNzYmhGQ2o4R0ZhTGstZUZlV3ZEQVgyR1RraTg5UnlTUENucEtxN0tEWTJXUW9DMm10R2pYY1ZDVnBYN3ZFMG9Ld1lBRzVOb1QwZER2ODJuNVJRUEtGSDdPbHZzQQ?oc=5",
-    "time": "Thu, 05 Nov 2026 19:22:00 GMT",
     "important": false
   },
   {
@@ -1455,17 +1257,6 @@
     "category": "important",
     "team": "",
     "team_fa": "",
-    "title": "Football To Continue Ivy League March Against Brown - Yale University - Yale Bulldogs",
-    "summary": "Football To Continue Ivy League March Against Brown - Yale University &nbsp;&nbsp; Yale Bulldogs",
-    "source": "Yale Bulldogs",
-    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNY1hPNy1naUpKSlRfekVHQ2NQU3pKOW52YlhKazJqbzVHcU1RdGhpX2hXZ3ppdEtlTi0welR4UW4zbW5scW4tMjRmdlpJU1o3d0owME5STzVUWDRvVk8yOVVidGdKazhKMmpudFhTck82aTU2b3FoRTZMSkx1bnFBVkMyT1NZUjF4Q25xRmFHXy1Wd1VVUVIxcHByQ1g?oc=5",
-    "time": "Thu, 05 Nov 2026 19:18:40 GMT",
-    "important": true
-  },
-  {
-    "category": "important",
-    "team": "",
-    "team_fa": "",
     "title": "Did anyone have more fun playing football than Rob Gronkowski? - Boston.com",
     "summary": "Did anyone have more fun playing football than Rob Gronkowski? &nbsp;&nbsp; Boston.com",
     "source": "Boston.com",
@@ -1474,36 +1265,25 @@
     "important": true
   },
   {
-    "category": "Liverpool",
-    "team": "Liverpool",
-    "team_fa": "لیورپول",
-    "title": "Crystal Palace v Liverpool: Referee and match officials confirmed - Liverpool FC",
-    "summary": "Crystal Palace v Liverpool: Referee and match officials confirmed &nbsp;&nbsp; Liverpool FC",
-    "source": "Liverpool FC",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbTFvOTh4d3poMlh0TEpscXZRSkE2U1lVZThEUXFiQ0tRd1dwdmFGdDU5OXEwd1BVaE1lU3cyY2dVSjR1RXF2VDI4WFVNVmNOSENORlB6Smp4VlhZdWxFSWoxY21EYlFDRmFvbEh6WkxjeEpBWlkyNU5pYlpTNnFReF9RR3AtTlhjc242dkwwdXJYQ2NzSUNLNFdXZUIyUQ?oc=5",
-    "time": "Thu, 05 Nov 2026 19:05:30 GMT",
+    "category": "Arsenal",
+    "team": "Arsenal",
+    "team_fa": "آرسنال",
+    "title": "Arsenal release Love Actually-inspired Christmas advert! Ft. Colin Firth, Gabriel, Calafiori and Russo! - Sky Sports",
+    "summary": "Arsenal release Love Actually-inspired Christmas advert! Ft. Colin Firth, Gabriel, Calafiori and Russo! &nbsp;&nbsp; Sky Sports",
+    "source": "Sky Sports",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOUHJBc0U4VDJwZnFxY3BtSGFKYm1HeU1MOFJ2MWdHc0ZVajNVYW5Rc2U2UGY1aVJDeDhISFNETS1ORHlBRkdIejRVcTBtRDlRNmlTQ1FxUVY1azVOSVVOeXI1cDA1ZDg3SGI4aWZTVUlVZnRDYnl2RnBhcjVTTGlBa0s0Z1JnNVhmV3dLRUNBRm8xNlQ3T2d3bkdZY0Y3NFpWeEhFNHZmMF9vNFNsWVFlUS05MWhIelBlSjhjdDZETC01VmlVREh5b1JpdFJQT3RsV3ZRb09UbjFnWHhGcEtNcXNn?oc=5",
+    "time": "Thu, 05 Nov 2026 19:07:53 GMT",
     "important": false
   },
   {
     "category": "laliga",
     "team": "Barcelona",
     "team_fa": "بارسلونا",
-    "title": "RB Leipzig star ‘wants to come’ to Barcelona - Yahoo Sports",
-    "summary": "RB Leipzig star ‘wants to come’ to Barcelona &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZmtkMUU1TlBIbThqMFk3UVpVZDJjLWtxYWx1N0tCMTZzSTR6WXB1SEt0TVRyZEM4eGRmSWFKbnZ0cExhSnF1Z1FBMjB6aXdYSmhtU3JwdHYxQllZeTdaTnBOQkt5TkJsVkROaHQ2Q3d2aE4yU3FTRVRadmtWMlV1VA?oc=5",
+    "title": "RB Leipzig star ‘wants to come’ to Barcelona - Get Spanish Football News",
+    "summary": "RB Leipzig star ‘wants to come’ to Barcelona &nbsp;&nbsp; Get Spanish Football News",
+    "source": "Get Spanish Football News",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPOGJUYkVYVVpPVUh0RmlUc1ZscTRrSVRtNWdfZU5QTU5LTk91Q19uNnVSeEZwaE03SnlsbzU3WDFWUVQxRXNYN0o2eldBYVUzaFpZc1NVMUx5TDJzS2ZyX0lVVmRZZTJBaHpicXB6QzA4bDUxbjQtd3l4a042N3V6OS1B?oc=5",
     "time": "Thu, 05 Nov 2026 19:05:00 GMT",
-    "important": false
-  },
-  {
-    "category": "Chelsea",
-    "team": "Chelsea",
-    "team_fa": "چلسی",
-    "title": "Thomas Tuchel makes checks on Cole Palmer as he considers England call-up - The Telegraph",
-    "summary": "Thomas Tuchel makes checks on Cole Palmer as he considers England call-up &nbsp;&nbsp; The Telegraph",
-    "source": "The Telegraph",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOW91b0s3Skx4bEFsbEc2ekxHWkhoY2hJb29JWTlrVmwzSk4tcDd6ZkpkdGFPNjVkTzk1TWxabFBSalBrRkxtS2NSUEVNWnZMVHVKdUFWTmI3ZU9tbUpYcnVPeTY1VmQtWXRsOVFqaENwdnF5YUF1c1BHVmdTLWZjWW5BQ2dmSTJFU1pwMWpoLUR4cUJY?oc=5",
-    "time": "Thu, 05 Nov 2026 19:00:00 GMT",
     "important": false
   },
   {
@@ -1519,123 +1299,35 @@
   },
   {
     "category": "laliga",
-    "team": "Real Madrid",
-    "team_fa": "رئال مادرید",
-    "title": "Valencia manager could field a five-man defence to stop Real Madrid in La Liga clash - Yahoo Sports",
-    "summary": "Valencia manager could field a five-man defence to stop Real Madrid in La Liga clash &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRDZWTGFFWWVQM0F1b1EwOUxmZEtvRnI4ZDJQRktTUlhqSUJjLXRoSFp1Sm9ENi1QYWczdUY1TXktZFV3X19Hd2ZEUEw1NGZDM2R2Y1hmQi1lbzFsb0hvdlJYNmFTNnRPb1k2dHByNnZXQXJzdWxkOGMxZE5SaDE3TmxCU0FFVkdoaFE?oc=5",
-    "time": "Thu, 05 Nov 2026 18:56:00 GMT",
+    "team": "Barcelona",
+    "team_fa": "بارسلونا",
+    "title": "Official: Barcelona star dropped from international duty - Get Spanish Football News",
+    "summary": "Official: Barcelona star dropped from international duty &nbsp;&nbsp; Get Spanish Football News",
+    "source": "Get Spanish Football News",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQemJYTjZfN1JIZ1pQVDVSbGFrVEMxbWdfang1LXlWa0Yydm1oS29wbWJNTEpPYnBtRzFGQnVPMXVRM0tnMS1NaThLVl9FVnNSUjdLMFM2NUxFQjdCTWQxa2FwQ1JDNDBWWFYzMGU0VlNJYUR1VjFLVHBKWTlKR055dTB1V0hLQy1rTHFIUzI1d0ZIRDA?oc=5",
+    "time": "Thu, 05 Nov 2026 18:25:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Bayern Munich",
+    "team": "Bayern Munich",
+    "team_fa": "بایرن مونیخ",
+    "title": "Bayern-Ajax ticket frenzy as cheapest seats sell out in two hours - The Star, Kenya",
+    "summary": "Bayern-Ajax ticket frenzy as cheapest seats sell out in two hours &nbsp;&nbsp; The Star, Kenya",
+    "source": "The Star, Kenya",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPclpla3FVQzdRVHd3QVVEbzI5c2Q0VmNuQ2gtYWZMaTJFTEFwMTZCMS1kSGFFNkZOLXg0eW93NjdsUW82SlJkT21nbDRUN0F2X3QtemFHdXVCb1JLd2JKTTZjb1d0akJzS3BuLUotZjN1Tm5ScmNuX2lhd2tzTXdrOE1Cb3JlLVNBeWVWWXNnWUdQZzVXWDBISA?oc=5",
+    "time": "Thu, 05 Nov 2026 18:19:38 GMT",
     "important": false
   },
   {
     "category": "Liverpool",
     "team": "Liverpool",
     "team_fa": "لیورپول",
-    "title": "Van Dijk Says “Everyone Should Be Disappointed” by Defeat at Fenerbahce - Yahoo Sports",
-    "summary": "Van Dijk Says “Everyone Should Be Disappointed” by Defeat at Fenerbahce &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdkNEMDRYaGJDcURHa2IteUFtUWk2Z1FPMEJESF90N0o1SUdYZWFQUm9FZXhXemNuaUtTRmFBUWV4SHVIcVlwZlBwREdTWVA0cTlQWGtmRVdVeGhzYklYREh5cndxc0swSUlwMzViM1JrMDJYcjVFZ2hXMUJBUm9lV3YtZjJSb0JpaHEzMg?oc=5",
-    "time": "Thu, 05 Nov 2026 18:48:08 GMT",
-    "important": false
-  },
-  {
-    "category": "laliga",
-    "team": "Real Madrid",
-    "team_fa": "رئال مادرید",
-    "title": "Thibaut Courtois admits Real Madrid teammate is already eyeing 2027 Ballon d’Or - Yahoo Sports",
-    "summary": "Thibaut Courtois admits Real Madrid teammate is already eyeing 2027 Ballon d’Or &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSUU5S3ZtUU5Qam1xSklSWUxHaUVsY21DRjlNZE5GZVI4MTljdnA5d2hMbXMtZTk1ZWNMRnVPNmhfRkJ6Um5rLU54WkF4T0pzQXVtTVJ2dlc0Tlo2UHd4RlIyclNhcUF3cFd2NFEyUUJYbFRtbDhXSHJwVGFBSFhRQkNZaFBiVmlmLVNtVg?oc=5",
-    "time": "Thu, 05 Nov 2026 18:45:00 GMT",
-    "important": false
-  },
-  {
-    "category": "Juventus",
-    "team": "Juventus",
-    "team_fa": "یوونتوس",
-    "title": "Game Time Thread: Juventus vs. AZ Alkmaar - Yahoo Sports",
-    "summary": "Game Time Thread: Juventus vs. AZ Alkmaar &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSGNTdl9NVWh6QmpSdzVuYS10dHloaUNyb2pxY0szNGNFeWJacmoyZEZfU3E1YWNUamI5WW9odVFEb25wNjNjaDZEdTcxeEowMnVhNUNXdDlPbFhhajFkWUpfMVJWcEIwV3YtZnZWamZjd0NpanpLTlhLZl9jQi1HYU85dw?oc=5",
-    "time": "Thu, 05 Nov 2026 18:45:00 GMT",
-    "important": false
-  },
-  {
-    "category": "Real Madrid",
-    "team": "Real Madrid",
-    "team_fa": "رئال مادرید",
-    "title": "Bijan Robinson plans to meet with soccer stars Vinícius Júnior, Kylian Mbappé while in Madrid - Newsday",
-    "summary": "Bijan Robinson plans to meet with soccer stars Vinícius Júnior, Kylian Mbappé while in Madrid &nbsp;&nbsp; Newsday",
-    "source": "Newsday",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMjQtNmo5ZW5TOVVoSzNhbGs3RlprbzRkcTg3bi1EajdvbFkyemgybmRVYjAtemI1clBybEtMc0NiWmdUUEgyVW9tenN0YUZnVERQMEFLYmRjWE03cnFYQkFsbHZ0V2dlU0YycnFhekszWUUzX0lUQVJZdEI2a292dkFZWFBvVVUzREFoalNUMURBRVNkbXk3ejNxMEV0UQ?oc=5",
-    "time": "Thu, 05 Nov 2026 18:42:57 GMT",
-    "important": false
-  },
-  {
-    "category": "transfers",
-    "team": "Chelsea",
-    "team_fa": "چلسی",
-    "title": "Man Utd start €35m Chelsea transfer domino for 'popular' star - FootballTransfers.com",
-    "summary": "Man Utd start €35m Chelsea transfer domino for 'popular' star &nbsp;&nbsp; FootballTransfers.com",
-    "source": "FootballTransfers.com",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWEVJZGdtVG1yT1hndU1ITnVCckhwV3RwRGZFeE1JZklIaVBlclp4eW9QdFhYTWE1WncxZjhMV3AyTGk2RElvWktmdWNwMFB0R0JBU3Iya3NLdzk3eFhaYUhrV200OHh2eS14VnNidnNmc3dROWZ5WEdsdEhLNk16azFDNk43VlBXbWIzUnRDcXdqWlh0NmZPeEJwS3Q1MDFtUV8wbGVOaG55eDMxRl81ODlSbUE?oc=5",
-    "time": "Thu, 05 Nov 2026 18:32:00 GMT",
-    "important": false
-  },
-  {
-    "category": "laliga",
-    "team": "Barcelona",
-    "team_fa": "بارسلونا",
-    "title": "Official: Barcelona star dropped from international duty - Yahoo Sports",
-    "summary": "Official: Barcelona star dropped from international duty &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSFZiTDVoSTlmei1naUVJQy1ISGp0NFJ6MFUyVW8wOGkzUDV5VkczRFpWanNHOUlBV1dPN0cwVXVNSGc5dGZueDF6WUY1aVNPa3F4UmJ1Z2FmcE1JYzRzZGRrcW5Rdl9ILUxsZVpBRDQ2S3NuYTR3YkFFS0FIZFQycnFjS0N6U0U0aXU0NjdvcWRqU2poamtDRE1B?oc=5",
-    "time": "Thu, 05 Nov 2026 18:25:00 GMT",
-    "important": false
-  },
-  {
-    "category": "Manchester United",
-    "team": "Manchester United",
-    "team_fa": "منچستریونایتد",
-    "title": "Man Utd ‘idiots’ about to be ‘shut up’ by Emery as he takes £17m to avoid ‘toxic football club’ - Football365",
-    "summary": "Man Utd ‘idiots’ about to be ‘shut up’ by Emery as he takes £17m to avoid ‘toxic football club’ &nbsp;&nbsp; Football365",
-    "source": "Football365",
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSVlBeXJOOEZ0YXZTMnJOaUU1NFNTMDdaTnVKZENMYloyVFVac21lMnBLeDRCMTl5RTRIMFhlenpQVUNGbERCa2pTZHRXc3E2T1N5V3dSeDdiSVc1ZmNGVTNVQ1dCaGVLRW0wdnpnYm5GTnE0Rmc4bkROemVqZUlHVHdWNVZnRGgzaUZCemdQa2s?oc=5",
-    "time": "Thu, 05 Nov 2026 18:24:34 GMT",
-    "important": false
-  },
-  {
-    "category": "important",
-    "team": "",
-    "team_fa": "",
-    "title": "No. 25 Boise State aims to stay hot vs. reeling Colorado State - Field Level Media",
-    "summary": "No. 25 Boise State aims to stay hot vs. reeling Colorado State &nbsp;&nbsp; Field Level Media",
-    "source": "Field Level Media",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRzA0Q09ySTFSVFlmVUpYejlpUm1JemhzTVJLN0h6d29iazBnS0hNbXotYXJjRVJ2UERIRUxuV2hDSGpnVDlOV3N6UEh2LXZmWWlZT0h0T0dtTkJlcHF5akhPU3paOHBIdGEtSjdjZVBoWlpQYV9wOXU2VUxLZGsyUGxtUTh0ZFhCVDJOeVZrRG1XWjBCZW1pZWo1MA?oc=5",
-    "time": "Thu, 05 Nov 2026 18:16:05 GMT",
-    "important": true
-  },
-  {
-    "category": "Manchester City",
-    "team": "Manchester City",
-    "team_fa": "منچسترسیتی",
-    "title": "Gianluigi Donnarumma: Enzo Maresca insists goalkeeper's form is 'not a concern' after Leipzig error - Yahoo Sports",
-    "summary": "Gianluigi Donnarumma: Enzo Maresca insists goalkeeper's form is 'not a concern' after Leipzig error &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbTJudlVsSUFQcmpjSVE4elNvZU53Yk9takN2N3c1ZkQ5UDFQTExFRWdwU1cwS01qalpjQUdSWEVZRTFBM1hoVllQUDhoSmdJR2FRcXd6WnlrQWk5dXZ1TGJmZjFoblhYMF9hU3BMSk5RdUVoRVhLZmJGdzRWQmV3dy13Uy1UODUtRU8xallKUl9PcW1j?oc=5",
-    "time": "Thu, 05 Nov 2026 18:16:00 GMT",
-    "important": false
-  },
-  {
-    "category": "Atletico Madrid",
-    "team": "Atletico Madrid",
-    "team_fa": "اتلتیکو مادرید",
-    "title": "Bayern Munich News: Was Bayern scouting Atlético star during UCL match - Bavarian Football Works",
-    "summary": "Bayern Munich News: Was Bayern scouting Atlético star during UCL match &nbsp;&nbsp; Bavarian Football Works",
-    "source": "Bavarian Football Works",
-    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOY2xBOEdXeGJhTzlHVTVqRzJyZHRvTjdFZHljX2x4ajFpOUNSc1dNQl9pUUpkd2lBOU5ES1dILTV1ZFBaaTh3elh6cDBJYVFSeEF4TW9pSV9yWHdYN0tza1Z0Tng5VmRLYlRmRVhnYWZ3VG43eUhjdzFEaWZtTGVESGJNd19vRVRXa05XSi05N096M09zU3kwRk13TTZPNkxFbGcxVlFraXNLWEZHLWdyS0VZejBQOUVPX1VobVpHWXA4N01SRXBPVEc5NnhKV3ZHUFVuMlNiYTdDMFVCSFRTZGU3bmE5WUhIT3Vv?oc=5",
-    "time": "Thu, 05 Nov 2026 18:15:00 GMT",
+    "title": "Virgil van Dijk: Everyone is disappointed - we cannot lose in that manner - Liverpool FC",
+    "summary": "Virgil van Dijk: Everyone is disappointed - we cannot lose in that manner &nbsp;&nbsp; Liverpool FC",
+    "source": "Liverpool FC",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOEZ5OWMxeTV0YVdiVzZ3YmdzUHVWLTZPSmpVYU4xdEVHVm1MMWlGS1h4bklfVHR2Z3FVMzZNU0loVTRkMzdCSHB4QXQ2dGpDQ3REY0Zidlc2dFdtaWxXWkZtbm5HX3NDbEVnV180aXBiYzdNWjhSUEJtWElMZVYyQjFnQlJldGx3NFNCMm92SFI5T1BudzYzTHMtM2xQN0lwa3ZJbFVn?oc=5",
+    "time": "Thu, 05 Nov 2026 18:18:33 GMT",
     "important": false
   },
   {
@@ -1672,14 +1364,14 @@
     "important": false
   },
   {
-    "category": "Manchester United",
+    "category": "seriea",
     "team": "Manchester United",
     "team_fa": "منچستریونایتد",
-    "title": "Manchester United man Lisandro Martínez’s January exit like as Serie A clubs circle - Yahoo Sports",
-    "summary": "Manchester United man Lisandro Martínez’s January exit like as Serie A clubs circle &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVlF6b1FzdDZzWGVZR1lvTTlBWlNadHVJN1FhdXdOcllyZVk3MVNiel8ybEZkRlZEaVJ4Ukh2OVUxajBWMlJ5Q3RlS1ptM3R6NEgtcUpYX3otalBJWko4OGN3cmxoSlA1aFo5RThodlJMeXlkRnJET3pEb3dwcGkycEM1ZU9BMEJkdXZKbQ?oc=5",
-    "time": "Thu, 05 Nov 2026 17:49:00 GMT",
+    "title": "Manchester United man Lisandro Martínez’s January exit like as Serie A clubs circle - Get Italian Football News",
+    "summary": "Manchester United man Lisandro Martínez’s January exit like as Serie A clubs circle &nbsp;&nbsp; Get Italian Football News",
+    "source": "Get Italian Football News",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVVpVN3ZnZXE3UkFPck9ranBUMFRCeDBFdmwzaHRxUmFqUzBUbVBnWXg1WW9PT0VYenpWTkpFbWV4NzRHc2M3WEhPNHp6LUVjN01nd0RaUC1GV2FqSENzZE9hZU9rZWl1a0V1WFlYQWhaUnE4aV9CZGNGZk5qM21CcUNwMklwY0ZENU5hS01kQ1drcHVRMVpiMFBaVUJrZ1k4VlRXdFg4b1RNdnM5ZEZPeC0xLW5rVWU4TTZOM0NQXzRBTm8?oc=5",
+    "time": "Thu, 05 Nov 2026 17:49:45 GMT",
     "important": false
   },
   {
@@ -1694,25 +1386,14 @@
     "important": false
   },
   {
-    "category": "Borussia Dortmund",
-    "team": "Borussia Dortmund",
-    "team_fa": "بوروسیا دورتموند",
-    "title": "\"It's going to be amazing\" – Campbell on Dortmund return - Bulinews",
-    "summary": "\"It's going to be amazing\" – Campbell on Dortmund return &nbsp;&nbsp; Bulinews",
-    "source": "Bulinews",
-    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1XY00wOVo2b2YwS1pwZmdQd09sSW5fYk54NlJEVnZZU2toU2JnSnRNZHJOQzFIMlF3VkJWWmU3UVFuamNvZ1U5QkJCMzlvcVBZdmlVUGhydVNpbkU3YjdXQkdwYy1IQUs1cFNV?oc=5",
-    "time": "Thu, 05 Nov 2026 17:38:00 GMT",
-    "important": false
-  },
-  {
-    "category": "AC Milan",
-    "team": "AC Milan",
-    "team_fa": "آث میلان",
-    "title": "Amorim: ‘Milan need Rabiot experience in Europa League, strange without Pavlovic’ - Football Italia",
-    "summary": "Amorim: ‘Milan need Rabiot experience in Europa League, strange without Pavlovic’ &nbsp;&nbsp; Football Italia",
-    "source": "Football Italia",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBubExNZUcweEdVUl9SUkFNck1ZMHJ5WGVJRmREclF4UmtyX1VNeU13SWw2WmZBUXBEekQ5WHYzNy1QcXY1SXZKN0VlN0JyYk5feHNQTEdKS2VDODlvZ2FXSGN4cmJvNklja0RMc2s4SV9PV3dzMnoyTDBGQjNmcTjSAYQBQVVfeXFMTlhzTWJCTDFpZVVyVG13OGE4VUMyckhvbVF1M3hPQmI0YXFHQnV4Q1RmMThISWFpcmtoWF9KNTZFZjF4THJQSkpwdUhrS2pyU2JPWjUyc2ZGNDJ1LWxmc25WXzZqWUQtVzRVSnExcWVUVHp2Zl81WGl6b0lGOUlUaldreDJx?oc=5",
-    "time": "Thu, 05 Nov 2026 17:30:39 GMT",
+    "category": "Chelsea",
+    "team": "Chelsea",
+    "team_fa": "چلسی",
+    "title": "Chelsea XI vs Sunderland: Confirmed team news, predicted lineup and injury latest for Premier League - London Evening Standard",
+    "summary": "Chelsea XI vs Sunderland: Confirmed team news, predicted lineup and injury latest for Premier League &nbsp;&nbsp; London Evening Standard",
+    "source": "London Evening Standard",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNemoxY0RKZ1M2SkRUQ0gwaWhnckIwc2tZSEpxMURVS3BvaWtKa0pVcEp4S0RoTl9ublRUbXQzNERyc2VzM2gxU0YwczZPVnpCT2JoT01rOHN2SnY3RGtvb2ZCbXlkZ2lBS3hHeWdkVnFHa2FyU29wVTZZZEpRYm5wVDFnanpBdWVDZUczRkM5Ql9ueU9xQ2hDbklOdXhmT2JuRzRsTzhKOFNsTzhTb2VpRE5EU3BZbjcxT25fOXQ1Q3UyV0UwSHprTklKUU9vNmY2TDg5eW8zNXJ5T3ZLRFVaaTdpWklxMjdldFE?oc=5",
+    "time": "Thu, 05 Nov 2026 17:36:33 GMT",
     "important": false
   },
   {
@@ -1727,58 +1408,14 @@
     "important": false
   },
   {
-    "category": "important",
-    "team": "",
-    "team_fa": "",
-    "title": "Daily Breeze football: Previews of Friday’s first-round playoff games - Daily Breeze",
-    "summary": "Daily Breeze football: Previews of Friday’s first-round playoff games &nbsp;&nbsp; Daily Breeze",
-    "source": "Daily Breeze",
-    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRnNQTFRFZFVGM01yX2RVMUlQM0NVdy1EbnhMQnZadUl5MkhOSks1TXJJa1pWWTF1WlNaa1RDUjhZYm0xRDlPMU1vSm4zM0dwVk1tUGFZaUFMcnNHbzNEdUdmdkVPend1T2o5SzVtaFc5V3JaMVNBYlhlMlpMWjhqSkp4OUo5TTc2bWxUbXlfdlM3dmJwakROeXE5cTJYR3Y3NHZTNWRfS2RLTE1JazF0Sml3Z1BhZmpZWHdUeC1Jazk2V1NVNXVGNWNuMnk?oc=5",
-    "time": "Thu, 05 Nov 2026 17:26:37 GMT",
-    "important": true
-  },
-  {
-    "category": "important",
-    "team": "",
-    "team_fa": "",
-    "title": "VHSL Football Top Tens - Entering 11-5-26 Games - On3",
-    "summary": "VHSL Football Top Tens - Entering 11-5-26 Games &nbsp;&nbsp; On3",
-    "source": "On3",
-    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSXNPdVVMclA2WHlnOUNOQ3JyRUlIQy1KQjBrWXlvWkxDQXZKUU5mcmR6dmhFUkp3UWhTLVdsMXJ1R3U5bE1QNVJkQVlXWmxDM0RQd1hYQnd4c0loVkhueVFmaEU0VXIwWTdaU3hGd0VCYk5rTlM5allINnNfUFVUa3FOc0xBRzg5TzAtZHdvZlY0UWRDc1VF?oc=5",
-    "time": "Thu, 05 Nov 2026 17:21:20 GMT",
-    "important": true
-  },
-  {
-    "category": "Liverpool",
-    "team": "Liverpool",
-    "team_fa": "لیورپول",
-    "title": "Jeff Bezos consortium has “100% buyout” option – Latest Liverpool FC News - This Is Anfield",
-    "summary": "Jeff Bezos consortium has “100% buyout” option – Latest Liverpool FC News &nbsp;&nbsp; This Is Anfield",
-    "source": "This Is Anfield",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVVc5WHctcVBySEhJTlI4X1N2MHpMRzk0WTdWYnhWSUZNZm5mQldHUzd3TzJLODF4S1B4UHItbTFFMktxdGxvbER1YzEwZWppY1hDbmstQ20za3BJWjdtZGtJczVNdWZ6SUw4WUtxVzJ0VUFtUXAzZHBrcGRVSVEtQlo2SW5PYVI3aUdvcThCamszWW9rR29sYk93dWNiN3V6TUpUTlhVbkQ?oc=5",
-    "time": "Thu, 05 Nov 2026 17:18:10 GMT",
-    "important": false
-  },
-  {
-    "category": "Liverpool",
-    "team": "Liverpool",
-    "team_fa": "لیورپول",
-    "title": "Virgil van Dijk slams Liverpool players after Fenerbahce defeat - 'They should be disappointed' - Liverpool Echo",
-    "summary": "Virgil van Dijk slams Liverpool players after Fenerbahce defeat - 'They should be disappointed' &nbsp;&nbsp; Liverpool Echo",
-    "source": "Liverpool Echo",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMmZpUE9uazZ5cUR4cFJXZGNwajBvdWJBMUpMTmN1cWd4VklIS3FXaHVYb2ZiM2dqVS1ocmpqc2pnY0NJdGF3bF84VUlmTnl5a01vbUlEYURCMzRzaDZyMTRkQUpQVVpaVXdMVUZRajRTSVp0bVphN3VQeHZFbThmeHhWeXB0LXpxUkRtdmpRcGtNWkJua2VUZUJtVFQ4UFNDVzhZ0gGoAUFVX3lxTE1BOVBDOFF1ZTVYeDRRSHR6YUR1bjJILWJObHNxSTFkQVpBQU1SRXd0c3V1TG5HOHZLN2VsV3pjRG82OWZoaFI0aFRXdDNXUk1WU2JSai04NW5NM05TY3AzaXZqWGI2UmRBcUJ6cEZVajBORUthRTNmNDF6YjhUN3VuMDNnNFdTUE0xd3dHbmlkR2E5ajMxWGRlOWZESjgwLUhSeklqMk5Ccg?oc=5",
-    "time": "Thu, 05 Nov 2026 17:03:23 GMT",
-    "important": false
-  },
-  {
-    "category": "Chelsea",
-    "team": "Chelsea",
-    "team_fa": "چلسی",
-    "title": "Chelsea XI vs Sunderland: Confirmed team news, predicted lineup and injury latest for Premier League - London Evening Standard",
-    "summary": "Chelsea XI vs Sunderland: Confirmed team news, predicted lineup and injury latest for Premier League &nbsp;&nbsp; London Evening Standard",
-    "source": "London Evening Standard",
-    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNemoxY0RKZ1M2SkRUQ0gwaWhnckIwc2tZSEpxMURVS3BvaWtKa0pVcEp4S0RoTl9ublRUbXQzNERyc2VzM2gxU0YwczZPVnpCT2JoT01rOHN2SnY3RGtvb2ZCbXlkZ2lBS3hHeWdkVnFHa2FyU29wVTZZZEpRYm5wVDFnanpBdWVDZUczRkM5Ql9ueU9xQ2hDbklOdXhmT2JuRzRsTzhKOFNsTzhTb2VpRE5EU3BZbjcxT25fOXQ1Q3UyV0UwSHprTklKUU9vNmY2TDg5eW8zNXJ5T3ZLRFVaaTdpWklxMjdldFE?oc=5",
-    "time": "Thu, 05 Nov 2026 16:58:55 GMT",
+    "category": "Manchester United",
+    "team": "Manchester United",
+    "team_fa": "منچستریونایتد",
+    "title": "Soccer's main characters: Man United, Como, PSG, Donnarumma - ESPN",
+    "summary": "Soccer's main characters: Man United, Como, PSG, Donnarumma &nbsp;&nbsp; ESPN",
+    "source": "ESPN",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONUc4WG84MXFvdFcySkp3N2NZNzhUS01vNUhPRkRHM1oteGZOT2c5LXNPQXRIcXVqSUcwTUpvcFh3OXhUYVBITGs5OXJwc0s1UW9JdlB4clBUa3I1R1BncENjWnU5T21menAxQmRqbWZWM0szWENEVENTcUZxa214Y1BMTUZsRUc1RHVnTW9tNjdzZG5UTUw5UG1uaURGZ09SQ0o2OGhWRGlvMHQ4WGF3YVFxeVhMNUJRdXc?oc=5",
+    "time": "Thu, 05 Nov 2026 17:10:00 GMT",
     "important": false
   },
   {
@@ -1793,28 +1430,6 @@
     "important": false
   },
   {
-    "category": "Tottenham",
-    "team": "Tottenham",
-    "team_fa": "تاتنهام",
-    "title": "Tottenham star set for shock return vs Leeds as part of quadruple De Zerbi boost - TEAMtalk",
-    "summary": "Tottenham star set for shock return vs Leeds as part of quadruple De Zerbi boost &nbsp;&nbsp; TEAMtalk",
-    "source": "TEAMtalk",
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZktnbzZGWlhlNXBKUzFURE5EcDhBX2JLUnQzR051cmZjNFoxaEk3d3JaS1VWLTQtN08zUUxhdy1fUm83VW82cEMzRUUzaU54cEd2TFIyOGZBNDRzSjRQVmNPbU1scnlDaV9maFdkYTVGT0dNR2g2RFY1UkNzMEc5eWRBRUFacGo2ZVN5M3IxSFlvUzhQaThOY2sxLTRQUjNQNUVhdlhRY3Bfbm1l?oc=5",
-    "time": "Thu, 05 Nov 2026 16:52:47 GMT",
-    "important": false
-  },
-  {
-    "category": "Inter Milan",
-    "team": "Inter Milan",
-    "team_fa": "اینتر",
-    "title": "Simone Lo Schiavo is the new Director of Football Development - Inter.it",
-    "summary": "Simone Lo Schiavo is the new Director of Football Development &nbsp;&nbsp; Inter.it",
-    "source": "Inter.it",
-    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMkRGSTEwNEV2LU14aDZkRlJ3SWREb2R4MjFkVWlxY01OaktxVzVlbmstQ2xZRHo5aWxLVjlheTZTemY3WWlGeDByWUgxb1RveW83ZTRqS3duTy10NlN2WTBrS2oxYVlrVGtRSTg4SVlJeUdKQnZ5Q0F4OXEwMEYyYUlYbHBMNnFOdWpRRWwtdDdpNi1LeHhPeExDNEU?oc=5",
-    "time": "Thu, 05 Nov 2026 16:48:55 GMT",
-    "important": false
-  },
-  {
     "category": "laliga",
     "team": "",
     "team_fa": "",
@@ -1826,6 +1441,28 @@
     "important": false
   },
   {
+    "category": "Tottenham",
+    "team": "Tottenham",
+    "team_fa": "تاتنهام",
+    "title": "Harry Kane transfer boost for Tottenham as contract clause is revealed in new Bayern deal - Football365",
+    "summary": "Harry Kane transfer boost for Tottenham as contract clause is revealed in new Bayern deal &nbsp;&nbsp; Football365",
+    "source": "Football365",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUzVCUFl2UWNjWUg5cWtJZ0N6aTJLbnBVcmtTNjVaVERpdjB0UHVOT3hieHlOY3gzbmdFWi1wQWhmNlk3aERNeVpBdU4zWkJQOWFhTkd1THZrTHUxai0wMVlKZXozaG1Gd3I2bGxDbzFBOUppZ3E3am9hLVNCbkwycDc4NDR5bFJka3VQY3ExSVhWdDEwZDF2eV9QT0Z2QnFLWjdnV2lfeU82MHc?oc=5",
+    "time": "Thu, 05 Nov 2026 16:43:50 GMT",
+    "important": false
+  },
+  {
+    "category": "laliga",
+    "team": "",
+    "team_fa": "",
+    "title": "🚨 Official: LaLiga games go ahead and will pause in the 9th minute - Yahoo Sports",
+    "summary": "🚨 Official: LaLiga games go ahead and will pause in the 9th minute &nbsp;&nbsp; Yahoo Sports",
+    "source": "Yahoo Sports",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPcXJjUGpOTHFBMWdxd2dRTTdibjRnSlJsUXlVRFRET240SWtPVFlWSnJpMXJZLWRPRE1iXzlPWlFaM2dJN2tyT2pYMzZ2U3dRSnkzU1dwUUEybF8zZjczRnBkNVY2NzlqSTVDR1owLVNISDdKX0Yza0Q1RTFyR1RDWkg2NFBLb1IwZVE?oc=5",
+    "time": "Thu, 05 Nov 2026 16:39:00 GMT",
+    "important": false
+  },
+  {
     "category": "Inter Milan",
     "team": "Inter Milan",
     "team_fa": "اینتر",
@@ -1834,17 +1471,6 @@
     "source": "SempreMilan",
     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oOXlPNTdLYUItX2RzRVIwbjUzWWV2NHgzSndIMm5iTVZfN1FTSmVLQkZTM0hlVjI1SFZRUjh0bFE1ektDbTY5WGFPczRjOEc0TkQ4UnZRWTExdW9NQzVENVU4dXJ3bEFJRy1xc1JOdllKSE9lR1lfQjVkbkNRQW_SAYQBQVVfeXFMT2MwSkJSQm9UZ3dUSnBXSVpXUldzREptVExZLUI3V2lwbDhYNzNmVjNsMV8xREFuT0ZQZ3dYOVBGNzJUek5FNm5qTnY5RzJtWTRPUjI2MHBXRGJIY1daOTgxa01GSTBmejVWNFhZQ2ZYd3ZrWHloVkZkNDZnX1BwLTZrOHRR?oc=5",
     "time": "Thu, 05 Nov 2026 16:36:12 GMT",
-    "important": false
-  },
-  {
-    "category": "Juventus",
-    "team": "Juventus",
-    "team_fa": "یوونتوس",
-    "title": "Europa League Liveblog: Milan-Ferencvaros, AZ Alkmaar-Juventus, Atalanta-Kairat - Yahoo Sports",
-    "summary": "Europa League Liveblog: Milan-Ferencvaros, AZ Alkmaar-Juventus, Atalanta-Kairat &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTFhkODBPY1ZmQU81V3hOT3Q0Z1FESmJ0QmRjX25Od3Q2SXhjM2FFck5FSTBLUEFKX0RYMEFzWV9MMk5ScEFnTWZsc1Faa2Y3T0wzZmV4WjlIOW1OSlR4VjhIY0dYenlLaHg3dTFuS1hwQUhBVGdva01aTUw1ODNGWEJQZEV1Sk43eFJYalAwbE9fcWM?oc=5",
-    "time": "Thu, 05 Nov 2026 16:35:00 GMT",
     "important": false
   },
   {
@@ -1870,6 +1496,17 @@
     "important": false
   },
   {
+    "category": "transfers",
+    "team": "Arsenal",
+    "team_fa": "آرسنال",
+    "title": "Transfer news LIVE: Shock Arsenal move, Kroupi twist; Man Utd stunner; new Chelsea target; Liverpool latest - London Evening Standard",
+    "summary": "Transfer news LIVE: Shock Arsenal move, Kroupi twist; Man Utd stunner; new Chelsea target; Liverpool latest &nbsp;&nbsp; London Evening Standard",
+    "source": "London Evening Standard",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUFFRWWJ1SjJ1M0NRamg0M2V2aTZmdFlfenljQnUzVFhhM2c0VEZoUi04QXd6cmowWjVhcE1XVTNTNVZhYVQxQzFDWWwzdktWVW9KVEc4SVlKRS0zTEFKZlFVbjRvYU1oOHBLSVh3aWhaU1FhRlVOcUdGelhxdlJoRkN6NWR2a0tMM3Y4U1BSS05SSTNBZ0IwTklIZm5SOG9HSWpiOUlzYk5zaVo1cUVNcFhqcUxCSllXY0FEWXN3RXlTQW83Zjk4bnJn?oc=5",
+    "time": "Thu, 05 Nov 2026 16:15:24 GMT",
+    "important": false
+  },
+  {
     "category": "Real Madrid",
     "team": "Real Madrid",
     "team_fa": "رئال مادرید",
@@ -1878,6 +1515,17 @@
     "source": "Metro.co.uk",
     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMUY3YUpjODdrejFoU1U2UjEwVVhObmZHVC0zT0pJdFVjVzBiXzVvdFdNOFc4V1dRSkxyVW43dU5fX3JFNElqWW53X3BjNHV2MmFMOFp1bnNuNlh5bWxjSzVwakVGZ0JCRUZlQzdPVUhqamxTUHZpVGVWQkJ2RWlrUENyclZGY0FjOWRpU3UtQ3ZDM24xYW5wcGxqZGFKZ9IBowFBVV95cUxPWDFGTzQwOEk4UGNhWVBqYmRsVE5HWEtDMzJ1TWpqSjNzcjRsd21GZ3ZJc2VnUVdPMFB1d09zUnVJazQxWmlGRnAtbzNOSVdGODFEVldXMlhWZ1FSQjVRc19GTDVvYXExNDFUUGZlbXNzVWVkdHpWcFRkM0tBTHpmU2d6Rjk5WWprZnJhOEZUYlRQREJhV1BWLURnLTJ3Q0hvdzRJ?oc=5",
     "time": "Thu, 05 Nov 2026 16:15:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Al Nassr",
+    "team": "Al Nassr",
+    "team_fa": "النصر",
+    "title": "#MCNews | Cristiano Ronaldo’s wealth goes far beyond football. 💰⚽ From his reported $300 million in annual earnings to a billion-dollar fortune, global endorsement deals and an enviable luxury car collection, Ronaldo has built one of sport’s biggest commer - LinkedIn",
+    "summary": "#MCNews | Cristiano Ronaldo’s wealth goes far beyond football. 💰⚽ From his reported $300 million in annual earnings to a billion-dollar fortune, global endorsement deals and an enviable luxury car collection, Ronaldo has built one of sport’s biggest commer &nbsp;&nbsp; LinkedIn",
+    "source": "LinkedIn",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSTU1YWVRM2Z3VzN5ZjBTMmF1S204NTBYeFhsWmpnaVpRNUhwa0ZGNEVqa3Q5Y25Wbkhjd3Y5VHBKY3lCYkpEYS1OZG5NMnpFNnR6WldnWWE0dm5TTjNsMzBLWHNiMFlHZnQ0eFlEczUxX1JJRUVqUEdzMHZKa2ZhaHBDMXdVWjl5YWF6bURKVVpKckRsNFBkUjliaUdNV1F6Zm0wY3FvcGNQUzI3YUE?oc=5",
+    "time": "Thu, 05 Nov 2026 16:09:02 GMT",
     "important": false
   },
   {
@@ -1925,28 +1573,6 @@
     "important": true
   },
   {
-    "category": "Chelsea",
-    "team": "Chelsea",
-    "team_fa": "چلسی",
-    "title": "Ex Chelsea manager Liam Rosenior says sacking had 'nothing to do with football' - Yahoo Sports",
-    "summary": "Ex Chelsea manager Liam Rosenior says sacking had 'nothing to do with football' &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ2lwTk5zNlVsTC1DWmVwOTROLTYwclRwME53QllEdHVMdFBLcGZpYVFVSmZ4bF9sNVQzd3pGNDJ3ZFB0LTFXcVB1MVpDSmVIRllmZWNiSEZITDEwUTJNRGZDZXIyLV9yWDhqZE1vN1dXbnFhUXRMNHVGTWpyd1M5Qkt2TW84aXEz?oc=5",
-    "time": "Thu, 05 Nov 2026 15:49:17 GMT",
-    "important": false
-  },
-  {
-    "category": "Real Madrid",
-    "team": "Real Madrid",
-    "team_fa": "رئال مادرید",
-    "title": "Real Madrid vs. Paris FC Live Stream of UEFA Women’s Champions League - CBS Sports",
-    "summary": "Real Madrid vs. Paris FC Live Stream of UEFA Women’s Champions League &nbsp;&nbsp; CBS Sports",
-    "source": "CBS Sports",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE44OUN6NzNoZEZhQVliRTN5YVFzR2ltZGN5SmxCeWNKVkNRUXhvRnAxYVZ0cXo3ek51QWREMF9WU2dSWmVSZnhad3kyVnBSbERaQjhMZkZzam4yWkNaSkc3Zm5VRk9hZmN1Sk5zTGNCS3JoajNWM0RqS2h3b3ZBNE0?oc=5",
-    "time": "Thu, 05 Nov 2026 15:34:29 GMT",
-    "important": false
-  },
-  {
     "category": "Liverpool",
     "team": "Liverpool",
     "team_fa": "لیورپول",
@@ -1955,6 +1581,17 @@
     "source": "The New York Times",
     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdEpQTWpuM3dMWE16djlNMHdBOEZLZ2h2czZPaUF4djNKaUE5RWd5eXVPLTd5WTRWMy1ieUZNXy1xNGZoaGxxLXhna0FweWRyRkZ0M1ZQZnhmZmVrcE5RWjAwa2ktVWZPNDloRExZQlZTaEp0bXlYQUxzNlhDdTJ4QmI2dGNmNmwwT3IwV0Q3eW5jZE0?oc=5",
     "time": "Thu, 05 Nov 2026 15:32:19 GMT",
+    "important": false
+  },
+  {
+    "category": "Real Madrid",
+    "team": "Real Madrid",
+    "team_fa": "رئال مادرید",
+    "title": "Five Bullet Points From Real Madrid’s Win Over AEK Athens - Managing Madrid",
+    "summary": "Five Bullet Points From Real Madrid’s Win Over AEK Athens &nbsp;&nbsp; Managing Madrid",
+    "source": "Managing Madrid",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQXpHYi0xWUQ3dVNRU04xTVFoRm9pRnZPb0VzNFdCelhEb293RDl5UFlTSVZSd1FoZTk1blgySmtGaWpTTVVqNnNOTVFyYjNKVnVBT19qWWFGd1NOaTJBR1NuaFh4NnZCNUNiemJvZkdBOVZTLUhsdk11MHFSSl9tX1BrTWNkV2hqRVhxTkVuaHlpb0NmTUNVMUxlSQ?oc=5",
+    "time": "Thu, 05 Nov 2026 15:30:12 GMT",
     "important": false
   },
   {
@@ -2002,6 +1639,17 @@
     "important": false
   },
   {
+    "category": "AC Milan",
+    "team": "AC Milan",
+    "team_fa": "آث میلان",
+    "title": "AC Milan vs. Ferencvaros Lineups and Confirmed Team News: Is Christian Pulisic Playing Today? - Athlon Sports",
+    "summary": "AC Milan vs. Ferencvaros Lineups and Confirmed Team News: Is Christian Pulisic Playing Today? &nbsp;&nbsp; Athlon Sports",
+    "source": "Athlon Sports",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOLVhJMTlWSTVKSGtZRVZaVl9zaDROZ043OEpIMkFBUFl4cmVQY1BvdmNTUzZBUXJrUFFsSFZuU1R4YkxHRmNwYnVrUV83WmhJYmVudWR2RUdWczg1UndValNlbXlGaW9FYkt6YzVCYWhCZUNJclV5dU02d2dXRTA3UjVQUXl3dF94cURvWmlndDJZYkhuZGR2MG10S012by1mWDc0U3ZmVERaZE5ick1TZHNZVHRjMUZad0FSRUZaQQ?oc=5",
+    "time": "Thu, 05 Nov 2026 15:00:00 GMT",
+    "important": false
+  },
+  {
     "category": "seriea",
     "team": "",
     "team_fa": "",
@@ -2035,6 +1683,17 @@
     "important": false
   },
   {
+    "category": "Tottenham",
+    "team": "Tottenham",
+    "team_fa": "تاتنهام",
+    "title": "Leeds United vs Tottenham Prediction: Premier League Preview - Opta Analyst",
+    "summary": "Leeds United vs Tottenham Prediction: Premier League Preview &nbsp;&nbsp; Opta Analyst",
+    "source": "Opta Analyst",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNV3AwVzF1aUhoX245WlhhTFYxQVNZTTl0TGloZnR3SXNSMl9FUUxtSEtUa01iX2dmT1RxLVFlUU04VmdNMzVudjlNdFJTdzVtNDlpNG90bG96MGtlbDk2QTRMclVCcVlTaW5QWi1VZ2JIVHAyNzJBR2pEVjdyR2JFSl9LdW42NHlYaFVrRUdvRnNMX3cteFhndk1XMmFLMFVJ?oc=5",
+    "time": "Thu, 05 Nov 2026 14:49:05 GMT",
+    "important": false
+  },
+  {
     "category": "premier",
     "team": "",
     "team_fa": "",
@@ -2046,20 +1705,9 @@
     "important": false
   },
   {
-    "category": "transfers",
+    "category": "Arsenal",
     "team": "Arsenal",
     "team_fa": "آرسنال",
-    "title": "Transfer news LIVE: Shock Arsenal move, Kroupi twist; Man Utd stunner; new Chelsea target; Liverpool latest - London Evening Standard",
-    "summary": "Transfer news LIVE: Shock Arsenal move, Kroupi twist; Man Utd stunner; new Chelsea target; Liverpool latest &nbsp;&nbsp; London Evening Standard",
-    "source": "London Evening Standard",
-    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUFFRWWJ1SjJ1M0NRamg0M2V2aTZmdFlfenljQnUzVFhhM2c0VEZoUi04QXd6cmowWjVhcE1XVTNTNVZhYVQxQzFDWWwzdktWVW9KVEc4SVlKRS0zTEFKZlFVbjRvYU1oOHBLSVh3aWhaU1FhRlVOcUdGelhxdlJoRkN6NWR2a0tMM3Y4U1BSS05SSTNBZ0IwTklIZm5SOG9HSWpiOUlzYk5zaVo1cUVNcFhqcUxCSllXY0FEWXN3RXlTQW83Zjk4bnJn?oc=5",
-    "time": "Thu, 05 Nov 2026 14:40:16 GMT",
-    "important": false
-  },
-  {
-    "category": "Liverpool",
-    "team": "Liverpool",
-    "team_fa": "لیورپول",
     "title": "Fenerbahce thwart Liverpool and Arsenal pushed in Prague | Football Weekly Extra – video - The Guardian",
     "summary": "Fenerbahce thwart Liverpool and Arsenal pushed in Prague | Football Weekly Extra – video &nbsp;&nbsp; The Guardian",
     "source": "The Guardian",
@@ -2076,61 +1724,6 @@
     "source": "The Telegraph",
     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWmtkOFd6WFVIaU5jWmN2SXFFamZFTFU3Q1lTalBqYlhBVWcwcWllcWNPaTZNOXNDUHFLRlZSUnNyMHpPMjdaUDhkeFFSVXhGczNTUlBDdzVSanNKcXlVeTVwb3NLOFNtSU1wMVh4RGt0c0RQVkJDUUoyd0dWR2Yxc3dEbzh2UHZEa1F6bEkwNUp4SEZnaEQtTkotS0dXODdN?oc=5",
     "time": "Thu, 05 Nov 2026 14:36:00 GMT",
-    "important": false
-  },
-  {
-    "category": "Liverpool",
-    "team": "Liverpool",
-    "team_fa": "لیورپول",
-    "title": "Trey Nyoni On First Liverpool Goal and Champions League Defeat - Yahoo Sports",
-    "summary": "Trey Nyoni On First Liverpool Goal and Champions League Defeat &nbsp;&nbsp; Yahoo Sports",
-    "source": "Yahoo Sports",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPR3lUc09DTWQwWTB2VlA1dXNPVVZobnFscjZwY1hUR0ZpbEgzRmdoMEZEMG1fSXR1bTBoQmlfSWdvR3ZCMzRKdDlobTFJRHFZbjNfVkhQblVUVXlxNWdoMXBKdXl5Rmx2bWxXeVlMdEdmTlE0ZHg3OWJNcVZDTzd4UDFFSVdwUXM?oc=5",
-    "time": "Thu, 05 Nov 2026 14:34:41 GMT",
-    "important": false
-  },
-  {
-    "category": "Borussia Dortmund",
-    "team": "Borussia Dortmund",
-    "team_fa": "بوروسیا دورتموند",
-    "title": "Karetsas on his first Dortmund goal: 'It was a huge weight off my shoulders', Borussia Dortmund - Forza Football",
-    "summary": "Karetsas on his first Dortmund goal: 'It was a huge weight off my shoulders', Borussia Dortmund &nbsp;&nbsp; Forza Football",
-    "source": "Forza Football",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSU9hUzVIMk4tbEsxZjNHdWdEWWRXajBnd0gyWmZBbGJLc3AxeVM3QXlGTGc4cnNZam8za19ZWE13elB1MENrdWd4amgzQV9vVUp1d1FJcFZtZGNINUswT19tczVYQ0w1UW1ONEJySENKc1Fpd1ZFWnpLUl9yRE1FRkNoejdMOHc5MW80U2kzdHliMlpEbTVtanhwOHNHVzQ2T3RfR2JyY0V1ZTN5OEpDMW95RU8?oc=5",
-    "time": "Thu, 05 Nov 2026 14:30:55 GMT",
-    "important": false
-  },
-  {
-    "category": "AC Milan",
-    "team": "AC Milan",
-    "team_fa": "آث میلان",
-    "title": "‘A lot of criticism for the first time’ - Christian Pulisic’s AC Milan contract decision assessed by ex-USMNT star Brad Friedel after bouncing back from World Cup woe - Goal.com",
-    "summary": "‘A lot of criticism for the first time’ - Christian Pulisic’s AC Milan contract decision assessed by ex-USMNT star Brad Friedel after bouncing back from World Cup woe &nbsp;&nbsp; Goal.com",
-    "source": "Goal.com",
-    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOQkNuZ0lKb1lwZGJzLU4xRVpzN1BWdW5DaDJaRWFQQ1hOc0o1c3dLQWxWdlZNaUlhM3VySjBfLVhLaklQU2oxcl9RSWhEcGhpYUd0NTVNbldYeXg1OC1Va1JkTDF4cmotTEQzY3BXV2FLM2RXX3hqUF9lOEFCRk90ZTRRNUg4bThKd0FnaTd2NUJ1NTV1MWdUaEoyS0hKWEF3MkxRZU9ILVVvNXRUNkZBQ1hWR0JuQXBreGNDaWdoalZFdUhuSlpOa3BtWTczejZL?oc=5",
-    "time": "Thu, 05 Nov 2026 14:25:44 GMT",
-    "important": false
-  },
-  {
-    "category": "AC Milan",
-    "team": "AC Milan",
-    "team_fa": "آث میلان",
-    "title": "You can watch the AC Milan vs. Ferencvaros Europa League match live today - Here’s how - OregonLive.com",
-    "summary": "You can watch the AC Milan vs. Ferencvaros Europa League match live today - Here’s how &nbsp;&nbsp; OregonLive.com",
-    "source": "OregonLive.com",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVjlEemdWdnNOckphVDU4Ym5LZ2xQZFBQTTV6clY1ZnN5dnZDY0FEME1hOElmZ3NsOFdLUl9ncGJ6ZnpjMHBQLTBCcUZnWHR4UU9WVzdYVnJKcDFHMWFNTmVKeTZSRGQxeE9PY1JoYmtfUl8wQmNmNjRBRlJxM0FwNFYzZWcyUWtDQ19hcEc1SUhheHp3OHRFSTgwUl80V1c1QWNhLWtTeEdVX1hReE9xVHRxNkpHeE5URnBZdDQtMWttOGvSAdcBQVVfeXFMTVNJSEFjeXI4NkdEZ1FCN0IxeGx2UzFSOWZzaW9iRWFOREozV3pXRnNoR1BYcWpyZHROMTJqVW1ORFRweUVvRHFkVlJLWHIwVFJPd3JGUTJYV0F1OGRQTi1rQ3JpVjZaaDctY1ZVSjJaQnR5bjZRVnRRNVctTW8yWTNqQUdZNXI5YXcwUWl5Rl9kcGdKbzZLcDZGVEVvR01WOVNuaUJ3TUxMWDkxWGxPODNXR1M0eEJ1bVFZSGdJanJZWnZ4SUUwQTFWOFR6N3FLR1A4TjVoVW8?oc=5",
-    "time": "Thu, 05 Nov 2026 14:16:00 GMT",
-    "important": false
-  },
-  {
-    "category": "Bayern Munich",
-    "team": "Bayern Munich",
-    "team_fa": "بایرن مونیخ",
-    "title": "England’s Harry Kane extends Bayern Munich contract until 2029 - Al Jazeera",
-    "summary": "England’s Harry Kane extends Bayern Munich contract until 2029 &nbsp;&nbsp; Al Jazeera",
-    "source": "Al Jazeera",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZk1sTWVzdEYxVkZLQnRkSG1oUHZ4VmhpNGIxWXVIT3lKSGhCS085N1pPekNPRDU4RE9EdlFPdVZrT0M3b085NEtnVmRWd1lQYWlPeDVEc1hXLWp6LVVncXFNRXNnVW9xSFhXWU9ER2d4MEM0Y0U3NmQzSm50Y1VTSjY2MTh0MkIxcjZqVVdDWU5vYjhmbnZSSE5oRDVrYTh1bFFuS0JTc9IBrAFBVV95cUxQM1Y5eHBLTHIzWE15YnBMYXI0d0xUZV9LQTZGb1VUMTFjT013SHVXbHVrUVJmdFV0Zl9ibWc4SU42WUlJQ3RJcEhvMkhYVC05X2FscFc2cVEyNFVYRFNlRDFSWlpuV2lEY2g1aDhJS2JjOEczUmRHRzY0aEtJZmxraDhKNXMwQjVSOHU0cFJ3b29WZm9JZWM1RWlzdk5aQjZnMGYzRkp5akFNbC03?oc=5",
-    "time": "Thu, 05 Nov 2026 14:14:48 GMT",
     "important": false
   },
   {
@@ -2167,14 +1760,14 @@
     "important": false
   },
   {
-    "category": "Al Nassr",
-    "team": "Al Nassr",
-    "team_fa": "النصر",
-    "title": "Is Cristiano Ronaldo Retiring From Football? Everything Explained - Yardbarker",
-    "summary": "Is Cristiano Ronaldo Retiring From Football? Everything Explained &nbsp;&nbsp; Yardbarker",
-    "source": "Yardbarker",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONndOS1B5WDFtQy0tUzlPQ1J0bWNiczJNQW8teGFiTUVqOGpHVC1uVlNZUjRKeHlfOXhJT3ZsYU5HTEZRU1RaSUlFUER1N0xEdmF3OFRfZnptcTNhNmFoY05mZkRxWktIdFJzRFh1Z052a3lRQWtDSGQ4VmIwTFFycldfUU5TZWtQWjJPMjhOcjI3dGJxM1V6Z0IxdUwzVjBuX043Y011azhTNm5XZDJWUGJfWFljcUZ0UnhlbTliQS1zVXc?oc=5",
-    "time": "Thu, 05 Nov 2026 13:55:44 GMT",
+    "category": "AC Milan",
+    "team": "AC Milan",
+    "team_fa": "آث میلان",
+    "title": "Moretto: Deal done, compensation paid – Krösche will be Milan’s new Head of Football - SempreMilan",
+    "summary": "Moretto: Deal done, compensation paid – Krösche will be Milan’s new Head of Football &nbsp;&nbsp; SempreMilan",
+    "source": "SempreMilan",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5iTUl6ZmZQbzFmajFlcVVBVlZMRlNMcnFHX0dSRkQ0amVQQko1YlFqVzJfc2Zsekh0LW5jcVdrQTM5Z2kwTnNKV21DOUZFSTdaLWxHak0tRUJZWjVvek1iOGJDdXFuLXR2T0ZOeXRrdzRXdWPSAXhBVV95cUxNYWZZYUxIQ0Y2bV92V2dTZWZscklqX3FadmdhRFhQX0szVXl5MmVZcmhUbVFrc0l5Nk5qNnR6T1Nwbmh0RXc1dGpkeEhuRHRuQWdHQzRlU0NTYi0tSlA4cGZ4RGdhbWNKTzZzYVY5MHh0UnZPeXlKSVc?oc=5",
+    "time": "Thu, 05 Nov 2026 14:00:00 GMT",
     "important": false
   },
   {
@@ -2197,6 +1790,413 @@
     "source": "Goal.com",
     "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNUU5nWUFKUVhIekRoZlFWVEozcmpOYUlEem80OEhJNi1sZ09iRWxqaEdpNWFKRkVXYVJua2hUV2NJMmVrS3Azenp6QjIyNGFPZ1RTWTdiSXc3TVJheVlPc08xV2dVQl9hRExxZHMxN21xUVhwZ0QxYzR1RUZwc3l3X3RVYXZTSllmb3VYdnR5RlJtSHc1VUJsdFlkNHJRaTZZNERHM2hSQ0diSURPdllpaWJLc1JaSHFWUllUR2hHWDFCV3NDOHhFb0paZU5qR1JXelk1a1RtMDktMnh3c2lYaTg0VTh2dnRuQkNBZnMzRWp0RkU3MjlBOUtDVXBEeVlOUGxmak44bUhMTm5yX25LMWtiWTI?oc=5",
     "time": "Thu, 05 Nov 2026 13:42:54 GMT",
+    "important": false
+  },
+  {
+    "category": "laliga",
+    "team": "Barcelona",
+    "team_fa": "بارسلونا",
+    "title": "Who is Brian Farinas, Barcelona’s latest La Masia star? - The New York Times",
+    "summary": "Who is Brian Farinas, Barcelona’s latest La Masia star? &nbsp;&nbsp; The New York Times",
+    "source": "The New York Times",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNU200UjlIVW4zM0NlYjFMTG1sRUpvVlhWS04xR2NrZDN2YWQtVUNkTEJ0dm43STJpUFBLaXVaUlRxWWhkcXdtcXlaSTk1ZHBldnZyTWFlcERqOW1EcFJqcG5Ma3JrRURuVTFZQnhDWHRkWUtKYS13QXF5dDlQV3FvN2s5REtUSmpWbnRncWZnMW1VUjdjTEE?oc=5",
+    "time": "Thu, 05 Nov 2026 13:15:39 GMT",
+    "important": false
+  },
+  {
+    "category": "Manchester City",
+    "team": "Manchester City",
+    "team_fa": "منچسترسیتی",
+    "title": "Gianluigi Donnarumma's Man City form 'no concern' - Enzo Maresca - ESPN",
+    "summary": "Gianluigi Donnarumma's Man City form 'no concern' - Enzo Maresca &nbsp;&nbsp; ESPN",
+    "source": "ESPN",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZU51T1lsclBoV0FYaE5YZ205T1hPRU5LejhfbkFVYjVFVm82TGktRzgtSTFMUm12M3BFMm1BLVdUSElYUkRuSDJQZEFXdHd3V0pzYnZka2RxSE9MREpwSVZmX1FKOUNTWHFudlRwcXktQ1hUUEkwbHJrTENsWVVFRzVXcjZRSVgtc1NTQzNES3FUZW1vX3JWUkIxS2tzZTM5TmlBTWVGOEV4Q1ZndkVYRw?oc=5",
+    "time": "Thu, 05 Nov 2026 12:53:16 GMT",
+    "important": false
+  },
+  {
+    "category": "Manchester United",
+    "team": "Manchester United",
+    "team_fa": "منچستریونایتد",
+    "title": "Avram Glazer's tone-deaf comments will only help Manchester United fans' push for change - Manchester Evening News",
+    "summary": "Avram Glazer's tone-deaf comments will only help Manchester United fans' push for change &nbsp;&nbsp; Manchester Evening News",
+    "source": "Manchester Evening News",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNanhEYmtIbVU1R3JVRHVVZDBBUFF4THI2c2Q1em1BdHFGdWlaald4WkFDUlN0c3V6dGw1QlJGNVlHY2liTTlUMVVrYUVBT21VOEpHcWtuYkJlWE1CTm01YXc1ZV9jc1hNSV9kTlRTeG9EQU54ejNJVVh6ZXhjRUhWbmdHOGRNakhsTlJJaG1qT2tMR0trZktoVlV2VErSAaIBQVVfeXFMUGRWU0g3UXc5bi1VNGN5U3J0LUpMX0ROZHF0dFY2MEhsZE1lX1ljWnpWM3dhU1ZtWUU2N1N1MDdlbGtmWVJHV0V3bTUtdVRDb0wycDhtQW1USmF0Y1dzM2RiMWNLX0dDbzZtdVVYVXJCSGtpbDl5TWxjNno4NW5sVG9fdXFIREl3bWl4RnJIbGV1VDU4WGxqNzJGaGktVUNieGNR?oc=5",
+    "time": "Thu, 05 Nov 2026 12:49:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Inter Milan",
+    "team": "Inter Milan",
+    "team_fa": "اینتر",
+    "title": "Inter Legends to face Liverpool FC Legends at Anfield in March - Inter.it",
+    "summary": "Inter Legends to face Liverpool FC Legends at Anfield in March &nbsp;&nbsp; Inter.it",
+    "source": "Inter.it",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNaEY5dnF3NTlFRC05SzJFbGJ1RTVpSjZyQ0F5RnNtMFpKWml5ZTlyTW85OTRKNGE1RG1QeUx1NjVXamxzTVZqQkx5LWdzZVZIT1k3RWFhVERMUS15T1lfZDBtWlI1eUF6Sk1sUUJHYnNjMEY2U3I2NnpFWm0xekNkNDBoUjVrUnY2MW5uNmd3?oc=5",
+    "time": "Thu, 05 Nov 2026 12:48:54 GMT",
+    "important": false
+  },
+  {
+    "category": "Bayern Munich",
+    "team": "Bayern Munich",
+    "team_fa": "بایرن مونیخ",
+    "title": "Ballon d'Or winner Kane signs to stay at Bayern until 2029 - Reuters",
+    "summary": "Ballon d'Or winner Kane signs to stay at Bayern until 2029 &nbsp;&nbsp; Reuters",
+    "source": "Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZl8yaDJaNEhua1BRUDJlbWpuZTJMV051SjgyNXh6MVUtZl9rQmEyRXptSkZwLUVrZ3IwRGZlblAzc0FaTXA3VTZKazNLMEZnZnBfa2V3MFdXZDdDLVJfNVp4ZUVleUFuQkcyb1AyRVBMZ1QyTmo4OUdxZGYtUG9nMU1ZVE9XMHd5QWRBUGYycXhzM1QwVnRmUFpJSzFoVXd2YUFLcy1yWTdMZw?oc=5",
+    "time": "Thu, 05 Nov 2026 12:28:52 GMT",
+    "important": false
+  },
+  {
+    "category": "Manchester United",
+    "team": "Manchester United",
+    "team_fa": "منچستریونایتد",
+    "title": "Avram Glazer says Manchester United not reliant on sporting success for commercial power - The Athletic - The New York Times",
+    "summary": "Avram Glazer says Manchester United not reliant on sporting success for commercial power - The Athletic &nbsp;&nbsp; The New York Times",
+    "source": "The New York Times",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVExLLUcyOXJ2TVBZYVRmU2N3X25wUW95TE1XV29wQmhvTGRfZEF6QWdUdVgzcW9BNmVtSHFnN3BNRVB2TXVWekNGaWZScTduUkRCamxSZ1ZkMlIyNFZGbkwtZHFWTDd2eXVFTE9MdFVyNkIxREVUX1JqaHoya0RPRmRBaEFacmpSZENfX2prUHYyV2s2QmdDZ1pub25uMkdZWUE?oc=5",
+    "time": "Thu, 05 Nov 2026 12:26:30 GMT",
+    "important": false
+  },
+  {
+    "category": "Chelsea",
+    "team": "Chelsea",
+    "team_fa": "چلسی",
+    "title": "'I'm not a joke' - Liam Rosenior claims Chelsea axe had 'nothing to do with football' having been sacked after 107 days - The Sun",
+    "summary": "'I'm not a joke' - Liam Rosenior claims Chelsea axe had 'nothing to do with football' having been sacked after 107 days &nbsp;&nbsp; The Sun",
+    "source": "The Sun",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcW0tai13aHJBcFZrUUFHOEt3aXhZaTZPWTZJQklhQ056YndLUnRtd3M0OGR1bUtsWGxGVzF4RjBKMVZodWZFM0tJVnBBTFB6d3cwRmVoSnNxdjQtRG8ybHM5TTdubVBwNFdvdWRHcEY1dDE0MEdEbDJFNUNzaGQ2THd1bmZCQQ?oc=5",
+    "time": "Thu, 05 Nov 2026 12:26:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Al Nassr",
+    "team": "Al Nassr",
+    "team_fa": "النصر",
+    "title": "Has Ronaldo retired? From Portugal, yes, but he will keep playing for Al-Nassr - Nacionale",
+    "summary": "Has Ronaldo retired? From Portugal, yes, but he will keep playing for Al-Nassr &nbsp;&nbsp; Nacionale",
+    "source": "Nacionale",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdGlSMnJqRVhDbDBCOXdMbEE4LWp0V0tuUWQydXdCUEJ1X2RHMFAyMDBOVEp6SWhkRklmTks3VmltcjJmbjFpQzQtbkhob0g0M2wwRHlyN1c2UU1vV1d3N1JiZTB4bXl0RmoyMmh2WjZId24tTTFzVEZoU0VneFlQWkU1Q0ZFdVkzWktuSGVSTlQ3S1hBQV9wSE5ycWV2d2dpTU4zSkpGR1ZrZ2VoMU11TEZiVTI?oc=5",
+    "time": "Thu, 05 Nov 2026 12:23:56 GMT",
+    "important": false
+  },
+  {
+    "category": "Liverpool",
+    "team": "Liverpool",
+    "team_fa": "لیورپول",
+    "title": "Liverpool FC Legends to face Inter Legends at Anfield in March 2027 - Liverpool FC",
+    "summary": "Liverpool FC Legends to face Inter Legends at Anfield in March 2027 &nbsp;&nbsp; Liverpool FC",
+    "source": "Liverpool FC",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORGxiVUJCWUdWUXpKbGVNSk5ETklzeFp1d3Zqd2ZXZzMyaHcyTW5rWi04S0NLMVpWNTdzQTlLZGd4UUJCV3k0Z0Q0eXNzdlVZc0luem0xeUJ5cnZLRl9EVVdyQ3JfMjZ6b1RYakpla0V1d09odm5rTnlGM3BOVHU1Zjl4aEdJWGtfYnI5blZicVFZQ3A5UDBaSThDTXRYbG1MT2c?oc=5",
+    "time": "Thu, 05 Nov 2026 12:02:40 GMT",
+    "important": false
+  },
+  {
+    "category": "Bayern Munich",
+    "team": "Bayern Munich",
+    "team_fa": "بایرن مونیخ",
+    "title": "Harry Kane signs new Bayern Munich deal to become highest-paid player in Europe - The Athletic - The New York Times",
+    "summary": "Harry Kane signs new Bayern Munich deal to become highest-paid player in Europe - The Athletic &nbsp;&nbsp; The New York Times",
+    "source": "The New York Times",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVHM5eFBDbXZSZVU2QVprMXFtNEZhelI5Yk92VWhrZ3BPNHpZbVVOSW1UOFU4WFJwVGctQi1kdWFSZ1dGM3QtS2xpQzkwdHJobVN2bWhpOUFEdG9TMnlVMHRGSzVHeGl4b1ZJNUxiUURQdV9HZ2UtbnFSX1dYTDBIS2p6ZUZkTkJhejR4bE5jOA?oc=5",
+    "time": "Thu, 05 Nov 2026 12:00:42 GMT",
+    "important": false
+  },
+  {
+    "category": "Chelsea",
+    "team": "Chelsea",
+    "team_fa": "چلسی",
+    "title": "Vote Xabi Alonso for Premier League Manager of the Month | News | Official Site - Chelsea Football Club",
+    "summary": "Vote Xabi Alonso for Premier League Manager of the Month | News | Official Site &nbsp;&nbsp; Chelsea Football Club",
+    "source": "Chelsea Football Club",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOc3VCcldyVkFWSUpvbzVDdDl6aXBEYWZPRnRRdHlDR1NhQnlIcUwxOWlmQXRob3VDcWJ6Szg2SmRqNlVXWWpEXzRxRFNJUXpaSXVBNFlHeFdhRV9YemFFRlkxSEhxZzBPTFJxaUpxYjNPRUNDaEpSZmtHVnpuLVhPQnJsTVhKYzJvdktPdjlPMF9JMEt4V3ZKcW1MRHpSdms?oc=5",
+    "time": "Thu, 05 Nov 2026 12:00:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Barcelona",
+    "team": "Barcelona",
+    "team_fa": "بارسلونا",
+    "title": "Every record broken by Como in 9-1 win over Lens, surpassing Barcelona and Liverpool - Football Italia",
+    "summary": "Every record broken by Como in 9-1 win over Lens, surpassing Barcelona and Liverpool &nbsp;&nbsp; Football Italia",
+    "source": "Football Italia",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBpMEU3NXd6ZnJ3UEs5dE1KSnF3WERRYTJOSlpjUVpFS3RRQ19DSTJZT2VLX2ZXS285SG1iYWZJQktvNUdnSW1EMjVQQWNfcGd5d2dGZUVGemtlY01SWDNZYXZ6YW5MX3hOejBFQ2o3ZjFxLWVOTTBZb0VSWi1DQlnSAYQBQVVfeXFMUFNjRkJlYnNvRWhVWGVsaUVyMGkwdUtNc3hwY2N0WGRvS3lGbGpmVEt5NFl1T01Gb0lMQ2xyYlBQZmR3SjNBUTd2V0xuY2Nac3FwY2ozVHc3VUVuX2Z0UGFMdXAyNGJzZk45RzQ0R0RZOHN4T1BZemVfa0xabUxGdmRTZG00?oc=5",
+    "time": "Thu, 05 Nov 2026 11:55:22 GMT",
+    "important": false
+  },
+  {
+    "category": "Manchester United",
+    "team": "Manchester United",
+    "team_fa": "منچستریونایتد",
+    "title": "Man Utd: Paul Merson says Michael Carrick needs Bruno Fernandes on side and Matheus Cunha to be consistent - Sky Sports",
+    "summary": "Man Utd: Paul Merson says Michael Carrick needs Bruno Fernandes on side and Matheus Cunha to be consistent &nbsp;&nbsp; Sky Sports",
+    "source": "Sky Sports",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxONXdDdTJzcVhHOW5iVC01NzI0OUpNeFFoQzg4UTVvQXRZREs1SDdON0pmTkVKbVRlQldkRHg1ZU9sbkstVWtINW9QT1lnRE8tVlR1S2t0ZXA0QXlxdmJUOXBCcGd4UnR6YWx1ZHFvOWU1OEI5Y1VERC1GT0xUdG5reUIyY2lKY2dVSW0wVGFJcnJQZ1pvcmpZNzhLMC1sRnpKamF0ZHRKNGhZNlllQXgxLUgzSloxWnFtQVpVZjdIU0kxUVpxdG4yVjY0bFpZT3FLeWRXMGFQbzNabnlINWhjeXljUzc2aURyeXc?oc=5",
+    "time": "Thu, 05 Nov 2026 11:47:03 GMT",
+    "important": false
+  },
+  {
+    "category": "transfers",
+    "team": "",
+    "team_fa": "",
+    "title": "Man Utd transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
+    "summary": "Man Utd transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts &nbsp;&nbsp; Sky Sports",
+    "source": "Sky Sports",
+    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNVGxETjVqU2RwQ2J1N2o5MHliQkNSM2lLejh6TGN1UjIyTnZ3R3YyZVlQM0NBZ3dVOXF0Wk5yWHpvRl9zcmpmU2plOXRZeEhULTJuZGo3TDg2ai1SaUZObl9Md2IzUWUzNVU4LXhRWEhoeHhRZDFYb0x5T2F5dGFqZlZRWEhGZE5NTjNLdEpUSFV6bFJFM3BaQnZYU3p5OEJsMTJHS0xNbGlwbzZWM3o5a2FlUEZ1ZEtjaUIzdWxUaEdzNlcyNGMtTGE3N0FnN1pCZnk2TjBoZ1dnQUxyWUhLb0VFYWF0VC1VMDJiZQ?oc=5",
+    "time": "Thu, 05 Nov 2026 11:45:05 GMT",
+    "important": false
+  },
+  {
+    "category": "Liverpool",
+    "team": "Liverpool",
+    "team_fa": "لیورپول",
+    "title": "Xabi Alonso told that ex-Liverpool star would 'thrive' at Chelsea - Metro.co.uk",
+    "summary": "Xabi Alonso told that ex-Liverpool star would 'thrive' at Chelsea &nbsp;&nbsp; Metro.co.uk",
+    "source": "Metro.co.uk",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUnZwc3hRazJkSDV6eGFRdGdWMXJUOWZWM1gwRUVkRGxna1pHZ3VoUTZLSUpfM0N2d0lxMXhZTFpHd3l1YlVpUEpnOV9oMnZmblE4MHBUS0Flc05CZk5LQWlJRHM4VTB5cE44MG5MUWhNVmZ4eV9PSV94dlZYeUpLVHF6Qy1XX3E1RG4zc0RMelcwaUky0gGaAUFVX3lxTFBkTEplOVhSdGdwaU14N0RnczgtTVdTS0RiQTRCWTF0RFo1d3hialJRTXA1XzlYMHBLMHVvRkZLdnVwRGJkZFVlWVMzdU8xanljMXhpeFczczRqNlAtQ3pJcTVPX1V4aG9UN1BpMDF1ZUw2Ri16Z3A4YkNpMXdfb2ZfdW9GTTlDNHFaeWtpQ3NLc1EwUXlBRm5VY3c?oc=5",
+    "time": "Thu, 05 Nov 2026 11:39:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Manchester United",
+    "team": "Manchester United",
+    "team_fa": "منچستریونایتد",
+    "title": "Ronaldo retires from international football - Manchester United",
+    "summary": "Ronaldo retires from international football &nbsp;&nbsp; Manchester United",
+    "source": "Manchester United",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNS1RScEY0YXphTl9rcDMzelJNcEdJZU03MTBhcENTWUpaREgyWVNZUHNJUGpIY1NiNHk4N2o4YUlaWld3d0J5UmdOa1VzZnZZOTFJNDNadDF6UlFrNThUVm1sU1pNZEhyMGN4MUhhemZtcFFLd3pTZk9YSzRKdUZoNkQtOXRQMlJjbFZoQVd1U0RyQ0tiZ3c?oc=5",
+    "time": "Thu, 05 Nov 2026 11:32:14 GMT",
+    "important": false
+  },
+  {
+    "category": "AC Milan",
+    "team": "AC Milan",
+    "team_fa": "آث میلان",
+    "title": "Fonseca revisits bitter Milan exit: “I didn’t even get a phone call” - SempreMilan",
+    "summary": "Fonseca revisits bitter Milan exit: “I didn’t even get a phone call” &nbsp;&nbsp; SempreMilan",
+    "source": "SempreMilan",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5VYllxLW1mMG9ydTNCTFRHeGxSUURMX3doLU1rWFBfa0xHTUt6aWhIeVQwalNfUnl0Wm5uaHdGbUd2UnlJX0ZEZ29IVFBYcnQ1M3c4RXk5bUlCWk4tdWhlTEozMEdER19UTnfSAW9BVV95cUxOQ1RWeGIzeGZtenhBVVNRUngxS1NNUS1DZERCTllxd1Vrdms2M3I1RF83S2NuSFBJZjJjczRLeHZpVkNoVmlKLWJkOHdhNHBudndEcmFoOEE0bk5GRmIwb1NCczVLeVZIQThjRWVJV0E?oc=5",
+    "time": "Thu, 05 Nov 2026 11:30:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Chelsea",
+    "team": "Chelsea",
+    "team_fa": "چلسی",
+    "title": "Xabi Alonso suffers fresh Chelsea injury concern as another star misses training - Football London",
+    "summary": "Xabi Alonso suffers fresh Chelsea injury concern as another star misses training &nbsp;&nbsp; Football London",
+    "source": "Football London",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOS090bnNTOFVoeWJLdTZXaHhLbTdrNXpqQkVCOTZucDdXNDdDcGVkeThUcjZweHRaMGNLNnJ3WHo4NzhwOFQ0OG04YjRiUndtM3RUNjI1dUJ3SUpJdU45NnlZVlYzWmJlV3JMdjBhR0ozNEUxWUVwVXpyeDByZVFPY2RyZXdHRm43Nnl3T3k1NA?oc=5",
+    "time": "Thu, 05 Nov 2026 11:16:48 GMT",
+    "important": false
+  },
+  {
+    "category": "Manchester United",
+    "team": "Manchester United",
+    "team_fa": "منچستریونایتد",
+    "title": "Every word Marcus Rashford said as audio leaked from chat before Manchester United game - Manchester Evening News",
+    "summary": "Every word Marcus Rashford said as audio leaked from chat before Manchester United game &nbsp;&nbsp; Manchester Evening News",
+    "source": "Manchester Evening News",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVkYtelZVZWN3eDlpZ19CWmREODQ4U2llTk4zUUI4NzI4eUk1dk5nRml6SHJCcjZ4Yzc1N2Mzdm11ODRRSEpFRlNUT1E2RHZpRy15TTB4SlNlbDBKVzlSd0RTOFNmdEV6cUI5QjIxOVdkbEZsdkNkVlVSTF96UUhlVmtoek9RU2xIZmVMZmhVMFQ4Qi0xZXR1WG5MRdIBoAFBVV95cUxQZGE0YWhQcGJtQVZaRzAtNGQzR1ZZclFoQ20zSzZRalplTjUzanZGQldIY1RvMzJTdTFfMFZLZzB5QlpvU3NLeDZIbXpMdDMzOHFYcy1Gamh5Z0hNRlpVdHA2ZjFhaHh3SmFTRFRkRXpMM1VJbjQ2TGFSNVRJcEItcFlYSG4ycTNDaG80aFBfbTF0ZGlYcDNvOHM4ZWZBZUlj?oc=5",
+    "time": "Thu, 05 Nov 2026 11:03:18 GMT",
+    "important": false
+  },
+  {
+    "category": "Bayern Munich",
+    "team": "Bayern Munich",
+    "team_fa": "بایرن مونیخ",
+    "title": "Talanta: Bayern versus Ajax regular tickets to cost Sh2,500 - Daily Nation",
+    "summary": "Talanta: Bayern versus Ajax regular tickets to cost Sh2,500 &nbsp;&nbsp; Daily Nation",
+    "source": "Daily Nation",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHpsNThFNzllWFpVa3kzRzhEWi1XdGlMa2ZDZzgyZFNXcW5oS2VVUVNzV2NBNzdjVUN2M3NZYk5FeWRFR3RteGtZUjU5UXpoWW15OTZnbWxxYUZsaGJNWDBnRnlWQUJEUVhOWHNac2p5WlM3R213WkYtWkRUcEhwenIxeGFFek42ejJJdmt2T2tWM0l6WXVpcWh1V2RZTlhyWHZyTUlYa3htQkZzb1U4?oc=5",
+    "time": "Thu, 05 Nov 2026 11:00:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Tottenham",
+    "team": "Tottenham",
+    "team_fa": "تاتنهام",
+    "title": "‘He drives people like Fabio Capello bonkers’ – View From The Lane special on Roberto De Zerbi - The New York Times",
+    "summary": "‘He drives people like Fabio Capello bonkers’ – View From The Lane special on Roberto De Zerbi &nbsp;&nbsp; The New York Times",
+    "source": "The New York Times",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPR3Z6OFM4QkROVjZPWTlKbDUxaXpSVVFBSXlMemN0TU41dlVUd2JsYXU1QVhXOGprcUpCWURfLUdTOVg1SEkyRFE2ODBjam5jMnJzLURXdFl6YkFqQ1lxcGdWaGZLNHZlN1l3WGV4S0dZOE5CeHBoWVFxSmptWVNGaVN4bEw2VHA0VzNIdThlMUsxZWNiYlNxamdrU0ZRbkU?oc=5",
+    "time": "Thu, 05 Nov 2026 10:59:26 GMT",
+    "important": false
+  },
+  {
+    "category": "Barcelona",
+    "team": "Barcelona",
+    "team_fa": "بارسلونا",
+    "title": "Tottenham will sell midfielder to Barcelona in January on one condition as chances of transfer revealed - Football365",
+    "summary": "Tottenham will sell midfielder to Barcelona in January on one condition as chances of transfer revealed &nbsp;&nbsp; Football365",
+    "source": "Football365",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcHQwNVRpLXVhODdsUVY1Z0V2dzVicTBpUVhrMEVmUENlSF9GVTJEb0tDUlhzVkYtUEpjX3M5a295emVMTFFvZ3ZseDA0QUMwdDVtZTZfd1I5LTRVOTVOWHlydTNSNzRXMUNhbUV0TU1vRDM4QnhpSXhxVGdNSlJJV1NXRmlVYTUtNm1iMEZldzBoMjZHeTZscHVmNUg5eU0?oc=5",
+    "time": "Thu, 05 Nov 2026 10:43:46 GMT",
+    "important": false
+  },
+  {
+    "category": "Barcelona",
+    "team": "Barcelona",
+    "team_fa": "بارسلونا",
+    "title": "FC Barcelona News: 5 November 2026; Raphinha set to sign contract renewal, Rodri injury confirmed - Barca Blaugranes",
+    "summary": "FC Barcelona News: 5 November 2026; Raphinha set to sign contract renewal, Rodri injury confirmed &nbsp;&nbsp; Barca Blaugranes",
+    "source": "Barca Blaugranes",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVk5lZW5VS3phdENEN1lQd2FubW16dzRMNlJIc2ZXSmVWMHg1OXBYNVQ2R2daWlVldW1QZWNPb25WTi1GandSX1c0ODI3WTlsM1liUWdMQldVRm1kamN1cmVCRGJMT2pUc2VIWTUyLTAzeldRRGVrN21kRXJIM2lJTW1LbGE5dlZMd1JJZEY0SmdXRXdlZGlRSm9JSkFmb01mSUdjZkdEal9TbFY3SHNGaU9KTFYxQjM3R05sLUYtWi1ubDFXOVBhVWRvQk4wM0pDSmdPQ2QxMVVFeWtCSGhsWVln?oc=5",
+    "time": "Thu, 05 Nov 2026 10:00:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Borussia Dortmund",
+    "team": "Borussia Dortmund",
+    "team_fa": "بوروسیا دورتموند",
+    "title": "Niko Kovac sets 17-point-target after latest Borussia Dortmund Champions League win - Get German Football News",
+    "summary": "Niko Kovac sets 17-point-target after latest Borussia Dortmund Champions League win &nbsp;&nbsp; Get German Football News",
+    "source": "Get German Football News",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeGNWQmRkTkwyd0s5a0wwY2VlN2w5ZGp6NWsyeGRPN3lhbmdaYmNsVGt0TEw5Z3d5aGdpZ0taUElQTmduTDBzLW9RdjFjNHB2dFBTYzNKbXI4MUhmS0lIcmpJQjJLaGNiS2dwOFNENE9TOVoyNk45NGdST19XaVljd1Fn?oc=5",
+    "time": "Thu, 05 Nov 2026 09:52:59 GMT",
+    "important": false
+  },
+  {
+    "category": "Arsenal",
+    "team": "Arsenal",
+    "team_fa": "آرسنال",
+    "title": "Preview: Arsenal vs Hull City - prediction, team news, lineups - Sports Mole",
+    "summary": "Preview: Arsenal vs Hull City - prediction, team news, lineups &nbsp;&nbsp; Sports Mole",
+    "source": "Sports Mole",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdVk2SmtJWnA4dHVOMVd6NnlUbDQzdzVFbncwSU5DZ041UC00S291eGtKdFFfalF5dzEwUWpoVm9KSnpNa1MtcW93RVlVX1ZBb0tROGxILTU4TjJsR1Z2c2JxWFJUTXhZY2VReC1uaWg1WmxsdVMxTTFpUUVLUDNEWmtTZld1VGg1Ni0zVTNERXRkV2JxTlp2SzFrRDRCVnNOWnNrM1VHQUJpZXRQbVNvTGxNdDJQUQ?oc=5",
+    "time": "Thu, 05 Nov 2026 09:48:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Manchester United",
+    "team": "Manchester United",
+    "team_fa": "منچستریونایتد",
+    "title": "Man Utd takeover: Avram Glazer breaks cover to offer bleak take in bid to sell club - Football365",
+    "summary": "Man Utd takeover: Avram Glazer breaks cover to offer bleak take in bid to sell club &nbsp;&nbsp; Football365",
+    "source": "Football365",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNmtuRnpUMlZ3SzNnOUxwQW85Ti1MZ25RNkZDTF9UMnJhZ1B4dXZVTjBIWXdMY0hWVktabElBNVQ1VXNXZFBWZnFhT0JxRERyMDdab19sU2lHc1hhbFpwQmVMd3d3YUpPT21jc0NKNVhZcmE2Ml9DRFBxOC1MUGxTZFZoajZfU1NHOUg4V0xwb2NjRmJaNEluRmRObEtMZzVBbDVDMzVjVERrRDd4VElucA?oc=5",
+    "time": "Thu, 05 Nov 2026 09:37:33 GMT",
+    "important": false
+  },
+  {
+    "category": "Tottenham",
+    "team": "Tottenham",
+    "team_fa": "تاتنهام",
+    "title": "Two Tottenham changes for Leeds clash as Roberto De Zerbi faces Luca Williams-Barnett dilemma - Football London",
+    "summary": "Two Tottenham changes for Leeds clash as Roberto De Zerbi faces Luca Williams-Barnett dilemma &nbsp;&nbsp; Football London",
+    "source": "Football London",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNTBrZVN2dnJjSFBtLWl5Q0FsSUpPLVpXdVdoTWpORFFhR0RBcVFXZDlNQnIybjFjWkhrN3NsUlpXZVNhQ29tbWRfSHNJQmN0bXlEQURaLW1wcTN4bHh0Qnd4WW1MYzRfd2hqNUtyVE96d2lnUWozZ0d2R0dBNmhibTBJb1RsRUF5ZUZ3aFFkWURHeWtrU0xETFR2bW_SAaIBQVVfeXFMUDVzUmJqSTM3WXRxT2w5MF9jYjB3Qi15eUN4Nm1GRHlJb1d4Tk1lMm0xeElSVWtyX1dtcUxUSWdlbWRwRGR1cFBoMDI4a3FsVV9NLWpMWnVzYmlSeEotb3AtdTJLMTQwVzczRmNqNWxkaUw0c1htMXdCaFZZMFAxTDNnQ3pNc3gxbkhrUGVjQms1ME1SaWJzeENWN0JlM19TZkJB?oc=5",
+    "time": "Thu, 05 Nov 2026 09:20:15 GMT",
+    "important": false
+  },
+  {
+    "category": "Bayern Munich",
+    "team": "Bayern Munich",
+    "team_fa": "بایرن مونیخ",
+    "title": "Tottenham retain first option on Harry Kane despite new Bayern deal - The Telegraph",
+    "summary": "Tottenham retain first option on Harry Kane despite new Bayern deal &nbsp;&nbsp; The Telegraph",
+    "source": "The Telegraph",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNkdsSFlGQzhsSVotOVJveGhzdVRtdnRDWUN2aXQ2S3ZLRGR5eTk1WEJKWFlVRXdFQnQ0Z1U4Ry1tN3VTbE5iV3ZlSmNYUllZRVoxemtlOFBKVDZ3bmdLeVR5VVM1R1VXUVFhUEZIbHk4TTBnUTVidTZyb0hadVBnM1pVN29nWDR4VUNuN2MzUFRBMjl4MkdXS3N6SEp3TWFzNlE0?oc=5",
+    "time": "Thu, 05 Nov 2026 09:07:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Manchester City",
+    "team": "Manchester City",
+    "team_fa": "منچسترسیتی",
+    "title": "Manchester City and PUMA unveil new flagship City Store at Medlock Square - Manchester City FC",
+    "summary": "Manchester City and PUMA unveil new flagship City Store at Medlock Square &nbsp;&nbsp; Manchester City FC",
+    "source": "Manchester City FC",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWV9rZEFMXzQxbU9ydkV6TTE5SkRhdFZ5NHprdGVTcjdHVnNJME9NQmdDZHNhYlRhbS15OE9aZ2lHeVNrQ18yX0psT3o3TDN1a0lpdmtZQmNGRDNuWkpDeUM0TFdjN2FXYng4aFZoNmtJQ2pCSHdkM3Z2VUxwOHNUcF9STkhhcVlucHF5eVlHQnVMTWhQV0lGTA?oc=5",
+    "time": "Thu, 05 Nov 2026 09:00:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Borussia Dortmund",
+    "team": "Borussia Dortmund",
+    "team_fa": "بوروسیا دورتموند",
+    "title": "Borussia Dortmund and SPORTFIVE extend partnership until 2034 - Yahoo Sports",
+    "summary": "Borussia Dortmund and SPORTFIVE extend partnership until 2034 &nbsp;&nbsp; Yahoo Sports",
+    "source": "Yahoo Sports",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPX290dEcyTFlqR3RNVjZfSHg4N2VReTlMN2dmd25lcEQ1YmhielhDT25oTjUwUGdDYkRYMFhJN0tMdl9GbFB1aVpzNWs4UWxKUTg0M3NHakNfWi03WDJYdWMzcVlqOWZZVExHckNZdElqenh3TkJQNmZCdUNXTG9WRHY5YUtqYW82Ujl3NEYzdURXaUpsWmpJSVZYMA?oc=5",
+    "time": "Thu, 05 Nov 2026 09:00:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Bayern Munich",
+    "team": "Bayern Munich",
+    "team_fa": "بایرن مونیخ",
+    "title": "Harry Kane: England captain and 2026 Ballon d'Or winner signs new contract at Bayern Munich running until 2029 - Sky Sports",
+    "summary": "Harry Kane: England captain and 2026 Ballon d'Or winner signs new contract at Bayern Munich running until 2029 &nbsp;&nbsp; Sky Sports",
+    "source": "Sky Sports",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQWVaeGdHMk41cTJ0Y284eDVld0xOZzl3U3dwXzJicnFxekVIU05lenNqbmU4c3c2OVZ3c2NxRHVEZEc3SVJoNjM2UUNleW1aLXZmWU4yZEtfZ0ZQYld1ZUxnaDNiU3FjVjJMc2NKRDEtQkk2WTl4S0FtR0V5dnZuTGlQQUZ3TmFocng4NW03ZlJSQXctTnNoNE82c250UkYweHBpNnE5N0xCTkw2ajJfNDBzSEVsbGthdWZhRFltZGs2WTI2U0JOazl3?oc=5",
+    "time": "Thu, 05 Nov 2026 08:41:25 GMT",
+    "important": false
+  },
+  {
+    "category": "Bayern Munich",
+    "team": "Bayern Munich",
+    "team_fa": "بایرن مونیخ",
+    "title": "Harry Kane lands highest salary in Europe as Ballon d'Or winner announces decision on future - talkSPORT",
+    "summary": "Harry Kane lands highest salary in Europe as Ballon d'Or winner announces decision on future &nbsp;&nbsp; talkSPORT",
+    "source": "talkSPORT",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdUxVcWxuQXNxS0ZYVUxUd0FXX3BLVUFLbFl6RU1NTC1GLWtFQk1fdVlaUkQ5bUQyR1VzMGFQcFdCUkJvSnlpWTlCUGJlM05mZXc0ckdHOEhxZGYxMlZmUTNQWkt0RGVFZVNUSmN2NG5kem1icDRyaDNsMVU2Tk5DX01ha2p0M21YcjA0dEw1LXRQN3IxLTI1ZjVtZk8wdWlo?oc=5",
+    "time": "Thu, 05 Nov 2026 08:25:59 GMT",
+    "important": false
+  },
+  {
+    "category": "Bayern Munich",
+    "team": "Bayern Munich",
+    "team_fa": "بایرن مونیخ",
+    "title": "Harry Kane signs new Bayern Munich contract until 2029 - BBC",
+    "summary": "Harry Kane signs new Bayern Munich contract until 2029 &nbsp;&nbsp; BBC",
+    "source": "BBC",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1YNmNScGFtb1c4MDZKT1VPZktRU2Q2SDNITjJQbVFxVjVaXzFfa3IwdXJVYl9fQ2pVRUZjT1ZmVm0yTFdFLURuOGRRSWxMaEdZN0l3ajhrZU9kSUdzai1zazdwazVvMVRY?oc=5",
+    "time": "Thu, 05 Nov 2026 08:12:31 GMT",
+    "important": false
+  },
+  {
+    "category": "Manchester City",
+    "team": "Manchester City",
+    "team_fa": "منچسترسیتی",
+    "title": "Is Gianluigi Donnarumma’s Manchester City form becoming a liability for Enzo Maresca? - The New York Times",
+    "summary": "Is Gianluigi Donnarumma’s Manchester City form becoming a liability for Enzo Maresca? &nbsp;&nbsp; The New York Times",
+    "source": "The New York Times",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQ2NHNzdPY2lSVjhlQ3czcGlqd0hLQzFfUFp0T0pKZ2RxOWJVZlNkbUNnblZ0U3BFbGNoeVNDUVNkX2sxWmNxTkxMWDVtV3pzT3lwaDVNc2FIcWV3N2JqY3pZMWh6LVBpZHpZNjhBUk5vOFlFd1h4UnUtaldEbS1IQldUNFMtQUY2RGpvY2FRVmd0aUd3U3RXOQ?oc=5",
+    "time": "Thu, 05 Nov 2026 08:01:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Manchester City",
+    "team": "Manchester City",
+    "team_fa": "منچسترسیتی",
+    "title": "Preview: Nottingham Forest vs Manchester City - prediction, team news, lineups - Sports Mole",
+    "summary": "Preview: Nottingham Forest vs Manchester City - prediction, team news, lineups &nbsp;&nbsp; Sports Mole",
+    "source": "Sports Mole",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYmdWb2dYOUlvRjRHeGpIX2Z5NlZxQk83VE1jdWdCNVV5WFc4aldXV0lhZncwNDh2RnJWY3otclZHQVdSZzNqa3JJdkdmdlU4WVRkNW5XZ0xHY0dMQlM5S1FvMjBQZWdmYjQ2bE5VSGpLUFBFOGd2S25TR0FnTzRmbHVFUmJoeU5PSGEtbEdTSER2VVdQLVpTd01HbHlqeVJJSmNjMFpESFF4S3FxQVh0OXJ6VTgwY1RTS1RrMEVWTy1LNXlZZEcyMQ?oc=5",
+    "time": "Thu, 05 Nov 2026 08:00:00 GMT",
+    "important": false
+  },
+  {
+    "category": "Arsenal",
+    "team": "Arsenal",
+    "team_fa": "آرسنال",
+    "title": "Team news: Six changes made for Slavia Prague showdown - Arsenal.com",
+    "summary": "Team news: Six changes made for Slavia Prague showdown &nbsp;&nbsp; Arsenal.com Viktor Gyökeres the difference as Arsenal claim nervy win against Slavia Prague &nbsp;&nbsp; The Guardian Slavia Prague vs Arsenal: UEFA Champions League stats & head-to-head &nbsp;&nbsp; BBC",
+    "source": "Arsenal.com",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOM3AySzk3emxoWmFSSUFGOVYxR0ZjZjNXRWlrRmVvWXJScmJrcnJPM2RZRlFrek9tbzBxZWtjeFU0SEJ3S0pqWW1CWGZxelAxY05DcXpYN01vSXMteVNuQWxwbi01ckRnOTFpd0lUSjA2U19jOFpmYUo4MTZuYW95T1NWSVNMempCODVfZ2NEOUdtZ3BrR25fY3Nocw?oc=5",
+    "time": "Thu, 05 Nov 2026 07:49:07 GMT",
+    "important": false
+  },
+  {
+    "category": "Arsenal",
+    "team": "Arsenal",
+    "team_fa": "آرسنال",
+    "title": "Report: Slavia Prague 1-2 Arsenal - Arsenal.com",
+    "summary": "Report: Slavia Prague 1-2 Arsenal &nbsp;&nbsp; Arsenal.com",
+    "source": "Arsenal.com",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5WVEJTYWlmeFEyZXhld1Vjdlh4aVRHeEpSS0E3Z0t5SW9jRjhvY2d4Mm1BTmNUbVJoVnJhSWRmcjRMeldwTnJMUW01VldWMUkycFFtaUxFQmJqVTZEbFMydk00QTNLZVJVeEtNNFF0b0YxeXhMaS1Well2d09fWlE?oc=5",
+    "time": "Thu, 05 Nov 2026 07:49:07 GMT",
     "important": false
   }
 ]
